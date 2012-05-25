@@ -1,0 +1,111 @@
+<SmartAssemblyProject ProjectID="{1c22e1b1-5b73-4f71-ba92-f84be493d010}" Version="2.0">
+    <MainAssemblyFileName>.\Source\bin\Debug\IDFM - AR.exe</MainAssemblyFileName>
+    <Configuration Name="Release">
+        <ApplicationName />
+        <Destination DestinationFileName=".\IDFM - AR.exe" />
+        <Assemblies>
+            <Assembly AssemblyName="DevComponents.DotNetBar2, Culture=neutral, PublicKeyToken=5fd520d36328f741">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Calendar, Culture=neutral, PublicKeyToken=145b7e473c8af181">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Db.Layer.Manager, Culture=neutral, PublicKeyToken=05adbdc7e690569f">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.MessageBox, Culture=neutral, PublicKeyToken=dfb97cb8308c094f">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Log.Manager, Culture=neutral, PublicKeyToken=7d935595bdbb98a2">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.ConnectionString.Manager, Culture=neutral, PublicKeyToken=8591c648ca881033">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.License.Manager, Culture=neutral, PublicKeyToken=0dbe34f4a48e0e11">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Interop.NovinAfzar, Culture=neutral, PublicKeyToken=f973fbbb2077d5f9">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Db.Layer.Manager.Sepehr, Culture=neutral, PublicKeyToken=2c485803badad6a0">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.User.Security.Manager, Culture=neutral, PublicKeyToken=07c8b4ac8802f45f">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="IDFM - AR, Culture=neutral, PublicKeyToken=null">
+                <Merging>
+                    <ResourcesCompression />
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesPruning />
+                </Merging>
+            </Assembly>
+        </Assemblies>
+        <Options>
+            <Obfuscation FieldsNameMangling="2" NameMangling="2" />
+            <ExceptionReporting />
+            <StrongNameSigning Sign="0" />
+            <OtherProtections />
+            <StringsEncoding />
+            <OtherOptimizations />
+            <Debugging />
+        </Options>
+    </Configuration>
+</SmartAssemblyProject>

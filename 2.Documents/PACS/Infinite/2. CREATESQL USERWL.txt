@@ -1,0 +1,12 @@
+CREATE TABLE USERWL (
+	USER_KEY		numeric,
+	TRIGGER_DTTM	nvarchar(14),
+	REPLICA_DTTM	nvarchar(14),
+	USER_ID			nvarchar(64),
+	USER_NAME		nvarchar(32),
+	PASSWORD		nvarchar(16),
+	USER_LEVEL		NUMBER,
+	USER_STATUS		CHAR(1),
+	COMMENTS		nvarchar(max)
+);
+

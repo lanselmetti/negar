@@ -1,0 +1,213 @@
+<SmartAssemblyProject ProjectID="{dc513d01-7438-4d62-81b9-e536f4a3e4d3}" Version="2.0">
+    <MainAssemblyFileName>.\Db.Doc.Update\bin\Debug\Db.Doc.Update.exe</MainAssemblyFileName>
+    <Configuration Name="Release">
+        <ApplicationName />
+        <Destination DestinationFileName=".\DbDocUpdate.exe" />
+        <Assemblies>
+            <Assembly AssemblyName="DevComponents.DotNetBar2, Culture=neutral, PublicKeyToken=5fd520d36328f741">
+                <Merging Merge="1">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="0" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab Calendar, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="0" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab MessageBox, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab Connection String Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning Prune="1">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab License Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning Prune="1">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Interop.NovinAfzar, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="IMS Windows Log Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning Prune="1">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr IMS IDFM - تامین اجتماعی, Culture=neutral, PublicKeyToken=null">
+                <Merging>
+                    <ResourcesCompression Compress="1" />
+                    <Pruning Prune="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS IDFM - تامین اجتماعی</Assembly>
+                                <Module>Sepehr IMS IDFM - تامین اجتماعی.exe</Module>
+                                <Namespace>Sepehr.DbLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS IDFM - تامین اجتماعی</Assembly>
+                                <Module>Sepehr IMS IDFM - تامین اجتماعی.exe</Module>
+                                <Namespace>Sepehr.DbLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesPruning />
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="Aftab WinApp Log Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr DB Layer Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab DB Layer Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab User Security Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow Obfuscate="0" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="ChilkatDotNet2, Culture=neutral, PublicKeyToken=eb5fc1fc52ef09bd">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding Compress="0" Embed="1" GAC="0" />
+            </Assembly>
+            <Assembly AssemblyName="Pardis NMR Listener, Culture=neutral, PublicKeyToken=null">
+                <Merging>
+                    <ResourcesCompression />
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesPruning />
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="Microsoft.Office.Interop.Word, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+                <Embedding Compress="0" Embed="0" GAC="0" />
+            </Assembly>
+            <Assembly AssemblyName="Microsoft.Vbe.Interop, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+                <Embedding Compress="0" Embed="0" GAC="0" />
+            </Assembly>
+            <Assembly AssemblyName="office, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+                <Embedding Compress="0" Embed="0" GAC="0" />
+            </Assembly>
+            <Assembly AssemblyName="DBDocUpdate, Culture=neutral, PublicKeyToken=null">
+                <Merging>
+                    <ResourcesCompression />
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesPruning />
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="Db.Doc.Update, Culture=neutral, PublicKeyToken=null">
+                <Merging>
+                    <ResourcesCompression />
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesPruning />
+                </Merging>
+            </Assembly>
+        </Assemblies>
+        <Options>
+            <Obfuscation FieldsNameMangling="3" NameMangling="3" />
+            <ExceptionReporting ReportExceptions="0" />
+            <StrongNameSigning KeyFileName=".\Db.Doc.Update\bin\Debug\Strong Key.snk" Sign="1" />
+            <OtherProtections AddIncorrectMetadata="1" SuppressIldasm="1" />
+            <StringsEncoding Encode="1" UseImprovedEncoding="1" />
+            <OtherOptimizations ManageMemory="1" SealClasses="1" />
+            <Debugging CreatePDB="0" />
+        </Options>
+    </Configuration>
+</SmartAssemblyProject>

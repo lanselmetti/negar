@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calendar", "Calendar\Calendar.csproj", "{F1BB10F1-4438-433B-AB78-968EF29501A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{5A62A423-92FF-4B6D-8EFA-BBF944A40BAF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F1BB10F1-4438-433B-AB78-968EF29501A5} = {F1BB10F1-4438-433B-AB78-968EF29501A5}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1BB10F1-4438-433B-AB78-968EF29501A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1BB10F1-4438-433B-AB78-968EF29501A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1BB10F1-4438-433B-AB78-968EF29501A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1BB10F1-4438-433B-AB78-968EF29501A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A62A423-92FF-4B6D-8EFA-BBF944A40BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A62A423-92FF-4B6D-8EFA-BBF944A40BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A62A423-92FF-4B6D-8EFA-BBF944A40BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A62A423-92FF-4B6D-8EFA-BBF944A40BAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

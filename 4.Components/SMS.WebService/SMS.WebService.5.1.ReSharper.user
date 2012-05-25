@@ -1,0 +1,254 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">False</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="static" priority="4" />
+      <Item value="return" priority="11" />
+      <Item value="true" priority="7" />
+      <Item value="private" priority="3" />
+      <Item value="String`0" priority="19" />
+      <Item value="prop" priority="6" />
+      <Item value="_UserName" priority="0" />
+      <Item value="_Password" priority="1" />
+      <Item value="using" priority="2" />
+      <Item value="Negar.SMSWebService" priority="0" />
+      <Item value="Manager`0" priority="9" />
+      <Item value="textBox1" priority="2" />
+      <Item value="Text" priority="0" />
+      <Item value="textBox2" priority="1" />
+      <Item value="value" priority="1" />
+      <Item value="client" priority="1" />
+      <Item value="Encoding`0" priority="3" />
+      <Item value="Encoder`0" priority="0" />
+      <Item value="var" priority="2" />
+      <Item value="Convert`0" priority="0" />
+      <Item value="Boolean`0" priority="4" />
+      <Item value="new" priority="12" />
+      <Item value="StringBuilder" priority="0" />
+      <Item value="false" priority="3" />
+      <Item value="URL" priority="5" />
+      <Item value="foreach" priority="0" />
+      <Item value="DestinationNumber" priority="4" />
+      <Item value="if" priority="20" />
+      <Item value="mbox" priority="3" />
+      <Item value="else" priority="1" />
+      <Item value="DownloadDataCompletedEventHandler" priority="0" />
+      <Item value="SendRequest`0" priority="0" />
+      <Item value="_URL" priority="2" />
+      <Item value="BGWorker" priority="6" />
+      <Item value="e" priority="3" />
+      <Item value="_ErrorIndicator" priority="1" />
+      <Item value="public" priority="5" />
+      <Item value="ctor" priority="1" />
+      <Item value="BackgroundWorker" priority="1" />
+      <Item value="BGWorker_DoWork`0" priority="0" />
+      <Item value="BGWorker_RunWorkerCompleted`0" priority="0" />
+      <Item value="_ClassIsBusy" priority="0" />
+      <Item value="Int32`0" priority="2" />
+      <Item value="for" priority="0" />
+      <Item value="MessageID" priority="2" />
+      <Item value="ListBindableAttribute`0" priority="0" />
+      <Item value="i" priority="2" />
+      <Item value="BodyText" priority="0" />
+      <Item value="ThreadStaticAttribute`0" priority="0" />
+      <Item value="Thread`0" priority="1" />
+      <Item value="Thread" priority="2" />
+      <Item value="ThreadStart`0" priority="0" />
+      <Item value="ThreadStart" priority="0" />
+      <Item value="ParameterizedThreadStart`0" priority="0" />
+      <Item value="_Thread" priority="5" />
+      <Item value="_Timer" priority="5" />
+      <Item value="Timer" priority="0" />
+      <Item value="void" priority="0" />
+      <Item value="Timer`0" priority="0" />
+      <Item value="test`0" priority="1" />
+      <Item value="timer1" priority="0" />
+      <Item value="ElapsedEventHandler" priority="0" />
+      <Item value="Void`0" priority="0" />
+      <Item value="InvokeRequests`0" priority="1" />
+      <Item value="enum" priority="0" />
+      <Item value="SystemState`0" priority="1" />
+      <Item value="Send" priority="1" />
+      <Item value="class" priority="0" />
+      <Item value="List" priority="0" />
+      <Item value="Message`0" priority="1" />
+      <Item value="List&lt;Message&gt;" priority="0" />
+      <Item value="Message" priority="4" />
+      <Item value="MessageList" priority="2" />
+      <Item value="CheckDelivery" priority="0" />
+      <Item value="null" priority="5" />
+      <Item value="finally" priority="0" />
+      <Item value="DoWork`0" priority="0" />
+      <Item value="RunWorkerCompletedEventHandler" priority="0" />
+      <Item value="_BGWorkerIsBusy" priority="1" />
+      <Item value="_SystemState" priority="0" />
+      <Item value="Sepehr" priority="2" />
+      <Item value="DBLayerIMS" priority="2" />
+      <Item value="Messages`0" priority="2" />
+      <Item value="bool" priority="0" />
+      <Item value="CheckDelivery`0" priority="1" />
+      <Item value="byte" priority="0" />
+      <Item value="ReportString" priority="2" />
+      <Item value="switch" priority="0" />
+      <Item value="case" priority="0" />
+      <Item value="break" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Negar.SMSWebService.Manager">
+      <Item value="SendSMS`0" priority="0" />
+      <Item value="Username" priority="0" />
+      <Item value="Password" priority="0" />
+      <Item value="TestInternetConnection`0" priority="0" />
+      <Item value="TimerStart`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="Text" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.WebClient">
+      <Item value="Encoding" priority="0" />
+      <Item value="DownloadDataCompleted" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Text.Encoding">
+      <Item value="Unicode" priority="0" />
+      <Item value="UTF8" priority="0" />
+      <Item value="GetEncoding`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.Encoding">
+      <Item value="BodyName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.StringBuilder">
+      <Item value="Append`0" priority="1" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="Remove`0" priority="0" />
+      <Item value="Length" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ComponentModel.BackgroundWorker">
+      <Item value="RunWorkerAsync`0" priority="2" />
+      <Item value="DoWork" priority="1" />
+      <Item value="RunWorkerCompleted" priority="1" />
+      <Item value="IsBusy" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ComponentModel.RunWorkerCompletedEventArgs">
+      <Item value="Cancelled" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ComponentModel.DoWorkEventArgs">
+      <Item value="Cancel" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Count" priority="5" />
+      <Item value="Add`0" priority="0" />
+      <Item value="Find`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="3" />
+      <Item value="IsNullOrEmpty`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Threading.Thread">
+      <Item value="Start`0" priority="0" />
+      <Item value="IsAlive" priority="1" />
+      <Item value="Abort`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Timers.Timer">
+      <Item value="Interval" priority="0" />
+      <Item value="Start`0" priority="0" />
+      <Item value="Elapsed" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Timer">
+      <Item value="Tick" priority="0" />
+      <Item value="Stop`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Negar.SMSWebService.InvokeRequests">
+      <Item value="SendRequest`0" priority="0" />
+      <Item value="Thread" priority="0" />
+      <Item value="BGWorkerIsBusy" priority="0" />
+      <Item value="BGWorker" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Negar.SMSWebService.Manager+SystemState">
+      <Item value="Send" priority="1" />
+      <Item value="Recieve" priority="0" />
+      <Item value="CheckBalance" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Negar.SMSWebService.Manager+Message">
+      <Item value="DestinationNumber" priority="2" />
+      <Item value="TextBody" priority="2" />
+      <Item value="MessageID" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Sepehr.DBLayerIMS.Messages">
+      <Item value="PreparingMsgListForSend`0" priority="0" />
+      <Item value="PreparingMsgListForCheckDelivery`0" priority="0" />
+      <Item value="InsertMessageToMsgList`0" priority="0" />
+      <Item value="InsertMsgLogEvent`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Sepehr.DBLayerIMS.DataLayer.MsgList">
+      <Item value="Number" priority="0" />
+      <Item value="Text" priority="0" />
+      <Item value="ID" priority="0" />
+      <Item value="DestinationNumber" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Remove`0" priority="0" />
+      <Item value="Contains`0" priority="2" />
+      <Item value="Substring`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="EDB3396B-2C2E-4B25-AF64-3F317A4EB985/f:Program.cs" caret="481" fromTop="18" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/d:DataLayer/f:DbLayer.designer.cs" caret="438855" fromTop="4" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:Manager.cs" caret="1281" fromTop="3" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:Messages.cs" caret="9940" fromTop="6" />
+      <File id="EDB3396B-2C2E-4B25-AF64-3F317A4EB985/f:Form1.cs" caret="744" fromTop="10" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:Manager.cs" caret="3928" fromTop="15" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:InvokeRequests.cs" caret="4541" fromTop="15" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:Manager.cs" caret="4383" fromTop="14" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:Manager.cs" caret="4805" fromTop="19" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:Manager.cs" caret="147" fromTop="5" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:Manager.cs" caret="1241" fromTop="4" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:Manager.cs" caret="2713" fromTop="10" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:InvokeRequests.cs" caret="1674" fromTop="10" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:InvokeRequests.cs" caret="84" fromTop="4" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:InvokeRequests.cs" caret="357" fromTop="16" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:Manager.cs" caret="5325" fromTop="7" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:Manager.cs" caret="6614" fromTop="10" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:Manager.cs" caret="8939" fromTop="20" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:Manager.cs" caret="8592" fromTop="9" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:Manager.cs" caret="8894" fromTop="12" />
+      <File id="EDB3396B-2C2E-4B25-AF64-3F317A4EB985/f:Form1.cs" caret="724" fromTop="14" />
+      <File id="EDB3396B-2C2E-4B25-AF64-3F317A4EB985/f:Form1.cs" caret="962" fromTop="14" />
+      <File id="EDB3396B-2C2E-4B25-AF64-3F317A4EB985/f:Form1.cs" caret="916" fromTop="11" />
+      <File id="EDB3396B-2C2E-4B25-AF64-3F317A4EB985/f:Form1.cs" caret="475" fromTop="10" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:Manager.cs" caret="8400" fromTop="7" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:InvokeRequests.cs" caret="608" fromTop="6" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:InvokeRequests.cs" caret="414" fromTop="9" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:InvokeRequests.cs" caret="1347" fromTop="7" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:Manager.cs" caret="3835" fromTop="5" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:Manager.cs" caret="3286" fromTop="5" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:Manager.cs" caret="3354" fromTop="8" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:Manager.cs" caret="3928" fromTop="15" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:InvokeRequests.cs" caret="1910" fromTop="6" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:InvokeRequests.cs" caret="1918" fromTop="6" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:InvokeRequests.cs" caret="2294" fromTop="20" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:InvokeRequests.cs" caret="2316" fromTop="15" />
+      <File id="3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854/f:InvokeRequests.cs" caret="4431" fromTop="8" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

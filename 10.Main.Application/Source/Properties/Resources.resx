@@ -1,0 +1,802 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PMSClearCommand" xml:space="preserve">
+    <value>DELETE FROM [PatientsSystem].[Patients].[List];
+DBCC CHECKIDENT ('PatientsSystem.Patients.List', RESEED, 0);
+-- =======================================
+DELETE FROM [PatientsSystem].[Patients].[Jobs];
+DBCC CHECKIDENT ('PatientsSystem.Patients.Jobs', RESEED, 0);
+-- =======================================
+TRUNCATE TABLE [PatientsSystem].[Patients].[IDPool];
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-- بیمه های سازمان های اصلی باقی می مانند
+DELETE FROM [PatientsSystem].[Clinic].[Insurances] WHERE [ID] &gt; 6;
+DBCC CHECKIDENT ('PatientsSystem.Clinic.Insurances', RESEED, 6);
+-- =======================================
+-- پزشكان عمومی و داخلی پیش فرض
+--DELETE FROM [PatientsSystem].[Clinic].[RefPhysicians] WHERE [ID] &gt; 1545;
+--DBCC CHECKIDENT ('PatientsSystem.Clinic.RefPhysicians', RESEED, 1545);
+-- =======================================
+-- تخصص های پیش فرض ثبت شده
+--DELETE FROM [PatientsSystem].[Clinic].[RefPhysiciansSpecs] WHERE [ID] &gt; 61;
+--DBCC CHECKIDENT ('PatientsSystem.Clinic.RefPhysiciansSpecs', RESEED, 61);
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-- شهرها ، استان ها و كشورهای پیش فرض
+--DELETE FROM [PatientsSystem].[Locations].[Cities]	WHERE [ID] &gt; 22;
+--DBCC CHECKIDENT ('PatientsSystem.Locations.Cities', RESEED, 22);
+-- =======================================
+--DELETE FROM [PatientsSystem].[Locations].[States] WHERE [ID] &gt; 29;
+--DBCC CHECKIDENT ('PatientsSystem.Locations.States', RESEED, 29);
+-- =======================================
+--DELETE FROM [PatientsSystem].[Locations].[Countries] WHERE [ID] &gt; 193;
+--DBCC CHECKIDENT ('PatientsSystem.Locations.Countries', RESEED, 193);
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-- كاربران و گروه های كاربری پیش فرض
+DELETE FROM [PatientsSystem].[Security].[Users] WHERE [ID] &gt; 3;
+DBCC CHECKIDENT ('PatientsSystem.Security.Users', RESEED, 3);
+-- =======================================
+DELETE FROM [PatientsSystem].[Security].[Groups] WHERE [ID] &gt; 8;
+DBCC CHECKIDENT ('PatientsSystem.Security.Groups', RESEED, 8);</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Plus.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Left.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dicom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dicom.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMSClearCommand" xml:space="preserve">
+    <value>USE [ImagingSystem];
+-- ============================
+-- لیست بانك ها
+--DELETE FROM [ImagingSystem].[Accounting].[Banks] WHERE [ID] &gt; 13;
+--DBCC CHECKIDENT ('ImagingSystem.Accounting.Banks', RESEED, 13);
+-- ============================
+-- ارتباط صندوق ها و صندوقداران
+DELETE FROM [ImagingSystem].[Accounting].[CashiersCashes];
+-- ============================
+-- لیست صندوق ها
+DELETE FROM [ImagingSystem].[Accounting].[Cashes];
+DBCC CHECKIDENT ('ImagingSystem.Accounting.Cashes', RESEED, 0);
+-- ============================
+-- ورود و خروج پول
+DBCC CHECKIDENT ('ImagingSystem.Accounting.CashInputOutput', RESEED, 0);
+-- ============================
+-- صندوق های باز شده و بسته شده
+DBCC CHECKIDENT ('ImagingSystem.Accounting.CashLog', RESEED, 0);
+-- ============================
+-- انواع تخفیف ها و هزینه ها
+DELETE FROM [ImagingSystem].[Accounting].[CostsAndDiscountsTypes];
+DBCC CHECKIDENT ('ImagingSystem.Accounting.CostsAndDiscountsTypes', RESEED, 0);
+-- ============================
+DBCC CHECKIDENT ('ImagingSystem.Accounting.RefCostsAndDiscounts', RESEED, 0);
+-- ============================
+-- تراكنش ها
+DBCC CHECKIDENT ('ImagingSystem.Accounting.RefTransaction', RESEED, 0);
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-- قالب های مدارك و متن ها
+TRUNCATE TABLE [ImagingSystem].[Documents].[Templates];
+TRUNCATE TABLE [ImagingSystem].[Documents].[Texts];
+-- ============================
+-- نوع مدارك
+DELETE FROM [ImagingSystem].[Documents].[Type];
+DBCC CHECKIDENT ('ImagingSystem.Documents.Type', RESEED, 0);
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-- مراجعات
+DELETE FROM [ImagingSystem].[Referrals].[List];
+DBCC CHECKIDENT ('ImagingSystem.Referrals.List', RESEED, 0);
+-- ============================
+-- فیلد های اطلاعاتی پویا بیماران
+DELETE FROM [ImagingSystem].[Referrals].[PatAdditionalDataItemsColCover];
+DELETE FROM [ImagingSystem].[Referrals].[PatAdditionalColumns];
+DBCC CHECKIDENT ('ImagingSystem.Referrals.PatAdditionalColumns', RESEED, 0);
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+DELETE FROM [ImagingSystem].[Insurances].[List] WHERE [InsuranceIX] &gt; 6;
+-- ============================
+DELETE FROM [ImagingSystem].[Insurances].[Ins2Formulas];
+DBCC CHECKIDENT ('ImagingSystem.Insurances.Ins2Formulas', RESEED, 0);
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-- [ImagingSystem].[Referrals].[PatAdditionalData]
+IF  EXISTS (SELECT * FROM sys.objects 
+WHERE object_id = OBJECT_ID(N'[Referrals].[PatAdditionalData]') AND type in (N'U'))
+DROP TABLE [Referrals].[PatAdditionalData]
+--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+CREATE TABLE [Referrals].[PatAdditionalData]
+(	[PatientIX] [int] NOT NULL, CONSTRAINT [PK_PatientsAdditionalData] PRIMARY KEY CLUSTERED 
+(	[PatientIX] ASC)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF,
+ IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY];
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'كلید بیمار' , @level0type=N'SCHEMA',@level0name=N'Referrals', @level1type=N'TABLE',@level1name=N'PatAdditionalData', @level2type=N'COLUMN',@level2name=N'PatientIX';
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'جدول اطلاعات اضافه بیماران تصویربرداری' , @level0type=N'SCHEMA',@level0name=N'Referrals', @level1type=N'TABLE',@level1name=N'PatAdditionalData';
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-- فیلد های اطلاعاتی پویا مراجعات
+DELETE FROM [ImagingSystem].[Referrals].[RefAdditionalDataItemsColCover];
+DELETE FROM [ImagingSystem].[Referrals].[RefAdditionalColumns];
+DBCC CHECKIDENT ('ImagingSystem.Referrals.RefAdditionalColumns', RESEED, 0);
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-- [ImagingSystem].[Referrals].[RefAdditionalData]
+IF  EXISTS (SELECT * FROM sys.foreign_keys 
+	WHERE OBJECT_ID = OBJECT_ID(N'[Referrals].[FK_RefAdditionalData_List]') 
+	AND parent_object_id = OBJECT_ID(N'[Referrals].[RefAdditionalData]'))
+ALTER TABLE [Referrals].[RefAdditionalData] DROP CONSTRAINT [FK_RefAdditionalData_List];
+IF  EXISTS (SELECT * FROM sys.objects 
+	WHERE OBJECT_ID = OBJECT_ID(N'[Referrals].[RefAdditionalData]') AND type in (N'U'))
+DROP TABLE [Referrals].[RefAdditionalData];
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+CREATE TABLE [Referrals].[RefAdditionalData](
+[ReferralIX] [INT] NOT NULL,
+CONSTRAINT [PK_ReferralsAdditionalData] PRIMARY KEY CLUSTERED ([ReferralIX] ASC)
+WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]) ON [PRIMARY];
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'كد مراجعه' , 
+@level0type=N'SCHEMA',@level0name=N'Referrals', @level1type=N'TABLE',
+@level1name=N'RefAdditionalData', @level2type=N'COLUMN',@level2name=N'ReferralIX';
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'جدول اطلاعات اضافه مراجعات' , 
+@level0type=N'SCHEMA',@level0name=N'Referrals', @level1type=N'TABLE',
+@level1name=N'RefAdditionalData';
+ALTER TABLE [Referrals].[RefAdditionalData] 
+WITH CHECK ADD  CONSTRAINT [FK_RefAdditionalData_List] FOREIGN KEY([ReferralIX])
+REFERENCES [Referrals].[List] ([ID])
+ON UPDATE CASCADE
+ON DELETE CASCADE;
+ALTER TABLE [Referrals].[RefAdditionalData] CHECK CONSTRAINT [FK_RefAdditionalData_List];
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-- پزشكان و كارشناسان
+DELETE FROM [ImagingSystem].[Referrals].[Performers];
+DBCC CHECKIDENT ('ImagingSystem.Referrals.Performers', RESEED, 0);
+-- ============================
+-- مدارك مراجعات
+TRUNCATE TABLE [ImagingSystem].[Referrals].[RefDocuments];
+-- ============================
+-- خدمات مراجعات
+TRUNCATE TABLE [ImagingSystem].[Referrals].[RefServices];
+-- ============================
+DELETE FROM [ImagingSystem].[Referrals].[Status];
+-- وضعیت های مراجعات
+DBCC CHECKIDENT ('ImagingSystem.Referrals.Status', RESEED, 0);
+-- ============================
+-- لاگ چاپ قبض
+TRUNCATE TABLE [ImagingSystem].[Reports].[BillsPrintLog];
+-- ============================
+DELETE FROM [ImagingSystem].[Reports].[BillsUserAccess] WHERE [UserIX] &gt; 3;
+UPDATE [ImagingSystem].[Reports].[BillsUserAccess] SET [PrintLimitation] = NULL;
+-- ============================
+DELETE FROM [ImagingSystem].[Reports].[BillTemplates] WHERE [ID] &gt; 2;
+DBCC CHECKIDENT ('ImagingSystem.Reports.BillTemplates', RESEED, 2);
+-- ============================
+-- گزارش های قابل طراحی
+TRUNCATE TABLE [ImagingSystem].[Reports].[DesignableReports];
+TRUNCATE TABLE [ImagingSystem].[Reports].[DesignableReportsAdditionalColumn];
+-- ============================
+DELETE FROM [ImagingSystem].[Reports].[SavedSearch];
+DBCC CHECKIDENT ('ImagingSystem.Reports.SavedSearch', RESEED, 0);
+-- ============================
+DELETE FROM [ImagingSystem].[Schedules].[AdditionalColumns];
+DBCC CHECKIDENT ('ImagingSystem.Schedules.AdditionalColumns', RESEED, 0);
+-- ============================
+TRUNCATE TABLE [ImagingSystem].[Schedules].[AdditionalColumnsAppCover];
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-- ImagingSystem.Schedules.AdditionalData
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE OBJECT_ID = 
+OBJECT_ID(N'[Schedules].[FK_AppAdditionalData_Appointments]') 
+AND parent_object_id = OBJECT_ID(N'[Schedules].[AdditionalData]'))
+ALTER TABLE [Schedules].[AdditionalData] DROP CONSTRAINT [FK_AppAdditionalData_Appointments];
+IF  EXISTS (SELECT * FROM sys.objects 
+	WHERE OBJECT_ID = OBJECT_ID(N'[Schedules].[AdditionalData]') AND type in (N'U'))
+DROP TABLE [Schedules].[AdditionalData];
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+CREATE TABLE [Schedules].[AdditionalData]([AppointmentIX] [int] NOT NULL, CONSTRAINT [PK_AppAdditionalData] PRIMARY KEY CLUSTERED (	[AppointmentIX] ASC ) WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]) ON [PRIMARY];
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'كلید نوبت' , 
+	@level0type=N'SCHEMA',@level0name=N'Schedules', @level1type=N'TABLE' , 
+	@level1name=N'AdditionalData', @level2type=N'COLUMN',@level2name=N'AppointmentIX';
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', 
+	@value=N'جدول اطلاعات اضافه نوبت بیمار' , @level0type=N'SCHEMA',
+	@level0name=N'Schedules', @level1type=N'TABLE',@level1name=N'AdditionalData';
+ALTER TABLE [Schedules].[AdditionalData]  WITH CHECK ADD  CONSTRAINT [FK_AppAdditionalData_Appointments] FOREIGN KEY([AppointmentIX])
+REFERENCES [Schedules].[Appointments] ([ID])
+ON UPDATE CASCADE
+ON DELETE CASCADE;
+ALTER TABLE [Schedules].[AdditionalData] CHECK CONSTRAINT [FK_AppAdditionalData_Appointments];
+--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+DELETE FROM [ImagingSystem].[Schedules].[Applications];
+DBCC CHECKIDENT ('ImagingSystem.Schedules.Applications', RESEED, 0);
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+DELETE FROM [ImagingSystem].[Schedules].[Appointments];
+DBCC CHECKIDENT ('ImagingSystem.Schedules.Appointments', RESEED, 0);
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+TRUNCATE TABLE [ImagingSystem].[Schedules].[AdditionalDataItemsColCover];
+DELETE FROM [ImagingSystem].[Schedules].[AdditionalDataItems];
+DBCC CHECKIDENT ('ImagingSystem.Schedules.AdditionalDataItems', RESEED, 0);
+TRUNCATE TABLE [ImagingSystem].[Schedules].[ColumnsOrder];
+TRUNCATE TABLE [ImagingSystem].[Schedules].[Holidays];
+-- ============================
+TRUNCATE TABLE [ImagingSystem].[Schedules].[Services];
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+TRUNCATE TABLE [ImagingSystem].[Services].[AdditionalPriceColumns];
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-- [ImagingSystem].[Services].[AdditionalPriceData]
+IF  EXISTS (SELECT * FROM sys.foreign_keys 
+	WHERE OBJECT_ID = OBJECT_ID(N'[Services].[FK_AdditionalPrice_List]') 
+	AND parent_object_id = OBJECT_ID(N'[Services].[AdditionalPriceData]'))
+ALTER TABLE [Services].[AdditionalPriceData] DROP CONSTRAINT [FK_AdditionalPrice_List];
+IF EXISTS (SELECT * FROM sys.objects 
+	WHERE OBJECT_ID = OBJECT_ID(N'[Services].[AdditionalPriceData]') AND type in (N'U'))
+DROP TABLE [Services].[AdditionalPriceData];
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+CREATE TABLE [Services].[AdditionalPriceData](
+[ServiceIX] [smallint] NOT NULL,
+CONSTRAINT [PK_AdditionalPrice] PRIMARY KEY CLUSTERED 
+([ServiceIX] ASC)
+WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE = OFF, 
+IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, 
+ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]) ON [PRIMARY];
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'كلید سرویس' , 
+@level0type=N'SCHEMA',@level0name=N'Services', @level1type=N'TABLE',
+@level1name=N'AdditionalPriceData', @level2type=N'COLUMN',@level2name=N'ServiceIX';
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'جدول تعرفه های اضافه خدمات' , 
+@level0type=N'SCHEMA',@level0name=N'Services', @level1type=N'TABLE',
+@level1name=N'AdditionalPriceData';
+ALTER TABLE [Services].[AdditionalPriceData]
+WITH CHECK ADD  CONSTRAINT [FK_AdditionalPrice_List] FOREIGN KEY([ServiceIX])
+REFERENCES [Services].[List] ([ID])
+ON UPDATE CASCADE
+ON DELETE CASCADE;
+ALTER TABLE [Services].[AdditionalPriceData] CHECK CONSTRAINT [FK_AdditionalPrice_List];
+-- ============================
+DELETE FROM [ImagingSystem].[Services].[Categories] WHERE [ID] &gt; 13;
+DBCC CHECKIDENT ('ImagingSystem.Services.Categories', RESEED, 13);
+-- ============================
+DELETE FROM [ImagingSystem].[Services].[Groups];
+DBCC CHECKIDENT ('ImagingSystem.Services.Groups', RESEED, 0);
+-- ============================
+-- جدول خدمات
+DELETE FROM [ImagingSystem].[Services].[List] WHERE [ID] &gt; 674;
+DBCC CHECKIDENT ('ImagingSystem.Services.List', RESEED, 674);
+-- ============================
+TRUNCATE TABLE [ImagingSystem].[Settings].[UsersSettings];</value>
+  </data>
+  <data name="InfoSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InfoSmall.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CDBurnerStart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CDBurnerStart.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SMS Logo 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SMS Logo 1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Config" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Config.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MoneyLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MoneyLogo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CashMonitor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CashMonitor.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpecianReports" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SpecianReports.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Word" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Word.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PatEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatEdit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PayMoney" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PayMoney.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Address" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Address.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DesignableReports" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DesignableReports.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Data.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SchSearchApps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SchSearchApps.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Browse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Browse.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PatLastRef" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatLastRef.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Find" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Find.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Style" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Style.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InsLogo.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Setting1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Setting1.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RPNLogoSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RPNLogoSmall.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportAccounting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReportAccounting.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ACLManage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ACLManage.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Costs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Costs.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Discounts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Discounts.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrintSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PrintSettings.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LeftMed2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LeftMed2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Licenses" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Licenses.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CashReport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CashReport.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Schedules" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Schedules.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Expand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Expand.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SchInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SchInfo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sch.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SchAdmitRef" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SchAdmitRef.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Discount" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Discount.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ACLDiagram" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ACLDiagram.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ContactUs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ContactUs.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Language" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Language.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GroupsManage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GroupsManage.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RefAccount" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RefAccount.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bank.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Accept" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Accept.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HowTo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HowTo.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paste.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SelectNone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SelectNone.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrintPreview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PrintPreview.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChangeUser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChangeUser.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ServicesSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ServicesSettings.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrintBill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PrintBill.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RefLastDoc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RefLastDoc.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpLarge.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blank.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Setting2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Setting2.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Right.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Copy.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditLarge.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PatientFile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientFile.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BillsTemplate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BillsTemplate.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrintGrid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PrintGrid.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddSmall.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportManagement" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReportManagement.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EventsLogs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EventsLogs.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="USBRestricted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\USBRestricted.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Movie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Movie.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PatientNameAddLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientNameAddLogo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SchEditApp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SchEditApp.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Allow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Allow.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SchClearShift" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SchClearShift.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Refresh.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SchAdmitPat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SchAdmitPat.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RebuildDatabase" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RebuildDatabase.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="USBOpen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\USBOpen.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DownLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DownLarge.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Help.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RightLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RightLarge.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NewPat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NewPat.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RPNLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RPNLogo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AccountSetting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AccountSetting.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FreeLockedRow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FreeLockedRow.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SelectAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SelectAll.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeleteSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DeleteSmall.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Money" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Money.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RecieveMoney" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RecieveMoney.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SchAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SchAdd.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddinFields" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddinFields.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DocToolbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DocToolbar.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PatRef" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatRef.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DocumentDelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DocumentDelete.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SMS Logo 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SMS Logo 2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SchSearchPatSch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SchSearchPatSch.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Apply" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Apply.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NewRef" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NewRef.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Physician" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Physician.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditSmall.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Collapse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Collapse.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LeftLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LeftLarge.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SepehrIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SepehrIcon.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetUsersInGroups" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SetUsersInGroups.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cut.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UsersSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UsersSettings.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PatLocations" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatLocations.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DocumentCheck" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DocumentCheck.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cost" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cost.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AllowedUsers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AllowedUsers.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ascending" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ascending.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Job" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Job.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DocumentEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DocumentEdit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExportToExcel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportToExcel.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CashManage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CashManage.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Restore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Restore.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Password.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SysSecurity1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SysSecurity1.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RightMed2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RightMed2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Backup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Backup.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InfoLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InfoLarge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cash.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeleteMed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DeleteMed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Descending" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Descending.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DocTemplates" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DocTemplates.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DocumentAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DocumentAdd.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Automatic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Automatic.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PatientID" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientID.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SchHolidays" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SchHolidays.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HelpMed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HelpMed.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DocumentSetting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DocumentSetting.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PhysicianLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhysicianLogo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReportMenu.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Payment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Payment.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Deny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Deny.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Performers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Performers.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SepehrLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SepehrLogo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddMed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddMed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportManage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReportManage.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RefDocuments" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RefDocuments.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Minus.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

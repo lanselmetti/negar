@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Sepehr.Account.frmAccount">
+    <Position X="0.5" Y="0.5" Width="3" />
+    <Members>
+      <Field Name="btnAccountTotalData" Hidden="true" />
+      <Field Name="btnAddCost" Hidden="true" />
+      <Field Name="btnAddDiscount" Hidden="true" />
+      <Field Name="btnClose" Hidden="true" />
+      <Field Name="btnEditCostDiscount" Hidden="true" />
+      <Field Name="btnEditMode" Hidden="true" />
+      <Field Name="btnEditTransaction" Hidden="true" />
+      <Field Name="btnExit" Hidden="true" />
+      <Field Name="btnFreeAccount" Hidden="true" />
+      <Field Name="btnHelp" Hidden="true" />
+      <Field Name="btnInsDetails" Hidden="true" />
+      <Field Name="btnIsActive" Hidden="true" />
+      <Field Name="btnNextPatient" Hidden="true" />
+      <Field Name="btnNextReferral" Hidden="true" />
+      <Field Name="btnPayMoney" Hidden="true" />
+      <Field Name="btnPrevPatient" Hidden="true" />
+      <Field Name="btnPrevReferral" Hidden="true" />
+      <Field Name="btnPrint" Hidden="true" />
+      <Field Name="btnPrintPreview" Hidden="true" />
+      <Field Name="btnPrintSelectedBill" Hidden="true" />
+      <Field Name="btnQuickBillPrint1" Hidden="true" />
+      <Field Name="btnQuickBillPrint2" Hidden="true" />
+      <Field Name="btnRecieveMoney" Hidden="true" />
+      <Field Name="btnRemoveCostDiscount" Hidden="true" />
+      <Field Name="btnRemoveTransaction" Hidden="true" />
+      <Field Name="btnServiceBasePriceList" Hidden="true" />
+      <Field Name="btnServiceGroups" Hidden="true" />
+      <Field Name="btnServiceInsPrice" Hidden="true" />
+      <Field Name="cboCostAndDiscountType" Hidden="true" />
+      <Field Name="cboPrintTemplates" Hidden="true" />
+      <Field Name="cmsdgvCostOrDiscount" Hidden="true" />
+      <Field Name="cmsdgvServices" Hidden="true" />
+      <Field Name="cmsdgvTransactions" Hidden="true" />
+      <Field Name="cmsPatients" Hidden="true" />
+      <Field Name="ColCostAndDiscountType" Hidden="true" />
+      <Field Name="ColCostDiscountCashiers" Hidden="true" />
+      <Field Name="ColCostDiscountTime" Hidden="true" />
+      <Field Name="ColExpert" Hidden="true" />
+      <Field Name="ColIns1PartPrice" Hidden="true" />
+      <Field Name="ColIns1PatientPartPrice" Hidden="true" />
+      <Field Name="ColIns1Percent" Hidden="true" />
+      <Field Name="ColIns1Price" Hidden="true" />
+      <Field Name="ColIns2PartPrice" Hidden="true" />
+      <Field Name="ColIns2Price" Hidden="true" />
+      <Field Name="ColIsActive" Hidden="true" />
+      <Field Name="ColIsIns1Cover" Hidden="true" />
+      <Field Name="ColIsIns2Cover" Hidden="true" />
+      <Field Name="ColPatientPayablePrice" Hidden="true" />
+      <Field Name="ColPhysician" Hidden="true" />
+      <Field Name="ColQuantity" Hidden="true" />
+      <Field Name="ColServiceName" Hidden="true" />
+      <Field Name="ColTransactionCashiers" Hidden="true" />
+      <Field Name="ColTransactionTime" Hidden="true" />
+      <Field Name="ColTransPrice" Hidden="true" />
+      <Field Name="ColTransRealPrice" Hidden="true" />
+      <Field Name="ColTransType" Hidden="true" />
+      <Field Name="ColValue" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvCostDiscounts" Hidden="true" />
+      <Field Name="dgvServices" Hidden="true" />
+      <Field Name="dgvTransaction" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="FormToolTip" Hidden="true" />
+      <Field Name="iContainerAccountSummary" Hidden="true" />
+      <Field Name="iContainerIns1Details" Hidden="true" />
+      <Field Name="iContainerIns2Details" Hidden="true" />
+      <Field Name="iContainerPatientData" Hidden="true" />
+      <Field Name="iContainerPrintSetting" Hidden="true" />
+      <Field Name="iContainerQuickBillPrint" Hidden="true" />
+      <Field Name="iContainerRecievable" Hidden="true" />
+      <Field Name="iContainerRefButtons" Hidden="true" />
+      <Field Name="iContainerTotalCosts" Hidden="true" />
+      <Field Name="iContainerTotalDiscounts" Hidden="true" />
+      <Field Name="iContainerTotalIns1Part" Hidden="true" />
+      <Field Name="iContainerTotalIns1Price" Hidden="true" />
+      <Field Name="iContainerTotalIns2Part" Hidden="true" />
+      <Field Name="iContainerTotalIns2Price" Hidden="true" />
+      <Field Name="iContainerTotalPatientPartPrice" Hidden="true" />
+      <Field Name="iContainerTotalPayable" Hidden="true" />
+      <Field Name="iContainerTotalPayed" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="LayoutPanelBottom" Hidden="true" />
+      <Field Name="lblCostDiscountTitle" Hidden="true" />
+      <Field Name="lblIns1Name" Hidden="true" />
+      <Field Name="lblIns2Name" Hidden="true" />
+      <Field Name="lblPatientFullName" Hidden="true" />
+      <Field Name="lblPatientID" Hidden="true" />
+      <Field Name="lblPrintTemplate" Hidden="true" />
+      <Field Name="lblRecievable" Hidden="true" />
+      <Field Name="lblRecievableValue" Hidden="true" />
+      <Field Name="lblRefDate" Hidden="true" />
+      <Field Name="lblRial" Hidden="true" />
+      <Field Name="lblServiceCategory" Hidden="true" />
+      <Field Name="lblServiceFreePrice" Hidden="true" />
+      <Field Name="lblServiceGovPrice" Hidden="true" />
+      <Field Name="lblServiceIns1Part" Hidden="true" />
+      <Field Name="lblServiceIns1PatientPart" Hidden="true" />
+      <Field Name="lblServiceIns1Price" Hidden="true" />
+      <Field Name="lblTotalCosts" Hidden="true" />
+      <Field Name="lblTotalCostsValue" Hidden="true" />
+      <Field Name="lblTotalDiscounts" Hidden="true" />
+      <Field Name="lblTotalDiscountsValue" Hidden="true" />
+      <Field Name="lblTotalIns1Part" Hidden="true" />
+      <Field Name="lblTotalIns1PartValue" Hidden="true" />
+      <Field Name="lblTotalIns1PatientPartValue" Hidden="true" />
+      <Field Name="lblTotalIns1Price" Hidden="true" />
+      <Field Name="lblTotalIns1PriceValue" Hidden="true" />
+      <Field Name="lblTotalIns2Part" Hidden="true" />
+      <Field Name="lblTotalIns2PartValue" Hidden="true" />
+      <Field Name="lblTotalIns2Price" Hidden="true" />
+      <Field Name="lblTotalIns2PriceValue" Hidden="true" />
+      <Field Name="lblTotalPatientPartPrice" Hidden="true" />
+      <Field Name="lblTotalPayable" Hidden="true" />
+      <Field Name="lblTotalPayableValue" Hidden="true" />
+      <Field Name="lblTotalPayed" Hidden="true" />
+      <Field Name="lblTotalPayedValue" Hidden="true" />
+      <Field Name="lblTransactionTitle" Hidden="true" />
+      <Field Name="lblType" Hidden="true" />
+      <Field Name="lblValue" Hidden="true" />
+      <Field Name="PanelCostDiscount" Hidden="true" />
+      <Field Name="PanelFormBottom" Hidden="true" />
+      <Field Name="PanelTransaction" Hidden="true" />
+      <Field Name="ribbonBarOrders" Hidden="true" />
+      <Field Name="sliderPrintCount" Hidden="true" />
+      <Field Name="txtCostAndDiscountValue" Hidden="true" />
+      <Field Name="txtIns1Name" Hidden="true" />
+      <Field Name="txtIns2Name" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Sepehr.Account.frmAccount.AccountFormStates" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Account\Account.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>KMOW8GIN1mgfPxPPZ3L76xQOyvQbYne739Xxdl7c82Q=</HashCode>
+      <FileName>Account\Account.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sepehr.Account.frmManageTransaction">
+    <Position X="9.5" Y="0.5" Width="2.75" />
+    <Members>
+      <Field Name="btnCancel" Hidden="true" />
+      <Field Name="btnHelp" Hidden="true" />
+      <Field Name="btnPayTypeDetails" Hidden="true" />
+      <Field Name="btnPrintPreview" Hidden="true" />
+      <Field Name="btnSave" Hidden="true" />
+      <Field Name="cboCash" Hidden="true" />
+      <Field Name="cboPrintTemplates" Hidden="true" />
+      <Field Name="cBoxInBill" Hidden="true" />
+      <Field Name="cBoxInCash" Hidden="true" />
+      <Field Name="cBoxInCheck" Hidden="true" />
+      <Field Name="cBoxPrintWithCommit" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="FillFormBaseData" Hidden="true" />
+      <Field Name="FormToolTip" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="lblCash" Hidden="true" />
+      <Field Name="lblCashier" Hidden="true" />
+      <Field Name="lblComment" Hidden="true" />
+      <Field Name="lblDate" Hidden="true" />
+      <Field Name="lblPatientFullName" Hidden="true" />
+      <Field Name="lblPatientID" Hidden="true" />
+      <Field Name="lblPatientPayable" Hidden="true" />
+      <Field Name="lblPayType" Hidden="true" />
+      <Field Name="lblPrePayValue" Hidden="true" />
+      <Field Name="lblPrintCount" Hidden="true" />
+      <Field Name="lblPrintSettings" Hidden="true" />
+      <Field Name="lblPrintTemplate" Hidden="true" />
+      <Field Name="lblRefDate" Hidden="true" />
+      <Field Name="lblRial1" Hidden="true" />
+      <Field Name="lblTime" Hidden="true" />
+      <Field Name="lblTitle" Hidden="true" />
+      <Field Name="lblType" Hidden="true" />
+      <Field Name="lblValue" Hidden="true" />
+      <Field Name="lblValueInChar" Hidden="true" />
+      <Field Name="PanelBillTemplateSettings" Hidden="true" />
+      <Field Name="PanelPayType" Hidden="true" />
+      <Field Name="PanelTransaction" Hidden="true" />
+      <Field Name="PanelType" Hidden="true" />
+      <Field Name="TransDate" Hidden="true" />
+      <Field Name="TransTime" Hidden="true" />
+      <Field Name="txtCashier" Hidden="true" />
+      <Field Name="txtDescription" Hidden="true" />
+      <Field Name="txtPatientFullName" Hidden="true" />
+      <Field Name="txtPatientID" Hidden="true" />
+      <Field Name="txtPatientPayable" Hidden="true" />
+      <Field Name="txtPrePayValue" Hidden="true" />
+      <Field Name="txtPrintCount" Hidden="true" />
+      <Field Name="txtRefDate" Hidden="true" />
+      <Field Name="txtValue" Hidden="true" />
+      <Field Name="txtValueInChar" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AgACIqAkRKYQJmNESwCZEkUGkdAI8BCMBCgmIiYNAQg=</HashCode>
+      <FileName>Account\ManageTransaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sepehr.Account.frmManageCostOrDiscount">
+    <Position X="4.25" Y="0.5" Width="2.25" />
+    <Members>
+      <Field Name="btnAccept" Hidden="true" />
+      <Field Name="btnCancel" Hidden="true" />
+      <Field Name="btnHelp" Hidden="true" />
+      <Field Name="cboType" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="FillcboTypes" Hidden="true" />
+      <Field Name="FormToolTip" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="lblDate" Hidden="true" />
+      <Field Name="lblDescription" Hidden="true" />
+      <Field Name="lblTime" Hidden="true" />
+      <Field Name="lblTitle" Hidden="true" />
+      <Field Name="lblType" Hidden="true" />
+      <Field Name="lblValue" Hidden="true" />
+      <Field Name="PanelCostDiscount" Hidden="true" />
+      <Field Name="RegDate" Hidden="true" />
+      <Field Name="RegTime" Hidden="true" />
+      <Method Name="SetControlsToolTipTexts" Hidden="true" />
+      <Field Name="txtDescription" Hidden="true" />
+      <Field Name="txtValue" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAABCAAAAkAAACQAg4CAABAQAAEBCACICAFCWA=</HashCode>
+      <FileName>Account\ManageCostOrDiscount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sepehr.Account.frmPaymentDescription">
+    <Position X="7" Y="0.5" Width="2" />
+    <Members>
+      <Field Name="btnAccept" Hidden="true" />
+      <Field Name="btnCancel" Hidden="true" />
+      <Field Name="cboBankName" Hidden="true" />
+      <Field Name="cBox1" Hidden="true" />
+      <Field Name="cBox2" Hidden="true" />
+      <Field Name="cBox3" Hidden="true" />
+      <Field Name="CheckDate" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="FormToolTip" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="labelX4" Hidden="true" />
+      <Field Name="lblAccountNumber" Hidden="true" />
+      <Field Name="lblBranchCode" Hidden="true" />
+      <Field Name="lblBranchName" Hidden="true" />
+      <Field Name="lblCheckDate" Hidden="true" />
+      <Field Name="lblCheckNumber" Hidden="true" />
+      <Field Name="lblDescription" Hidden="true" />
+      <Field Name="lblInsName" Hidden="true" />
+      <Field Name="lblTitle" Hidden="true" />
+      <Field Name="PanelTransaction" Hidden="true" />
+      <Field Name="txtAccountNumber" Hidden="true" />
+      <Field Name="txtBranchCode" Hidden="true" />
+      <Field Name="txtBranchName" Hidden="true" />
+      <Field Name="txtCheckNumber" Hidden="true" />
+      <Field Name="txtDescription" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQAAAIAAAGAAAAskAQDZAAkCAACAQIBBAACABAAFEIA=</HashCode>
+      <FileName>Account\PaymentDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E34721F6-6159-4FB7-9A43-C46FD5717F70}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sepehr.Forms.Admission</RootNamespace>
+    <AssemblyName>Sepehr.Forms.Admission</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>SepehrLogo.ico</ApplicationIcon>
+    <StartupObject>
+    </StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Forms.Admission.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Sepehr.Forms.Admission.xml</DocumentationFile>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=7.7.0.4, Culture=neutral, PublicKeyToken=5fd520d36328f741, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Bills.Manager, Version=2.3.2.19, Culture=neutral, PublicKeyToken=b4b068709de94ab0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Bills.Manager\Bills.Manager\bin\Debug\Negar.Bills.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Calendar, Version=2.2.0.5, Culture=neutral, PublicKeyToken=145b7e473c8af181, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Calendar\Calendar\bin\Debug\Negar.Calendar.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Db.Layer.Manager, Version=2.3.3.28, Culture=neutral, PublicKeyToken=05adbdc7e690569f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Db.Layer.Manager\Db.Layer.Manager\bin\Debug\Negar.Db.Layer.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Db.Layer.Manager.Sepehr, Version=2.4.0.35, Culture=neutral, PublicKeyToken=2c485803badad6a0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Db.Layer.Manager.Sepehr\Db.Layer.Manager.Sepehr\bin\Debug\Negar.Db.Layer.Manager.Sepehr.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Help.Manager, Version=2.1.0.3, Culture=neutral, PublicKeyToken=3400f1278b418aa3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Help.Manager\Help.Manager\bin\Debug\Negar.Help.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.License.Manager, Version=1.3.0.3, Culture=neutral, PublicKeyToken=0dbe34f4a48e0e11, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\License.Manager\License.Manager\bin\Debug\Negar.License.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Log.Manager, Version=2.3.0.3, Culture=neutral, PublicKeyToken=7d935595bdbb98a2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Log.Manager\Log.Manager\bin\Debug\Negar.Log.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Medical.Video.Capture, Version=1.2.3.9, Culture=neutral, PublicKeyToken=dd6094eed36cb310, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\DirectX.Manager\Medical.Video.Capture\bin\Debug\Negar.Medical.Video.Capture.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.MessageBox, Version=2.1.0.0, Culture=neutral, PublicKeyToken=dfb97cb8308c094f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\MessageBox\MessageBox\bin\Debug\Negar.MessageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.User.Security.Manager, Version=2.2.0.1, Culture=neutral, PublicKeyToken=07c8b4ac8802f45f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\User.Security.Manager\User.Security.Manager\bin\Debug\Negar.User.Security.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Sepehr.Forms.Account, Version=2.3.4.35, Culture=neutral, PublicKeyToken=dcc3f08507c87586, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Account\Source\bin\Debug\Sepehr.Forms.Account.dll</HintPath>
+    </Reference>
+    <Reference Include="Sepehr.Forms.Documents, Version=2.5.2.53, Culture=neutral, PublicKeyToken=eef734bcae4de234, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Documents\Source\bin\Debug\Sepehr.Forms.Documents.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Patients\PatientsNavigation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients\PatientsFormStates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients\PatientsAdmit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients\Schedules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients\Schedules.Designer.cs">
+      <DependentUpon>Schedules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\AdmitHelper.cs" />
+    <Compile Include="Referrals\PrinterSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Referrals\PrinterSelection.Designer.cs">
+      <DependentUpon>PrinterSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Referrals\PatRefManagerFormState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Referrals\PatRefManagerNavigation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Referrals\PatRefManagerAdmit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Referrals\RefModalitySelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Referrals\RefModalitySelection.Designer.cs">
+      <DependentUpon>RefModalitySelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Referrals\RefAddinData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Referrals\RefAddinData.designer.cs">
+      <DependentUpon>RefAddinData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patients\SimilarPatients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients\SimilarPatients.Designer.cs">
+      <DependentUpon>SimilarPatients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Referrals\PatRefManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Referrals\PatRefManager.Designer.cs">
+      <DependentUpon>PatRefManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\IMSComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\NamesTranslator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\NamesTranslator.Designer.cs">
+      <DependentUpon>NamesTranslator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Referrals\PhysicianManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Referrals\PhysicianManager.Designer.cs">
+      <DependentUpon>PhysicianManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Referrals\ServicesSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Referrals\ServicesSelection.Designer.cs">
+      <DependentUpon>ServicesSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Referrals\RefInsDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Referrals\RefInsDetails.Designer.cs">
+      <DependentUpon>RefInsDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patients\Patients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients\Patients.designer.cs">
+      <DependentUpon>Patients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Patients\Schedules.resx">
+      <DependentUpon>Schedules.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\NamesTranslator.resx">
+      <DependentUpon>NamesTranslator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Referrals\PrinterSelection.resx">
+      <DependentUpon>PrinterSelection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Referrals\RefModalitySelection.resx">
+      <DependentUpon>RefModalitySelection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Referrals\RefAddinData.resx">
+      <DependentUpon>RefAddinData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patients\SimilarPatients.resx">
+      <DependentUpon>SimilarPatients.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Referrals\PhysicianManager.resx">
+      <DependentUpon>PhysicianManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Referrals\ServicesSelection.resx">
+      <DependentUpon>ServicesSelection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Referrals\PatRefManager.resx">
+      <DependentUpon>PatRefManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patients\Patients.resx">
+      <DependentUpon>Patients.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Referrals\RefInsDetails.resx">
+      <DependentUpon>RefInsDetails.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangeLog.txt" />
+    <None Include="Forms.Admission.snk" />
+    <None Include="Resources\Cancel.png" />
+    <None Include="Resources\Help.png" />
+    <None Include="Resources\SepehrIcon.ico" />
+    <None Include="Resources\AddMed.png" />
+    <None Include="Resources\SelectAll.png" />
+    <None Include="Resources\SelectNone.png" />
+    <None Include="Resources\Accept.png" />
+    <None Include="Resources\NewPat.ico" />
+    <None Include="Resources\HelpMed.ico" />
+    <None Include="Resources\FreeLockedRow.ico" />
+    <None Include="Resources\Refresh.ico" />
+    <None Include="Resources\RightLarge.ico" />
+    <None Include="Resources\LeftLarge.ico" />
+    <None Include="Resources\EditLarge.ico" />
+    <None Include="Resources\PatRef.png" />
+    <None Include="Resources\PatientID.ico" />
+    <None Include="Resources\RefAccount.ico" />
+    <None Include="Resources\RefDocuments.png" />
+    <None Include="Resources\PrintBill.ico" />
+    <None Include="Resources\PrintPreview.ico" />
+    <None Include="Resources\DeleteMed.png" />
+    <None Include="Resources\PatientNameAddLogo.png" />
+    <None Include="Resources\InsLogo.ico" />
+    <None Include="Resources\PatEdit.png" />
+    <None Include="Resources\UpLarge.ico" />
+    <None Include="Resources\DownLarge.ico" />
+    <None Include="Resources\AddinFields.ico" />
+    <None Include="Resources\DocumentAdd.png" />
+    <None Include="Resources\PhysicianLogo.png" />
+    <None Include="Resources\Search.ico" />
+    <None Include="Resources\Find.ico" />
+    <None Include="Resources\Dicom.jpg" />
+    <None Include="Resources\SchSearchPatSch.ico" />
+    <None Include="Resources\PatientFile.ico" />
+    <None Include="Resources\PrintSettings.ico" />
+    <Content Include="SepehrLogo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>C:\Projects\Negar\5.Tools\GacInstaller\GacInstaller.exe u $(TargetName)</PreBuildEvent>
+    <PostBuildEvent>C:\Projects\Negar\5.Tools\GacInstaller\GacInstaller.exe i "$(TargetPath)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

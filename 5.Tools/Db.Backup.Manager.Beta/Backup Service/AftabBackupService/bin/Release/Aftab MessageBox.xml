@@ -1,0 +1,61 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AftabMessageBox
+</name>
+</assembly>
+<members>
+<member name="M:Aftab.PMBox.Show(System.String)">
+	<summary>
+ تابع نمایش جعبه پیام فارسی
+ </summary>
+	<param name="Text">متن جعبه پیام</param>
+	<returns>نتیجه انتخابی كاربر</returns>
+	<remarks>بازنویسی شده برای كلاس جعبه متن مایكروسافت</remarks>
+</member><member name="M:Aftab.PMBox.Show(System.String,System.String)">
+	<summary>
+ تابع نمایش جعبه پیام فارسی
+ </summary>
+	<param name="Text">متن جعبه پیام</param>
+	<param name="Title">تیتر جعبه پیام</param>
+	<returns>نتیجه انتخابی كاربر</returns>
+	<remarks>بازنویسی شده برای كلاس جعبه متن مایكروسافت</remarks>
+</member><member name="M:Aftab.PMBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons)">
+	<summary>
+ تابع نمایش جعبه پیام فارسی
+ </summary>
+	<param name="Text">متن جعبه پیام</param>
+	<param name="Title">تیتر جعبه پیام</param>
+	<param name="ButtonsType">نوع و تعداد دكمه های جعبه پیام</param>
+	<returns>نتیجه انتخابی كاربر</returns>
+	<remarks>بازنویسی شده برای كلاس جعبه متن مایكروسافت</remarks>
+</member><member name="M:Aftab.PMBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon)">
+	<summary>
+ تابع نمایش جعبه پیام فارسی
+ </summary>
+	<param name="Text">متن جعبه پیام</param>
+	<param name="Title">تیتر جعبه پیام</param>
+	<param name="ButtonsType">نوع و تعداد دكمه های جعبه پیام</param>
+	<param name="IconType">نوع آیكون جعبه پیام</param>
+	<returns>نتیجه انتخابی كاربر</returns>
+	<remarks>بازنویسی شده برای كلاس جعبه متن مایكروسافت</remarks>
+</member><member name="M:Aftab.PMBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton)">
+	<summary>
+ تابع نمایش جعبه پیام فارسی
+ </summary>
+	<param name="Text">متن جعبه پیام</param>
+	<param name="Title">تیتر جعبه پیام</param>
+	<param name="ButtonsType">نوع و تعداد دكمه های جعبه پیام</param>
+	<param name="IconType">نوع آیكون جعبه پیام</param>
+	<param name="DefaultButton">دكمه پیش فرض</param>
+	<returns>نتیجه انتخابی كاربر</returns>
+	<remarks>بازنویسی شده برای كلاس جعبه متن مایكروسافت</remarks>
+</member><member name="T:Aftab.PMBox">
+	<summary>
+ كلاس نمایش جعبه پیام فارسی 
+ </summary>
+	<remarks>شركت رایان پرتونگار</remarks>
+</member>
+</members>
+</doc>

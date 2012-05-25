@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Db.Layer.Manager.Sepehr", "Db.Layer.Manager.Sepehr\Db.Layer.Manager.Sepehr.csproj", "{A5AB37C6-47E2-4544-A3A2-7F91753B5BC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{1169D85A-FE46-43D7-8814-3926C7FBF856}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A5AB37C6-47E2-4544-A3A2-7F91753B5BC6} = {A5AB37C6-47E2-4544-A3A2-7F91753B5BC6}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5AB37C6-47E2-4544-A3A2-7F91753B5BC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5AB37C6-47E2-4544-A3A2-7F91753B5BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5AB37C6-47E2-4544-A3A2-7F91753B5BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5AB37C6-47E2-4544-A3A2-7F91753B5BC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1169D85A-FE46-43D7-8814-3926C7FBF856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1169D85A-FE46-43D7-8814-3926C7FBF856}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1169D85A-FE46-43D7-8814-3926C7FBF856}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1169D85A-FE46-43D7-8814-3926C7FBF856}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

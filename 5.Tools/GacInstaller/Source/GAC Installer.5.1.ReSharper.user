@@ -1,0 +1,59 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/d:SRC/f:GAC.cs" caret="0" fromTop="0" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/d:SRC/f:GACInstaller.cs" caret="475" fromTop="20" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/f:InstForm.cs" caret="3044" fromTop="99" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/d:SRC/f:GAC.cs" caret="91" fromTop="5" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/d:SRC/f:GACInstaller.cs" caret="13" fromTop="0" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/d:SRC/f:GACInstaller.cs" caret="223" fromTop="8" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/d:SRC/f:GACInstaller.cs" caret="570" fromTop="7" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/d:SRC/f:GACInstaller.cs" caret="913" fromTop="12" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/d:SRC/f:GACInstaller.cs" caret="1443" fromTop="11" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/d:SRC/f:GACInstaller.cs" caret="1878" fromTop="9" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/d:SRC/f:GACInstaller.cs" caret="2248" fromTop="12" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/d:SRC/f:GACInstaller.cs" caret="2540" fromTop="14" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/d:SRC/f:GACInstaller.cs" caret="2083" fromTop="10" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/d:SRC/f:GACInstaller.cs" caret="1207" fromTop="4" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/d:SRC/f:GACInstaller.cs" caret="3185" fromTop="5" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/d:SRC/f:GACInstaller.cs" caret="3668" fromTop="17" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/d:SRC/f:GACInstaller.cs" caret="2773" fromTop="4" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/d:SRC/f:GACInstaller.cs" caret="4757" fromTop="20" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/d:SRC/f:GACInstaller.cs" caret="4492" fromTop="9" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/d:SRC/f:GACInstaller.cs" caret="4323" fromTop="4" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/d:SRC/f:GACInstaller.cs" caret="3876" fromTop="5" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/f:InstForm.cs" caret="699" fromTop="8" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/f:InstForm.cs" caret="940" fromTop="13" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/f:InstForm.cs" caret="421" fromTop="8" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/f:InstForm.cs" caret="566" fromTop="7" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/f:InstForm.cs" caret="2028" fromTop="7" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/f:InstForm.cs" caret="1763" fromTop="11" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/f:InstForm.cs" caret="1558" fromTop="12" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/f:InstForm.cs" caret="1074" fromTop="13" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/f:InstForm.cs" caret="3034" fromTop="17" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/f:InstForm.cs" caret="2257" fromTop="15" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/f:InstForm.cs" caret="3076" fromTop="12" />
+      <File id="93C3AF3C-FBAB-46FB-B09D-46261EF5A105/f:InstForm.cs" caret="2662" fromTop="4" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

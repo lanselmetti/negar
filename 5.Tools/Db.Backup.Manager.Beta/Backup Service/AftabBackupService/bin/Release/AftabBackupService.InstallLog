@@ -1,0 +1,44 @@
+﻿Installing assembly 'C:\Projects\ServiceTest\WindowsService1\WindowsService1\bin\Release\AftabBackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Projects\ServiceTest\WindowsService1\WindowsService1\bin\Release\AftabBackupService.exe
+   logfile = C:\Projects\ServiceTest\WindowsService1\WindowsService1\bin\Release\AftabBackupService.InstallLog
+Installing service AftabBackupService...
+Service AftabBackupService has been successfully installed.
+Creating EventLog source AftabBackupService in log Application...
+Committing assembly 'C:\Projects\ServiceTest\WindowsService1\WindowsService1\bin\Release\AftabBackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Projects\ServiceTest\WindowsService1\WindowsService1\bin\Release\AftabBackupService.exe
+   logfile = C:\Projects\ServiceTest\WindowsService1\WindowsService1\bin\Release\AftabBackupService.InstallLog
+Uninstalling assembly 'C:\Projects\ServiceTest\WindowsService1\WindowsService1\bin\Release\AftabBackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Projects\ServiceTest\WindowsService1\WindowsService1\bin\Release\AftabBackupService.exe
+   logfile = C:\Projects\ServiceTest\WindowsService1\WindowsService1\bin\Release\AftabBackupService.InstallLog
+Removing EventLog source AftabBackupService.
+Service AftabBackupService is being removed from the system...
+Service AftabBackupService was successfully removed from the system.
+Attempt to stop service AftabBackupService.
+Installing assembly 'C:\Projects\ServiceTest\WindowsService1\WindowsService1\bin\Release\AftabBackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Projects\ServiceTest\WindowsService1\WindowsService1\bin\Release\AftabBackupService.exe
+   logfile = C:\Projects\ServiceTest\WindowsService1\WindowsService1\bin\Release\AftabBackupService.InstallLog
+Installing service AftabBackupService...
+Service AftabBackupService has been successfully installed.
+Creating EventLog source AftabBackupService in log Application...
+Committing assembly 'C:\Projects\ServiceTest\WindowsService1\WindowsService1\bin\Release\AftabBackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Projects\ServiceTest\WindowsService1\WindowsService1\bin\Release\AftabBackupService.exe
+   logfile = C:\Projects\ServiceTest\WindowsService1\WindowsService1\bin\Release\AftabBackupService.InstallLog
+Uninstalling assembly 'C:\Projects\ServiceTest\WindowsService1\WindowsService1\bin\Release\AftabBackupService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Projects\ServiceTest\WindowsService1\WindowsService1\bin\Release\AftabBackupService.exe
+   logfile = C:\Projects\ServiceTest\WindowsService1\WindowsService1\bin\Release\AftabBackupService.InstallLog
+Removing EventLog source AftabBackupService.
+Service AftabBackupService is being removed from the system...
+Service AftabBackupService was successfully removed from the system.
+Attempt to stop service AftabBackupService.

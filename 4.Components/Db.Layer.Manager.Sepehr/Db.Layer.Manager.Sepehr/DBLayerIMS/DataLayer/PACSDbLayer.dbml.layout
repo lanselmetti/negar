@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 11.25" name="PACSDbLayer">
+  <DataContextMoniker Name="/PACSDbLayer" />
+  <nestedChildShapes>
+    <classShape Id="ac3c3f2c-b5fa-4688-9d83-a5abed93f527" absoluteBounds="0.5, 0.5, 2, 10.463951009114583">
+      <DataClassMoniker Name="/PACSDbLayer/MWLWL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c6560b48-9d8f-46ee-a387-5d6161f66a87" absoluteBounds="0.515, 0.96, 1.9700000000000002, 9.9039510091145821" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b70f663a-5930-498f-9146-271d44fedaa2" absoluteBounds="4.875, 0.5, 2, 3.8900577799479166">
+      <DataClassMoniker Name="/PACSDbLayer/STUDY_RI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f0be423b-761c-4057-8d57-c6de0be09b55" absoluteBounds="4.89, 0.96, 1.9700000000000002, 3.3300577799479165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6face69d-cc28-41cd-9daf-4a871c2c90d9" absoluteBounds="2.75, 0.5, 2, 5.3691837565104157">
+      <DataClassMoniker Name="/PACSDbLayer/PATIENTWL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="00c2bfa3-f303-4aef-b631-b23cf1734dee" absoluteBounds="2.765, 0.96, 1.9700000000000002, 4.8091837565104161" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

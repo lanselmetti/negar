@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="PACS" Class="PACSDbLayer" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="ConnectionString" ConnectionString="Data Source=.\Sqldeveloper;Initial Catalog=PACS;Integrated Security=True" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.MWLWL" Member="MWLWLs">
+    <Type Name="MWLWL">
+      <Column Name="MWL_KEY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TRIGGER_DTTM" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="REPLICA_DTTM" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="EVENT_TYPE" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CHARACTER_SET" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SCHEDULED_AETITLE" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SCHEDULED_DTTM" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SCHEDULED_MODALITY" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SCHEDULED_STATION" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SCHEDULED_LOCATION" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SCHEDULED_PROC_ID" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SCHEDULED_PROC_DESC" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SCHEDULED_ACTION_CODES" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SCHEDULED_PROC_STATUS" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PREMEDICATION" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CONTRAST_AGENT" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="REQUESTED_PROC_ID" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="REQUESTED_PROC_DESC" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="REQUESTED_PROC_CODES" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="REQUESTED_PROC_PRIORITY" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="REQUESTED_PROC_REASON" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="REQUESTED_PROC_COMMENTS" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="STUDY_INSTANCE_UID" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PROC_PLACER_ORDER_NO" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PROC_FILLER_ORDER_NO" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ACCESSION_NO" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ATTEND_DOCTOR" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PERFORM_DOCTOR" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CONSULT_DOCTOR" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="REQUEST_DOCTOR" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="REFER_DOCTOR" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="REQUEST_DEPARTMENT" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="IMAGING_REQUEST_REASON" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="IMAGING_REQUEST_COMMENTS" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="IMAGING_REQUEST_DTTM" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ISR_PLACER_ORDER_NO" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ISR_FILLER_ORDER_NO" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ADMISSION_ID" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PATIENT_TRANSPORT" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PATIENT_LOCATION" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PATIENT_RESIDENCY" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PATIENT_NAME" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PATIENT_ID" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="OTHER_PATIENT_NAME" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="OTHER_PATIENT_ID" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PATIENT_BIRTH_DATE" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PATIENT_SEX" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PATIENT_WEIGHT" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PATIENT_SIZE" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PATIENT_STATE" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CONFIDENTIALITY" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PREGNANCY_STATUS" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="MEDICAL_ALERTS" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CONTRAST_ALLERGIES" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SPECIAL_NEEDS" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SPECIALTY" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DIAGNOSIS" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ADMIT_DTTM" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="REGISTER_DTTM" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.STUDY_RIS" Member="STUDY_RIs">
+    <Type Name="STUDY_RI">
+      <Column Name="input_date" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Study_Key" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Patient_Id" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="accession_no" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Study_Stat" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Study_Instance_UID" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Study_Dttm" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Request_Code" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Request_Name" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Perform_Modality" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Perform_Station" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Source_AETitle" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Scheduled_Location" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Perform_Department" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Scheduled_Dttm" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Patient_Location" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Request_Dttm" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="admission_id" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="request_doctor" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PATIENTWL" Member="PATIENTWLs">
+    <Type Name="PATIENTWL">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PATIENTWL_KEY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TRIGGER_DTTM" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="REPLICA_DTTM" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="EVENT_TYPE" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PATIENT_ID" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PATIENT_NAME" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ENGLISH_NAME" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PATIENT_SSN" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PATIENT_BIRTH_DTTM" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PATIENT_SEX" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PATIENT_WEIGHT" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PATIENT_SIZE" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ETHNIC_GROUP" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="TEL_NO" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="FAX_NO" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ZIPCODE" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ADDRESS" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="BLOOD_TYPE" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PREGNANCY_STATUS" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CURRENT_LOCATION" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CURRENT_RESIDENCY" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CURRENT_DEPARTMENT" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CURRENT_DOCTOR_ID" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CURRENT_DOCTOR_NAME" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ADMIT_DTTM" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DISCHARGE_DTTM" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

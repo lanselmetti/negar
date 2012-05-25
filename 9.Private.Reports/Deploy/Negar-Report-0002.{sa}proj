@@ -1,0 +1,297 @@
+<SmartAssemblyProject ProjectID="{92d31f24-25bd-459d-aec5-7fa782f0dc43}" Version="2.0">
+    <MainAssemblyFileName>..\Source\RPN-Report-0002\bin\Debug\Negar-Report-0002.dll</MainAssemblyFileName>
+    <Configuration Name="Release">
+        <ApplicationName />
+        <Destination DestinationFileName=".\Negar-Report-0002.dll" />
+        <Assemblies>
+            <Assembly AssemblyName="CrystalDecisions.CrystalReports.Engine, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Merging />
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.Shared, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Merging />
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.ReportAppServer.DataSetConversion, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Merging />
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.KeyCode, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Merging />
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.ReportSource, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Merging />
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="DevComponents.DotNetBar2, Culture=neutral, PublicKeyToken=5fd520d36328f741">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" />
+                    <ResourcesCompression Compress="0" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab Calendar, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="0" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.Windows.Forms, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Merging />
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab Connection String Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab License Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Interop.NovinAfzar, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="IMS Patient Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Patient Manager</Assembly>
+                                <Module>IMS Patient Manager.dll</Module>
+                                <Namespace>IMS.DbLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab MessageBox, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab WinApp Log Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab-Report-0001, Culture=neutral, PublicKeyToken=null">
+                <Merging>
+                    <ResourcesCompression Compress="0" />
+                    <Pruning />
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesPruning />
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.ReportAppServer.ObjectFactory, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.ReportAppServer.XmlSerialize, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.ReportAppServer.ClientDoc, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.ReportAppServer.Controllers, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.ReportAppServer.CommonControls, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.ReportAppServer.CommLayer, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.ReportAppServer.ReportDefModel, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.ReportAppServer.DataDefModel, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.ReportAppServer.CommonObjectModel, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.Enterprise.Framework, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.Enterprise.PluginManager, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.Enterprise.InfoStore, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab-Report-0002, Culture=neutral, PublicKeyToken=null">
+                <Merging>
+                    <ResourcesCompression />
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesPruning />
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="Sepehr DB Layer Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab User Security Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab DB Layer Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Calendar, Culture=neutral, PublicKeyToken=145b7e473c8af181">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Db.Layer.Manager.Sepehr, Culture=neutral, PublicKeyToken=2c485803badad6a0">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Db.Layer.Manager, Culture=neutral, PublicKeyToken=05adbdc7e690569f">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.MessageBox, Culture=neutral, PublicKeyToken=dfb97cb8308c094f">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Log.Manager, Culture=neutral, PublicKeyToken=7d935595bdbb98a2">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.ConnectionString.Manager, Culture=neutral, PublicKeyToken=8591c648ca881033">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.License.Manager, Culture=neutral, PublicKeyToken=0dbe34f4a48e0e11">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Interop.NovinAfzar, Culture=neutral, PublicKeyToken=f973fbbb2077d5f9">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.User.Security.Manager, Culture=neutral, PublicKeyToken=07c8b4ac8802f45f">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar-Report-0002, Culture=neutral, PublicKeyToken=null">
+                <Merging>
+                    <ResourcesCompression />
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesPruning />
+                </Merging>
+            </Assembly>
+        </Assemblies>
+        <Options>
+            <Obfuscation FieldsNameMangling="3" NameMangling="3" />
+            <ExceptionReporting />
+            <StrongNameSigning KeyFileName=".\ReportsKey0002.snk" Sign="1" />
+            <OtherProtections AddIncorrectMetadata="0" SuppressIldasm="1" />
+            <StringsEncoding Encode="1" UseImprovedEncoding="1" />
+            <OtherOptimizations SealClasses="1" />
+            <Debugging CreatePDB="0" />
+        </Options>
+    </Configuration>
+</SmartAssemblyProject>

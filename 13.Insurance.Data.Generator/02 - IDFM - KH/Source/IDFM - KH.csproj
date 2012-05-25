@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2EA2217-E227-43F7-AA00-BF6DA249BBED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sepehr</RootNamespace>
+    <AssemblyName>Sepehr IDFM - KH</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>SepehrLogo.ico</ApplicationIcon>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=7.7.0.4, Culture=neutral, PublicKeyToken=5fd520d36328f741, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Calendar, Version=2.2.0.5, Culture=neutral, PublicKeyToken=145b7e473c8af181, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Calendar\Calendar\bin\Debug\Negar.Calendar.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.ConnectionString.Manager, Version=2.2.0.5, Culture=neutral, PublicKeyToken=8591c648ca881033, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\ConnectionString.Manager\ConnectionString.Manager\bin\Debug\Negar.ConnectionString.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Db.Layer.Manager, Version=2.3.3.28, Culture=neutral, PublicKeyToken=05adbdc7e690569f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Db.Layer.Manager\Db.Layer.Manager\bin\Debug\Negar.Db.Layer.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Db.Layer.Manager.Sepehr, Version=2.4.0.35, Culture=neutral, PublicKeyToken=2c485803badad6a0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Db.Layer.Manager.Sepehr\Db.Layer.Manager.Sepehr\bin\Debug\Negar.Db.Layer.Manager.Sepehr.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Help.Manager, Version=2.1.0.3, Culture=neutral, PublicKeyToken=3400f1278b418aa3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Help.Manager\Help.Manager\bin\Debug\Negar.Help.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.License.Manager, Version=1.3.0.3, Culture=neutral, PublicKeyToken=0dbe34f4a48e0e11, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\License.Manager\License.Manager\bin\Debug\Negar.License.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Log.Manager, Version=2.3.0.3, Culture=neutral, PublicKeyToken=7d935595bdbb98a2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Log.Manager\Log.Manager\bin\Debug\Negar.Log.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.MessageBox, Version=2.1.0.0, Culture=neutral, PublicKeyToken=dfb97cb8308c094f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\MessageBox\MessageBox\bin\Debug\Negar.MessageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\ErrorMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ErrorMessageBox.Designer.cs">
+      <DependentUpon>ErrorMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManagePhysSpecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManagePhysSpecs.designer.cs">
+      <DependentUpon>ManagePhysSpecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageServInterCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageServInterCode.designer.cs">
+      <DependentUpon>ManageServInterCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\PhysicianSpecs.designer.cs" />
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\ErrorMessageBox.resx">
+      <DependentUpon>ErrorMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManagePhysSpecs.resx">
+      <DependentUpon>ManagePhysSpecs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageServInterCode.resx">
+      <DependentUpon>ManageServInterCode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientCode.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddReferral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Prev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation First.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigation Last.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit Patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Referral Account.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document Add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Other Information.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer Start.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Patient Details.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Insurance Summary.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search Services.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print Preview.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Patient Information.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Referral Details.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Physician Logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Physician Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Physician Check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Physician Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar Check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Insurance Information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms\Commands.Sql" />
+    <None Include="Resources\Edit Row.ico" />
+    <None Include="Resources\Accept Logo.png" />
+    <None Include="Resources\Report Edit.png" />
+    <None Include="Resources\Select All.ico" />
+    <None Include="Resources\Help Blue.ico" />
+    <None Include="Resources\SepehrLogo1.ico" />
+    <None Include="Resources\Browse.ico" />
+    <None Include="Resources\Physician Settings.png" />
+    <None Include="Resources\Service Settings.ico" />
+    <None Include="Resources\Apply.png" />
+    <Content Include="ChangeLog.txt" />
+    <Content Include="SepehrLogo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

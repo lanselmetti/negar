@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="PatientsSystem" Class="DbMLDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\Sqldeveloper;Initial Catalog=PatientsSystem;Persist Security Info=True;User ID=sa" SettingsObjectName="Negar.Properties.Settings" SettingsPropertyName="PatientsSystemConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="Patients.List" Member="PatLists">
+    <Type Name="PatList">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PatientID" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="IsEditing" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="IsMale" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BirthDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Association Name="PatList_Detail" Member="Detail" ThisKey="ID" OtherKey="PatientListIX" Type="Detail" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="Patients.NamesBank" Member="NamesBanks">
+    <Type Name="NamesBank">
+      <Column Name="LocaleName" Type="System.String" DbType="NVarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EnglishName" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="IsFirstName" Type="System.Boolean" DbType="Bit NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="Patients.Details" Member="Details">
+    <Type Name="Detail">
+      <Column Name="PatientListIX" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EngFirstName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="EngLastName" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="IsMaried" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FatherName" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="IDNo" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="NationalID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="CityIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="BirthLocation" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="JobIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TelNo1" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="TelNo2" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ZipCode" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Association Name="PatList_Detail" Member="PatList" ThisKey="PatientListIX" OtherKey="ID" Type="PatList" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+</Database>

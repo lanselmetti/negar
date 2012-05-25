@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Negar.Security.frmUsers">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <Members>
+      <Field Name="btnAccept" Hidden="true" />
+      <Field Name="btnAdd" Hidden="true" />
+      <Field Name="btnApply" Hidden="true" />
+      <Field Name="btnCancel" Hidden="true" />
+      <Field Name="btnHelp" Hidden="true" />
+      <Field Name="btnResetPassword" Hidden="true" />
+      <Field Name="cBoxWithInActives" Hidden="true" />
+      <Field Name="cmsUsers" Hidden="true" />
+      <Field Name="cmsUsersManage" Hidden="true" />
+      <Field Name="ColDescription" Hidden="true" />
+      <Field Name="ColFirstName" Hidden="true" />
+      <Field Name="ColIsActive" Hidden="true" />
+      <Field Name="ColLastName" Hidden="true" />
+      <Field Name="ColMustChangePassword" Hidden="true" />
+      <Field Name="ColPass" Hidden="true" />
+      <Field Name="ColUserName" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvData" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="FormPanel" Hidden="true" />
+      <Field Name="FormToolTip" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>UEAAKAgAECAAIksAAAKQCAACAAAAwFCABDAQJBREgEI=</HashCode>
+      <FileName>Users.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.Security.frmUsersGroups">
+    <Position X="3.5" Y="0.5" Width="2.75" />
+    <Members>
+      <Field Name="btnAccept" Hidden="true" />
+      <Field Name="btnAdd" Hidden="true" />
+      <Field Name="btnApply" Hidden="true" />
+      <Field Name="btnCancel" Hidden="true" />
+      <Field Name="btnDelete" Hidden="true" />
+      <Field Name="btnHelp" Hidden="true" />
+      <Field Name="cBoxWithInActives" Hidden="true" />
+      <Field Name="cmsForm" Hidden="true" />
+      <Field Name="cmsMenu" Hidden="true" />
+      <Field Name="ColDescription" Hidden="true" />
+      <Field Name="ColIsActive" Hidden="true" />
+      <Field Name="ColName" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvData" Hidden="true" />
+      <Method Name="dgvData_CellValidating" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="FormPanel" Hidden="true" />
+      <Field Name="FormToolTip" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AEAAKAgAADAAAIsAAgCQCAACAQAAwBCABDAQJRQEgUY=</HashCode>
+      <FileName>UsersGroups.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.Security.frmUsersInGroups">
+    <Position X="6.5" Y="0.5" Width="2.5" />
+    <Members>
+      <Field Name="btnAdd" Hidden="true" />
+      <Field Name="btnCancel" Hidden="true" />
+      <Field Name="btnDelete" Hidden="true" />
+      <Field Name="btnHelp" Hidden="true" />
+      <Field Name="cboGroups" Hidden="true" />
+      <Field Name="cmsForm" Hidden="true" />
+      <Field Name="cmsMenu" Hidden="true" />
+      <Field Name="ColFullName" Hidden="true" />
+      <Field Name="ColUserName" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvData" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="FormPanel" Hidden="true" />
+      <Field Name="FormToolTip" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="lblGroup" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>UAAACAAAADAAAAMAAgCYBCQCAQAAwQAABCAQIAAUAQY=</HashCode>
+      <FileName>UsersInGroups.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

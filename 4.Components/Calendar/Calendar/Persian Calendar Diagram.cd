@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Negar.PersianCalendar.Resource.ARLocalizer">
+    <Position X="6.5" Y="8.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Resource\ARLocalizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.Resource.BaseLocalizer">
+    <Position X="9" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Resource\BaseLocalizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.Resource.ENLocalizer">
+    <Position X="9" Y="8.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Resource\ENLocalizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.Resource.FALocalizer">
+    <Position X="11.5" Y="8.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Resource\FALocalizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.Resource.PersianLocalizeManager" Collapsed="true">
+    <Position X="29.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAJBAAAAQARACiAQIABCAAAEAAA=</HashCode>
+      <FileName>Resource\PersianLocalizeManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.BaseClasses.BaseControl">
+    <Position X="18.75" Y="8.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>JgBQJTRIAABBIYDIYDRQEBAAgFACgAEIIIAISQBCAFo=</HashCode>
+      <FileName>UI\BaseClasses\BaseControl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.BaseClasses.BaseStyledControl">
+    <Position X="17.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AEBAAgKAMABAAIMAQAQACACAAAAAAAAIAAAAAAAQAIA=</HashCode>
+      <FileName>UI\BaseClasses\BaseStyledControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.BaseClasses.DateEditBase">
+    <Position X="19.25" Y="34" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAABAAAAAAAAAAEABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\BaseClasses\DateEditBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.BaseClasses.DateTimeCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="29.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIAAEAAAAAAABAQCAAAhAQAAAAAABAEKAAEAABUIAA=</HashCode>
+      <FileName>UI\BaseClasses\DateTimeCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.BaseClasses.TextEditBase">
+    <Position X="19" Y="22" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>IQCATAAAACZJArBDAAAIHAgAEAAAkAEAAAAQSAYHHAI=</HashCode>
+      <FileName>UI\BaseClasses\TextEditBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Controls.DataGridViewPersianDateTimePickerColumn" Collapsed="true">
+    <Position X="28" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAIAAAAAAAAAAEAAAAAQAA=</HashCode>
+      <FileName>UI\Controls\DataGridViewPersianDateTimePickerColumn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Controls.DataGridViewPersianDateTimePickerCell" Collapsed="true">
+    <Position X="26.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAEAAAiAAAAAAAAAAAAAEEQAAAAACIQAIEAA=</HashCode>
+      <FileName>UI\Controls\DataGridViewPersianDateTimePickerColumn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Controls.DataGridViewPersianDateTimePickerEditor">
+    <Position X="18.75" Y="52" Width="3" />
+    <TypeIdentifier>
+      <HashCode>gAAACAKAAIAAAAAAAAAAAAAAABAAQAMAAUAAAAAIAAA=</HashCode>
+      <FileName>UI\Controls\DataGridViewPersianDateTimePickerColumn.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Controls.PersianContainerComboBox">
+    <Position X="19" Y="37" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAATiACAACAhAAEQEADEAAAAAAICAcCAACGkA=</HashCode>
+      <FileName>UI\Controls\PersianContainerComboBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Controls.PersianDatePicker">
+    <Position X="19" Y="45.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>gAAgIAwgBAhEBAgEAIAEgAAAEACBAQAAAAMAAEAEABA=</HashCode>
+      <FileName>UI\Controls\PersianDatePicker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Controls.PersianDatePickerStrip" Collapsed="true">
+    <Position X="24.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAiAABAAA=</HashCode>
+      <FileName>UI\Controls\PersianDatePickerStrip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Controls.PersianMonthView">
+    <Position X="15.5" Y="8.25" Width="2.5" />
+    <NestedTypes>
+      <Class Name="Negar.PersianCalendar.UI.Controls.PersianMonthView.ActRect" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>UI\Controls\PersianMonthView.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>qQnIUMu7p3L0wYL4RPBAnUagwlaAAaINagsLjILGQg4=</HashCode>
+      <FileName>UI\Controls\PersianMonthView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Controls.PersianMonthViewContainer">
+    <Position X="3.75" Y="13.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIJCACAAggAAIAgAAAAAAAEAgEALAABBAQAEAAA=</HashCode>
+      <FileName>UI\Controls\PersianMonthViewContainer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Controls.PersianMonthViewStrip" Collapsed="true">
+    <Position X="31.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiAABAAA=</HashCode>
+      <FileName>UI\Controls\PersianMonthViewStrip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.BindPopupControlEventArgs" Collapsed="true">
+    <Position X="26.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAgBAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Delegates.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.CloseDropDownEventArgs" Collapsed="true">
+    <Position X="29.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACACAA=</HashCode>
+      <FileName>UI\Delegates.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.PopupClosedEventArgs" Collapsed="true">
+    <Position X="28" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Delegates.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.PopupCancelEventArgs" Collapsed="true">
+    <Position X="26.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAQCQAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Delegates.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.SelectedDateRangeChangedEventArgs" Collapsed="true">
+    <Position X="29.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>UI\Delegates.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.SelectedDateTimeChangingEventArgs" Collapsed="true">
+    <Position X="31.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAQAAAAAAAAAAAkAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>UI\Delegates.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.ValueValidatingEventArgs" Collapsed="true">
+    <Position X="28" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAIAAAgAAAAAAA=</HashCode>
+      <FileName>UI\Delegates.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.CustomDrawDayEventArgs" Collapsed="true">
+    <Position X="24.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAJAAAAAAAAAAQAAAAGABgAAAMABABAAAAAAA=</HashCode>
+      <FileName>UI\Delegates.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.CalendarButtonClickedEventArgs" Collapsed="true">
+    <Position X="28" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Delegates.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.CollectionChangedEventArgs" Collapsed="true">
+    <Position X="31.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Delegates.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.PersianThemeManager" Collapsed="true">
+    <Position X="22.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAEAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\PersianThemeManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Design.About" Collapsed="true">
+    <Position X="22.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAACAAABAAAACAgAACAAQCQAAAIIIAQAAAAAA=</HashCode>
+      <FileName>UI\Design\About.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Design.AboutDialogEditor" Collapsed="true">
+    <Position X="24.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Design\AboutDialogEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Design.DateTimeCollectionEditor" Collapsed="true">
+    <Position X="31.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAABAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Design\DateTimeCollectionEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Design.PersianBaseDesigner">
+    <Position X="9.5" Y="10.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIACAQBQBAQAABAEAAAABCAAAAAAABAAAAAQA=</HashCode>
+      <FileName>UI\Design\PersianBaseDesigner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Design.PersianDatePickerDesigner">
+    <Position X="8.25" Y="15.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAQCAAAAAAAACAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Design\PersianDatePickerDesigner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Design.PersianDateTypeConverter" Collapsed="true">
+    <Position X="26.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAACAAAAIAAAAAAAA=</HashCode>
+      <FileName>UI\Design\PersianDateTypeConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Design.PersianMonthViewDesigner">
+    <Position X="11.25" Y="15.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAACAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Design\PersianMonthViewDesigner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Drawing.FAPainterBase">
+    <Position X="5.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>UI\Drawing\FAPainterBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Drawing.FAPainterOffice2007">
+    <Position X="5.25" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAIAAAgEAAGQAAAAAAABBAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>UI\Drawing\FAPainterOffice2007.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Drawing.ColorInfo" Collapsed="true">
+    <Position X="33.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAEAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Drawing\Office2007Colors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Drawing.Office2007Colors" Collapsed="true">
+    <Position X="29.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACGAAADCAKCAEgCEOAIAAgkCAAAAKAAAACggAIAAA=</HashCode>
+      <FileName>UI\Drawing\Office2007Colors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Helpers.ControlUtils" Collapsed="true">
+    <Position X="22.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAACAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>UI\Helpers\ControlUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.PersianPopup.HookInfo" Collapsed="true">
+    <Position X="33.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAKAAAAAAAAkAACAAAACAIAAAgAAEAAAAAAAAGAAAAA=</HashCode>
+      <FileName>UI\PersianPopup\HookInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.PersianPopup.HookManager" Collapsed="true">
+    <Position X="22.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gABQAIAABAAAAAQKABAADAABAgAAAAAAATQAwAAgQCE=</HashCode>
+      <FileName>UI\PersianPopup\HookManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.PersianPopup.PersianHookPopup" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JIAAACQgACAAAAAAACAAAAABIABAABAIAAIAABwAIAA=</HashCode>
+      <FileName>UI\PersianPopup\PersianHookPopup.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.PersianPopup.PersianPopupContainer">
+    <Position X="2.5" Y="11.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\PersianPopup\PersianPopupContainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.PersianPopup.PersianShadow">
+    <Position X="0.5" Y="13.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IxCAAIAwggKAgAATAIAABAAAAAAQQIACAAAAQAAAAAA=</HashCode>
+      <FileName>UI\PersianPopup\PersianShadow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.PersianPopup.PersianShadowManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AxQAAAAAQKAAAABBECAAAQAgABgUQABKAIAgCAEIIAg=</HashCode>
+      <FileName>UI\PersianPopup\PersianShadowManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.PersianPopup.PersianTopFormBase">
+    <Position X="2.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AARgggMgKgIBgoIAQSAAAAAAAEiAgAABQIAiSQUQIIg=</HashCode>
+      <FileName>UI\PersianPopup\PersianTopFormBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.PersianPopup.PersianWinPopupController">
+    <Position X="8.25" Y="18.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgAACAEAIgAAAgAAACAAAQAAAAAAgAADABAAQARQAIA=</HashCode>
+      <FileName>UI\PersianPopup\PersianWinPopupController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.PersianPopup.PersianHookPopupController">
+    <Position X="8.25" Y="24.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>UI\PersianPopup\PersianWinPopupController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Win32.INITCOMMONCONTROLSEX" Collapsed="true">
+    <Position X="24.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Win32\Structs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.UI.Win32.User32" Collapsed="true">
+    <Position X="26.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>COABAEAAEgQBBEAKYeIGAEAIQoCEAAAUEEEgKQTYHQg=</HashCode>
+      <FileName>UI\Win32\User32.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.Utilities.PersianCalendar" Collapsed="true">
+    <Position X="31.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgBACAAgiAADAQAAAoAIAAAQjBAAgNAAAgDEUAAA=</HashCode>
+      <FileName>Utilities\PersianCalendar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.Utilities.PersianDate" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIgKAUAJQDACAxEgACJAiIASCAGArIMAAjkAjoENzE=</HashCode>
+      <FileName>Utilities\PersianDate.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Negar.PersianCalendar.Utilities.PersianDateConverter" Collapsed="true">
+    <Position X="22.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASgDBACACBAACAAAAAgAAACAACAAABAAAARGABAQAAA=</HashCode>
+      <FileName>Utilities\PersianDateConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.Utilities.toEnglish" Collapsed="true">
+    <Position X="33.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\toEnglish.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.Utilities.toFarsi" Collapsed="true">
+    <Position X="22.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\toFarsi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.Utilities.ToWords" Collapsed="true">
+    <Position X="24.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAEAAAAAAgAEAAAAA=</HashCode>
+      <FileName>Utilities\ToWords.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.Utilities.PersianUtilities" Collapsed="true">
+    <Position X="24.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\Utilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.Utilities.Exceptions.InvalidPersianDateException" Collapsed="true">
+    <Position X="26.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\Exceptions\InvalidPersianDateException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.PersianCalendar.Utilities.Exceptions.InvalidPersianDateFormatException" Collapsed="true">
+    <Position X="28" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\Exceptions\InvalidPersianDateFormatException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Negar.PersianCalendar.UI.Win32.LOGFONT" Collapsed="true">
+    <Position X="26.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAIAAAAAAAAAQAAgAAgAAAAAAAAACAAgAIQoAAQ=</HashCode>
+      <FileName>UI\Win32\Structs.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Negar.PersianCalendar.UI.Win32.NONCLIENTMETRICS" Collapsed="true">
+    <Position X="31.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAFAAAkAgCAAAAAAAAAAAQBAAAAAgABhAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Win32\Structs.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Negar.PersianCalendar.UI.Win32.MSG" Collapsed="true">
+    <Position X="28" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAIAAAAAAAAQAAAAwAAAAAAAAAAAAAAAAAgAACA=</HashCode>
+      <FileName>UI\Win32\Structs.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Negar.PersianCalendar.UI.Win32.PAINTSTRUCT" Collapsed="true">
+    <Position X="33.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgCAAAAAAAAAAAAAAABAAAAAAAIAgAABAA=</HashCode>
+      <FileName>UI\Win32\Structs.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Negar.PersianCalendar.UI.Win32.RECT" Collapsed="true">
+    <Position X="24.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAEAAAAAAgAAAAIAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>UI\Win32\Structs.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Negar.PersianCalendar.UI.Win32.POINT" Collapsed="true">
+    <Position X="22.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>UI\Win32\Structs.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Negar.PersianCalendar.UI.Win32.SIZE" Collapsed="true">
+    <Position X="26.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>UI\Win32\Structs.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Negar.PersianCalendar.UI.Win32.BLENDFUNCTION" Collapsed="true">
+    <Position X="22.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAABAAAAAAAAAAAAAAAAABAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>UI\Win32\Structs.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Negar.PersianCalendar.UI.Win32.TRACKMOUSEEVENTS" Collapsed="true">
+    <Position X="28" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAUAAAAAggAAAAAAIAAQAIAAAAAgAAAABAAAACA=</HashCode>
+      <FileName>UI\Win32\Structs.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Negar.PersianCalendar.UI.Win32.LOGBRUSH" Collapsed="true">
+    <Position X="24.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEgAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Win32\Structs.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Negar.PersianCalendar.UI.Win32.NCCALCSIZE_PARAMS" Collapsed="true">
+    <Position X="29.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAACAA=</HashCode>
+      <FileName>UI\Win32\Structs.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="Negar.PersianCalendar.UI.Drawing.IFAPainter" Collapsed="true">
+    <Position X="22.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAIEAAgEAAGQAAAAAAABBAAAAAAAAAAQIAAAA=</HashCode>
+      <FileName>UI\Drawing\IFAPainter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Negar.PersianCalendar.UI.PersianPopup.IHookController">
+    <Position X="12.25" Y="18.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAQAIAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\PersianPopup\IHookController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Negar.PersianCalendar.UI.PersianPopup.IHookController2">
+    <Position X="12.5" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\PersianPopup\IHookController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Negar.PersianCalendar.UI.PersianPopup.IPopupServiceControl" Collapsed="true">
+    <Position X="26.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAACAAAAAAAAAAAAAAAAQAAAAAAAAACABAAQAQAAIA=</HashCode>
+      <FileName>UI\PersianPopup\IPopupServiceControl.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Negar.PersianCalendar.UI.PersianPopup.IPopupControl" Collapsed="true">
+    <Position X="24.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIIAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>UI\PersianPopup\IPopupServiceControl.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

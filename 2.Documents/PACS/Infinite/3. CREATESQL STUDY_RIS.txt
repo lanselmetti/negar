@@ -1,0 +1,22 @@
+CREATE TABLE study_ris
+(  
+    input_date			nvarchar(14),
+    Study_Key			nvarchar(32),
+    Patient_Id			nvarchar(32),
+    accession_no		nvarchar(32) NOT NULL,
+    Study_Stat			nvarchar(4),
+    Study_Instance_UID		nvarchar(64),
+    Study_Dttm			nvarchar(14),
+    Request_Code		nvarchar(32),
+    Request_Name		nvarchar(64),
+    Perform_Modality		nvarchar(32),
+    Perform_Station		nvarchar(32),
+    Source_AETitle		nvarchar(32),
+    Scheduled_Location		nvarchar(32),
+    Perform_Department		nvarchar(32),
+    Scheduled_Dttm		nvarchar(14),
+    Patient_Location		nvarchar(32),
+    Request_Dttm		nvarchar(14),
+    admission_id		nvarchar(32),
+    request_doctor		nvarchar(32)
+    );

@@ -1,0 +1,50 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/d:Forms/f:Main.resx" caret="89" fromTop="0" />
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/f:ChangeLog.txt" caret="2921" fromTop="14" />
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/d:Forms/f:Main.Designer.cs" caret="75346" fromTop="10" />
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/d:Forms/f:Main.cs" caret="7281" fromTop="11" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/d:Forms/f:Main.cs" caret="48847" fromTop="13" />
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/d:Forms/f:Main.cs" caret="49773" fromTop="13" />
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/d:Forms/f:Main.cs" caret="51087" fromTop="19" />
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/d:Forms/f:Main.cs" caret="50666" fromTop="16" />
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/d:Forms/f:Main.cs" caret="51434" fromTop="10" />
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/d:Forms/f:Main.cs" caret="52564" fromTop="16" />
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/d:Forms/f:Main.cs" caret="54255" fromTop="16" />
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/d:Forms/f:Main.cs" caret="56000" fromTop="10" />
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/f:ChangeLog.txt" caret="0" fromTop="0" />
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/d:Forms/f:Main.resx" caret="0" fromTop="0" />
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/d:Forms/f:Main.cs" caret="56580" fromTop="11" />
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/d:Forms/f:Main.Designer.cs" caret="0" fromTop="0" />
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/d:Forms/f:Main.cs" caret="37311" fromTop="14" />
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/f:ChangeLog.txt" caret="2921" fromTop="14" />
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/d:Forms/f:Main.cs" caret="7232" fromTop="10" />
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/d:Forms/f:Main.Designer.cs" caret="75346" fromTop="10" />
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/d:Forms/f:Main.Designer.cs" caret="75346" fromTop="10" />
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/d:Forms/f:Main.Designer.cs" caret="75346" fromTop="10" />
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/d:Forms/f:Main.Designer.cs" caret="75346" fromTop="10" />
+      <File id="4C16C202-B617-44DC-BF53-8F5F8E3FDC5E/d:Forms/f:Main.cs" caret="57572" fromTop="11" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

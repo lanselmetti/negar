@@ -1,0 +1,1107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAddSchApps" xml:space="preserve">
+    <value>افزودن برنامه جدید.
+&lt;div&gt;&lt;/div&gt;با كلیك بر روی این دكمه فرم افزودن برنامه نمایش داده می شود.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات نوبت دهی - فرم برنامه های نوبت دهی</comment>
+  </data>
+  <data name="btnAddGroupsInServices" xml:space="preserve">
+    <value>افزودن خدمت جدید به گروه خدمت.
+&lt;div&gt;&lt;/div&gt;برای افزودن خدمت جدید به گروه خدمت انتخاب شده بر روی این دكمه كلیك كنید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات خدمات مراجعات - فرم گروهبندی خدمات</comment>
+  </data>
+  <data name="btnAccept" xml:space="preserve">
+    <value>ذخیره تغییرات و بستن فرم.
+&lt;div&gt;&lt;/div&gt;پس از فشردن این كلید تنظیمات در بانك اطلاعاتی ذخیره می گردند و فرم بسته می شود.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F8&lt;/b&gt;</value>
+    <comment>فرمان ذخیره سازی فرم و بستن آن</comment>
+  </data>
+  <data name="btnACLDiagram" xml:space="preserve">
+    <value>نمایش دیاگرام دسترسی كاربران.
+با كلیك بر روی این دكمه ، دیاگرام گرافیكی سطوح دسترسی كاربران نمایش داده می شود.</value>
+    <comment>تنظیمات كاربران - فرم سطوح دسترسی</comment>
+  </data>
+  <data name="btnAddUser" xml:space="preserve">
+    <value>افزودن كاربر جدید.
+&lt;div&gt;&lt;/div&gt;برای افزودن كاربر جدید بر روی این دكمه كلیك كنید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>پروژه تنظیمات امنیتی - فرم كاربران</comment>
+  </data>
+  <data name="btnAddSchAddinData" xml:space="preserve">
+    <value>افزودن فیلد اطلاعات اضافی.
+&lt;div&gt;&lt;/div&gt;با كلیك بر روی این دكمه فرم افزودن فیلد اطلاعات اضافه برای برنامه های نوبت دهی نمایش دااده می شود.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات نوبت دهی - فیلد های اطلاعاتی اضافی نوبت دهی</comment>
+  </data>
+  <data name="btnAddAccountBank" xml:space="preserve">
+    <value>افزودن بانك به جدول.
+&lt;div&gt;&lt;/div&gt;با انتخاب این فرمان ، ردیف جدیدی برای افزودن بانك اضافه خواهد شده.
+&lt;div&gt;&lt;/div&gt;تا قبل از فشردن فرمان اعمال یا تایید ، بانك افزودن شده به سیستم اضافه نمی گردد.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات حساب - فرم مدیریت بانك ها</comment>
+  </data>
+  <data name="btnAddCashCashier" xml:space="preserve">
+    <value>افزودن یك  صندوقدار جدید.
+با انتخاب این فرمان ، فرمی برای افزودن صندوقدار نمایش داده خواهد شده.
+با انتخاب صندوقدار جدید ، امكان ثبت تراكنش در یك صندوق برای آن صندوقدار به وجود خواهد آمد.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات صندوق ها - فرم ارتباط صندوق ها و صندوقداران</comment>
+  </data>
+  <data name="btnAddCash" xml:space="preserve">
+    <value>افزودن یك  صندوق جدید به جدول.
+&lt;div&gt;&lt;/div&gt;با انتخاب این فرمان ، ردیف جدیدی برای افزودن صندوق نمایش داده خواهد شد.
+&lt;div&gt;&lt;/div&gt;تا قبل از فشردن فرمان اعمال یا تایید ، صندوق افزودن شده به بانك اضافه نمی گردند.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات صندوق ها - فرم مدیریت صندوق ها</comment>
+  </data>
+  <data name="btnAddServiceCat" xml:space="preserve">
+    <value>افزودن طبقه بندی جدید.
+&lt;div&gt;&lt;/div&gt;با كلیك روی این دكمه می توانید یك طبقه بندی جدید تبت نمایید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات بیماران - فرم فیلدهای اطلاعاتی اضافی بیماران</comment>
+  </data>
+  <data name="btnAddPatCity" xml:space="preserve">
+    <value>افزودن شهر جدید.
+&lt;div&gt;&lt;/div&gt;با كلیك روی این دكمه می توانید یك شهر جدید تبت نمایید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات بیماران - فرم شهرهای بیماران</comment>
+  </data>
+  <data name="btnAddCDTypes" xml:space="preserve">
+    <value>افزودن یك نوع تخفیف یا هزینه جدید به جدول.
+با انتخاب این فرمان ، ردیف جدیدی برای افزودن یك نوع تخفیف یا هزینه افزوده خواهد شده.
+تا قبل از فشردن فرمان اعمال یا تایید ، نوع تخفیف یا هزینه افزودن شده به بانك اضافه نمی گردد.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات حساب - فرم مدیریت تخفیف ها و هزینه ها</comment>
+  </data>
+  <data name="btnAddPatCountries" xml:space="preserve">
+    <value>افزودن كشور جدید.
+&lt;div&gt;&lt;/div&gt;با كلیك روی این دكمه می توانید یك كشور جدید تبت نمایید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات بیماران - فرم كشورهای بیماران</comment>
+  </data>
+  <data name="btnAddInsFormula" xml:space="preserve">
+    <value>افزودن فرمول بیمه دوم جدید.
+برای افزودن فرمول بیمه دوم جدید بر روی این دكمه كلیك كنید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات بیمه ها - فرم مدیریت فرمول های بیمه دوم</comment>
+  </data>
+  <data name="btnAddSchHoliday" xml:space="preserve">
+    <value>ایجاد یك روز تعطیل جدید برای یك برنامه نوبت دهی.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات نوبت دهی - ایام تعطیل</comment>
+  </data>
+  <data name="btnSchAddinFields" xml:space="preserve">
+    <value>فیلد های اضافه برنامه های نوبت دهی.
+با كلیك روی این دكمه فرم اطلاعات اضافه برنامه های نوبت دهی نمایش داده می شود</value>
+    <comment>تنظیمات نوبت دهی - فرم مدیریت برنامه ها</comment>
+  </data>
+  <data name="btnAddPatJob" xml:space="preserve">
+    <value>افزودن شغل جدید.
+&lt;div&gt;&lt;/div&gt;با كلیك بر روی این دكمه ردیف جدیدی برای افزودن شغل جدید نمایش دااده می شود.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات بیماران - فرم مشاغل بیماران</comment>
+  </data>
+  <data name="btnAddRefPerformers" xml:space="preserve">
+    <value>افزودن انجام دهنده جدید.
+&lt;div&gt;&lt;/div&gt;برای افزودن متخصص جدید بر روی این دكمه كلیك كنید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات مراجعات - فرم انجام دهندگان مراجعات تصویربرداری</comment>
+  </data>
+  <data name="btnAddRefPhysSpecs" xml:space="preserve">
+    <value>افزودن تخصص پزشك  جدید.
+&lt;div&gt;&lt;/div&gt;با كلیك این فرمان می توانید یك تخصص  جدید وارد نمایید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات مراجعات - فرم تخصص پزشكان مراجعات</comment>
+  </data>
+  <data name="btnAddService" xml:space="preserve">
+    <value>افزودن خدمت جدید.
+&lt;div&gt;&lt;/div&gt;برای افزودن خدمت این فرمان را فشار دهید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات خدمات مراجعات - فرم مدیریت خدمات</comment>
+  </data>
+  <data name="btnAddServicesGroups" xml:space="preserve">
+    <value>افزودن گروه خدمت جدید.
+&lt;div&gt;&lt;/div&gt;برای افزودن گروه خدمت این فرمان را فشار دهید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات خدمات مراجعات - فرم گروه های خدمات</comment>
+  </data>
+  <data name="btnAddServicesPriceField" xml:space="preserve">
+    <value>افزودن فیلد قیمت خدمت جدید.
+&lt;div&gt;&lt;/div&gt;برای افزودن فیلد بر روی این دكمه كلیك كنید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات خدمات مراجعات - فرم فیلدهای اضافی قیمت خدمات</comment>
+  </data>
+  <data name="btnAddInsFormulaToText" xml:space="preserve">
+    <value>افزودن فرمول به متن فرمول بیمه.
+با فراخوانی این فرمان متن فرمول ریاضی سرفصل انتخاب شده به متن كلی اضافه می شود.</value>
+    <comment>تنظیمات بیمه ها - فرم مدیریت یك فرمول بیمه</comment>
+  </data>
+  <data name="btnAddPatStates" xml:space="preserve">
+    <value>افزودن استان جدید.
+&lt;div&gt;&lt;/div&gt;برای افزودن استان جدید بر روی این دكمه كلیك كنید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات بیماران - فرم استان های سكونت بیماران</comment>
+  </data>
+  <data name="btnAddRefStatus" xml:space="preserve">
+    <value>افزودن وضعیت مراجعه جدید.
+&lt;div&gt;&lt;/div&gt;برای افزودن وضعیت مراجعه جدید به جدول بر روی این دكمه كلیك كنید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات مراجعات - فرم وضعیت مراجعات بیماران</comment>
+  </data>
+  <data name="btnAll" xml:space="preserve">
+    <value>انتخاب تمام ردیف های موجود در لیست.
+با فراخوانی این فرمان كلیه ردیف های موجود در جدول انتخاب می گردند.</value>
+    <comment>فرم هایی كه چك باكس انتخاب دارند</comment>
+  </data>
+  <data name="btnApply" xml:space="preserve">
+    <value>اعمال تنظیمات و ادامه مدیریت اطلاعات.
+&lt;div&gt;&lt;/div&gt;پس از فشردن این كلید تنظیمات در بانك اطلاعاتی ذخیره می گردد اما فرم بسته نمیشود.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F4&lt;/b&gt;</value>
+    <comment>فرم های سیستم ، برای دكمه های اعمال</comment>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>خروج از فرم.
+&lt;div&gt;&lt;/div&gt;در صورت اجرای این فرمان ، بدون ذخیره سازی اطلاعات از آخرین اعمال ، فرم بسته می شود.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: ESC&lt;/b&gt;</value>
+    <comment>انصراف هایی كه در فرم های دارای دكمه ی اعمال استفاده می شود</comment>
+  </data>
+  <data name="btnServicesChangeAll" xml:space="preserve">
+    <value>تغییر گروهی قیمت خدمات.
+با فراخوانی این فرمان ، فرمی برای اعمال تغییرات دسته جمعی بین خدمات مختلف به صورت گروهی نمایش داده خواهد شد.</value>
+    <comment>تنظیمات خدمات مراجعات - فرم مدیریت خدمات</comment>
+  </data>
+  <data name="btnClose" xml:space="preserve">
+    <value>خروج از فرم.
+&lt;div&gt;&lt;/div&gt;در صورت اجرای این فرمان ، فرم بسته می شود.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: ESC&lt;/b&gt;</value>
+    <comment>فرمان خروج از فرم ها</comment>
+  </data>
+  <data name="btnCopyUserACL" xml:space="preserve">
+    <value>كپی برداری دسترسی های كاربران.
+در صورت اجرا این فرمان سطوح دسترسی یك كاربر به كاربران انتخاب شده ، عیناً كپی خواهد شد.</value>
+    <comment>پروژه تنظیمات امنیتی - فرم كپی برداری سطوح دسترسی</comment>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>حذف ردیف انتخاب شده از جدول.
+&lt;div&gt;&lt;/div&gt;با تایید این فرمان ، ردیف انتخاب شده از جدول حذف میگردد.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: DEL&lt;/b&gt;
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;تذكر:&lt;/b&gt;
+&lt;div&gt;&lt;/div&gt;در صورت حذف ردیف ، تنها زمانی تغییرات اعمال می گردد كه فرمان اعمال یا تایید فراخوانی گردند.</value>
+    <comment>حذف با دكمه اعمال یا تایید</comment>
+  </data>
+  <data name="btnEditAccess" xml:space="preserve">
+    <value>ویرایش سطح دسترسی.
+با كلیك این دكمه می توانید دسترسی كاربر یا گروه  انتخاب شده را تغییر دهید.</value>
+    <comment>تنظیمات امنیتی - فرم سطوح دسترسی</comment>
+  </data>
+  <data name="btnHelp" xml:space="preserve">
+    <value>نمایش آموزش كاربری فرم.
+&lt;div&gt;&lt;/div&gt;این راهنمای كاربری به شما در مورد نحوه عملكرد فرم كمك می نماید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F1&lt;/b&gt;</value>
+    <comment>راهنمای كاربری فرم ها</comment>
+  </data>
+  <data name="btnSchHolidays" xml:space="preserve">
+    <value>مدیریت روزهای تعطیل برنامه های نوبت دهی.
+با كلیك روی این دكمه فرم مدیریت روزهای تعطیل برنامه های نوبت دهی نمایش داده می شود.</value>
+    <comment>تنظیمات نوبت دهی - فرم مدیریت برنامه ها</comment>
+  </data>
+  <data name="btnRefPhysMixRows" xml:space="preserve">
+    <value>ادغام پزشكان.
+با فراخوانی این فرمان ، فرمی برای ادغام اطلاعات و مراجعات ثبت شده چند پزشك در یك پزشك نمایش داده خواهد شد.</value>
+    <comment>تنظیمات مراجعات - فرم پزشكان مراجعات</comment>
+  </data>
+  <data name="btnNewAccess" xml:space="preserve">
+    <value>ایجاد دسترسی جدید.
+با كلیك این دكمه می توانید برای سطح دسترسی انتخاب شده ، دسترسی جدیدی برای كاربران یا گروه ها ایجاد كنید.</value>
+    <comment>تنظیمات امنیتی. فرم سطوح دسترسی</comment>
+  </data>
+  <data name="btnNone" xml:space="preserve">
+    <value>حذف انتخاب تمام ردیف های موجود در لیست.
+با فراخوانی این فرمان كلیه ردیف های موجود در جدول به انتخاب نشده تبدیل می گردند.</value>
+    <comment>فرم هایی كه چك باكس انتخاب دارند</comment>
+  </data>
+  <data name="btnPrint" xml:space="preserve">
+    <value>چاپ جدول .
+با فراخوانی این فرمان ، فرمی برای مدیریت چاپ جدول نمایش داده خواهد شد.</value>
+    <comment>كلیه فرم هایی كه دارای فرمان چاپ هستند.</comment>
+  </data>
+  <data name="btnRemoveAccess" xml:space="preserve">
+    <value>حذف دسترسی سطح انتخاب شده.
+با كلیك بر روی این دكمه می توانید دسترسی گروه یا كاربر انتخاب شده را حذف كنید.
+با حذف دسترسی ، در واقع به كاربر یا گروه دسترسی لازم برای كار با سطح مورد نظر را ارائه داده اید.</value>
+    <comment>تنظیمات امنیتی. فرم سطوح دسترسی</comment>
+  </data>
+  <data name="btnUsersResetPassword" xml:space="preserve">
+    <value>تغییر كلمه عبور.
+با كلیك بر روی این دكمه فرم تغییر كلمه عبور را مشاهده خواهید كرد.</value>
+    <comment>تنظیمات امنیتی - فرم مدیریت كاربران</comment>
+  </data>
+  <data name="btnServiceColumns" xml:space="preserve">
+    <value>مدیریت سرفصل های خدمات.
+با فراخوانی این فرمان ، فرمی برای مدیریت سرفصل های قیمت خدمات ، از جمله افزودن ، ویرایش یا حذف سرفصل خدمت نمایش داده خواهد شد.</value>
+    <comment>تنظیمات خدمات - فرم مدیریت خدمات</comment>
+  </data>
+  <data name="cboUsersGroups" xml:space="preserve">
+    <value>لیست انتخاب گروه مورد نظر برای مدیریت كاربرانی كه عضو آن گروه هستند.
+با تغییر گروه مورد نظر ، جدول كاربران عضو گروه بر اساس آن گروه تغییر می كند.</value>
+    <comment>فرم هایی انتخاب كاربران - كمبوباكس انتخاب گروه های كاربری</comment>
+  </data>
+  <data name="cboGroupsServices" xml:space="preserve">
+    <value>لیست انتخاب گروه خدمت برای مدیریت خدماتی كه تحت پوشش آن گروه هستند.
+با تغییر گروه مورد نظر ، جدول خدمات تحت پوشش بر اساس آن گروه تغییر می كند.</value>
+    <comment>تنظیمات خدمات مراجعات - فرم گروه بندی خدمات</comment>
+  </data>
+  <data name="cBoxWithInActivesApplication" xml:space="preserve">
+    <value>تعیین نمایش برنامه های غیر فعال شده توسط كاربر یا عدم نمایش آنها.
+در صورتی كه یك برنامه غیر فعال گردد ، امكان استفاده از آن وجود ندارد.
+</value>
+    <comment>تنظیمات نوبت دهی - فرم برنامه های نوبت دهی</comment>
+  </data>
+  <data name="cBoxWithInActivesAccountBanks" xml:space="preserve">
+    <value>تعیین نمایش بانك های غیر فعال شده.
+در صورتی كه یك بانك غیر فعال گردد ، امكان ثبت تراكنشی با آن بانك وجود ندارد.
+اما تراكنش هایی كه قبلا با چنین بانكی ثبت گردیده اند بدون تغییر باقی خواهند ماند.</value>
+    <comment>تنظیمات حساب - فرم مدیریت بانك ها</comment>
+  </data>
+  <data name="cBoxWithInActivesCashes" xml:space="preserve">
+    <value>تعیین نمایش صندوق های غیر فعال شده.
+در صورتی كه یك صندوق غیر فعال گردد ، امكان ثبت تراكنشی با نام این صندوق كه غیر فعال شده وجود ندارد.
+اما تراكنش هایی كه قبلا در چنین صندوقی ثبت گردیده اند بدون تغییر باقی خواهند ماند.</value>
+    <comment>تنظیمات صندوق ها - فرم مدیریت صندوق ها</comment>
+  </data>
+  <data name="cBoxWithInActivesServiceCat" xml:space="preserve">
+    <value>تعیین نمایش طبقه بندی های غیر فعال شده توسط كاربر یا عدم نمایش آنها.
+در صورتی كه یك طبقه بندی غیر فعال گردد ، امكان فیلتر كردن خدمات با آن طبقه بندی ممكن نیست.</value>
+    <comment>تنظیمات خدمات مراجعات - فرم طبقه بندی های خدمات</comment>
+  </data>
+  <data name="cBoxWithInActivesPatCities" xml:space="preserve">
+    <value>تعیین نمایش شهرهای غیر فعال شده یا عدم نمایش آنها.
+در صورتی كه یك شهر غیر فعال گردد ، ثبت آن شهر برای بیمار جدید ممكن نیست.
+اما بیمارانی كه قبلا در چنین شهری ثبت گردیده اند بدون تغییر باقی خواهند ماند.</value>
+    <comment>تنظیمات بیماران - فرم شهرهای آدرس بیماران</comment>
+  </data>
+  <data name="cBoxWithInActivesRefCDTypes" xml:space="preserve">
+    <value>تعیین نمایش تخفیف ها و هزینه های غیر فعال شده.
+در صورتی كه یك نوع تخفیف یا هزینه غیر فعال گردد ، امكان ثبت مورد جدیدی از آن تخفیف یا هزینه وجود ندارد.
+اما مواردی كه قبلاً با چنین نوعی ثبت گردیده اند بدون تغییر باقی خواهند ماند.</value>
+    <comment>تنظیمات حساب - فرم مدیریت تخفیف ها و هزینه ها</comment>
+  </data>
+  <data name="cBoxWithInActivesPatCountries" xml:space="preserve">
+    <value>تعیین نمایش كشورهای غیر فعال شده توسط كاربر یا عدم نمایش آنها.
+در صورتی كه یك كشور غیر فعال گردد ، ثبت بیماری با محل سكونتی در آن كشور ممكن نیست.
+اما بیمارانی كه قبلا در چنین كشوری ثبت گردیده اند بدون تغییر باقی خواهند ماند.</value>
+    <comment>تنظیمات بیماران - فرم كشورهای آدرس بیماران</comment>
+  </data>
+  <data name="cBoxWithInActivesIns2Formula" xml:space="preserve">
+    <value>تعیین نمایش فرمول های بیمه دوم غیر فعال شده.
+در صورتی كه یك فرمول بیمه دوم غیر فعال گردد ،
+امكان ثبت مراجعه جدید با این فرمول  وجود ندارد.
+اما مراجعاتی كه قبلاً با چنین فرمولی ثبت گردیده اند بدون تغییر باقی خواهند ماند.</value>
+    <comment>تنظیمات بیمه ها - فرم مدیریت فرمول های بیمه دوم</comment>
+  </data>
+  <data name="cBoxWithInActivesUserGroups" xml:space="preserve">
+    <value>تعیین نمایش گروه های غیر فعال شده.
+در صورتی كه یك گروه غیر فعال گردد ، دسترسی های تخصیص داده شده به آن گروه كاربری نادیده گرفته می شود.</value>
+    <comment>تنظیمات امنیتی - فرم مدیریت گروه های كاربری</comment>
+  </data>
+  <data name="cBoxWithInActivesInsurances" xml:space="preserve">
+    <value>تعیین نمایش بیمه های غیر فعال شده توسط كاربر یا عدم نمایش آنها.
+در صورتی كه یك بیمه ی مراجعه غیر فعال گردد ، امكان ثبت مراجعه جدید با آن بیمه وجود ندارد.
+اما مراجعاتی كه قبلاً با چنین بیمه ای ثبت گردیده اند بدون تغییر باقی خواهند ماند.</value>
+    <comment>تنظیمات بیمه ها - فرم مدیریت بیمه ها</comment>
+  </data>
+  <data name="cBoxWithInActivesPatJobs" xml:space="preserve">
+    <value>تعیین نمایش یا عدم نمایش مشاغل غیر فعال شده.
+در صورتی كه یك شغل غیر فعال گردد ، امكان ثبت بیماری جدید با شغل مورد نظر ممكن نیست.
+اما بیمارانی كه قبلا چنین شغلی داشته اند بدون تغییر باقی خواهند ماند.</value>
+    <comment>تنظیمات بیماران - فرم مشاغل بیماران</comment>
+  </data>
+  <data name="cBoxWithInActivesRefPerformers" xml:space="preserve">
+    <value>تعیین نمایش متخصصان غیر فعال شده توسط كاربر یا عدم نمایش آنها.
+در صورتی كه یك انجام دهنده غیر فعال گردد ، امكان ثبت خدمت برای وی ممكن نیست.
+اما خدماتی كه قبلاً چنین انجام دهنده ای داشته اند بدون تغییر باقی خواهند ماند.</value>
+    <comment>تنظیمات مراجعات - فرم انجام دهندگان مراجعات</comment>
+  </data>
+  <data name="cBoxWithInActivesRefPhys" xml:space="preserve">
+    <value>تعیین نمایش پزشكان غیر فعال شده.
+در صورتی كه یك پزشك مراجعه غیر فعال گردد ، امكان ثبت مراجعه جدید با آن پزشك وجود ندارد.
+اما مراجعاتی كه قبلاً با چنین پزشكی ثبت گردیده اند بدون تغییر باقی خواهند ماند.</value>
+    <comment>تنظیمات مراجعات - فرم پزشكان مراجعه</comment>
+  </data>
+  <data name="cBoxWithInActivesRefPhysSpecs" xml:space="preserve">
+    <value>تعیین نمایش تخصص های غیر فعال شده.
+در صورتی كه یك تخصص غیر فعال گردد
+امكان ثبت پزشك مراجعه ای با تخصص غیر فعال وجود ممكن نیست،.
+اما پزشكانی كه قبلاً چنین تخصصی داشته اند بدون تغییر باقی خواهند ماند.</value>
+    <comment>تنظیمات مراجعات - فرم تخصص پزشكان مراجعه</comment>
+  </data>
+  <data name="cBoxWithInActivesServices" xml:space="preserve">
+    <value>تعیین نمایش خدمات غیر فعال شده.
+در صورتی كه یك خدمت غیر فعال گردد ،
+امكان ثبت آن خدمت برای مراجعات جدید وجود ندارد.
+اما مراجعاتی كه قبلاً با چنین خدمتی ثبت گردیده اند بدون تغییر باقی خواهند ماند.</value>
+    <comment>تنظیمات خدمات مراجعات - فرم مدیریت خدمات</comment>
+  </data>
+  <data name="cBoxWithInActivesServicesGroups" xml:space="preserve">
+    <value>تعیین نمایش گروه های غیر فعال شده.
+در صورتی كه یك گروه غیر فعال گردد ، امكان گزارش گیری از آن گروه ممكن نخواهد بود.</value>
+    <comment>تنظیمات خدمات مراجعات - فرم گروه های خدمات</comment>
+  </data>
+  <data name="cBoxWithInActivesPatStates" xml:space="preserve">
+    <value>تعیین نمایش استانهای غیر فعال شده یا عدم نمایش آنها.
+در صورتی كه یك استان غیر فعال گردد ، امكان ثبت بیماری با آن استام ممكن نیست.
+اما بیمارانی كه قبلا در چنین استانی ثبت گردیده اند بدون تغییر باقی خواهند ماند.</value>
+    <comment>تنظیمات بیماران - فرم استانهای آدرس بیماران</comment>
+  </data>
+  <data name="cBoxWithInActivesRefStatus" xml:space="preserve">
+    <value>تعیین نمایش وضعیت های غیر فعال شده یا عدم نمایش آنها.
+در صورتی كه یك وضعیت غیر فعال گردد ، امكان ثبت مراجعه بیمار با وضعیت مورد نظر ممكن نیست.
+اما بیمارانی كه قبلا در چنین وضعیتی ثبت شده اند بدون تغییر باقی خواهند ماند.</value>
+    <comment>تنظیمات مراجعات - فرم وضعیت های مراجعات</comment>
+  </data>
+  <data name="btnSchAddAppointment" xml:space="preserve">
+    <value>افزودن نوبت به برنامه انتخاب شده.
+با كلیك بر روی این دكمه یك ردیف نوبت جدید به جدول نوبت ها اضافه می شود.</value>
+    <comment>فرم های نوبت دهی - فرم مدیریت برنامه های نوبت دهی</comment>
+  </data>
+  <data name="btnAddAccountCost" xml:space="preserve">
+    <value>برای ثبت هزینه جدید به مراجعه جاری بر روی این دكمه كلیك كنید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>فرم های حساب مراجعات - فرم حساب</comment>
+  </data>
+  <data name="btnAddAccountDiscount" xml:space="preserve">
+    <value>برای ثبت تخفیف جدید به مراجعه جاری بر روی این دكمه كلیك كنید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F5&lt;/b&gt;</value>
+    <comment>فرم های حساب مراجعات - فرم حساب</comment>
+  </data>
+  <data name="btnAddDocumentType" xml:space="preserve">
+    <value>افزودن طبقه بندی مدرك جدید.
+&lt;div&gt;&lt;/div&gt;با كلیك روی این دكمه ردیف جدیدی برای ثبت طبقه بندی مدرك نمایش داده می شود.
+&lt;div&gt;&lt;/div&gt;تا قبل از فشردن فرمان اعمال یا تایید ، طبقه بندی به بانك اضافه نمی گردد.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات مدارك - فرم مدیریت طبقه بندی مدارك</comment>
+  </data>
+  <data name="btnAddDocumentRootGroup" xml:space="preserve">
+    <value>افزودن گروه قالب جدید به سطح اول درخت قالب ها.
+گروه های قالب ها برای طبقه بندی كردن و آسان كردن دسترسی كاربران به قالب ها استفاده میشوند و حاوی متن قالب نمی باشند.</value>
+    <comment>تنظیمات مدارك - فرم مدیریت قالب های مدارك</comment>
+  </data>
+  <data name="btnAddDocumentRootTemplate" xml:space="preserve">
+    <value>افزودن قالب  جدید به سطح اول درخت قالب ها.
+قالب ها برای آسان كردن ایجاد مدارك برای بیماران تعریف شده است.
+این قالب ها در هنگام ثبت یا ویرایش متن مدرك مراجعات بیماران مورد استفاده خواهد بود.</value>
+    <comment>تنظیمات مدارك - فرم مدیریت قالب های مدارك</comment>
+  </data>
+  <data name="btnAddRefPhys" xml:space="preserve">
+    <value>افزودن پزشك مراجعه جدید.
+&lt;div&gt;&lt;/div&gt;برای افزودن پزشك مراجعه جدید بر روی این دكمه كلیك كنید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات مراجعات - فرم پزشكان مراجعات</comment>
+  </data>
+  <data name="btnAddDocumentor" xml:space="preserve">
+    <value>اضافه كردن كاربر ثبت كننده مدرك.
+&lt;div&gt;&lt;/div&gt;برای اضافه كردن یك كاربر به لیست كاربران مجاز ثبت كننده و ویرایش كننده مدرك ، بر روی این فرمان كلیك كنید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات مدارك - فرم مدیریت كاربران ثبت كننده مدرك</comment>
+  </data>
+  <data name="btnBillTemplatesAccess" xml:space="preserve">
+    <value>تنظیم محدودیت ها و دسترسی های كاربران به قبوض.
+برای تنظیم مجوزهای كاربران برای قالب های قبوض بر روی این دكمه كلیك نمایید.</value>
+    <comment>گزارش گیری - فرم مدیریت قالب های قبوض</comment>
+  </data>
+  <data name="btnCashReport" xml:space="preserve">
+    <value>برای نمایش فرم گزارش صندوق ها روی دكمه كلیك  نمایید.
+فرم گزارش های صندوق ، وضعیتی از صندوق های فعال در سیستم نمایش می دهد.</value>
+    <comment>فرم های صندوق - فرم بیماران صندوق
+فرم اصلی - دكمه ی گزارش های صندوق</comment>
+  </data>
+  <data name="btnPatDeletePatient" xml:space="preserve">
+    <value>برای حذف بیمار انتخاب شده بر روی این دكمه كلیك نمایید.
+با حذف بیمار ، كلیه اطلاعات پرونده بیمار حذف شده و امكان بازگشت وجود نخواهد داشت.
+این اطلاعات شامل اطلاعات بیمار ، مراجعات بیمار ، خدمات مراجعات ، اطلاعات مالی حساب مراجعات و مدارك مراجعات می باشد.</value>
+    <comment>مدیریت پذیرش - كنترل مدیریت بیماران</comment>
+  </data>
+  <data name="btnReportEditFont" xml:space="preserve">
+    <value>برای تغییر اندازه و نوع قلم گزارش بر روی این دكمه كلیك نمایید.</value>
+    <comment>گزارش گیری - فرم مدیریت چاپ گزارش های پویا</comment>
+  </data>
+  <data name="btnExportReportToExcel" xml:space="preserve">
+    <value>برای ایجاد خروجی از گزارش در برنامه اكسل بر روی این دكمه كلیك نمایید.</value>
+    <comment>گزارش گیری - فرم مدیریت چاپ گزارش های پویا</comment>
+  </data>
+  <data name="btnSchFindPatientSchedule" xml:space="preserve">
+    <value>جستجوی نوبت بیماران.
+&lt;div&gt;&lt;/div&gt;با كلیك بر روی این دكمه فرمی برای جستجوی نوبت های بیماران ثبت شده در سیستم را مشاهده خواهید نمود.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F7&lt;/b&gt;</value>
+    <comment>فرم های نوبت دهی - فرم مدیریت برنامه های نوبت دهی</comment>
+  </data>
+  <data name="btnReportFirstPage" xml:space="preserve">
+    <value>برای مشاهده اولین صفحه این گزارش بر روی این دكمه كلیك نمایید.</value>
+    <comment>گزارش گیری - فرم پیش نمایش چاپ گزارش های طراحی شده</comment>
+  </data>
+  <data name="btnFreeAccount" xml:space="preserve">
+    <value>فرمانی برای آزاد سازی حساب قفل شده.
+در صورتی كه حساب مراجعه ای توسط كاربر دیگری قفل شده و مایلید كه قفل را آزاد نمایید ، این فرمان را فراخوانی نمایید.
+توجه نمایید كه این فرمان تنها زمانی مفید خواهد بود كه بر اثر خطای سیستم ، حساب بدون علت قفل شده است.
+در صورتی كه حساب جاری توسط كاربر دیگری در حال ویرایش است از فراخوانی این فرمان خودداری كنید.</value>
+    <comment>فرم های حساب مراجعات - فرم حساب</comment>
+  </data>
+  <data name="btnRefInsDetails" xml:space="preserve">
+    <value>برای مشاهده اطلاعات كامل تنظیمات بیمه انتخاب شده بر روی این دكمه كلیك نمایید.</value>
+    <comment>فرم های پذیرش - كنترل مدیریت مراجعات</comment>
+  </data>
+  <data name="btnReportLastPage" xml:space="preserve">
+    <value>برای مشاهده آخرین صفحه این گزارش بر روی این دكمه كلیك نمایید.</value>
+    <comment>گزارش گیری - فرم پیش نمایش چاپ گزارش های طراحی شده</comment>
+  </data>
+  <data name="btnPatFormNewPatient" xml:space="preserve">
+    <value>برای افزودن بیمار جدید بر روی این دكمه كلیك نمایید.
+در صورتی كه در حال ثبت یا ویرایش یك بیمار باشید ، پس از دریافت تایید شما ، فرم به حالت ثبت بیمار جدید خواهد رفت.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F2&lt;/b&gt;</value>
+    <comment>مدیریت پذیرش - كنترل مدیریت بیماران</comment>
+  </data>
+  <data name="btnPatFormNewRef" xml:space="preserve">
+    <value>برای افزودن مراجعه جدید بر روی این دكمه كلیك نمایید.
+در صورتی كه در حال ثبت یا ویرایش یك بیمار باشید ، پس از دریافت تایید شما ، بیمار ثبت شده و فرم ثبت مراجعه جدید برای بیمار نمایش داده خواهد شد.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F4&lt;/b&gt;</value>
+    <comment>مدیریت پذیرش - كنترل مدیریت بیماران</comment>
+  </data>
+  <data name="btnReportNextPage" xml:space="preserve">
+    <value>برای مشاهده صفحه بعدی این گزارش بر روی این دكمه كلیك نمایید.</value>
+    <comment>گزارش گیری - فرم پیش نمایش چاپ گزارش های طراحی شده</comment>
+  </data>
+  <data name="btnPatNextPatient" xml:space="preserve">
+    <value>برای مشاهده اطلاعات بیمار بعدی بر روی این دكمه كلیك نمایید.
+&lt;div&gt;&lt;/div&gt;در صورتی كه در حال ثبت یا ویرایش یك بیمار باشید ، ابتدا در این مورد از شما پرسش خواهد شد.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F12&lt;/b&gt;</value>
+    <comment>مدیریت پذیرش - كنترل مدیریت بیماران</comment>
+  </data>
+  <data name="btnNextReferral" xml:space="preserve">
+    <value>برای مشاهده اطلاعات مراجعه بعدی بر روی این دكمه كلیك نمایید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F10&lt;/b&gt;</value>
+    <comment>فرمان مراجعه بعدی در فرم های مختلف</comment>
+  </data>
+  <data name="btnSchNextShift" xml:space="preserve">
+    <value>نمایش روز بعدی برنامه نوبت دهی جاری.
+&lt;div&gt;&lt;/div&gt;در صورت اجرای این فرمان ، روز جاری به روز بعدی منتفل می شود.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: Ctrl+Q&lt;/b&gt;</value>
+    <comment>فرم های نوبت دهی - فرم مدیریت برنامه های نوبت دهی</comment>
+  </data>
+  <data name="btnPatAddInData" xml:space="preserve">
+    <value>برای مشاهده فرم اطلاعات اضافه بیمار بر روی این دكمه كلیك نمایید.</value>
+    <comment>مدیریت پذیرش - كنترل مدیریت بیماران</comment>
+  </data>
+  <data name="btnPatDetailsData" xml:space="preserve">
+    <value>برای مشاهده اطلاعات كامل بیمار بر روی این دكمه كلیك نمایید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: Ctrl+Q&lt;/b&gt;</value>
+    <comment>فرم های پذیرش - فرم های مدیریت مراجعات</comment>
+  </data>
+  <data name="btnAccountPayMoney" xml:space="preserve">
+    <value>برای بازپرداخت پول به بیمار بر روی این دكمه كلیك نمایید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F2&lt;/b&gt;</value>
+    <comment>مدیریت حساب مراجعات - فرم حساب</comment>
+  </data>
+  <data name="btnAccountPayTypeDetails" xml:space="preserve">
+    <value>برای مشاهده و ویرایش جزئیات پرداخت یا بازپرداخت بر روی این دكمه كلیك نمایید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F2&lt;/b&gt;</value>
+    <comment>مدیریت حساب مراجعات - فرم مدیریت تراكنش های مراجعه</comment>
+  </data>
+  <data name="btnReportPrevPage" xml:space="preserve">
+    <value>برای مشاهده صفحه قبلی این گزارش بر روی این دكمه كلیك نمایید.</value>
+    <comment>گزارش گیری - فرم پیش نمایش چاپ گزارش های طراحی شده</comment>
+  </data>
+  <data name="btnPatPrevPatient" xml:space="preserve">
+    <value>برای مشاهده اطلاعات بیمار قبلی بر روی این دكمه كلیك نمایید.
+&lt;div&gt;&lt;/div&gt;در صورتی كه در حال ثبت یا ویرایش یك بیمار باشید ، ابتدا در این مورد از شما پرسش خواهد شد.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F11&lt;/b&gt;</value>
+    <comment>مدیریت پذیرش - كنترل مدیریت بیماران</comment>
+  </data>
+  <data name="btnPrevReferral" xml:space="preserve">
+    <value>برای مشاهده اطلاعات مراجعه قبلی بر روی این دكمه كلیك نمایید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F9&lt;/b&gt;</value>
+    <comment>فرمان مراجعه قبلی در فرم های مختلف</comment>
+  </data>
+  <data name="btnSchPrevShift" xml:space="preserve">
+    <value>نمایش روز قبلی برنامه نوبت دهی جاری.
+&lt;div&gt;&lt;/div&gt;در صورت اجرای این فرمان ، روز جاری به روز قبلی منتفل می شود.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: Ctrl+W&lt;/b&gt;</value>
+    <comment>فرم های نوبت دهی - فرم مدیریت برنامه های نوبت دهی</comment>
+  </data>
+  <data name="btnPrintReport" xml:space="preserve">
+    <value>برای چاپ گزارش تهیه شده بر روی این دكمه كلیك نمایید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F8&lt;/b&gt;</value>
+    <comment>گزارش گیری - فرم مدیریت پیش نمایش چاپ گزارش های پویا</comment>
+  </data>
+  <data name="btnGridPrintingPrinterSettings" xml:space="preserve">
+    <value>یرای مشاهده و تغییر تنظیمات چاپگر بر روی این دكمه كلیك نمایید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F4&lt;/b&gt;</value>
+    <comment>گزارش گیری - فرم مدیریت پیش نمایش چاپ گزارش های پویا</comment>
+  </data>
+  <data name="btnAccountRecieveMoney" xml:space="preserve">
+    <value>برای دریافت پول از بیمار بر روی این دكمه كلیك نمایید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F1&lt;/b&gt;</value>
+    <comment>فرم های حساب مراجعات - فرم حساب</comment>
+  </data>
+  <data name="btnRefAccount" xml:space="preserve">
+    <value>برای مشاهده فرم حساب این مراجعه ی بیمار بر روی این دكمه كلیك نمایید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F4&lt;/b&gt;</value>
+    <comment>فرم های پذیرش - فرم های مدیریت مراجعات</comment>
+  </data>
+  <data name="btnRefAddInData" xml:space="preserve">
+    <value>برای مشاهده فرم اطلاعات اضافه مراجعه این بیمار بر روی این دكمه كلیك نمایید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: Ctrl+W&lt;/b&gt;</value>
+    <comment>فرم های پذیرش - فرم های مدیریت مراجعات</comment>
+  </data>
+  <data name="btnRefresh" xml:space="preserve">
+    <value>&lt;div&gt;&lt;/div&gt;برای به روز رسانی اطلاعات این صفحه بر روی این دكمه كلیك نمایید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F5&lt;/b&gt;</value>
+    <comment>دكمه به روز رسانی در فرم های مختلف</comment>
+  </data>
+  <data name="btnDesignedReportRefreshReport" xml:space="preserve">
+    <value>برای بازخوانی مجدد این گزارش بر روی این دكمه كلیك نمایید.</value>
+    <comment>گزارش گیری - فرم مدیریت پیش نمایش چاپ گزارش های پویا</comment>
+  </data>
+  <data name="btnDesignedReportExport" xml:space="preserve">
+    <value>برای ایجاد فایل خروجی با فرمت های مختلف بر روی این دكمه كلیك نمایید.</value>
+    <comment>گزارش گیری - فرم مدیریت پیش نمایش چاپ گزارش های پویا</comment>
+  </data>
+  <data name="btnSchAppSearch" xml:space="preserve">
+    <value>جستجوی وضعیت برنامه نوبت دهی.
+&lt;div&gt;&lt;/div&gt;پس از فشردن این كلید ، بر اساس تنظیمات صورت گرفته ،وضعیت برنامه های نوبت دهی نمایش داده می شود.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F4&lt;/b&gt;</value>
+    <comment>فرم های نوبت دهی - فرم جستجوی وضعیت برنامه های نوبت دهی</comment>
+  </data>
+  <data name="btnSchSearchFreeSchedule" xml:space="preserve">
+    <value>جستجوی وضعیت برنامه نوبت دهی.
+&lt;div&gt;&lt;/div&gt;با كلیك بر روی این فرمان فرم جستجوی وضعیت برنامه های سیستم را مشاهده خواهید نمود.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: Ctrl+S&lt;/b&gt;</value>
+    <comment>فرم های نوبت دهی - فرم مدیریت برنامه های نوبت دهی</comment>
+  </data>
+  <data name="btnSchSelectApp" xml:space="preserve">
+    <value>انتخاب برنامه نوبت دهی انتخاب شده در روز مورد نظر.
+&lt;div&gt;&lt;/div&gt;پس از فشردن این كلید فرم بسته شده و برنامه مورد نظر نمایش داده می شود.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F8&lt;/b&gt;</value>
+    <comment>فرم های نوبت دهی - فرم جستجوی وضعیت برنامه های نوبت دهی</comment>
+  </data>
+  <data name="btnSchShowProgramDetails" xml:space="preserve">
+    <value>نمایش ساختار برنامه.
+با كلیك بر روی این دكمه فرمی كه شامل اطلاعات كامل ساختار برنامه است نمایش داده خواهد شد.</value>
+    <comment>فرم های نوبت دهی - فرم مدیریت برنامه های نوبت دهی</comment>
+  </data>
+  <data name="btnDocTemplates" xml:space="preserve">
+    <value>انتخاب قالب های پیش فرض مدرك.
+با فراخوانی این فرمان ، لیستی از قالب های پیش فرض مدرك ثبت شده در بخش تنظیمات نمایش داده خواهد شد.
+پس از انتخاب یك قالب مدرك ، متن مدرك جاری حذف شده و متن قالب انتخاب شده جایگزین میشود.</value>
+    <comment>مدیریت مدارك مراجعات - فرم مدیریت یك مدرك</comment>
+  </data>
+  <data name="cboBankName" xml:space="preserve">
+    <value>لیست انتخاب بانك از میان  بانك های  ثبت شده در سیستم.</value>
+    <comment>فرم های حساب - فرم مدیریت جزئیات پرداخت بیماران</comment>
+  </data>
+  <data name="cboCash" xml:space="preserve">
+    <value>لیست انتخاب صندوق از صندوق های ثبت شده در سیستم.</value>
+    <comment>كمبوباكس های لیست صندوق ها</comment>
+  </data>
+  <data name="cboPrintTemplates" xml:space="preserve">
+    <value>لیست انتخاب قالب قبض از میان قالب های قبض ثبت شده در سیستم.</value>
+    <comment>فرم های پذیرش و حساب</comment>
+  </data>
+  <data name="cboSchPrograms" xml:space="preserve">
+    <value>انتخاب برنامه نوبت دهی مورد نظر از میان برنامه هایی كه در سیستم ثبت شده اند.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F12&lt;/b&gt;</value>
+    <comment>فرم های نوبت دهی - فرم مدیریت برنامه های نوبت دهی</comment>
+  </data>
+  <data name="btnRefServiceSelection" xml:space="preserve">
+    <value>برای انتخاب خدمت برای مراجعه بر روی این دكمه كلیك نمایید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F7&lt;/b&gt;</value>
+    <comment>فرم های پذیرش - كنترل مدیریت مراجعات</comment>
+  </data>
+  <data name="cBoxWithInActivesDocumentTypes" xml:space="preserve">
+    <value>تعیین نمایش طبقه بندی های غیر فعال شده.
+در صورتی كه یك طبقه بندی غیر فعال گردد ، امكان ثبت مدركی جدید با آن نوع ممكن نیست.
+اما مداركی كه قبلاً چنین نوعی داشته اند بدون تغییر باقی خواهند ماند.</value>
+    <comment>تنظیمات مدارك - فرم مدیریت طبقه بندی مدارك</comment>
+  </data>
+  <data name="btnAddGroup" xml:space="preserve">
+    <value>افزودن گروه جدید.
+برای افزودن گروه كاربری جدید بر روی این دكمه كلیك كنید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>پروژه تنظیمات امنیتی - فرم گروه های كاربری</comment>
+  </data>
+  <data name="btnCancel_NoApply" xml:space="preserve">
+    <value>خروج از فرم.
+&lt;div&gt;&lt;/div&gt;در صورت اجرای این فرمان ، بدون ذخیره سازی اطلاعات فرم بسته می شود.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: ESC&lt;/b&gt;</value>
+    <comment>دكمه خروج از فرم هایی كه دكمه اعمال ندارند</comment>
+  </data>
+  <data name="btnAddSchedulder" xml:space="preserve">
+    <value>افزودن كاربر نوبت دهنده جدید.
+&lt;div&gt;&lt;/div&gt;برای افزودن كاربر جدید به لیست كاربران مجاز نوبت دهنده بر روی این دكمه كلیك كنید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات نوبت دهی - فرم مدیریت كاربران نوبت دهنده</comment>
+  </data>
+  <data name="btnSchPatSearch" xml:space="preserve">
+    <value>جستجوی بیماران نوبت داده شده در برنامه نوبتدهی.
+&lt;div&gt;&lt;/div&gt;پس از فشردن این كلید ، بر اساس تنظیمات صورت گرفته ، نوبت های ثبت شده برای بیماران نمایش داده می شود.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F4&lt;/b&gt;</value>
+    <comment>فرم های نوبت دهی - فرم جستجوی نوبت های ارائه شده</comment>
+  </data>
+  <data name="btnSchPatSearchSelect" xml:space="preserve">
+    <value>انتخاب نوبت انتخاب شده.
+&lt;div&gt;&lt;/div&gt;پس از فشردن این كلید فرم بسته شده و نوبت مورد نظر نمایش داده می شود.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F8&lt;/b&gt;</value>
+    <comment>فرم های نوبت دهی - فرم جستجوی نوبت های ارائه شده</comment>
+  </data>
+  <data name="lblSchCurrentDate" xml:space="preserve">
+    <value>نمایش روز جاری برنامه نوبت دهی.
+برای تغییر روز جاری بر روی این نوار كلیك نمایید.</value>
+    <comment>فرم های نوبت دهی - فرم مدیریت برنامه های نوبت دهی</comment>
+  </data>
+  <data name="btnAddPatAddinData" xml:space="preserve">
+    <value>افزودن "فیلد اطلاعاتی اضافی بیماران".
+&lt;div&gt;&lt;/div&gt;با انتخاب این فرمان ، فرمی برای افزودن فیلدی جدید نمایش داده خواهد شد.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات بیماران - فرم فیلدهای اطلاعاتی اضافی بیماران</comment>
+  </data>
+  <data name="btnAddPatientName" xml:space="preserve">
+    <value>افزودن نام جدید به جدول.
+&lt;div&gt;&lt;/div&gt;با انتخاب این فرمان ، ردیفی برای افزودن نام جدید در جدول نمایش داده خواهد شد.
+&lt;div&gt;&lt;/div&gt;تا قبل از فشردن فرمان اعمال یا انصراف ، ردیف افزوده شده به بانك اضافه نمی گردد.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات بیماران - فرم اسامی بیماران</comment>
+  </data>
+  <data name="btnAddRefAddinData" xml:space="preserve">
+    <value>افزودن "فیلد اطلاعاتی اضافی مراجعات".
+&lt;div&gt;&lt;/div&gt;با انتخاب این فرمان ، فرمی برای افزودن فیلدی جدید نمایش داده خواهد شد.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات مراجعات - فرم مدیریت فیلدهای اطلاعاتی اضافی مراجعات تصویربرداری</comment>
+  </data>
+  <data name="btnAddRefAdmitter" xml:space="preserve">
+    <value>افزودن كاربر پذیرش كننده جدید.
+&lt;div&gt;&lt;/div&gt;برای افزودن یك كاربر به لیست كاربران پذیرش كننده بر روی این دكمه كلیك كنید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات مراجعات - فرم كاربران نوبت دهنده</comment>
+  </data>
+  <data name="cboServiceCategory" xml:space="preserve">
+    <value>لیست انتخاب نوع طبقه بندی خدمات برای افزودن خدماتی كه تحت پوشش آن طبقه بندی هستند.
+با تغییر طبقه بندی مورد نظر ، جدول خدمات بر اساس آن طبقه بندی تغییر می كند.</value>
+    <comment>تنظیمات خدمات مراجعات - فرم انتخاب خدمت برای یك گروه</comment>
+  </data>
+  <data name="btnPatEditPatient" xml:space="preserve">
+    <value>در صورتی كه فرم در حالت ثبت یا ویرایش بیمار باشد ، اطلاعات ثبت می گردند.
+&lt;div&gt;&lt;/div&gt;در صورتی كه فرم در حالت نمایش بیمار باشد ، به حالت ویرایش بیمار خواهد رفت.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F3&lt;/b&gt;</value>
+    <comment>مدیریت پذیرش - كنترل مدیریت بیماران</comment>
+  </data>
+  <data name="btnPatFreePat" xml:space="preserve">
+    <value>فرمانی برای آزاد سازی بیماران قفل شده.
+در صورتی كه بیماری توسط كاربر دیگری قفل شده و مایلید كه قفل را آزاد نمایید ، این فرمان را فراخوانی نمایید.
+توجه نمایید كه این فرمان تنها زمانی مفید خواهد بود كه بر اثر خطای سیستم ، بیمار بدون علت قفل شده است.
+در صورتی كه بیمار جاری توسط كاربر دیگری در حال ویرایش است از فراخوانی این فرمان خودداری كنید.</value>
+    <comment>فرم های پذیرش - كنترل مدیریت بیماران</comment>
+  </data>
+  <data name="btnPrintPreviewRefBill" xml:space="preserve">
+    <value>برای پیش نمایش چاپ قبض انتخاب شده برای مراجعه جاری بر روی این دكمه كلیك نمایید.</value>
+    <comment>فرم های پذیرش و حساب</comment>
+  </data>
+  <data name="btnPrintRefBill" xml:space="preserve">
+    <value>برای چاپ قبض انتخاب شده برای مراجعه جاری بر روی این دكمه كلیك نمایید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F8&lt;/b&gt;</value>
+    <comment>فرم های پذیرش و حساب</comment>
+  </data>
+  <data name="btnRefDocuments" xml:space="preserve">
+    <value>برای مشاهده فرم مدارك مراجعه جاری این بیمار بر روی این دكمه كلیك نمایید.</value>
+    <comment>فرم های پذیرش - فرم های مدیریت مراجعات</comment>
+  </data>
+  <data name="btnRefEditRef" xml:space="preserve">
+    <value>در صورتی كه فرم در حالت ثبت یا ویرایش مراجعه باشد ، اطلاعات ثبت می گردند.
+&lt;div&gt;&lt;/div&gt;در صورتی كه فرم در حالت نمایش مراجعه باشد ، به حالت ویرایش مراجعه خواهد رفت.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F3&lt;/b&gt;</value>
+    <comment>مدیریت پذیرش - فرم های مدیریت مراجعات و ثبت مراجعه بیمار جدید</comment>
+  </data>
+  <data name="btnRefFreeRef" xml:space="preserve">
+    <value>فرمانی برای آزاد سازی مراجعه قفل شده.
+در صورتی كه مراجعه بیماری توسط كاربر دیگری قفل شده و مایلید كه قفل را آزاد نمایید ، این فرمان را فراخوانی نمایید.
+توجه نمایید كه این فرمان تنها زمانی مفید خواهد بود كه بر اثر خطای سیستم ، مراجعه بدون علت قفل شده است.
+در صورتی كه مراجعه جاری توسط كاربر دیگری در حال ویرایش است از فراخوانی این فرمان خودداری كنید.</value>
+    <comment>مدیریت پذیرش - فرم های مدیریت مراجعات و ثبت مراجعه بیمار جدید</comment>
+  </data>
+  <data name="btnRefNewRef" xml:space="preserve">
+    <value>برای افزودن مراجعه جدید به پرونده بیمار جاری بر روی این دكمه كلیك نمایید.
+در صورتی كه در حال ثبت یا ویرایش یك مراجعه بیمار باشید ، پس از دریافت تایید شما ، فرم به حالت ثبت مراجعه جدید خواهد رفت.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F2&lt;/b&gt;</value>
+    <comment>فرم های پذیرش - فرم مدیریت مراجعات بیماران</comment>
+  </data>
+  <data name="btnNewPatRef" xml:space="preserve">
+    <value>ثبت مراجعه بیمار جدید.
+&lt;div&gt;&lt;/div&gt;در صورتی كه فرم در حالت ثبت یا ویرایش مراجعه ی یك بیمار باشد ، پس از ثبت بیمار و مراجعه ، فرم به حالت ثبت بیمار جدید خواهد رفت.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F2&lt;/b&gt;</value>
+    <comment>فرم های پذیرش - فرم ثبت مراجعه بیمار جدید</comment>
+  </data>
+  <data name="btnAddCashier" xml:space="preserve">
+    <value>افزودن یك صندوقدار جدید.
+&lt;div&gt;&lt;/div&gt;با انتخاب این فرمان ، فرمی برای انتخاب كاربران به عنوان صندوقدار نمایش داده خواهد شد.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات صندوق ها - فرم مدیریت صندوقداران</comment>
+  </data>
+  <data name="btnAccountEditMode" xml:space="preserve">
+    <value>در صورتی كه فرم در حالت ویرایش حساب باشد ، اطلاعات ثبت می گردند.
+&lt;div&gt;&lt;/div&gt;در صورتی كه فرم در حالت نمایش حساب باشد ، به حالت ویرایش حساب خواهد رفت.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F3&lt;/b&gt;</value>
+    <comment>فرم های حساب مراجعات - فرم حساب</comment>
+  </data>
+  <data name="btnAccountInsDetails" xml:space="preserve">
+    <value>فرمانی برای نمایش بیمه های انتخاب شده ی مراجعه ی حساب جاری.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: Ctrl+W&lt;/b&gt;</value>
+    <comment>فرم های حساب مراجعات - فرم حساب</comment>
+  </data>
+  <data name="btnAccountTotalData" xml:space="preserve">
+    <value>فرمانی برای نمایش جزئیات اطلاعات قیمت های مراجعه ی حساب جاری.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: Ctrl+Q&lt;/b&gt;</value>
+    <comment>فرم های حساب مراجعات - فرم حساب</comment>
+  </data>
+  <data name="lblRecievableValue" xml:space="preserve">
+    <value>نمایش مبلغ قابل دریافت یا قابل بازپرداخت به بیمار.
+این مبلغ برابر مجموع "پرداختنی" مراجعه (ردیف اول) منهای مجموع "دریافتی" مراجعه (ردیف دوم) است.</value>
+    <comment>فرم های حساب مراجعات - فرم حساب</comment>
+  </data>
+  <data name="lblTotalPayableValue" xml:space="preserve">
+    <value>نمایش مجموع مبلغ پرداختنی مراجعه.
+این مبلغ برابر مجموع مبلغ پرداختنی "خدمات" فعال در مراجعه ، ضرب در تعداد خدمات ، به علاوه ی مجموع "هزینه" های مراجعه ، منهای مجموع "تخفیف" های مراجعه می باشد.</value>
+    <comment>فرم های حساب مراجعات - فرم حساب</comment>
+  </data>
+  <data name="lblTotalPayedValue" xml:space="preserve">
+    <value>نمایش بالانس مبلغ دریافت شده مراجعه.
+این مبلغ برابر مجموع مبلغ "دریافتی" ها منهای مجموع مبلغ "بازپرداخت"های مراجعه میباشد.
+اگر عدد ارائه شده منفی باشد (كوچكتر از صفر) به معنی مجموع مبلغ بازپرداخت شده به بیمار میباشد.</value>
+    <comment>فرم های حساب مراجعات - فرم حساب</comment>
+  </data>
+  <data name="btnCashCloseCash" xml:space="preserve">
+    <value>فرمان بستن صندوق.
+با بستن صندوق انتخاب شده ، تا زمانی كه صندوق مجدداً باز نگردد ، امكان ثبت تراكنش در صندوق مورد نظر وجود ندارد.</value>
+    <comment>فرم های صندوق - فرم مدیریت صندوق ها</comment>
+  </data>
+  <data name="btnCashInOutReport" xml:space="preserve">
+    <value>با فراخوانی این فرمان ، گزارشی از ورود و خروج های پول در صندوق مورد نظر ، از آخرین زمانی كه مجدداً باز شده نمایش داده خواهد شد.</value>
+    <comment>فرم مدیریت صندوق ها - فرم گزارش صندوق ها و مدیریت صندوق ها</comment>
+  </data>
+  <data name="btnCashInput" xml:space="preserve">
+    <value>فرمان ورود پول به صندوق.
+با فراخوانی این فرمان فرمی برای وارد كردن پول به صندوق نمایش داده می شود.</value>
+    <comment>فرم های صندوق - فرم مدیریت صندوق ها</comment>
+  </data>
+  <data name="btnCashOpenCash" xml:space="preserve">
+    <value>فرمان باز كردن صندوق.
+با بازكردن صندوق انتخاب شده ، امكان ثبت تراكنش در صندوق مورد نظر وجود خواهد داشت.</value>
+    <comment>فرم های صندوق - فرم مدیریت صندوق ها</comment>
+  </data>
+  <data name="btnCashOutput" xml:space="preserve">
+    <value>فرمان خروج پول از صندوق.
+با فراخوانی این فرمان فرمی برای خارج كردن پول از صندوق نمایش داده می شود.</value>
+    <comment>فرم های صندوق - فرم مدیریت صندوق ها</comment>
+  </data>
+  <data name="btnRecieveMoney" xml:space="preserve">
+    <value>دریافت پول برای مراجعه ی بیمار انتخاب شده.
+&lt;div&gt;&lt;/div&gt;با فراخوانی این فرمان ، فرمی برای دریافت پول برای مراجعه ی بیمار انتخاب شده نمایش داده می شود.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F8 یا Enter&lt;/b&gt;</value>
+    <comment>فرم های صندوق - فرم بیماران صندوق</comment>
+  </data>
+  <data name="btnAddInsurances" xml:space="preserve">
+    <value>افزودن بیمه جدید به سیستم.
+&lt;div&gt;&lt;/div&gt;برای افزودن بیمه مراجعه جدید به سیستم بر روی این دكمه كلیك كنید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات بیمه ها - فرم مدیریت بیمه ها</comment>
+  </data>
+  <data name="btnCopyInsuranceSettings" xml:space="preserve">
+    <value>كپی برداری تنظیمات بیمه ها.
+با فراخوانی این فرمان ، فرمی برای كپی برداری تنظیمات یك بیمه ، به سایر بیمه ها نمایش داده خواهد شد.</value>
+    <comment>تنظیمات بیمه ها - فرم مدیریت بیمه ها</comment>
+  </data>
+  <data name="btnManageIns2Formulas" xml:space="preserve">
+    <value>فرم مدیریت بیمه های دوم.
+با فراخوانی این فرمان ، فرمی برای مدیریت فرمول های بیمه دوم نمایش داده خواهد شد.</value>
+    <comment>تنظیمات بیمه ها - فرم مدیریت بیمه ها</comment>
+  </data>
+  <data name="btnDocSave" xml:space="preserve">
+    <value>ذخیره سازی مدرك جاری.
+&lt;div&gt;&lt;/div&gt;در صورت فراخوانی این فرمان ، مدرك جاری ذخیره می گردد.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;توجه:&lt;/b&gt;
+&lt;div&gt;&lt;/div&gt;با فراخوانی این فرمان فرم بسته نمی شود.</value>
+    <comment>مدیریت مدارك بیماران - فرم مدیریت یك مدرك مراجعه</comment>
+  </data>
+  <data name="btnDocumentNewDoc" xml:space="preserve">
+    <value>افزودن مدرك جدید.
+&lt;div&gt;&lt;/div&gt;برای افزودن مدرك جدید به مراجعه ی جاری بر روی این دكمه كلیك كنید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F4&lt;/b&gt;</value>
+    <comment>مدیریت مدارك بیماران - فرم مدیریت مدارك</comment>
+  </data>
+  <data name="cboDocMonitorPhysician" xml:space="preserve">
+    <value>نمایش مراجعات با پزشك انتخاب شده.
+با فراخوانی این فرمان ، تنها مراجعاتی نمایش داده خواهد شد كه حداقل یكی از خدمات آنها با پزشك انتخاب شده ثبت شده باشند.</value>
+    <comment>مدیریت مدارك بیماران - فرم مدیریت بیماران ثبت مدرك</comment>
+  </data>
+  <data name="cboDocMonitorServiceCat" xml:space="preserve">
+    <value>نمایش مراجعات با طبقه بندی خدمت انتخاب شده.
+با فراخوانی این فرمان ، تنها مراجعاتی نمایش داده خواهد شد كه حداقل یكی از خدمات آنها در طبقه بندی انتخاب شده باشند.</value>
+    <comment>مدیریت مدارك بیماران - فرم مدیریت بیماران ثبت مدرك</comment>
+  </data>
+  <data name="cBoxDocMonitorShowNoServiceRefs" xml:space="preserve">
+    <value>نمایش مراجعات فاقد خدمت.
+در صورت انتخاب این گزینه ،مراجعاتی كه هیچ خدمتی برای آنها ثبت نشده باشد نیز نمایش داده می شوند.</value>
+    <comment>مدیریت مدارك بیماران - فرم مدیریت بیماران ثبت مدرك</comment>
+  </data>
+  <data name="btnAddBillTemplate" xml:space="preserve">
+    <value>افزودن قالب قبض جدید.
+&lt;div&gt;&lt;/div&gt;برای افزودن یك قالب قبض جدید به لیست قالبها بر روی این دكمه كلیك كنید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>گزارش گیری - فرم مدیریت قالب های قبوض</comment>
+  </data>
+  <data name="btnAddBillTemplateUser" xml:space="preserve">
+    <value>افزودن كاربر مجاز جدید.
+&lt;div&gt;&lt;/div&gt;با فراخوانی این فرمان ، فرمی برای افزودن كاربر مجاز جدید به قالب قبض انتخاب شده نمایش داده میشود.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>گزارش گیری - فرم مدیریت مجوزهای قالب های قبوض</comment>
+  </data>
+  <data name="cBoxWithInActivesUser" xml:space="preserve">
+    <value>تعیین نمایش كاربران غیر فعال شده.
+در صورتی كه یك كاربر غیر فعال گردد ، امكان ورود به هیچ سیستمی را نخواهد داشت.</value>
+    <comment>تنظیمات كاربری - فرم مدیریت كاربران</comment>
+  </data>
+  <data name="btnDesignedReportGenerate" xml:space="preserve">
+    <value>با فراخوانی این فرمان ، بر اساس فیلترهایی كه تنظیم نموده اید ، گزارش مورد نظر شما تولید می شود.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F8&lt;/b&gt;</value>
+    <comment>گزارش گیری - فرم مدیریت چاپ گزارش های طراحی شده</comment>
+  </data>
+  <data name="btnGridPrintingPrintSettings" xml:space="preserve">
+    <value>برای تنظیم ساختار صفحات گزارش بر روی این دكمه كلیك نمایید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F4&lt;/b&gt;</value>
+    <comment>گزارش گیری - فرم مدیریت چاپ گزارش های پویا</comment>
+  </data>
+  <data name="btnReportPreviewView" xml:space="preserve">
+    <value>برای نمایش ظاهر قطعی گزارش قبل از چاپ بر روی این دكمه كلیك نمایید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F8&lt;/b&gt;</value>
+    <comment>گزارش گیری - فرم مدیریت چاپ گزارش های پویا</comment>
+  </data>
+  <data name="btnBackup" xml:space="preserve">
+    <value>ایجاد فایل پشتیبانی از بانك اطلاعات ، بر اساس تنظیمات صورت گرفته.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F8&lt;/b&gt;</value>
+    <comment>پروژه اصلی - فرم مدیریت پشتیبانی</comment>
+  </data>
+  <data name="btnRebuildDb" xml:space="preserve">
+    <value>بازسازی ساختار بانك اطلاعاتی جهت بالا بردن سرعت و كیفیت ارتباط با اطلاعات.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F8&lt;/b&gt;</value>
+    <comment>پروژه اصلی - فرم بازسازی بانك اطلاعاتی</comment>
+  </data>
+  <data name="btnRemoveData" xml:space="preserve">
+    <value>حذف اطلاعات مراجعات بیماران بر اساس تاریخ مراجعه نعریف شده.
+با حذف اطلاعات یك مراجعه ، كلیه اطلاعات پرونده آن مراجعه نیز حذف می گردد.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F8&lt;/b&gt;</value>
+    <comment>پروژه اصلی - فرم حذف جمعی اطلاعات</comment>
+  </data>
+  <data name="btnRestore" xml:space="preserve">
+    <value>بازیابی اطلاعات بانك اطلاعاتی از فایل پشتیبانی تولید شده توسط برنامه ، بر اساس تنظیمات صورت گرفته.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F8&lt;/b&gt;</value>
+    <comment>پروژه اصلی - فرم مدیریت بازیابی</comment>
+  </data>
+  <data name="btn_MainForm_RTabFile" xml:space="preserve">
+    <value>منوی مدیریت پرونده بیماران.
+با استفاده از این منو ، قادر خواهید بود پرونده بیماران را از نوبت دهی ، پذیرش و حساب تا مدارك بیماران مدیریت نمایید.</value>
+    <comment>فرم اصلی برنامه</comment>
+  </data>
+  <data name="btn_MainForm_RTabHelp" xml:space="preserve">
+    <value>منوی دریافت كمك از سیستم.
+در این منو قادرید اطلاعاتی كه در مورد كار با نرم افزار نیاز دارید و همچنین آموزش كاربری سیستم را فراخوانی نمایید. همچنین نحوه ارتباط با تولید كننده و همچنین اطلاعات فنی نرم افزار را در این قسمت بدست خواهید آورد.</value>
+    <comment>فرم اصلی برنامه</comment>
+  </data>
+  <data name="btn_MainForm_RTabPatients" xml:space="preserve">
+    <value>منوی مدیریت بیماران سیستم.
+در این منو ، قادرید بیماران ثبت شده در سیستم را جستجو نمایید.
+همچنین قادرید بیماران جستجو شده را در بخش های مختلف پذیرش ، حساب ، مدارك و ... مدیریت نمایید.</value>
+    <comment>فرم اصلی برنامه</comment>
+  </data>
+  <data name="btn_MainForm_RTabReport" xml:space="preserve">
+    <value>منوی گزارش ها.
+با استفاده از این منو قادر خواهید بود گزارش های اصلی سیستم را تولید نمایید.
+همچنین مدیریت قالب های قبوض مراجعات بیماران از این قسمت انجام می پذیرد.</value>
+    <comment>فرم اصلی برنامه</comment>
+  </data>
+  <data name="btn_MainForm_RTabSettings" xml:space="preserve">
+    <value>نموی مدیریت تنظیمات سیستم.
+با استفاده از این منو ، كلیه تنظیمات پایه ای سیستم ، از قبیل تنظیمات امنیتی ، نوبت دهی بیماران ، مراجعات ، خدمات و بیمه های مراجعات ، حساب مراجعات ، صندوق های تصویربرداری و مدارك مراجعات را قادرید مدیریت نمایید.</value>
+    <comment>فرم اصلی برنامه</comment>
+  </data>
+  <data name="btn_MainForm_RTabSystemAdmin" xml:space="preserve">
+    <value>منوی مدیریت سیستم.
+با استفاده از این منو قادرید سیستم مدیریت تصویربرداری را مدیریت و بانك اطلاعاتی را بهینه سازی نمایید.
+بخش هایی از قبیل مدیریت پشتیبانی و بازیابی ، مدیریت بازسازی ساختار بانك اطلاعات ، نمایش رخدادهای سیستم و... در این منو مدیریت میشوند.</value>
+    <comment>فرم اصلی برنامه</comment>
+  </data>
+  <data name="btn_MainForm_Start" xml:space="preserve">
+    <value>دكمه مدیریت فرم اصلی برنامه.
+با كلیك بر روی این دكمه ، لیستی از فرمان های مربوط به فرم اصلی برنامه را مشاهده خواهید نمود.</value>
+    <comment>فرم اصلی برنامه</comment>
+  </data>
+  <data name="cboInsParamFormula" xml:space="preserve">
+    <value>لیست پارامتر های قابل استفاده برای فرمول بیمه دوم.</value>
+    <comment>تنظیمات - مراجعات - بیمه ها - فرم مدیریت فرمول های بیمه های دوم تصویربرداری</comment>
+  </data>
+  <data name="btnInsFormulaValidation" xml:space="preserve">
+    <value>با فراخوانی این فرمان ، فرمول بیمه دوم وارد شده ، بر اساس تعدادی عدد آزمایشی وارد شده توسط كاربر بررسی و محاسبه می گردد.</value>
+    <comment>تنظیمات بیمه ها - فرم بررسی درستی فرمول بیمه دوم</comment>
+  </data>
+  <data name="btnAddRefPhysician" xml:space="preserve">
+    <value>افزودن پزشك مراجعه جدید.
+&lt;div&gt;&lt;/div&gt;با فراخوانی این فرمان ، فرمی برای افزودن پزشك مراجعه جدید نمایش داده خواهد شد.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: Ctrl+T&lt;/b&gt;</value>
+    <comment>كلاس پذیرش - كنترل مدیریت مراجعات</comment>
+  </data>
+  <data name="btnEditRefPhysician" xml:space="preserve">
+    <value>ویرایش پزشك مراجعه انتخاب شده.
+&lt;div&gt;&lt;/div&gt;با فراخوانی این فرمان ، فرمی برای ویرایش پزشك مراجعه انتخاب شده نمایش داده میشود.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: Ctrl+R&lt;/b&gt;</value>
+    <comment>كلاس پذیرش - كنترل مدیریت مراجعات</comment>
+  </data>
+  <data name="btnDelete_NoSubmit" xml:space="preserve">
+    <value>حذف ردیف انتخاب شده از جدول.
+&lt;div&gt;&lt;/div&gt;با تایید این فرمان ، ردیف انتخاب شده از جدول حذف میگردد.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: DEL&lt;/b&gt;</value>
+    <comment>فرمان های حذف مستقیم ،بدون اعمال</comment>
+  </data>
+  <data name="btnEditIns" xml:space="preserve">
+    <value>ویرایش اطلاعات بیمه.
+&lt;div&gt;&lt;/div&gt;
+با فراخوانی این فرمان ، فرمی برای ویرایش اطلاعات پایه بیمه انتخاب شده نمایش داده میشود.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F2&lt;/b&gt;</value>
+    <comment>تنظیمات بیمه - فرم مدیریت بیمه ها</comment>
+  </data>
+  <data name="btnInsAutoCalculation" xml:space="preserve">
+    <value>محاسبه خودكار قیمت های خدمات بیمه انتخاب شده.
+با فراخوانی این فرمان ، فرمی برای محاسبه خودكار و جمعی قیمت های بیمه انتخاب شده نمایش داده میشود.</value>
+    <comment>تنظیمات بیمه - فرم مدیریت ارتباط بیمه ها و خدمات</comment>
+  </data>
+  <data name="btnAddServicesDefaultPerformer" xml:space="preserve">
+    <value>افزودن كادر درمان پیش فرض جدید برای خدمات.
+&lt;div&gt;&lt;/div&gt;برای افزودن پیش فرض جدید بر روی این دكمه كلیك كنید.
+&lt;div&gt;&lt;/div&gt;&lt;b&gt;كلید میانبر: F6&lt;/b&gt;</value>
+    <comment>تنظیمات خدمات - فرم مدیریت كادر درمان پیش فرض</comment>
+  </data>
+</root>

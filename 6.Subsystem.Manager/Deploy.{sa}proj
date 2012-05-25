@@ -1,0 +1,351 @@
+<SmartAssemblyProject ProjectID="{b793f442-8b2c-4967-a6e3-ebf252487b42}" Version="2.0">
+    <MainAssemblyFileName>.\Source\bin\Debug\Negar.SSM.exe</MainAssemblyFileName>
+    <FriendlyName>سیستم مدیریت امنیت كلینیك آرش</FriendlyName>
+    <CompanyName>آفتاب</CompanyName>
+    <Configuration Name="Release">
+        <ApplicationName>سیستم مدیریت امنیت كلینیك آرش</ApplicationName>
+        <Destination DestinationFileName=".\Negar.SSM.exe" />
+        <Assemblies>
+            <Assembly AssemblyName="DevComponents.DotNetBar2, Culture=neutral, PublicKeyToken=5fd520d36328f741">
+                <Merging Merge="1">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding Compress="1" Embed="0" GAC="0" />
+            </Assembly>
+            <Assembly AssemblyName="Aftab MessageBox, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning Prune="1">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab Connection String Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning Prune="1">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab License Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning Prune="1">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Interop.NovinAfzar, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning Prune="1">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Arash CSM, Culture=neutral, PublicKeyToken=null">
+                <Merging>
+                    <ResourcesCompression Compress="1" />
+                    <Pruning Prune="1">
+                        <Exclusion>
+                            <Token Table="WholeType">
+                                <Assembly>Arash CSM</Assembly>
+                                <Module>Arash CSM.exe</Module>
+                                <Name>DbClass</Name>
+                                <ItemType>Class</ItemType>
+                                <Namespace>Aftab.Classes</Namespace>
+                            </Token>
+                            <Token Table="WholeType">
+                                <Assembly>Arash CSM</Assembly>
+                                <Module>Arash CSM.exe</Module>
+                                <Name>SP_SelectApplicationsResult</Name>
+                                <ItemType>Class</ItemType>
+                                <Namespace>Aftab.Classes</Namespace>
+                            </Token>
+                            <Token Table="WholeType">
+                                <Assembly>Arash CSM</Assembly>
+                                <Module>Arash CSM.exe</Module>
+                                <Name>SP_SelectUsersResult</Name>
+                                <ItemType>Class</ItemType>
+                                <Namespace>Aftab.Classes</Namespace>
+                            </Token>
+                            <Token Table="WholeType">
+                                <Assembly>Arash CSM</Assembly>
+                                <Module>Arash CSM.exe</Module>
+                                <Name>User</Name>
+                                <ItemType>Class</ItemType>
+                                <Namespace>Aftab.Classes</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion>
+                            <Token Table="WholeType">
+                                <Assembly>Arash CSM</Assembly>
+                                <Module>Arash CSM.exe</Module>
+                                <Name>DbClass</Name>
+                                <ItemType>Class</ItemType>
+                                <Namespace>Aftab.Classes</Namespace>
+                            </Token>
+                            <Token Table="WholeType">
+                                <Assembly>Arash CSM</Assembly>
+                                <Module>Arash CSM.exe</Module>
+                                <Name>SP_SelectApplicationsResult</Name>
+                                <ItemType>Class</ItemType>
+                                <Namespace>Aftab.Classes</Namespace>
+                            </Token>
+                            <Token Table="WholeType">
+                                <Assembly>Arash CSM</Assembly>
+                                <Module>Arash CSM.exe</Module>
+                                <Name>SP_SelectUsersResult</Name>
+                                <ItemType>Class</ItemType>
+                                <Namespace>Aftab.Classes</Namespace>
+                            </Token>
+                            <Token Table="WholeType">
+                                <Assembly>Arash CSM</Assembly>
+                                <Module>Arash CSM.exe</Module>
+                                <Name>User</Name>
+                                <ItemType>Class</ItemType>
+                                <Namespace>Aftab.Classes</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesPruning />
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="ComponentFactory.Krypton.Toolkit, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding Compress="0" Embed="1" GAC="1" />
+            </Assembly>
+            <Assembly AssemblyName="Aftab DB Layer Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab WinApp Log Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning Prune="1">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab Security Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning Prune="1">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="DevComponents.TreeGX, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab User Security Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning Prune="1">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab Help Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning Prune="1">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab Calendar, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.MessageBox, Culture=neutral, PublicKeyToken=dfb97cb8308c094f">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.ConnectionString.Manager, Culture=neutral, PublicKeyToken=8591c648ca881033">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.License.Manager, Culture=neutral, PublicKeyToken=0dbe34f4a48e0e11">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Interop.NovinAfzar, Culture=neutral, PublicKeyToken=f973fbbb2077d5f9">
+                <Merging Merge="1">
+                    <Pruning Prune="1">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Db.Layer.Manager, Culture=neutral, PublicKeyToken=05adbdc7e690569f">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Log.Manager, Culture=neutral, PublicKeyToken=7d935595bdbb98a2">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Calendar, Culture=neutral, PublicKeyToken=145b7e473c8af181">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Security.Forms, Culture=neutral, PublicKeyToken=2082fd47a73736eb">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Help.Manager, Culture=neutral, PublicKeyToken=3400f1278b418aa3">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.User.Security.Manager, Culture=neutral, PublicKeyToken=07c8b4ac8802f45f">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.SSM, Culture=neutral, PublicKeyToken=f7f33d86d5db528e">
+                <Merging>
+                    <ResourcesCompression />
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesPruning />
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="Negar.SSM, Culture=neutral, PublicKeyToken=b0b11a5b96f5c2ac">
+                <Merging>
+                    <ResourcesCompression />
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesPruning />
+                </Merging>
+            </Assembly>
+        </Assemblies>
+        <Options>
+            <Obfuscation FieldsNameMangling="3" NameMangling="3" />
+            <ExceptionReporting ReportExceptions="0" UseCustomTemplate="0" />
+            <StrongNameSigning KeyFileName=".\Source\bin\Debug\ProtectionKey.snk" Sign="1" />
+            <OtherProtections AddIncorrectMetadata="1" SuppressIldasm="1" />
+            <StringsEncoding Encode="1" UseImprovedEncoding="1" />
+            <OtherOptimizations ManageMemory="1" SealClasses="1" />
+            <Debugging CreatePDB="0" ObfuscateDocumentsURL="1" />
+            <Troubleshooting SelfDiagnostic="0" />
+        </Options>
+    </Configuration>
+</SmartAssemblyProject>

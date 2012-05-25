@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Negar.Security.ACL.frmCopy">
+    <Position X="6" Y="0.5" Width="2.75" />
+    <Members>
+      <Field Name="btnClose" Hidden="true" />
+      <Field Name="btnCopyUserACL" Hidden="true" />
+      <Field Name="btnHelp" Hidden="true" />
+      <Field Name="cboSelection" Hidden="true" />
+      <Field Name="cBoxSelectGroups" Hidden="true" />
+      <Field Name="cBoxSelectUsers" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="FormPanel" Hidden="true" />
+      <Field Name="FormToolTip" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="lblDestinationGroups" Hidden="true" />
+      <Field Name="lblDestinationUsers" Hidden="true" />
+      <Field Name="lstGroups" Hidden="true" />
+      <Field Name="lstUsers" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAAiAAAADAAAIIQAACQCAACAgACSQAABICAIAAEQAA=</HashCode>
+      <FileName>ACL\Copy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.Security.ACL.frmDiagram">
+    <Position X="9" Y="0.5" Width="2.5" />
+    <Members>
+      <Field Name="btnClose" Hidden="true" />
+      <Field Name="btnHelp" Hidden="true" />
+      <Field Name="cboUsers" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="FillACLDataSource" Hidden="true" />
+      <Field Name="FormPanel" Hidden="true" />
+      <Field Name="FormToolTip" Hidden="true" />
+      <Field Name="GroupsNodeStyle" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="lblUsers" Hidden="true" />
+      <Field Name="nodeConnector1" Hidden="true" />
+      <Field Name="nodeConnector2" Hidden="true" />
+      <Field Name="TreeViewACL" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>CAAACAAAACAAAAIQAAGQAAACAAgQQQIABYRBIAAUCAA=</HashCode>
+      <FileName>ACL\Diagram.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.Security.ACL.frmManage">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <Members>
+      <Field Name="btnACLDiagram" Hidden="true" />
+      <Field Name="btnClose" Hidden="true" />
+      <Field Name="btnCopyUserACL" Hidden="true" />
+      <Field Name="btnEditAccess" Hidden="true" />
+      <Field Name="btnHelp" Hidden="true" />
+      <Field Name="btnNewAccess" Hidden="true" />
+      <Field Name="btnRemoveAccess" Hidden="true" />
+      <Field Name="btnToDefaultACL" Hidden="true" />
+      <Field Name="cboUsers" Hidden="true" />
+      <Field Name="cmsACL" Hidden="true" />
+      <Field Name="cmsACLManage" Hidden="true" />
+      <Field Name="ColAllowChangePassword" Hidden="true" />
+      <Field Name="ColDescription" Hidden="true" />
+      <Field Name="ColMustChangePassword" Hidden="true" />
+      <Field Name="Column1" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvData" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="FormPanel" Hidden="true" />
+      <Field Name="FormToolTip" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="PanelToDefaultACL" Hidden="true" />
+      <Field Name="TreeViewACL" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>jAQACAQAIDAAAEIBBoCQAAACIFgwSAGABaBBIAAUCAE=</HashCode>
+      <FileName>ACL\Manage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.Security.ACL.frmManageAccess">
+    <Position X="3.25" Y="0.5" Width="2.5" />
+    <Members>
+      <Field Name="btnAccept" Hidden="true" />
+      <Field Name="btnCancel" Hidden="true" />
+      <Field Name="btnHelp" Hidden="true" />
+      <Field Name="cBoxAllow" Hidden="true" />
+      <Field Name="cBoxDeny" Hidden="true" />
+      <Field Name="cBoxIsPremiered" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="FormPanel" Hidden="true" />
+      <Field Name="FormToolTip" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="lbl1" Hidden="true" />
+      <Field Name="lbl2" Hidden="true" />
+      <Field Name="lbl3" Hidden="true" />
+      <Field Name="lblAccess" Hidden="true" />
+      <Field Name="lblAccessName" Hidden="true" />
+      <Field Name="lblAccessPath" Hidden="true" />
+      <Field Name="lblGroups" Hidden="true" />
+      <Field Name="lblName" Hidden="true" />
+      <Field Name="lblUsers" Hidden="true" />
+      <Field Name="lstGroups" Hidden="true" />
+      <Field Name="lstUsers" Hidden="true" />
+      <Field Name="panel1" Hidden="true" />
+      <Field Name="panel2" Hidden="true" />
+      <Field Name="panel3" Hidden="true" />
+      <Field Name="panel4" Hidden="true" />
+      <Field Name="panel5" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AwAACAAAgCEAAAv4AACQAAMThAAAQAIgBECAIQAUAYA=</HashCode>
+      <FileName>ACL\ManageAccess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

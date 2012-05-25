@@ -1,0 +1,1377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="ImagingSystem" Class="DbLayer" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="ConnectionString" ConnectionString="Data Source=MOHAMMAD-PC\AFTABSERVER02;Initial Catalog=ImagingSystem;Integrated Security=True" Provider="System.Data.SqlClient" />
+  <Table Name="Schedules.AdditionalColumns" Member="SchAddinColumns">
+    <Type Name="SchAddinColumns">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FieldName" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TypeID" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Lenght" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="SchAddinColumns_SchAddinDataItemsColCover" Member="SchAddinDataItemsColCovers" Storage="_AdditionalDataItemsColCovers" ThisKey="ID" OtherKey="ColumnIX" Type="SchAddinDataItemsColCover" />
+      <Association Name="SchAddinColumns_SchAddinColsAppCover" Member="SchAddinColsAppCovers" ThisKey="ID" OtherKey="FieldIX" Type="SchAddinColsAppCover" />
+    </Type>
+  </Table>
+  <Table Name="Schedules.AdditionalDataItems" Member="SchAddinDataItems">
+    <Type Name="SchAddinDataItem">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="SchAddinDataItem_SchAddinDataItemsColCover" Member="SchAddinDataItemsColCovers" Storage="_AdditionalDataItemsColCovers" ThisKey="ID" OtherKey="ItemIX" Type="SchAddinDataItemsColCover" />
+    </Type>
+  </Table>
+  <Table Name="Schedules.AdditionalDataItemsColCover" Member="SchAddinDataItemsColCovers">
+    <Type Name="SchAddinDataItemsColCover">
+      <Column Name="ItemIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ColumnIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="SchAddinColumns_SchAddinDataItemsColCover" Member="SchAddinColumns" Storage="_AdditionalColumn" ThisKey="ColumnIX" OtherKey="ID" Type="SchAddinColumns" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="SchAddinDataItem_SchAddinDataItemsColCover" Member="SchAddinDataItem" Storage="_AdditionalDataItem" ThisKey="ItemIX" OtherKey="ID" Type="SchAddinDataItem" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Schedules.Applications" Member="SchApplications">
+    <Type Name="SchApplications">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IsFixed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="SchApplications_SchAppWeekPeriods" Member="SchAppWeekPeriods" Storage="_AppWeekPeriods" ThisKey="ID" OtherKey="ApplicationIX" Type="SchAppWeekPeriods" />
+      <Association Name="SchApplications_SchHolidays" Member="SchHolidays" Storage="_Holidays" ThisKey="ID" OtherKey="ApplicationIX" Type="SchHolidays" />
+      <Association Name="SchApplications_SchAddinColsAppCover" Member="SchAddinColsAppCovers" ThisKey="ID" OtherKey="ApplicationIX" Type="SchAddinColsAppCover" />
+      <Association Name="SchApplications_SchAppointments" Member="SchAppointments" ThisKey="ID" OtherKey="ApplicationIX" Type="SchAppointments" />
+    </Type>
+  </Table>
+  <Table Name="Schedules.AppWeekPeriods" Member="SchAppWeekPeriods">
+    <Type Name="SchAppWeekPeriods">
+      <Column Name="ApplicationIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DayNo" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BeginTime" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EndTime" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Capacity" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="RoundingMinute" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="SchApplications_SchAppWeekPeriods" Member="SchApplications" Storage="_Application" ThisKey="ApplicationIX" OtherKey="ID" Type="SchApplications" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Schedules.ColumnsOrder" Member="SchColumnsOrders">
+    <Type Name="SchColumnsOrder">
+      <Column Name="ColumnIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OrderNumber" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="Schedules.Holidays" Member="SchHolidays">
+    <Type Name="SchHolidays">
+      <Column Name="ApplicationIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HolidayDate" Type="System.DateTime" DbType="SmallDateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="SchApplications_SchHolidays" Member="SchApplications" Storage="_Application" ThisKey="ApplicationIX" OtherKey="ID" Type="SchApplications" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Referrals.Performers" Member="Performers">
+    <Type Name="Performer">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="IsMale" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsExpert" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsPhysician" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="Performer_RefService" Member="RefServices" ThisKey="ID" OtherKey="ExpertIX" Type="RefService" />
+      <Association Name="Performer_RefService1" Member="RefServices1" ThisKey="ID" OtherKey="PhysicianIX" Type="RefService" />
+      <Association Name="Performer_DefaultPerformers" Member="DefaultPerformers" ThisKey="ID" OtherKey="PerformerIX" Type="DefaultPerformers" />
+      <Association Name="Performer_RefDocument" Member="RefDocuments" ThisKey="ID" OtherKey="ReportPhysicianIX" Type="RefDocument" />
+    </Type>
+  </Table>
+  <Table Name="Referrals.RefServices" Member="RefServices">
+    <Type Name="RefService">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ReferralIX" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ServiceIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Quantity" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="ExpertIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PhysicianIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsIns1Cover" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsIns2Cover" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Ins1Price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ins1PartPrice" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ins2Price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ins2PartPrice" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PatientPayablePrice" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Performer_RefService" Member="Performer" ThisKey="ExpertIX" OtherKey="ID" Type="Performer" IsForeignKey="true" />
+      <Association Name="Performer_RefService1" Member="Performer1" ThisKey="PhysicianIX" OtherKey="ID" Type="Performer" IsForeignKey="true" />
+      <Association Name="ServicesList_RefService" Member="ServicesList" ThisKey="ServiceIX" OtherKey="ID" Type="ServicesList" IsForeignKey="true" />
+      <Association Name="RefList_RefService" Member="RefList" ThisKey="ReferralIX" OtherKey="ID" Type="RefList" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Services.List" Member="ServicesLists">
+    <Type Name="ServicesList">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="CategoryIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PriceFree" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PriceGov" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="ServicesList_RefService" Member="RefServices" ThisKey="ID" OtherKey="ServiceIX" Type="RefService" />
+      <Association Name="ServicesList_DefaultPerformers" Member="DefaultPerformers" ThisKey="ID" OtherKey="ServiceIX" Type="DefaultPerformers" />
+      <Association Name="ServicesList_ServicesInGroups" Member="ServicesInGroups" ThisKey="ID" OtherKey="ServiceIX" Type="ServicesInGroups" />
+      <Association Name="ServicesList_InsuranceService" Member="InsuranceServices" ThisKey="ID" OtherKey="ServiceIX" Type="InsuranceService" />
+      <Association Name="ServicesList_InsPhysicianExclude" Member="InsPhysicianExcludes" ThisKey="ID" OtherKey="ServiceIX" Type="InsPhysicianExclude" />
+      <Association Name="ServicesList_InsRefPhysSpecExclude" Member="InsRefPhysSpecExcludes" ThisKey="ID" OtherKey="ServiceIX" Type="InsRefPhysSpecExclude" />
+      <Association Name="ServicesList_ServiceStudy" Member="ServiceStudy" ThisKey="ID" OtherKey="ServiceIX" Type="ServiceStudy" Cardinality="One" />
+      <Association Name="ServicesList_ServiceModality" Member="ServiceModalities" ThisKey="ID" OtherKey="ServiceIX" Type="ServiceModality" />
+      <Association Name="ServicesCategories_ServicesList" Member="ServicesCategories" ThisKey="CategoryIX" OtherKey="ID" Type="ServicesCategories" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="Services.Groups" Member="ServicesGroups">
+    <Type Name="ServicesGroups">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Association Name="ServicesGroups_ServicesInGroups" Member="ServicesInGroups" ThisKey="ID" OtherKey="GroupIX" Type="ServicesInGroups" />
+    </Type>
+  </Table>
+  <Table Name="Services.DefaultPerformers" Member="DefaultPerformers">
+    <Type Name="DefaultPerformers">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ServiceIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PerformerIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IsExpert" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Days" Type="System.String" DbType="NVarChar(7) NOT NULL" CanBeNull="false" />
+      <Column Name="Period" Type="System.String" DbType="NVarChar(8) NOT NULL" CanBeNull="false" />
+      <Association Name="ServicesList_DefaultPerformers" Member="ServicesList" ThisKey="ServiceIX" OtherKey="ID" Type="ServicesList" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Performer_DefaultPerformers" Member="Performer" ThisKey="PerformerIX" OtherKey="ID" Type="Performer" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Services.Categories" Member="ServicesCategories">
+    <Type Name="ServicesCategories">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Association Name="ServicesCategories_ServicesList" Member="ServicesLists" ThisKey="ID" OtherKey="CategoryIX" Type="ServicesList" />
+      <Association Name="ServicesCategories_BillServCatExclude" Member="BillServCatExclude" ThisKey="ID" OtherKey="CategoryIX" Type="BillServCatExclude" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="Services.AdditionalPriceColumns" Member="AdditionalPriceColumns">
+    <Type Name="AdditionalPriceColumn">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ColumnName" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Services.ServiceInGroups" Member="ServicesInGroups">
+    <Type Name="ServicesInGroups">
+      <Column Name="ServiceIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="GroupIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="ServicesGroups_ServicesInGroups" Member="ServicesGroups" ThisKey="GroupIX" OtherKey="ID" Type="ServicesGroups" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="ServicesList_ServicesInGroups" Member="ServicesList" ThisKey="ServiceIX" OtherKey="ID" Type="ServicesList" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Insurances.Ins2Formulas" Member="Ins2Formulas">
+    <Type Name="Ins2Formula">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Ins2Price" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Ins2Part" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="PatientPayable" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="Ins2Formula_ListInsurance" Member="ListInsurances" ThisKey="ID" OtherKey="Ins2FormulasIX" Type="ListInsurance" />
+    </Type>
+  </Table>
+  <Table Name="Insurances.List" Member="ListInsurances">
+    <Type Name="ListInsurance">
+      <Column Name="InsuranceIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ContractStartDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="ContractEndDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="PatientPercent" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="InsurerPartLimit" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsIns1" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsIns2" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Ins2FormulasIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="ListInsurance_InsuranceService" Member="InsuranceServices" ThisKey="InsuranceIX" OtherKey="InsIX" Type="InsuranceService" />
+      <Association Name="ListInsurance_InsPhysicianExclude" Member="InsPhysicianExcludes" ThisKey="InsuranceIX" OtherKey="InsIX" Type="InsPhysicianExclude" />
+      <Association Name="ListInsurance_InsRefPhysSpecExclude" Member="InsRefPhysSpecExcludes" ThisKey="InsuranceIX" OtherKey="InsIX" Type="InsRefPhysSpecExclude" />
+      <Association Name="Ins2Formula_ListInsurance" Member="Ins2Formula" ThisKey="Ins2FormulasIX" OtherKey="ID" Type="Ins2Formula" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="Insurances.InsuranceServices" Member="InsuranceServices">
+    <Type Name="InsuranceService">
+      <Column Name="InsIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ServiceIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IsCover" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="InsPrice" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="InsPart" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PatientPayable" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ServicesList_InsuranceService" Member="ServicesList" ThisKey="ServiceIX" OtherKey="ID" Type="ServicesList" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="ListInsurance_InsuranceService" Member="ListInsurance" ThisKey="InsIX" OtherKey="InsuranceIX" Type="ListInsurance" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Accounting.Banks" Member="Banks">
+    <Type Name="Bank">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="Bank_RefTransAddinData" Member="RefTransAddinDatas" Storage="_RefTransactionAdditionalDatas" ThisKey="ID" OtherKey="BankIX" Type="RefTransAddinData" />
+    </Type>
+  </Table>
+  <Table Name="Accounting.CostsAndDiscountsTypes" Member="CostsAndDiscountsTypes">
+    <Type Name="CostsAndDiscountsType">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsCost" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Limitation" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="CostsAndDiscountsType_RefCostsAndDiscount" Member="RefCostsAndDiscounts" ThisKey="ID" OtherKey="CostIXOrDiscountIX" Type="RefCostsAndDiscount" />
+      <Association Name="CostsAndDiscountsType_CostsAndDiscountsUsersExclude" Member="CostsAndDiscountsUsersExcludes" ThisKey="ID" OtherKey="CDIX" Type="CostsAndDiscountsUsersExclude" />
+    </Type>
+  </Table>
+  <Table Name="Accounting.Cashes" Member="Cashes">
+    <Type Name="Cash">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="Cash_CashiersCash" Member="CashiersCashes" ThisKey="ID" OtherKey="CashIX" Type="CashiersCash" />
+      <Association Name="Cash_RefTransaction" Member="RefTransactions" ThisKey="ID" OtherKey="CashIX" Type="RefTransaction" />
+      <Association Name="Cash_CashLog" Member="CashLogs" ThisKey="ID" OtherKey="CashIX" Type="CashLog" />
+    </Type>
+  </Table>
+  <Table Name="Accounting.CashiersCashes" Member="CashiersCashes">
+    <Type Name="CashiersCash">
+      <Column Name="CashierIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CashIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Cash_CashiersCash" Member="Cash" ThisKey="CashIX" OtherKey="ID" Type="Cash" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="Documents.Texts" Member="DocTexts">
+    <Type Name="DocText">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ParentIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Code" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsGroup" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TextsData" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Documents.Type" Member="DocTypes">
+    <Type Name="DocType">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="DocType_UsersDefaultDocType" Member="UsersDefaultDocType" ThisKey="ID" OtherKey="UserIX" Type="UsersDefaultDocType" Cardinality="One" />
+      <Association Name="DocType_RefDocument" Member="RefDocuments" ThisKey="ID" OtherKey="TypeIX" Type="RefDocument" />
+    </Type>
+  </Table>
+  <Table Name="Accounting.RefCostsAndDiscounts" Member="RefCostsAndDiscounts">
+    <Type Name="RefCostsAndDiscount">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ReferralIX" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CostIXOrDiscountIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CashierIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="CostsAndDiscountsType_RefCostsAndDiscount" Member="CostsAndDiscountsType" ThisKey="CostIXOrDiscountIX" OtherKey="ID" Type="CostsAndDiscountsType" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="RefList_RefCostsAndDiscount" Member="RefList" ThisKey="ReferralIX" OtherKey="ID" Type="RefList" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Reports.BillsPrintLog" Member="BillsPrintLogs">
+    <Type Name="BillsPrintLog">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BillIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="RefIX" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PrintDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="BillTemplate_BillsPrintLog" Member="BillTemplate" ThisKey="BillIX" OtherKey="ID" Type="BillTemplate" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="RefList_BillsPrintLog" Member="RefList" ThisKey="RefIX" OtherKey="ID" Type="RefList" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Accounting.RefTransaction" Member="RefTransactions">
+    <Type Name="RefTransaction">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ReferralIX" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="OccuredDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CashierIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CashIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Value" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="RefTransaction_RefTransAddinData" Member="RefTransactionAdditionalData" ThisKey="ID" OtherKey="RefTransactionIX" Type="RefTransAddinData" Cardinality="One" />
+      <Association Name="Cash_RefTransaction" Member="Cash" ThisKey="CashIX" OtherKey="ID" Type="Cash" IsForeignKey="true" DeleteRule="SET NULL" />
+      <Association Name="RefList_RefTransaction" Member="RefList" ThisKey="ReferralIX" OtherKey="ID" Type="RefList" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Accounting.RefTransactionAdditionalData" Member="RefTransAddinDatas">
+    <Type Name="RefTransAddinData">
+      <Column Name="RefTransactionIX" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PayType" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="BankIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="BranchName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BranchCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CheckDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="CheckNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AccountType" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="AccountNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="Bank_RefTransAddinData" Member="Bank" ThisKey="BankIX" OtherKey="ID" Type="Bank" IsForeignKey="true" DeleteRule="SET NULL" />
+      <Association Name="RefTransaction_RefTransAddinData" Member="RefTransaction" ThisKey="RefTransactionIX" OtherKey="ID" Type="RefTransaction" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Reports.DesignableReports" Member="DesignableReports">
+    <Type Name="DesignableReport">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Topic" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ColumnsData" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Reports.DesignableReportsAdditionalColumn" Member="DesignableReportsAddinCols">
+    <Type Name="DesignableReportsAddinCol">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FieldName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FieldFormula" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SelectedFields" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Accounting.CashLog" Member="CashLogs">
+    <Type Name="CashLog">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CashIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IsClosed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="StartDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FinishDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OpenerCashierIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="SupplyBegin" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SupplyEnd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CloserCashierIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Association Name="CashLog_CashInputOutput" Member="CashInputOutputs" ThisKey="ID" OtherKey="CashLogIX" Type="CashInputOutput" />
+      <Association Name="Cash_CashLog" Member="Cash" ThisKey="CashIX" OtherKey="ID" Type="Cash" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Accounting.CashInputOutput" Member="CashInputOutputs">
+    <Type Name="CashInputOutput">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CashLogIX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CashierIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="OccuredDate" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IsInput" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="CashLog_CashInputOutput" Member="CashLog" ThisKey="CashLogIX" OtherKey="ID" Type="CashLog" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="Accounting.VW_SelectCashesReport" Member="VW_SelectCashesReports">
+    <Type Name="VW_SelectCashesReport">
+      <Column Name="RowNo" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CashID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CashName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="CashLogID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CashStatus" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="OpenerCashierIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="OpenerCashierName" Type="System.String" DbType="NVarChar(41)" CanBeNull="true" />
+      <Column Name="StartDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SupplyBegin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StatutorySypply" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SupplyEnd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InputsOutputsBalance" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CloserCashierIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="CloserCashierName" Type="System.String" DbType="NVarChar(41)" CanBeNull="true" />
+      <Column Name="FinishDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Schedules.AdditionalColumnsAppCover" Member="SchAddinColsAppCovers">
+    <Type Name="SchAddinColsAppCover">
+      <Column Name="ApplicationIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FieldIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="SchAddinColumns_SchAddinColsAppCover" Member="SchAddinColumns" ThisKey="FieldIX" OtherKey="ID" Type="SchAddinColumns" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="SchApplications_SchAddinColsAppCover" Member="SchApplications" ThisKey="ApplicationIX" OtherKey="ID" Type="SchApplications" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Reports.SavedSearch" Member="SavedSearches">
+    <Type Name="SavedSearch">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ColumnsData" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FilterData" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Documents.Templates" Member="DocTemplates">
+    <Type Name="DocTemplate">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ParentIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Code" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsGroup" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsDefault" Storage="_IsDefualt" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TemplateData" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Referrals.RefAdditionalColumns" Member="RefAdditionalColumns">
+    <Type Name="RefAdditionalColumn">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FieldName" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TypeID" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Lenght" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="RefAdditionalColumn_RefAdditionalDataItemsColCover" Member="RefAdditionalDataItemsColCovers" ThisKey="ID" OtherKey="ColumnIX" Type="RefAdditionalDataItemsColCover" />
+    </Type>
+  </Table>
+  <Table Name="Referrals.PatAdditionalColumns" Member="PatAdditionalColumns">
+    <Type Name="PatAdditionalColumn">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FieldName" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TypeID" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Lenght" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="PatAdditionalColumn_PatAdditionalDataItemsColCover" Member="PatAdditionalDataItemsColCovers" ThisKey="ID" OtherKey="ColumnIX" Type="PatAdditionalDataItemsColCover" />
+    </Type>
+  </Table>
+  <Table Name="Referrals.RefAdditionalDataItems" Member="RefAdditionalDataItems">
+    <Type Name="RefAdditionalDataItem">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="RefAdditionalDataItem_RefAdditionalDataItemsColCover" Member="RefAdditionalDataItemsColCovers" ThisKey="ID" OtherKey="ItemIX" Type="RefAdditionalDataItemsColCover" />
+    </Type>
+  </Table>
+  <Table Name="Referrals.PatAdditionalDataItems" Member="PatAdditionalDataItems">
+    <Type Name="PatAdditionalDataItem">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="PatAdditionalDataItem_PatAdditionalDataItemsColCover" Member="PatAdditionalDataItemsColCovers" ThisKey="ID" OtherKey="ItemIX" Type="PatAdditionalDataItemsColCover" />
+    </Type>
+  </Table>
+  <Table Name="Referrals.PatAdditionalDataItemsColCover" Member="PatAdditionalDataItemsColCovers">
+    <Type Name="PatAdditionalDataItemsColCover">
+      <Column Name="ItemIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ColumnIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="PatAdditionalColumn_PatAdditionalDataItemsColCover" Member="PatAdditionalColumn" ThisKey="ColumnIX" OtherKey="ID" Type="PatAdditionalColumn" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="PatAdditionalDataItem_PatAdditionalDataItemsColCover" Member="PatAdditionalDataItem" ThisKey="ItemIX" OtherKey="ID" Type="PatAdditionalDataItem" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Referrals.RefAdditionalDataItemsColCover" Member="RefAdditionalDataItemsColCovers">
+    <Type Name="RefAdditionalDataItemsColCover">
+      <Column Name="ItemIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ColumnIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="RefAdditionalColumn_RefAdditionalDataItemsColCover" Member="RefAdditionalColumn" ThisKey="ColumnIX" OtherKey="ID" Type="RefAdditionalColumn" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="RefAdditionalDataItem_RefAdditionalDataItemsColCover" Member="RefAdditionalDataItem" ThisKey="ItemIX" OtherKey="ID" Type="RefAdditionalDataItem" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Reports.BillsUserAccess" Member="BillsUserAccesses">
+    <Type Name="BillsUserAccess">
+      <Column Name="BillIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PrintLimitation" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="BillTemplate_BillsUserAccess" Member="BillTemplate" ThisKey="BillIX" OtherKey="ID" Type="BillTemplate" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Reports.BillTemplates" Member="BillTemplates">
+    <Type Name="BillTemplate">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TemplateData" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="PrintLimitation" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="BillTemplate_BillsPrintLog" Member="BillsPrintLogs" ThisKey="ID" OtherKey="BillIX" Type="BillsPrintLog" />
+      <Association Name="BillTemplate_BillsUserAccess" Member="BillsUserAccesses" ThisKey="ID" OtherKey="BillIX" Type="BillsUserAccess" />
+    </Type>
+  </Table>
+  <Table Name="Reports.BillServCatExclude" Member="BillServCatExcludes">
+    <Type Name="BillServCatExclude">
+      <Column Name="CategoryIX" Storage="_ServiceIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="ServicesCategories_BillServCatExclude" Member="ServicesCategories" ThisKey="CategoryIX" OtherKey="ID" Type="ServicesCategories" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Accounting.CostsAndDiscountsUsersExclude" Member="CostsAndDiscountsUsersExcludes">
+    <Type Name="CostsAndDiscountsUsersExclude">
+      <Column Name="UserIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CDIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="CostsAndDiscountsType_CostsAndDiscountsUsersExclude" Member="CostsAndDiscountsType" ThisKey="CDIX" OtherKey="ID" Type="CostsAndDiscountsType" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Referrals.List" Member="RefLists">
+    <Type Name="RefList">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PatientIX" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BedRiddenIX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LockDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RegisterDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="PrescriptionDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Weight" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="AdmitterIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ReferPhysicianIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ReferStatusIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Ins1IX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Ins1Validation" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Ins1Num1" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Ins1PageNum" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Ins2IX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Ins2Validation" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Ins2Num" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="PrePayable" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RemainValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="ReportDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Association Name="RefList_RefService" Member="RefServices" ThisKey="ID" OtherKey="ReferralIX" Type="RefService" />
+      <Association Name="RefList_RefCostsAndDiscount" Member="RefCostsAndDiscounts" ThisKey="ID" OtherKey="ReferralIX" Type="RefCostsAndDiscount" />
+      <Association Name="RefList_BillsPrintLog" Member="BillsPrintLogs" ThisKey="ID" OtherKey="RefIX" Type="BillsPrintLog" />
+      <Association Name="RefList_RefTransaction" Member="RefTransactions" ThisKey="ID" OtherKey="ReferralIX" Type="RefTransaction" />
+      <Association Name="RefList_CashExcludedRef" Member="CashExcludedRef" ThisKey="ID" OtherKey="RefIX" Type="CashExcludedRef" Cardinality="One" />
+      <Association Name="RefList_RefDocument" Member="RefDocuments" ThisKey="ID" OtherKey="RefIX" Type="RefDocument" />
+      <Association Name="RefList_SchAppointments" Member="SchAppointments" ThisKey="ID" OtherKey="ReferralIX" Type="SchAppointments" />
+      <Association Name="RefList_MsgList" Member="MsgLists" ThisKey="ID" OtherKey="RefIX" Type="MsgList" />
+      <Association Name="Status_RefList" Member="Status" ThisKey="ReferStatusIX" OtherKey="ID" Type="Status" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="Insurances.PhysicianExclude" Member="InsPhysicianExcludes">
+    <Type Name="InsPhysicianExclude">
+      <Column Name="InsIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ServiceIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RefPhysID" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="ListInsurance_InsPhysicianExclude" Member="ListInsurance" ThisKey="InsIX" OtherKey="InsuranceIX" Type="ListInsurance" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="ServicesList_InsPhysicianExclude" Member="ServicesList" ThisKey="ServiceIX" OtherKey="ID" Type="ServicesList" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Insurances.RefPhysSpecExclude" Member="InsRefPhysSpecExcludes">
+    <Type Name="InsRefPhysSpecExclude">
+      <Column Name="InsIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ServiceIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RefPhysSpecID" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="ListInsurance_InsRefPhysSpecExclude" Member="ListInsurance" ThisKey="InsIX" OtherKey="InsuranceIX" Type="ListInsurance" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="ServicesList_InsRefPhysSpecExclude" Member="ServicesList" ThisKey="ServiceIX" OtherKey="ID" Type="ServicesList" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Referrals.Status" Member="Status">
+    <Type Name="Status">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Status_RefList" Member="RefLists" ThisKey="ID" OtherKey="ReferStatusIX" Type="RefList" />
+    </Type>
+  </Table>
+  <Table Name="Accounting.CashExcludedRefs" Member="CashExcludedRefs">
+    <Type Name="CashExcludedRef">
+      <Column Name="RefIX" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="RefList_CashExcludedRef" Member="RefList" ThisKey="RefIX" OtherKey="ID" Type="RefList" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Settings.UsersSettings" Member="UsersSettings">
+    <Type Name="UsersSetting">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SettingIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="UserIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Boolean" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Value" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Association Name="SettingsList_UsersSetting" Member="SettingsList" ThisKey="SettingIX" OtherKey="ID" Type="SettingsList" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Settings.List" Member="SettingsLists">
+    <Type Name="SettingsList">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Association Name="SettingsList_UsersSetting" Member="UsersSettings" ThisKey="ID" OtherKey="SettingIX" Type="UsersSetting" />
+    </Type>
+  </Table>
+  <Table Name="Documents.UsersDefaultDocType" Member="UsersDefaultDocTypes">
+    <Type Name="UsersDefaultDocType">
+      <Column Name="UserIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DocTypeIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Association Name="DocType_UsersDefaultDocType" Member="DocType" ThisKey="UserIX" OtherKey="ID" Type="DocType" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="PACS.Studies" Member="Studies">
+    <Type Name="Study">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Study_ServiceStudy" Member="ServiceStudies" ThisKey="ID" OtherKey="StudyIX" Type="ServiceStudy" />
+    </Type>
+  </Table>
+  <Table Name="PACS.ServiceStudies" Member="ServiceStudies">
+    <Type Name="ServiceStudy">
+      <Column Name="ServiceIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StudyIX" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ServicesList_ServiceStudy" Member="ServicesList" ThisKey="ServiceIX" OtherKey="ID" Type="ServicesList" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Study_ServiceStudy" Member="Study" ThisKey="StudyIX" OtherKey="ID" Type="Study" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="PACS.Modalities" Member="Modalities">
+    <Type Name="Modality">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="Abreviation" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="AETitle" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="IPAddress" Type="System.String" DbType="VarChar(16) NOT NULL" CanBeNull="false" />
+      <Column Name="PortNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Modality_ServiceModality" Member="ServiceModalities" ThisKey="ID" OtherKey="ModalityIX" Type="ServiceModality" />
+    </Type>
+  </Table>
+  <Table Name="PACS.ServiceModalities" Member="ServiceModalities">
+    <Type Name="ServiceModality">
+      <Column Name="ServiceIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ModalityIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="ServicesList_ServiceModality" Member="ServicesList" ThisKey="ServiceIX" OtherKey="ID" Type="ServicesList" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Modality_ServiceModality" Member="Modality" ThisKey="ModalityIX" OtherKey="ID" Type="Modality" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Referrals.RefDocuments" Member="RefDocuments">
+    <Type Name="RefDocument">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RefIX" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TypeIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ReportPhysicianIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TypistIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="LastModifyDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModifierIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsReport" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DocPath" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="Extension" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Association Name="RefList_RefDocument" Member="RefList" ThisKey="RefIX" OtherKey="ID" Type="RefList" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Performer_RefDocument" Member="Performer" ThisKey="ReportPhysicianIX" OtherKey="ID" Type="Performer" IsForeignKey="true" DeleteRule="SET NULL" />
+      <Association Name="DocType_RefDocument" Member="DocType" ThisKey="TypeIX" OtherKey="ID" Type="DocType" IsForeignKey="true" DeleteRule="SET NULL" />
+    </Type>
+  </Table>
+  <Table Name="Schedules.LogEvents" Member="SchLogEvents">
+    <Type Name="SchLogEvents">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CategoryIX" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="AppointmentIX" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="SchAppointments_SchLogEvents" Member="SchAppointments" ThisKey="AppointmentIX" OtherKey="ID" Type="SchAppointments" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Schedules.Appointments" Member="SchAppointments">
+    <Type Name="SchAppointments">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ApplicationIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PatientIX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReferralIX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OrderNo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="OccuredDateTime" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsAppointed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LockDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Column Name="IsMale" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Age" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="TelNo1" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="TelNo2" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="SchedulerIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="SchAppointments_SchLogEvents" Member="SchLogEvents" ThisKey="ID" OtherKey="AppointmentIX" Type="SchLogEvents" />
+      <Association Name="SchApplications_SchAppointments" Member="SchApplications" ThisKey="ApplicationIX" OtherKey="ID" Type="SchApplications" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="RefList_SchAppointments" Member="RefList" ThisKey="ReferralIX" OtherKey="ID" Type="RefList" IsForeignKey="true" DeleteRule="SET NULL" />
+    </Type>
+  </Table>
+  <Table Name="Messages.Categories" Member="MsgCategories">
+    <Type Name="MsgCategories">
+      <Column Name="ID" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="MsgCategories_MsgList" Member="MsgLists" ThisKey="ID" OtherKey="CategoryIX" Type="MsgList" />
+    </Type>
+  </Table>
+  <Table Name="Messages.LogCategories" Member="MsgLogCategories">
+    <Type Name="MsgLogCategories">
+      <Column Name="ID" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EnglishName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="LocaleName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="MsgLogCategories_MsgLogEvents" Member="MsgLogEvents" ThisKey="ID" OtherKey="CategoryIX" Type="MsgLogEvents" />
+    </Type>
+  </Table>
+  <Table Name="Messages.LogEvents" Member="MsgLogEvents">
+    <Type Name="MsgLogEvents">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CategoryIX" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="DateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="MsgLogCategories_MsgLogEvents" Member="MsgLogCategories" ThisKey="CategoryIX" OtherKey="ID" Type="MsgLogCategories" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="Messages.Priority" Member="MsgPriorities">
+    <Type Name="MsgPriorities">
+      <Column Name="ID" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="MsgPriorities_MsgList" Member="MsgLists" ThisKey="ID" OtherKey="PriorityIX" Type="MsgList" />
+    </Type>
+  </Table>
+  <Table Name="Messages.States" Member="MsgStates">
+    <Type Name="MsgStates">
+      <Column Name="ID" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EnglishName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="LocaleName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="MsgStates_MsgList" Member="MsgLists" ThisKey="ID" OtherKey="StateIX" Type="MsgList" />
+    </Type>
+  </Table>
+  <Table Name="Messages.List" Member="MsgLists">
+    <Type Name="MsgList">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CategoryIX" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="PriorityIX" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="StateIX" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="RefIX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Text" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="DateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LongMessageCount" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="DestinationNumber" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="StateChangedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="MessageID" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Association Name="MsgPriorities_MsgList" Member="MsgPriorities" ThisKey="PriorityIX" OtherKey="ID" Type="MsgPriorities" IsForeignKey="true" />
+      <Association Name="MsgStates_MsgList" Member="MsgStates" ThisKey="StateIX" OtherKey="ID" Type="MsgStates" IsForeignKey="true" />
+      <Association Name="MsgCategories_MsgList" Member="MsgCategories" ThisKey="CategoryIX" OtherKey="ID" Type="MsgCategories" IsForeignKey="true" />
+      <Association Name="RefList_MsgList" Member="RefList" ThisKey="RefIX" OtherKey="ID" Type="RefList" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="Schedules.SP_DeleteAdditionalColumns" Method="SP_DeleteAdditionalColumns">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int16" DbType="SmallInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Schedules.SP_InsertAdditionalColumns" Method="SP_InsertAdditionalColumns">
+    <Parameter Name="NewID" Parameter="newID" Type="System.Int16" DbType="SmallInt" Direction="InOut" />
+    <Parameter Name="Title" Parameter="title" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="TypeID" Parameter="typeID" Type="System.Byte" DbType="TinyInt" />
+    <Parameter Name="Lenght" Parameter="lenght" Type="System.Byte" DbType="TinyInt" />
+    <Parameter Name="Description" Parameter="description" Type="System.String" DbType="NVarChar(300)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Schedules.SP_InsertAppWeekPeriods" Method="SP_InsertAppWeekPeriods">
+    <Parameter Name="ApplicationIX" Parameter="applicationIX" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="DayNo" Parameter="dayNo" Type="System.Byte" DbType="TinyInt" />
+    <Parameter Name="BeginTime" Parameter="beginTime" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="EndTime" Parameter="endTime" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="Capacity" Parameter="capacity" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="RoundingMinute" Parameter="roundingMinute" Type="System.Byte" DbType="TinyInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Schedules.SP_InsertColumnsOrder" Method="SP_InsertColumnsOrder">
+    <Parameter Name="ColumnIX" Parameter="columnIX" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="OrderNumber" Parameter="orderNumber" Type="System.Byte" DbType="TinyInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Schedules.SP_InsertHolidays" Method="SP_InsertHolidays">
+    <Parameter Name="AppID" Parameter="appID" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="Date" Parameter="date" Type="System.DateTime" DbType="SmallDateTime" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Schedules.SP_InsertOneDayAppointments" Method="SP_InsertOneDayAppointments">
+    <Parameter Name="AppID" Parameter="appID" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="StartTime" Parameter="startTime" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="EndTime" Parameter="endTime" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="Capacity" Parameter="capacity" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="RoundMin" Parameter="roundMin" Type="System.Int16" DbType="SmallInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Schedules.SP_SelectApplications" Method="SP_SelectApplications">
+    <ElementType Name="SP_SelectApplicationsResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IsFixed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Schedules.SP_SetAdditionalColumnsApp" Method="SP_SetAdditionalColumnsApp">
+    <Parameter Name="ColumnID" Parameter="columnID" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="AppID" Parameter="appID" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="IsCovered" Parameter="isCovered" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Schedules.SP_UpdateApplications" Method="SP_UpdateApplications">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="IsActive" Parameter="isActive" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="IsFixed" Parameter="isFixed" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="StartDate" Parameter="startDate" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="EndDate" Parameter="endDate" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="Description" Parameter="description" Type="System.String" DbType="NVarChar(300)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Services.SP_SelectCategories" Method="SP_SelectCategories">
+    <ElementType Name="SP_SelectCategoriesResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Insurances.SP_InsertInsFullData" Method="SP_InsertInsFullData">
+    <Parameter Name="IsActiveBase" Parameter="isActiveBase" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="IsActiveImaging" Parameter="isActiveImaging" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="ContractStartDate" Parameter="contractStartDate" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="ContractEndDate" Parameter="contractEndDate" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="PatientPercent" Parameter="patientPercent" Type="System.Byte" DbType="TinyInt" />
+    <Parameter Name="InsurerPartLimit" Parameter="insurerPartLimit" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsIns1" Parameter="isIns1" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IsIns2" Parameter="isIns2" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Ins2FormulasIX" Parameter="ins2FormulasIX" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="Description" Parameter="description" Type="System.String" DbType="NVarChar(300)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Services.SP_SelectServicesList" Method="SP_SelectServicesList">
+    <ElementType Name="SP_SelectServicesListResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="CategoryIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="CategoryName" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="PriceFree" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PriceGov" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Insurances.SP_SelectInsFullData" Method="SP_SelectInsFullData">
+    <ElementType Name="SP_SelectInsFullDataResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="BaseIsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IsIns1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsIns2" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ContractStartDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="ContractEndDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="PatientPercent" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="InsurerPartLimit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ins2FormulasIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Referrals.SP_DeletePatAdditionalColumns" Method="SP_DeletePatAdditionalColumns">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int16" DbType="SmallInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Referrals.SP_DeleteRefAdditionalColumns" Method="SP_DeleteRefAdditionalColumns">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int16" DbType="SmallInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Services.SP_DeleteAdditionalPriceColumns" Method="SP_DeleteAdditionalPriceColumns">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int16" DbType="SmallInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Services.SP_InsertAdditionalPriceColumns" Method="SP_InsertAdditionalPriceColumns">
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="NVarChar(25)" />
+    <Parameter Name="Description" Parameter="description" Type="System.String" DbType="NVarChar(300)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Services.SP_InsertAdditionalPriceData" Method="SP_InsertAdditionalPriceData">
+    <Parameter Name="ServiceIX" Parameter="serviceIX" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="FieldID" Parameter="fieldID" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="Price" Parameter="price" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Referrals.SP_SelectPerformers" Method="SP_SelectPerformers">
+    <ElementType Name="SP_SelectPerformersResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsExpert" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsPhysician" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(38) NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Services.SP_SelectPriceColumnsList" Method="SP_SelectPriceColumnsList">
+    <ElementType Name="SP_SelectPriceColumnsListResult">
+      <Column Name="ColumnName" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(25) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Services.SP_SelectServicesInGroups" Method="SP_SelectServicesInGroups">
+    <ElementType Name="SP_SelectServicesInGroupsResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="GroupID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Services.SP_SelectGroups" Method="SP_SelectGroups">
+    <ElementType Name="SP_SelectGroupsResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Insurances.SP_CheckIns2Formula" Method="SP_CheckIns2Formula">
+    <Parameter Name="Ins2Price_Syntax" Parameter="ins2Price_Syntax" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="Ins2Part_Syntax" Parameter="ins2Part_Syntax" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="PatientPayable_Syntax" Parameter="patientPayable_Syntax" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="PriceFree" Parameter="priceFree" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PriceGov" Parameter="priceGov" Type="System.Int32" DbType="Int" />
+    <Parameter Name="X1Ins1Price" Parameter="x1Ins1Price" Type="System.Int32" DbType="Int" />
+    <Parameter Name="X2Ins1Part" Parameter="x2Ins1Part" Type="System.Int32" DbType="Int" />
+    <Parameter Name="X3Ins1PatientPrice" Parameter="x3Ins1PatientPrice" Type="System.Int32" DbType="Int" />
+    <Parameter Name="X4Ins1PatientPayable" Parameter="x4Ins1PatientPayable" Type="System.Int32" DbType="Int" />
+    <Parameter Name="X5Ins1Limit" Parameter="x5Ins1Limit" Type="System.Int32" DbType="Int" />
+    <Parameter Name="X6Ins1PatientPercent" Parameter="x6Ins1PatientPercent" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Y1Ins2Limit" Parameter="y1Ins2Limit" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Result1" Parameter="result1" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Result2" Parameter="result2" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Result3" Parameter="result3" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="IsCorrect" Parameter="isCorrect" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Insurances.SP_CopyInsuranceServices" Method="SP_CopyInsuranceServices">
+    <Parameter Name="InsID1" Parameter="insID1" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="InsID2" Parameter="insID2" Type="System.Int16" DbType="SmallInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Insurances.SP_InsertInsuranceServices" Method="SP_InsertInsuranceServices">
+    <Parameter Name="InsIX" Parameter="insIX" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="ServiceIX" Parameter="serviceIX" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="IsCover" Parameter="isCover" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="InsPrice" Parameter="insPrice" Type="System.Int32" DbType="Int" />
+    <Parameter Name="InsPart" Parameter="insPart" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PatientPayable" Parameter="patientPayable" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Insurances.SP_SelectIns2FormulaColumns" Method="SP_SelectIns2FormulaColumns">
+    <ElementType Name="SP_SelectIns2FormulaColumnsResult">
+      <Column Name="ColumnName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(26) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Insurances.SP_SelectIns2Formulas" Method="SP_SelectIns2Formulas">
+    <ElementType Name="SP_SelectIns2FormulasResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Insurances.SP_UpdateInsFullData" Method="SP_UpdateInsFullData">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="IsActiveBase" Parameter="isActiveBase" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="IsActiveImaging" Parameter="isActiveImaging" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="ContractStartDate" Parameter="contractStartDate" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="ContractEndDate" Parameter="contractEndDate" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="PatientPercent" Parameter="patientPercent" Type="System.Byte" DbType="TinyInt" />
+    <Parameter Name="InsurerPartLimit" Parameter="insurerPartLimit" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsIns1" Parameter="isIns1" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IsIns2" Parameter="isIns2" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Ins2FormulasIX" Parameter="ins2FormulasIX" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="Description" Parameter="description" Type="System.String" DbType="NVarChar(300)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Accounting.SP_InsertCashiersCashes" Method="SP_InsertCashiersCashes">
+    <Parameter Name="CashierID" Parameter="cashierID" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="CashID" Parameter="cashID" Type="System.Int16" DbType="SmallInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Accounting.SP_SelectCashes" Method="SP_SelectCashes">
+    <ElementType Name="SP_SelectCashesResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Accounting.SP_SelectCashiersCashesList" Method="SP_SelectCashiersCashesList">
+    <ElementType Name="SP_SelectCashiersCashesListResult">
+      <Column Name="CashierID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(41) NOT NULL" CanBeNull="false" />
+      <Column Name="CashID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CashIsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CashName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Accounting.FK_CalcRefPayable" Method="FK_CalcRefPayable" IsComposable="true">
+    <Parameter Name="RefID" Parameter="refID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Accounting.FK_CalcSumPay" Method="FK_CalcSumPay" IsComposable="true">
+    <Parameter Name="RefID" Parameter="refID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Accounting.FK_CalcSumRecieve" Method="FK_CalcSumRecieve" IsComposable="true">
+    <Parameter Name="RefID" Parameter="refID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Accounting.FK_CalcTotalRefRemain" Method="FK_CalcTotalRefRemain" IsComposable="true">
+    <Parameter Name="RefID" Parameter="refID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Referrals.SP_SelectRefServicesData" Method="SP_SelectRefServicesData">
+    <Parameter Name="RefID" Parameter="refID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SP_SelectRefServicesDataResult">
+      <Column Name="Code" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="ServiceName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CategoryName" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="PriceFree" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PriceGov" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="Quantity" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="ExpertName" Type="System.String" DbType="NVarChar(36)" CanBeNull="true" />
+      <Column Name="PhysicianName" Type="System.String" DbType="NVarChar(36)" CanBeNull="true" />
+      <Column Name="Ins1Price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ins1PartPrice" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ins2Price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ins2PartPrice" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PatientPayablePrice" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Referrals.SP_SelectStatus" Method="SP_SelectStatus">
+    <ElementType Name="SP_SelectStatusResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Insurances.SP_GenerateIns2Prices" Method="SP_GenerateIns2Prices">
+    <Parameter Name="Ins2ID" Parameter="ins2ID" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="ServiceID" Parameter="serviceID" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="X1Ins1Price" Parameter="x1Ins1Price" Type="System.Int32" DbType="Int" />
+    <Parameter Name="X2Ins1Part" Parameter="x2Ins1Part" Type="System.Int32" DbType="Int" />
+    <Parameter Name="X3Ins1PatientPrice" Parameter="x3Ins1PatientPrice" Type="System.Int32" DbType="Int" />
+    <Parameter Name="X4Ins1PatientPayable" Parameter="x4Ins1PatientPayable" Type="System.Int32" DbType="Int" />
+    <Parameter Name="X5Ins1Limit" Parameter="x5Ins1Limit" Type="System.Int32" DbType="Int" />
+    <Parameter Name="X6Ins1PatientPercent" Parameter="x6Ins1PatientPercent" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Y1Ins2Limit" Parameter="y1Ins2Limit" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Result1" Parameter="result1" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Result2" Parameter="result2" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Result3" Parameter="result3" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Settings.SP_InsertUserSetting" Method="SP_InsertUserSetting">
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="SettingID" Parameter="settingID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="BooleanValue" Parameter="booleanValue" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="StringValue" Parameter="stringValue" Type="System.String" DbType="NVarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Referrals.SP_ChangeLockRefList" Method="SP_ChangeLockRefList">
+    <Parameter Name="RefID" Parameter="refID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsLock" Parameter="isLock" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Referrals.SP_CheckLockRefList" Method="SP_CheckLockRefList">
+    <Parameter Name="RefID" Parameter="refID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsLock" Parameter="isLock" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Accounting.SP_SelectBanks" Method="SP_SelectBanks">
+    <ElementType Name="SP_SelectBanksResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Referrals.SP_SelectDocumentPatients" Method="SP_SelectDocumentPatients">
+    <Parameter Name="BeginTime" Parameter="beginTime" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="EndTime" Parameter="endTime" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="ShowNoServiceRefs" Parameter="showNoServiceRefs" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="ServicePhysIX" Parameter="servicePhysIX" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="ServiceCatIX" Parameter="serviceCatIX" Type="System.Int16" DbType="SmallInt" />
+    <ElementType Name="SP_SelectDocumentPatientsResult">
+      <Column Name="RowNumber" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PatientListID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PatientID" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(51) NOT NULL" CanBeNull="false" />
+      <Column Name="RefID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RefDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DocumentsCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Documents.SP_SelectType" Method="SP_SelectType">
+    <ElementType Name="SP_SelectTypeResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Accounting.FK_CalcRefServicesPayable" Method="FK_CalcRefServicesPayable" IsComposable="true">
+    <Parameter Name="RefID" Parameter="refID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Accounting.SP_SelectCashesStatus" Method="SP_SelectCashesStatus">
+    <Parameter Name="CashierID" Parameter="cashierID" Type="System.Int16" DbType="SmallInt" />
+    <ElementType Name="SP_SelectCashesStatusResult">
+      <Column Name="RowNo" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CashID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="CashLogID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CashStatusID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CashStatus" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="InOutBalance" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Accounting.SP_SelectCashPatients" Method="SP_SelectCashPatients">
+    <Parameter Name="BeginTime" Parameter="beginTime" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="EndTime" Parameter="endTime" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="HidePayedRefs" Parameter="hidePayedRefs" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="ShowNoServiceRefs" Parameter="showNoServiceRefs" Type="System.Boolean" DbType="Bit" />
+    <ElementType Name="SP_SelectCashPatientsResult">
+      <Column Name="PatientListID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PatientID" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(51) NOT NULL" CanBeNull="false" />
+      <Column Name="RefID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RefDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Ins1IX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Ins2IX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PatientPayable" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Accounting.SP_SelectCashiersCashes" Method="SP_SelectCashiersCashes">
+    <Parameter Name="CashierID" Parameter="cashierID" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="EditCashID" Parameter="editCashID" Type="System.Int16" DbType="SmallInt" />
+    <ElementType Name="SP_SelectCashiersCashesResult">
+      <Column Name="CashierID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="CashID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="CashIsActive" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CashName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Accounting.FK_GetCashLogStatutorySypply" Method="FK_GetCashLogStatutorySypply" IsComposable="true">
+    <Parameter Name="CashLogID" Parameter="cashLogID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Accounting.FK_CalcSumCost" Method="FK_CalcSumCost" IsComposable="true">
+    <Parameter Name="RefID" Parameter="refID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Accounting.FK_CalcSumDiscount" Method="FK_CalcSumDiscount" IsComposable="true">
+    <Parameter Name="RefID" Parameter="refID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Accounting.FK_CalcSumTransactions" Method="FK_CalcSumTransactions" IsComposable="true">
+    <Parameter Name="RefID" Parameter="refID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Schedules.SP_ChangeIsActiveAppointments" Method="SP_ChangeIsActiveAppointments">
+    <Parameter Name="AppoinmentID" Parameter="appoinmentID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsActive" Parameter="isActive" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Schedules.SP_ChangeLockAppointments" Method="SP_ChangeLockAppointments">
+    <Parameter Name="AppoinmentID" Parameter="appoinmentID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsLock" Parameter="isLock" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Schedules.SP_CheckLockAppointments" Method="SP_CheckLockAppointments">
+    <Parameter Name="AppoinmentID" Parameter="appoinmentID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsLock" Parameter="isLock" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Schedules.SP_DeleteAppointment" Method="SP_DeleteAppointment">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Schedules.SP_InsertAppointmentAddBoolData" Method="SP_InsertAppointmentAddBoolData">
+    <Parameter Name="AppointmentID" Parameter="appointmentID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FieldName" Parameter="fieldName" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Data" Parameter="data" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Schedules.SP_InsertAppointmentAddIntData" Method="SP_InsertAppointmentAddIntData">
+    <Parameter Name="AppointmentID" Parameter="appointmentID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FieldName" Parameter="fieldName" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Data" Parameter="data" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Schedules.SP_InsertAppointmentAddStringData" Method="SP_InsertAppointmentAddStringData">
+    <Parameter Name="AppointmentID" Parameter="appointmentID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FieldName" Parameter="fieldName" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Data" Parameter="data" Type="System.String" DbType="NVarChar(200)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Schedules.SP_SelectAppAdditionalColumns" Method="SP_SelectAppAdditionalColumns">
+    <Parameter Name="AppID" Parameter="appID" Type="System.Int16" DbType="SmallInt" />
+    <ElementType Name="SP_SelectAppAdditionalColumnsResult">
+      <Column Name="ApplicationIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="FieldName" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TypeID" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Lenght" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Schedules.SP_SelectAppFirstDay" Method="SP_SelectAppFirstDay">
+    <Parameter Name="AppID" Parameter="appID" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="ReturnValue" Parameter="returnValue" Type="System.DateTime" DbType="SmallDateTime" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Schedules.SP_SelectAppLastDay" Method="SP_SelectAppLastDay">
+    <Parameter Name="AppID" Parameter="appID" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="ReturnValue" Parameter="returnValue" Type="System.DateTime" DbType="SmallDateTime" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Schedules.SP_SelectAppNextDay" Method="SP_SelectAppNextDay">
+    <Parameter Name="AppID" Parameter="appID" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="Date" Parameter="date" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="ReturnValue" Parameter="returnValue" Type="System.DateTime" DbType="DateTime" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Schedules.SP_SelectAppPrevDay" Method="SP_SelectAppPrevDay">
+    <Parameter Name="AppID" Parameter="appID" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="Date" Parameter="date" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="ReturnValue" Parameter="returnValue" Type="System.DateTime" DbType="DateTime" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Schedules.SP_SelectMultiSelectItems" Method="SP_SelectMultiSelectItems">
+    <Parameter Name="ColumnID" Parameter="columnID" Type="System.Int16" DbType="SmallInt" />
+    <ElementType Name="SP_SelectMultiSelectItemsResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Settings.SP_CopyUserSetting" Method="SP_CopyUserSetting">
+    <Parameter Name="BaseUserID" Parameter="baseUserID" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="TargetUserID" Parameter="targetUserID" Type="System.Int16" DbType="SmallInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Documents.SP_SelectTemplates" Method="SP_SelectTemplates">
+    <ElementType Name="SP_SelectTemplatesResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Code" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsGroup" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsDefault" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Referrals.SP_InsertPatAddinBoolData" Method="SP_InsertPatAddinBoolData">
+    <Parameter Name="PatientListID" Parameter="patientListID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FieldName" Parameter="fieldName" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Data" Parameter="data" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Referrals.SP_InsertPatAddinStringData" Method="SP_InsertPatAddinStringData">
+    <Parameter Name="PatientListID" Parameter="patientListID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FieldName" Parameter="fieldName" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Data" Parameter="data" Type="System.String" DbType="NVarChar(200)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Referrals.SP_InsertPatAdditionalColumns" Method="SP_InsertPatAdditionalColumns">
+    <Parameter Name="Title" Parameter="title" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="TypeID" Parameter="typeID" Type="System.Byte" DbType="TinyInt" />
+    <Parameter Name="Lenght" Parameter="lenght" Type="System.Byte" DbType="TinyInt" />
+    <Parameter Name="Description" Parameter="description" Type="System.String" DbType="NVarChar(300)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Referrals.SP_InsertPatIntData" Method="SP_InsertPatIntData">
+    <Parameter Name="PatientListID" Parameter="patientListID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FieldName" Parameter="fieldName" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Data" Parameter="data" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Referrals.SP_InsertRefAddinBoolData" Method="SP_InsertRefAddinBoolData">
+    <Parameter Name="ReferralIX" Parameter="referralIX" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FieldName" Parameter="fieldName" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Data" Parameter="data" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Referrals.SP_InsertRefAddinIntData" Method="SP_InsertRefAddinIntData">
+    <Parameter Name="ReferralIX" Parameter="referralIX" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FieldName" Parameter="fieldName" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Data" Parameter="data" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Referrals.SP_InsertRefAddinStringData" Method="SP_InsertRefAddinStringData">
+    <Parameter Name="ReferralIX" Parameter="referralIX" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FieldName" Parameter="fieldName" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Data" Parameter="data" Type="System.String" DbType="NVarChar(200)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Referrals.SP_InsertRefAdditionalColumns" Method="SP_InsertRefAdditionalColumns">
+    <Parameter Name="Title" Parameter="title" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="TypeID" Parameter="typeID" Type="System.Byte" DbType="TinyInt" />
+    <Parameter Name="Lenght" Parameter="lenght" Type="System.Byte" DbType="TinyInt" />
+    <Parameter Name="Description" Parameter="description" Type="System.String" DbType="NVarChar(300)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Referrals.SP_SelectPatMultiSelectItems" Method="SP_SelectPatMultiSelectItems">
+    <Parameter Name="ColumnID" Parameter="columnID" Type="System.Int16" DbType="SmallInt" />
+    <ElementType Name="SP_SelectPatMultiSelectItemsResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Referrals.SP_SelectRefMultiSelectItems" Method="SP_SelectRefMultiSelectItems">
+    <Parameter Name="ColumnID" Parameter="columnID" Type="System.Int16" DbType="SmallInt" />
+    <ElementType Name="SP_SelectRefMultiSelectItemsResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Referrals.SP_SaveDocBinary" Method="SP_SaveDocBinary">
+    <Parameter Name="DocID" Parameter="docID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Binary" Parameter="binary" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <ElementType Name="SP_SaveDocBinaryResult">
+      <Column Name="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Referrals.SP_SelectDocBinary" Method="SP_SelectDocBinary">
+    <Parameter Name="DocID" Parameter="docID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Reports.SP_SelectBillTemplate" Method="SP_SelectBillTemplate">
+    <Parameter Name="UserIX" Parameter="userIX" Type="System.Int16" DbType="SmallInt" />
+    <ElementType Name="SP_SelectBillTemplateResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="UserIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PrintLimitation" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Schedules.SP_ClearAppointment" Method="SP_ClearAppointment">
+    <Parameter Name="SchID" Parameter="schID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Schedules.SP_SelectLogCategories" Method="SP_SelectLogCategories">
+    <ElementType Name="SP_SelectLogCategoriesResult">
+      <Column Name="ID" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Schedules.SP_SelectLogEvents" Method="SP_SelectLogEvents">
+    <Parameter Name="AppointmentID" Parameter="appointmentID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SP_SelectLogEventsResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(41)" CanBeNull="true" />
+      <Column Name="CategoryIX" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Schedules.SP_MoveLogEvents" Method="SP_MoveLogEvents">
+    <Parameter Name="PrincipleID" Parameter="principleID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DestinationID" Parameter="destinationID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

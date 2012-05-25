@@ -1,0 +1,33 @@
+CREATE TABLE PATIENTWL
+(
+	PATIENTWL_KEY	numeric NOT NULL,
+	TRIGGER_DTTM					nvarchar(14)
+		CONSTRAINT trigger_dttm_nn NOT NULL,
+	REPLICA_DTTM					nvarchar(14),
+	EVENT_TYPE              			nvarchar(32),
+	PATIENT_ID					nvarchar(32)
+		CONSTRAINT patient_nn NOT NULL,
+	PATIENT_NAME					nvarchar(32),
+	ENGLISH_NAME					nvarchar(32),
+	PATIENT_SSN					nvarchar(32),
+	PATIENT_BIRTH_DTTM				nvarchar(14),
+	PATIENT_SEX					CHAR(1),
+	PATIENT_WEIGHT					nvarchar(8),
+	PATIENT_SIZE					nvarchar(8),
+	ETHNIC_GROUP					nvarchar(32),
+	TEL_NO						nvarchar(32),
+	FAX_NO						nvarchar(32),
+	ZIPCODE						nvarchar(16),
+	ADDRESS						nvarchar(128),
+	EMAIL						nvarchar(64),
+	BLOOD_TYPE					nvarchar(8),
+	PREGNANCY_STATUS				CHAR(1),
+	CURRENT_LOCATION				CHAR(1),
+	CURRENT_RESIDENCY				nvarchar(16),
+	CURRENT_DEPARTMENT				nvarchar(32),
+	CURRENT_DOCTOR_ID				nvarchar(32),
+	CURRENT_DOCTOR_NAME				nvarchar(32),
+	ADMIT_DTTM					nvarchar(14),
+	DISCHARGE_DTTM					nvarchar(14)
+);
+commit;

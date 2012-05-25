@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{EDB3396B-2C2E-4B25-AF64-3F317A4EB985}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.WebService", "Source\SMS.WebService.csproj", "{3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Db.Layer.Manager.Sepehr", "..\Db.Layer.Manager.Sepehr\Db.Layer.Manager.Sepehr\Db.Layer.Manager.Sepehr.csproj", "{A5AB37C6-47E2-4544-A3A2-7F91753B5BC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDB3396B-2C2E-4B25-AF64-3F317A4EB985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDB3396B-2C2E-4B25-AF64-3F317A4EB985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDB3396B-2C2E-4B25-AF64-3F317A4EB985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDB3396B-2C2E-4B25-AF64-3F317A4EB985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EED0961-FBDB-4EBE-AAC1-75BC4F6FB854}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5AB37C6-47E2-4544-A3A2-7F91753B5BC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5AB37C6-47E2-4544-A3A2-7F91753B5BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5AB37C6-47E2-4544-A3A2-7F91753B5BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5AB37C6-47E2-4544-A3A2-7F91753B5BC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

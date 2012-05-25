@@ -1,0 +1,647 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2EA2217-E227-43F7-AA00-BF6DA249BBED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sepehr</RootNamespace>
+    <AssemblyName>Sepehr</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>SepehrIcon.ico</ApplicationIcon>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <SignManifests>false</SignManifests>
+    <SignAssembly>false</SignAssembly>
+    <ManifestCertificateThumbprint>13525A72B1F971A21F032599D57B7B65F9F4A3F3</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Sepehr IMS Main Application_TemporaryKey.pfx</ManifestKeyFile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <FileAlignment>512</FileAlignment>
+    <DebugSymbols>true</DebugSymbols>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ChilkatDotNet2, Version=8.5.0.0, Culture=neutral, PublicKeyToken=eb5fc1fc52ef09bd, processorArchitecture=x86">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="DevComponents.DotNetBar2, Version=7.7.0.4, Culture=neutral, PublicKeyToken=5fd520d36328f741, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Interop.NovinAfzar, Version=9.0.0.0, Culture=neutral, PublicKeyToken=f973fbbb2077d5f9, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Negar.Bills.Manager, Version=2.3.2.19, Culture=neutral, PublicKeyToken=b4b068709de94ab0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\4.Components\Bills.Manager\Bills.Manager\bin\Debug\Negar.Bills.Manager.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Negar.Calendar, Version=2.2.0.5, Culture=neutral, PublicKeyToken=145b7e473c8af181, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\4.Components\Calendar\Calendar\bin\Debug\Negar.Calendar.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Negar.CD.Burner, Version=1.0.0.1, Culture=neutral, PublicKeyToken=d3532a17236832c1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\4.Components\CD.Burner\CD.Burner\bin\Debug\Negar.CD.Burner.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Negar.ConnectionString.Manager, Version=2.2.0.5, Culture=neutral, PublicKeyToken=8591c648ca881033, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\4.Components\ConnectionString.Manager\ConnectionString.Manager\bin\Debug\Negar.ConnectionString.Manager.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Negar.Db.Layer.Manager, Version=2.3.3.28, Culture=neutral, PublicKeyToken=05adbdc7e690569f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\4.Components\Db.Layer.Manager\Db.Layer.Manager\bin\Debug\Negar.Db.Layer.Manager.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Negar.Db.Layer.Manager.Sepehr, Version=2.4.0.39, Culture=neutral, PublicKeyToken=2c485803badad6a0, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\4.Components\Db.Layer.Manager.Sepehr\Db.Layer.Manager.Sepehr\bin\Debug\Negar.Db.Layer.Manager.Sepehr.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Negar.DirectX.Capture.Manager, Version=1.0.0.1, Culture=neutral, PublicKeyToken=1b932e3c240dbe37, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\4.Components\DirectX.Manager\DirectX.Capture.Manager\bin\Debug\Negar.DirectX.Capture.Manager.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Negar.DirectX.Manager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0261dd00f7b66d0b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\4.Components\DirectX.Manager\DirectX.Manager\bin\Debug\Negar.DirectX.Manager.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Negar.Dynamic.Assembly.Manager, Version=1.0.0.16, Culture=neutral, PublicKeyToken=997ee20e80970eef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\4.Components\Dynamic.Assembly.Manager\Dynamic.Assembly.Manager\bin\Debug\Negar.Dynamic.Assembly.Manager.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Negar.Grid.Printing, Version=2.3.4.31, Culture=neutral, PublicKeyToken=889de89d3c20ee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\4.Components\Grid.Printing\Grid.Printing\bin\Debug\Negar.Grid.Printing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Negar.Help.Manager, Version=2.1.0.3, Culture=neutral, PublicKeyToken=3400f1278b418aa3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\4.Components\Help.Manager\Help.Manager\bin\Debug\Negar.Help.Manager.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Negar.License.Manager, Version=1.3.0.3, Culture=neutral, PublicKeyToken=0dbe34f4a48e0e11, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\4.Components\License.Manager\License.Manager\bin\Debug\Negar.License.Manager.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Negar.Log.Manager, Version=2.3.0.3, Culture=neutral, PublicKeyToken=7d935595bdbb98a2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\4.Components\Log.Manager\Log.Manager\bin\Debug\Negar.Log.Manager.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Negar.Medical.Video.Capture, Version=1.2.3.9, Culture=neutral, PublicKeyToken=dd6094eed36cb310, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\4.Components\DirectX.Manager\Medical.Video.Capture\bin\Debug\Negar.Medical.Video.Capture.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Negar.MessageBox, Version=2.1.0.0, Culture=neutral, PublicKeyToken=dfb97cb8308c094f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\4.Components\MessageBox\MessageBox\bin\Debug\Negar.MessageBox.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Negar.Security.Forms, Version=2.3.2.13, Culture=neutral, PublicKeyToken=2082fd47a73736eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\4.Components\Security.Forms\Security.Forms\bin\Debug\Negar.Security.Forms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Negar.SMS.Manager, Version=1.0.0.2, Culture=neutral, PublicKeyToken=dffe8fe90208e36b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\4.Components\SMS.Manager\SMS.Manager\bin\Debug\Negar.SMS.Manager.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Negar.User.Security.Manager, Version=2.2.0.1, Culture=neutral, PublicKeyToken=07c8b4ac8802f45f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\4.Components\User.Security.Manager\User.Security.Manager\bin\Debug\Negar.User.Security.Manager.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sepehr.Forms.Account, Version=2.3.4.35, Culture=neutral, PublicKeyToken=dcc3f08507c87586, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\8.Forms\Account\Source\bin\Debug\Sepehr.Forms.Account.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sepehr.Forms.Admission, Version=2.3.6.60, Culture=neutral, PublicKeyToken=7b8ea6fbc8251556, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\8.Forms\Admission\Source\bin\Debug\Sepehr.Forms.Admission.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sepehr.Forms.Cash, Version=2.3.2.14, Culture=neutral, PublicKeyToken=f7681f82a05894fd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\8.Forms\Cash\Source\bin\Debug\Sepehr.Forms.Cash.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sepehr.Forms.Documents, Version=2.5.2.53, Culture=neutral, PublicKeyToken=eef734bcae4de234, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\8.Forms\Documents\Source\bin\Debug\Sepehr.Forms.Documents.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sepehr.Forms.Reports, Version=2.3.12.49, Culture=neutral, PublicKeyToken=9abe8a95c0ef8f06, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\8.Forms\Reports\Source\bin\Debug\Sepehr.Forms.Reports.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sepehr.Forms.Schedules, Version=2.3.6.44, Culture=neutral, PublicKeyToken=d29b99480dc83f6d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\8.Forms\Schedule\Source\bin\Debug\Sepehr.Forms.Schedules.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sepehr.Settings.Accounts, Version=2.3.2.3, Culture=neutral, PublicKeyToken=b63dc9bb51d8ad5b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\7.Settings.Forms\Accounts\Source\bin\Debug\Sepehr.Settings.Accounts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sepehr.Settings.BillTemplates, Version=2.3.5.32, Culture=neutral, PublicKeyToken=54b2dcbad92d35ac, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\7.Settings.Forms\BillTemplates\Source\bin\Debug\Sepehr.Settings.BillTemplates.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sepehr.Settings.Cash, Version=2.3.0.6, Culture=neutral, PublicKeyToken=37e674cd7866d711, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\7.Settings.Forms\Cash\Source\bin\Debug\Sepehr.Settings.Cash.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sepehr.Settings.Documents, Version=2.3.2.17, Culture=neutral, PublicKeyToken=a6104812a0ec224f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\7.Settings.Forms\Documents\Source\bin\Debug\Sepehr.Settings.Documents.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sepehr.Settings.Insurances, Version=2.3.1.13, Culture=neutral, PublicKeyToken=9fe92fae6f82b4a6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\7.Settings.Forms\Insurances\Source\bin\Debug\Sepehr.Settings.Insurances.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sepehr.Settings.PACSIntegration, Version=2.2.0.2, Culture=neutral, PublicKeyToken=cb1cb7064c1f9379, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\7.Settings.Forms\PACSIntegration\Source\bin\Debug\Sepehr.Settings.PACSIntegration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sepehr.Settings.Patients, Version=2.3.1.4, Culture=neutral, PublicKeyToken=ec77ccde3d7abd7e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\7.Settings.Forms\Patients\Source\bin\Debug\Sepehr.Settings.Patients.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sepehr.Settings.Referrals, Version=2.3.3.12, Culture=neutral, PublicKeyToken=0fa7b36a90fea07c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\7.Settings.Forms\Referrals\Source\bin\Debug\Sepehr.Settings.Referrals.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sepehr.Settings.Schedules, Version=2.3.1.13, Culture=neutral, PublicKeyToken=117aa94a4b505c35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\7.Settings.Forms\Schedules\Source\bin\Debug\Sepehr.Settings.Schedules.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sepehr.Settings.Services, Version=2.3.0.11, Culture=neutral, PublicKeyToken=d8afced9433be29b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\7.Settings.Forms\Services\Source\bin\Debug\Sepehr.Settings.Services.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sepehr.Settings.SMS, Version=2.1.0.1, Culture=neutral, PublicKeyToken=4ef9cdc8009cccea, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\7.Settings.Forms\SMS\Source\bin\Debug\Sepehr.Settings.SMS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sepehr.SMS.Dashboard, Version=1.2.0.1, Culture=neutral, PublicKeyToken=75dd1fc2399a2af9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\4.Components\SMS.Dashboard\SMS.Dashboard\bin\Debug\Sepehr.SMS.Dashboard.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Administration\RemoveData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administration\RemoveData.Designer.cs">
+      <DependentUpon>RemoveData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administration\RebuildDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administration\RebuildDatabase.Designer.cs">
+      <DependentUpon>RebuildDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help\LicenseList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help\LicenseList.Designer.cs">
+      <DependentUpon>LicenseList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Search\AdvanceSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\AdvanceSearch.Designer.cs">
+      <DependentUpon>AdvanceSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administration\Backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administration\Backup.Designer.cs">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help\ContactUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help\ContactUs.Designer.cs">
+      <DependentUpon>ContactUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administration\EventViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administration\EventViewer.Designer.cs">
+      <DependentUpon>EventViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administration\Restore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administration\Restore.Designer.cs">
+      <DependentUpon>Restore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Search\SearchColumns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\SearchColumns.Designer.cs">
+      <DependentUpon>SearchColumns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SpecialReports\List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SpecialReports\List.Designer.cs">
+      <DependentUpon>List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserSettings\SelectUserForCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserSettings\SelectUserForCopy.Designer.cs">
+      <DependentUpon>SelectUserForCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserSettings\SelectUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserSettings\SelectUser.Designer.cs">
+      <DependentUpon>SelectUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserSettings\Manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserSettings\Manage.Designer.cs">
+      <DependentUpon>Manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SepehrMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SepehrMainForm.Designer.cs">
+      <DependentUpon>SepehrMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Forms\Help\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartUpClass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Administration\RemoveData.resx">
+      <DependentUpon>RemoveData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administration\RebuildDatabase.resx">
+      <DependentUpon>RebuildDatabase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help\LicenseList.resx">
+      <DependentUpon>LicenseList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Search\AdvanceSearch.resx">
+      <DependentUpon>AdvanceSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administration\Backup.resx">
+      <DependentUpon>Backup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help\ContactUs.resx">
+      <DependentUpon>ContactUs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administration\EventViewer.resx">
+      <DependentUpon>EventViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administration\Restore.resx">
+      <DependentUpon>Restore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Search\SearchColumns.resx">
+      <DependentUpon>SearchColumns.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SepehrMainForm.resx">
+      <DependentUpon>SepehrMainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpecialReports\List.resx">
+      <DependentUpon>List.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserSettings\SelectUserForCopy.resx">
+      <DependentUpon>SelectUserForCopy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserSettings\SelectUser.resx">
+      <DependentUpon>SelectUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserSettings\Manage.resx">
+      <DependentUpon>Manage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangeLog.txt" />
+    <None Include="App.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Resources\Performers.ico" />
+    <None Include="Resources\CashMonitor.png" />
+    <None Include="Resources\Licenses.ico" />
+    <None Include="Resources\RPNLogoSmall.png" />
+    <None Include="Resources\Style.ico" />
+    <None Include="Resources\USBRestricted.ico" />
+    <None Include="Resources\USBOpen.ico" />
+    <None Include="Resources\Word.png" />
+    <None Include="Resources\SysSecurity1.ico" />
+    <None Include="Resources\GroupsManage.png" />
+    <None Include="Resources\ReportMenu.ico" />
+    <None Include="Resources\Collapse.png" />
+    <None Include="Resources\Expand.png" />
+    <None Include="Resources\Ascending.png" />
+    <None Include="Resources\Descending.png" />
+    <None Include="Resources\Job.ico" />
+    <None Include="Resources\Address.ico" />
+    <None Include="Resources\Data.ico" />
+    <None Include="Resources\SpecianReports.ico" />
+    <None Include="Resources\DesignableReports.ico" />
+    <None Include="Resources\ReportManage.ico" />
+    <None Include="Resources\Physician.ico" />
+    <None Include="Resources\Bank.ico" />
+    <None Include="Resources\Money.png" />
+    <None Include="Resources\Cash.png" />
+    <None Include="Resources\Cost.ico" />
+    <None Include="Resources\Discount.ico" />
+    <None Include="Resources\Left.png" />
+    <None Include="Resources\Right.png" />
+    <None Include="Resources\SMS Logo 1.png" />
+    <None Include="Resources\SMS Logo 2.png" />
+    <None Include="Resources\CDBurnerStart.ico" />
+    <None Include="Resources\Movie.ico" />
+    <None Include="Resources\Language.ico" />
+    <None Include="Resources\Plus.gif" />
+    <None Include="Resources\Blank.bmp" />
+    <None Include="Resources\Minus.gif" />
+    <Content Include="SepehrIcon.ico" />
+    <None Include="Resources\RefLastDoc.png" />
+    <None Include="Resources\Setting2.ico" />
+    <None Include="Resources\Setting1.ico" />
+    <None Include="Resources\ReportManagement.ico" />
+    <None Include="Resources\ReportAccounting.ico" />
+    <None Include="Resources\Restore.ico" />
+    <None Include="Resources\RebuildDatabase.ico" />
+    <None Include="Resources\EventsLogs.ico" />
+    <None Include="Resources\Backup.ico" />
+    <None Include="Resources\ServicesSettings.ico" />
+    <None Include="Resources\AccountSetting.ico" />
+    <None Include="Resources\UsersSettings.ico" />
+    <None Include="Resources\SetUsersInGroups.ico" />
+    <None Include="Resources\Password.ico" />
+    <None Include="Resources\ChangeUser.ico" />
+    <None Include="Resources\AllowedUsers.ico" />
+    <None Include="Resources\ACLManage.ico" />
+    <None Include="Resources\ACLDiagram.ico" />
+    <None Include="Resources\SchSearchPatSch.ico" />
+    <None Include="Resources\SchSearchApps.ico" />
+    <None Include="Resources\Sch.ico" />
+    <None Include="Resources\PrintSettings.ico" />
+    <None Include="Resources\PrintPreview.ico" />
+    <None Include="Resources\PrintGrid.ico" />
+    <None Include="Resources\PrintBill.ico" />
+    <None Include="Resources\ExportToExcel.ico" />
+    <None Include="Resources\BillsTemplate.ico" />
+    <None Include="Resources\PatLocations.ico" />
+    <None Include="Resources\PatLastRef.ico" />
+    <None Include="Resources\PatientID.ico" />
+    <None Include="Resources\PatientFile.ico" />
+    <None Include="Resources\NewRef.ico" />
+    <None Include="Resources\NewPat.ico" />
+    <None Include="Resources\UpLarge.ico" />
+    <None Include="Resources\RightLarge.ico" />
+    <None Include="Resources\LeftLarge.ico" />
+    <None Include="Resources\DownLarge.ico" />
+    <None Include="Resources\CashReport.ico" />
+    <None Include="Resources\CashManage.ico" />
+    <None Include="Resources\RefAccount.ico" />
+    <None Include="Resources\RecieveMoney.ico" />
+    <None Include="Resources\PayMoney.ico" />
+    <None Include="Resources\Payment.ico" />
+    <None Include="Resources\InsLogo.ico" />
+    <None Include="Resources\Search.ico" />
+    <None Include="Resources\Save.ico" />
+    <None Include="Resources\Refresh.ico" />
+    <None Include="Resources\InfoSmall.ico" />
+    <None Include="Resources\HowTo.ico" />
+    <None Include="Resources\HelpMed.ico" />
+    <None Include="Resources\FreeLockedRow.ico" />
+    <None Include="Resources\Find.ico" />
+    <None Include="Resources\EditLarge.ico" />
+    <None Include="Resources\Deny.ico" />
+    <None Include="Resources\Copy.ico" />
+    <None Include="Resources\ContactUs.ico" />
+    <None Include="Resources\Config.ico" />
+    <None Include="Resources\Allow.ico" />
+    <None Include="Resources\AddinFields.ico" />
+    <None Include="Resources\Browse.ico" />
+    <None Include="Resources\SchInfo.png" />
+    <None Include="Resources\SchHolidays.png" />
+    <None Include="Resources\Schedules.png" />
+    <None Include="Resources\SchEditApp.png" />
+    <None Include="Resources\SchClearShift.png" />
+    <None Include="Resources\SchAdmitRef.png" />
+    <None Include="Resources\SchAdmitPat.png" />
+    <None Include="Resources\SchAdd.png" />
+    <None Include="Resources\PhysicianLogo.png" />
+    <None Include="Resources\PatRef.png" />
+    <None Include="Resources\PatientNameAddLogo.png" />
+    <None Include="Resources\PatEdit.png" />
+    <None Include="Resources\RightMed2.png" />
+    <None Include="Resources\LeftMed2.png" />
+    <None Include="Resources\RefDocuments.png" />
+    <None Include="Resources\DocumentSetting.png" />
+    <None Include="Resources\DocumentEdit.png" />
+    <None Include="Resources\DocumentDelete.png" />
+    <None Include="Resources\DocumentCheck.png" />
+    <None Include="Resources\DocumentAdd.png" />
+    <None Include="Resources\DocToolbar.png" />
+    <None Include="Resources\DocTemplates.png" />
+    <None Include="Resources\MoneyLogo.png" />
+    <None Include="Resources\Discounts.png" />
+    <None Include="Resources\Costs.png" />
+    <None Include="Resources\SepehrLogo.png" />
+    <None Include="Resources\RPNLogo.png" />
+    <None Include="Resources\SepehrIcon.ico" />
+    <None Include="Resources\SelectNone.png" />
+    <None Include="Resources\SelectAll.png" />
+    <None Include="Resources\Paste.png" />
+    <None Include="Resources\InfoLarge.png" />
+    <None Include="Resources\Help.png" />
+    <None Include="Resources\EditSmall.png" />
+    <None Include="Resources\Dicom.jpg" />
+    <None Include="Resources\DeleteSmall.png" />
+    <None Include="Resources\DeleteMed.png" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\Cut.png" />
+    <None Include="Resources\Copy.png" />
+    <None Include="Resources\Cancel.png" />
+    <None Include="Resources\Automatic.gif" />
+    <None Include="Resources\Apply.png" />
+    <None Include="Resources\AddSmall.png" />
+    <None Include="Resources\AddMed.png" />
+    <None Include="Resources\Accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,124 @@
+<SmartAssemblyProject ProjectID="{0e71a991-87a9-4a41-81ef-8fff92d1fde9}" Version="2.0">
+    <MainAssemblyFileName>.\Source\bin\Release\Pardis NMR Listener.exe</MainAssemblyFileName>
+    <Configuration Name="Release">
+        <ApplicationName />
+        <Destination DestinationFileName=".\Pardis NMR Listener.exe" />
+        <Assemblies>
+            <Assembly AssemblyName="DevComponents.DotNetBar2, Culture=neutral, PublicKeyToken=5fd520d36328f741">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.MessageBox, Culture=neutral, PublicKeyToken=dfb97cb8308c094f">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.User.Security.Manager, Culture=neutral, PublicKeyToken=07c8b4ac8802f45f">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Db.Layer.Manager, Culture=neutral, PublicKeyToken=05adbdc7e690569f">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Log.Manager, Culture=neutral, PublicKeyToken=7d935595bdbb98a2">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Calendar, Culture=neutral, PublicKeyToken=145b7e473c8af181">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.ConnectionString.Manager, Culture=neutral, PublicKeyToken=8591c648ca881033">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.License.Manager, Culture=neutral, PublicKeyToken=0dbe34f4a48e0e11">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Interop.NovinAfzar, Culture=neutral, PublicKeyToken=f973fbbb2077d5f9">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Db.Layer.Manager.Sepehr, Culture=neutral, PublicKeyToken=2c485803badad6a0">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="ChilkatDotNet2, Culture=neutral, PublicKeyToken=eb5fc1fc52ef09bd">
+                <Merging />
+                <Embedding Compress="0" Embed="1" GAC="1" />
+            </Assembly>
+            <Assembly AssemblyName="Pardis NMR Listener, Culture=neutral, PublicKeyToken=null">
+                <Merging>
+                    <ResourcesCompression />
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesPruning />
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="Microsoft.Office.Interop.Word, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+                <Embedding Compress="0" Embed="0" GAC="1" />
+            </Assembly>
+            <Assembly AssemblyName="Microsoft.Vbe.Interop, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+                <Embedding Compress="0" Embed="0" GAC="1" />
+            </Assembly>
+            <Assembly AssemblyName="office, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+                <Embedding Compress="0" Embed="0" GAC="1" />
+            </Assembly>
+        </Assemblies>
+        <Options>
+            <Obfuscation FieldsNameMangling="2" NameMangling="2" />
+            <ExceptionReporting />
+            <StrongNameSigning KeyFileName=".\Source\bin\Release\Strong Key.snk" Sign="1" />
+            <OtherProtections />
+            <StringsEncoding />
+            <OtherOptimizations />
+            <Debugging />
+        </Options>
+    </Configuration>
+</SmartAssemblyProject>

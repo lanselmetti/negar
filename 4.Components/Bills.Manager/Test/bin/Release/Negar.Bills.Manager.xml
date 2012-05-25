@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Negar.Bills.Manager</name>
+    </assembly>
+    <members>
+        <member name="T:Sepehr.BillPrintManager">
+            <summary>
+            كلاس مدیریت چاپ و پیش نمایش قالب های چاپ
+            </summary>
+        </member>
+        <member name="F:Sepehr.BillPrintManager._SubKeyBillDefaultPrinter">
+            <summary>
+            كلید ذخیره سازی اطلاعات پرینتر پیش فرض قالب قبوض در رجیستری
+            </summary>
+        </member>
+        <member name="F:Sepehr.BillPrintManager._UsedBillsBinaryList">
+            <summary>
+            لیست اسامی قالب های قبوض بر اساس سطح دسترسی كاربر
+            </summary>
+        </member>
+        <member name="F:Sepehr.BillPrintManager._CurrentUserBillTemplatesList">
+            <summary>
+            لیست قالب های قبوض قابل استفاده توسط كاربر جاری
+            </summary>
+        </member>
+        <member name="M:Sepehr.BillPrintManager.RefBillPrintPreview(System.Int32,System.Int16)">
+            <summary>
+            تابع پیش نمایش از قبض برای مراجعه انتخاب شده
+            </summary>
+            <param name="RefID">كلید مراجعه</param>
+            <param name="BillTemplateID">كلید قالب قبض</param>
+            <returns>صحت انجان كار</returns>
+        </member>
+        <member name="M:Sepehr.BillPrintManager.RefBillPrint(System.Int32,System.Int16,System.Int16)">
+            <summary>
+            تابع چاپ قبوض برای یك مراجعه
+            </summary>
+            <param name="RefID">كلید مراجعه</param>
+            <param name="BillTemplateID">كلید قالب قبض</param>
+            <param name="CopyCount">تعداد رونوشت</param>
+        </member>
+        <member name="M:Sepehr.BillPrintManager.RefBillPrint(System.Collections.Generic.List{System.Int32},System.Int16,System.Int16,System.Boolean)">
+            <summary>
+            تابع چاپ جمعی قبوض
+            </summary>
+        </member>
+        <member name="M:Sepehr.BillPrintManager.PrintDocument(System.Boolean,System.Int32,System.Int16,System.Int32)">
+            <summary>
+            روالی برای آماده سازی یك قالب قبض برای چاپ در یك مراجعه بیمار
+            </summary>
+        </member>
+        <member name="M:Sepehr.BillPrintManager.CheckUserPrintLimitation(System.Int16,System.Int32)">
+            <summary>
+            تابع خواندن دسترسی داشتن كاربر جاری برای چاپ یك قبض برای یك مراجعه
+            </summary>
+        </member>
+        <member name="M:Sepehr.BillPrintManager.ReadBillTemplateFile(System.Int16,System.String)">
+            <summary>
+            تابع خواندن فایل قالب قبض
+            </summary>
+        </member>
+        <member name="M:Sepehr.BillPrintManager.FindExcelData(Microsoft.Office.Interop.Excel._Worksheet,System.String)">
+            <summary>
+            تابع جستجوی یك مقدار در یك شیء اكسل
+            </summary>
+            <param name="worksheet">جدول اكسل</param>
+            <param name="ToSearch">فرمول جستجو</param>
+        </member>
+        <member name="M:Sepehr.BillPrintManager.ReplaceText(Microsoft.Office.Interop.Excel._Worksheet,System.String,System.String)">
+            <summary>
+            تابع جایگذاری اطلاعات مراجعه داخل قالب قبض
+            </summary>
+            <param name="worksheet">جدول اكسل</param>
+            <param name="ToSearch">فرمول جستجو</param>
+            <param name="ToReplace">مقدار جانشانی</param>
+        </member>
+        <member name="M:Sepehr.BillPrintManager.CloseExcelApp(Microsoft.Office.Interop.Excel._Application,System.String)">
+            <summary>
+            روالی برای بستن برنامه اكسل برای چاپ قبض
+            </summary>
+        </member>
+        <member name="M:Sepehr.BillPrintManager.GetPrtNameFromReg(System.String)">
+            <summary>
+            تابع خواندن نام پرینتر پیش فرض به ازای كلید قالب قبض
+            </summary>
+            <returns>نام پرینتر پیش فرض</returns>
+            <remarks>در صورت وجود خطا در نام پرینتر مقدار خالی باز گردانده می شود</remarks>
+        </member>
+        <member name="P:Sepehr.BillPrintManager.CurrentUserBillTemplatesList">
+            <summary>
+            لیست قالب های قبض قابل استفاده توسط كاربر جاری
+            </summary>
+        </member>
+    </members>
+</doc>

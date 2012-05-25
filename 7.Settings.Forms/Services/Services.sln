@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{47796417-D5A7-4703-9306-CF264C18F586}"
+	ProjectSection(ProjectDependencies) = postProject
+		{21866066-C5BB-4885-B245-CB832DEFC265} = {21866066-C5BB-4885-B245-CB832DEFC265}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Settings.Services", "Source\Settings.Services.csproj", "{21866066-C5BB-4885-B245-CB832DEFC265}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47796417-D5A7-4703-9306-CF264C18F586}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47796417-D5A7-4703-9306-CF264C18F586}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47796417-D5A7-4703-9306-CF264C18F586}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47796417-D5A7-4703-9306-CF264C18F586}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21866066-C5BB-4885-B245-CB832DEFC265}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21866066-C5BB-4885-B245-CB832DEFC265}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21866066-C5BB-4885-B245-CB832DEFC265}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21866066-C5BB-4885-B245-CB832DEFC265}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

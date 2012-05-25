@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{32749429-E6EE-4427-BC33-B44A9DE71BE4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sepehr.Settings.BillTemplates</RootNamespace>
+    <AssemblyName>Sepehr.Settings.BillTemplates</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>SepehrLogo.ico</ApplicationIcon>
+    <StartupObject>
+    </StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Settings.BillTemplates.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Sepehr.Settings.BillTemplates.XML</DocumentationFile>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=7.7.0.4, Culture=neutral, PublicKeyToken=5fd520d36328f741, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Negar.Db.Layer.Manager, Version=2.3.3.28, Culture=neutral, PublicKeyToken=05adbdc7e690569f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Db.Layer.Manager\Db.Layer.Manager\bin\Debug\Negar.Db.Layer.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Db.Layer.Manager.Sepehr, Version=2.4.0.35, Culture=neutral, PublicKeyToken=2c485803badad6a0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Db.Layer.Manager.Sepehr\Db.Layer.Manager.Sepehr\bin\Debug\Negar.Db.Layer.Manager.Sepehr.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Help.Manager, Version=2.1.0.3, Culture=neutral, PublicKeyToken=3400f1278b418aa3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Help.Manager\Help.Manager\bin\Debug\Negar.Help.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Log.Manager, Version=2.3.0.3, Culture=neutral, PublicKeyToken=7d935595bdbb98a2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Log.Manager\Log.Manager\bin\Debug\Negar.Log.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.MessageBox, Version=2.1.0.0, Culture=neutral, PublicKeyToken=dfb97cb8308c094f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\MessageBox\MessageBox\bin\Debug\Negar.MessageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Security.Forms, Version=2.3.2.13, Culture=neutral, PublicKeyToken=2082fd47a73736eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Security.Forms\Security.Forms\bin\Debug\Negar.Security.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BillDefaultPrinter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillDefaultPrinter.Designer.cs">
+      <DependentUpon>BillDefaultPrinter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillUserAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillUserAccess.Designer.cs">
+      <DependentUpon>BillUserAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddinFieldsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddinFieldsList.Designer.cs">
+      <DependentUpon>AddinFieldsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillTemplates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillTemplates.Designer.cs">
+      <DependentUpon>BillTemplates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillTemplatesManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillTemplatesManage.Designer.cs">
+      <DependentUpon>BillTemplatesManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillServiceGroupsExclude.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillServiceGroupsExclude.Designer.cs">
+      <DependentUpon>BillServiceGroupsExclude.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BillDefaultPrinter.resx">
+      <DependentUpon>BillDefaultPrinter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillTemplates.resx">
+      <DependentUpon>BillTemplates.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillTemplatesManage.resx">
+      <DependentUpon>BillTemplatesManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillUserAccess.resx">
+      <DependentUpon>BillUserAccess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddinFieldsList.resx">
+      <DependentUpon>AddinFieldsList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillServiceGroupsExclude.resx">
+      <DependentUpon>BillServiceGroupsExclude.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangeLog.txt" />
+    <None Include="Resources\Accept.png" />
+    <None Include="Resources\Cancel.png" />
+    <None Include="Resources\Help.png" />
+    <None Include="Resources\SelectAll.png" />
+    <None Include="Resources\SelectNone.png" />
+    <None Include="Resources\SepehrIcon.ico" />
+    <None Include="Resources\AddMed.png" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\EditSmall.png" />
+    <None Include="Resources\PrintGrid.ico" />
+    <None Include="Resources\ExportToExcel.ico" />
+    <None Include="Resources\Refresh.ico" />
+    <None Include="Resources\RightMed2.png" />
+    <None Include="Resources\RightMed1.png" />
+    <None Include="Resources\LeftMed1.png" />
+    <None Include="Resources\LeftMed2.png" />
+    <None Include="Resources\UsersSettings.ico" />
+    <None Include="Resources\AddinFields.ico" />
+    <None Include="Resources\PrintSettings.ico" />
+    <None Include="Resources\PrintPreview.ico" />
+    <None Include="Resources\Copy.png" />
+    <None Include="Resources\Browse.ico" />
+    <None Include="Settings.BillTemplates.snk" />
+    <Content Include="SepehrLogo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>C:\Projects\Negar\5.Tools\GacInstaller\GacInstaller.exe u $(TargetName)</PreBuildEvent>
+    <PostBuildEvent>C:\Projects\Negar\5.Tools\GacInstaller\GacInstaller.exe i "$(TargetPath)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

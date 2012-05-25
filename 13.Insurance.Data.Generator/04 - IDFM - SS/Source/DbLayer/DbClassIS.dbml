@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="ImagingSystem" Class="DbClassIS" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Function Name="Services.SP_SelectCategories" Method="SP_SelectCategories">
+    <ElementType Name="SP_SelectCategoriesResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Insurances.SP_SelectInsFullData" Method="SP_SelectInsFullData">
+    <ElementType Name="SP_SelectInsFullDataResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="BaseIsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="IsIns1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsIns2" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ContractStartDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="ContractEndDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="PatientPercent" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="InsurerPartLimit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ins2FormulasIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Services.SP_SelectServicesList" Method="SP_SelectServicesList">
+    <ElementType Name="SP_SelectServicesListResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="CategoryIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="CategoryName" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="PriceFree" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PriceGov" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="PatientsSystem" Class="DbLayer" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="ConnectionString" ConnectionString="Data Source=.\sqldeveloper;Initial Catalog=PatientsSystem;Integrated Security=True" Provider="System.Data.SqlClient" />
+  <Table Name="Security.Users" Member="UsersLists">
+    <Type Name="UsersList">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="MustChangePassword" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="UsersList_UsersInGroup" Member="UsersInGroups" ThisKey="ID" OtherKey="UserIX" Type="UsersInGroup" />
+      <Association Name="UsersList_PermissionsUsers" Member="PermissionsUsers" ThisKey="ID" OtherKey="UserIX" Type="PermissionsUsers" />
+      <Association Name="UsersList_DbEvent" Member="DbEvents" Storage="_Events" ThisKey="ID" OtherKey="UserIX" Type="DbEvent" />
+    </Type>
+  </Table>
+  <Table Name="Security.UsersInGroups" Member="UsersInGroups">
+    <Type Name="UsersInGroup">
+      <Column Name="UserIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="GroupIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="UsersList_UsersInGroup" Member="UsersList" Storage="_User" ThisKey="UserIX" OtherKey="ID" Type="UsersList" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="UsersGroups_UsersInGroup" Member="UsersGroups" Storage="_Group" ThisKey="GroupIX" OtherKey="ID" Type="UsersGroups" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Security.Groups" Member="UsersGroups">
+    <Type Name="UsersGroups">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="UsersGroups_UsersInGroup" Member="UsersInGroups" ThisKey="ID" OtherKey="GroupIX" Type="UsersInGroup" />
+      <Association Name="UsersGroups_PermissionsGroups" Member="PermissionsGroups" ThisKey="ID" OtherKey="GroupIX" Type="PermissionsGroups" />
+    </Type>
+  </Table>
+  <Table Name="Security.PermissionsGroups" Member="PermissionsGroups">
+    <Type Name="PermissionsGroups">
+      <Column Name="GroupIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ACLIX" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IsAllowed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UsersGroups_PermissionsGroups" Member="UsersGroups" Storage="_Group" ThisKey="GroupIX" OtherKey="ID" Type="UsersGroups" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Security.PermissionsUsers" Member="PermissionsUsers">
+    <Type Name="PermissionsUsers">
+      <Column Name="UserIX" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ACLIX" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IsAllowed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsPremiered" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UsersList_PermissionsUsers" Member="UsersList" Storage="_User" ThisKey="UserIX" OtherKey="ID" Type="UsersList" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Clinic.Applications" Member="HISApplications">
+    <Type Name="HISApplication">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EnglishName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LocalizedName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Edition" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Version" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DatabaseName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DbVersion" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="HISApplication_DbEvent" Member="DbEvents" Storage="_Events" ThisKey="ID" OtherKey="ApplicationIX" Type="DbEvent" />
+    </Type>
+  </Table>
+  <Table Name="Clinic.RefPhysiciansSpecs" Member="RefPhysiciansSpecs">
+    <Type Name="RefPhysiciansSpec">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="RefPhysiciansSpec_RefPhysician" Member="RefPhysicians" ThisKey="ID" OtherKey="SpecialtyIX" Type="RefPhysician" />
+    </Type>
+  </Table>
+  <Table Name="Locations.Cities" Member="Cities">
+    <Type Name="City">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="StateIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Association Name="City_PatDetail" Member="PatDetails" ThisKey="ID" OtherKey="CityIX" Type="PatDetail" />
+      <Association Name="State_City" Member="State" ThisKey="StateIX" OtherKey="ID" Type="State" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Locations.Countries" Member="Countries">
+    <Type Name="Country">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="Country_State" Member="States" ThisKey="ID" OtherKey="CountryIX" Type="State" />
+    </Type>
+  </Table>
+  <Table Name="Locations.States" Member="States">
+    <Type Name="State">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="CountryIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Association Name="State_City" Member="Cities" ThisKey="ID" OtherKey="StateIX" Type="City" />
+      <Association Name="Country_State" Member="Country" ThisKey="CountryIX" OtherKey="ID" Type="Country" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Patients.Jobs" Member="PatJobs">
+    <Type Name="PatJob">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="PatJob_PatDetail" Member="PatDetails" ThisKey="ID" OtherKey="JobIX" Type="PatDetail" />
+    </Type>
+  </Table>
+  <Table Name="Patients.NamesBank" Member="NamesBanks">
+    <Type Name="NamesBank">
+      <Column Name="LocaleName" Type="System.String" DbType="NVarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EnglishName" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="IsFirstName" Type="System.Boolean" DbType="Bit NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="Patients.List" Member="PatLists">
+    <Type Name="PatList">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PatientID" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="LockDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="IsMale" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BirthDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Association Name="PatList_PatDetail" Member="PatDetail" ThisKey="ID" OtherKey="PatientListIX" Type="PatDetail" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="Clinic.Insurances" Member="Insurances">
+    <Type Name="Insurance">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="Patients.Details" Member="PatDetails">
+    <Type Name="PatDetail">
+      <Column Name="PatientListIX" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EngFirstName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="EngLastName" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="IsMaried" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FatherName" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="IDNo" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="NationalID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="CityIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="BirthLocation" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="JobIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TelNo1" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="TelNo2" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ZipCode" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Association Name="City_PatDetail" Member="City" ThisKey="CityIX" OtherKey="ID" Type="City" IsForeignKey="true" DeleteRule="SET NULL" />
+      <Association Name="PatJob_PatDetail" Member="PatJob" ThisKey="JobIX" OtherKey="ID" Type="PatJob" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="PatList_PatDetail" Member="PatList" ThisKey="PatientListIX" OtherKey="ID" Type="PatList" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Clinic.TablesIndexes" Member="TablesIndexes">
+    <Type Name="TablesIndex">
+      <Column Name="ApplicationDb" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TableFullName" Type="System.String" DbType="NVarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IndexName" Type="System.String" DbType="NVarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="Clinic.RefPhysicians" Member="RefPhysicians">
+    <Type Name="RefPhysician">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsMale" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="FirstNameEn" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="LastNameEn" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Column Name="MedicalID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="SpecialtyIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="RefPhysiciansSpec_RefPhysician" Member="RefPhysiciansSpec" ThisKey="SpecialtyIX" OtherKey="ID" Type="RefPhysiciansSpec" IsForeignKey="true" DeleteRule="SET NULL" />
+    </Type>
+  </Table>
+  <Table Name="SMS.SendQueue" Member="SendQueues">
+    <Type Name="SendQueue">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MessageIX" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="SaveDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SendDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="QueueDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="SMSMessage_SendQueue" Member="SMSMessage" Storage="_Message" ThisKey="MessageIX" OtherKey="ID" Type="SMSMessage" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="SMS.SendFailed" Member="SendFaileds">
+    <Type Name="SendFailed">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MessageIX" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="SendDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SavedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="SMSMessage_SendFailed" Member="SMSMessage" Storage="_Message" ThisKey="MessageIX" OtherKey="ID" Type="SMSMessage" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="SMS.SendSucceed" Member="SendSucceeds">
+    <Type Name="SendSucceed">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MessageIX" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="SendDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SavedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="SMSMessage_SendSucceed" Member="SMSMessage" Storage="_Message" ThisKey="MessageIX" OtherKey="ID" Type="SMSMessage" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="[Log].Categories" Member="Categories">
+    <Type Name="Category">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EnglishTitle" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LocaleTitle" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Category_DbEvent" Member="DbEvents" Storage="_Events" ThisKey="ID" OtherKey="CategoryIX" Type="DbEvent" />
+    </Type>
+  </Table>
+  <Table Name="[Log].Events" Member="DbEvents">
+    <Type Name="DbEvent">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CategoryIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ApplicationIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="UserIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300) NOT NULL" CanBeNull="false" />
+      <Association Name="HISApplication_DbEvent" Member="HISApplication" ThisKey="ApplicationIX" OtherKey="ID" Type="HISApplication" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="Category_DbEvent" Member="Category" ThisKey="CategoryIX" OtherKey="ID" Type="Category" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="UsersList_DbEvent" Member="UsersList" ThisKey="UserIX" OtherKey="ID" Type="UsersList" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="SMS.Settings" Member="SMSSettings">
+    <Type Name="SMSSettings">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Data" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="SMS.Messages" Member="SMSMessages">
+    <Type Name="SMSMessage">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SenderNumber" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="RecieverNumber" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MessageText" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="RefIX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="SMSMessage_SendQueue" Member="SendQueues" ThisKey="ID" OtherKey="MessageIX" Type="SendQueue" />
+      <Association Name="SMSMessage_SendFailed" Member="SendFaileds" ThisKey="ID" OtherKey="MessageIX" Type="SendFailed" />
+      <Association Name="SMSMessage_SendSucceed" Member="SendSucceeds" ThisKey="ID" OtherKey="MessageIX" Type="SendSucceed" />
+    </Type>
+  </Table>
+  <Function Name="Security.SP_SelectUsers" Method="SP_SelectUsers">
+    <ElementType Name="SP_SelectUsersResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(41) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Security.SP_InsertACLPermissionsGroups" Method="SP_InsertACLPermissionsGroups">
+    <Parameter Name="GroupID" Parameter="groupID" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="ACLIX" Parameter="aCLIX" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsAllowed" Parameter="isAllowed" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Security.SP_InsertACLPermissionsUsers" Method="SP_InsertACLPermissionsUsers">
+    <Parameter Name="UserIX" Parameter="userIX" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="ACLIX" Parameter="aCLIX" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsAllowed" Parameter="isAllowed" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IsPremiered" Parameter="isPremiered" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Security.SP_InsertUsersInGroups" Method="SP_InsertUsersInGroups">
+    <Parameter Name="UserIX" Parameter="userIX" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="GroupIX" Parameter="groupIX" Type="System.Int16" DbType="SmallInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Security.SP_SelectACL" Method="SP_SelectACL">
+    <Parameter Name="AppID" Parameter="appID" Type="System.Int16" DbType="SmallInt" />
+    <ElementType Name="SP_SelectACLResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ParentIX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ApplicationIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IsTitle" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EnglishName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="LocaleName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Security.SP_SelectACLPermissions" Method="SP_SelectACLPermissions">
+    <Parameter Name="ACLID" Parameter="aCLID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SP_SelectACLPermissionsResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(41)" CanBeNull="true" />
+      <Column Name="ACLID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsUser" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Type" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="IsAllowed" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="IsPremiered" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Security.SP_SelectGroups" Method="SP_SelectGroups">
+    <ElementType Name="SP_SelectGroupsResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Security.SP_SelectUsersInGroups" Method="SP_SelectUsersInGroups">
+    <ElementType Name="SP_SelectUsersInGroupsResult">
+      <Column Name="GroupID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(41)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Security.SP_SelectACLPermissionsUsers" Method="SP_SelectACLPermissionsUsers">
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="ACLID" Parameter="aCLID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsAllowed" Parameter="isAllowed" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Clinic.SP_SelectRefPhysiciansSpecs" Method="SP_SelectRefPhysiciansSpecs">
+    <ElementType Name="SP_SelectRefPhysiciansSpecsResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Clinic.SP_MixRefPhysicians" Method="SP_MixRefPhysicians">
+    <Parameter Name="ToDeleteID" Parameter="toDeleteID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ToReplaceID" Parameter="toReplaceID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Locations.SP_SelectCities" Method="SP_SelectCities">
+    <ElementType Name="SP_SelectCitiesResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="StateIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Locations.SP_SelectStates" Method="SP_SelectStates">
+    <ElementType Name="SP_SelectStatesResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="CountryIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="Locations.SP_SelectCountries" Method="SP_SelectCountries">
+    <ElementType Name="SP_SelectCountriesResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Patients.SP_SelectJobs" Method="SP_SelectJobs">
+    <ElementType Name="SP_SelectJobsResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Patients.SP_ChangeLockPatientList" Method="SP_ChangeLockPatientList">
+    <Parameter Name="PatID" Parameter="patID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsLock" Parameter="isLock" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Patients.SP_CheckLockPatientList" Method="SP_CheckLockPatientList">
+    <Parameter Name="PatID" Parameter="patID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsLock" Parameter="isLock" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Patients.SP_DeleteList" Method="SP_DeleteList">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Patients.SP_SelectLastPatientID" Method="SP_SelectLastPatientID">
+    <Parameter Name="TodayDate" Parameter="todayDate" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="PatientID" Parameter="patientID" Type="System.String" DbType="NVarChar(20)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="Clinic.SP_RebuildIndex" Method="SP_RebuildIndex">
+    <Parameter Name="ApplicationDb" Parameter="applicationDb" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="TableFullName" Parameter="tableFullName" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="IndexName" Parameter="indexName" Type="System.String" DbType="NVarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="[Log].SP_SelectCategories" Method="SP_SelectCategories">
+    <ElementType Name="SP_SelectCategoriesResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="EnglishTitle" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LocaleTitle" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="[Log].SP_SelectEvents" Method="SP_SelectEvents">
+    <Parameter Name="StartDate" Parameter="startDate" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="EndDate" Parameter="endDate" Type="System.DateTime" DbType="SmallDateTime" />
+    <ElementType Name="SP_SelectEventsResult">
+      <Column Name="RowNumber" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ApplicationIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ApplicationName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CategoryIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CategoryName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UserIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(41)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="Clinic.SP_SelectRefPhysiciansFullDataList" Method="SP_SelectRefPhysiciansFullDataList">
+    <ElementType Name="SP_SelectRefPhysiciansFullDataListResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(54) NOT NULL" CanBeNull="false" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="MedicalID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="Specialty" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

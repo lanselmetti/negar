@@ -1,0 +1,165 @@
+<SmartAssemblyProject ProjectID="{984a1fb0-843b-487f-996e-15ca114885c1}" Version="2.0">
+    <MainAssemblyFileName>..\Source\bin\Debug\Negar.SMS.Sender.Service.exe</MainAssemblyFileName>
+    <Configuration Name="Release">
+        <ApplicationName />
+        <Destination DestinationFileName=".\Negar.SMS.Service.exe" />
+        <Assemblies>
+            <Assembly AssemblyName="Aftab License Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Interop.NovinAfzar, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation />
+                    <ControlFlow Obfuscate="0" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab Connection String Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab MessageBox, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="1">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation />
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab WinApp Log Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="1">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation />
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab Calendar, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab DB Layer Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging>
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="mCoreLib, Culture=neutral, PublicKeyToken=26762b829f36a08d">
+                <Merging Merge="0">
+                    <Pruning Prune="1">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding Compress="0" Embed="1" GAC="1" />
+            </Assembly>
+            <Assembly AssemblyName="Negar SMS Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging>
+                    <Pruning Prune="1">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="Negar.Db.Layer.Manager, Culture=neutral, PublicKeyToken=05adbdc7e690569f">
+                <Merging />
+                <Embedding Compress="0" Embed="1" GAC="1" />
+            </Assembly>
+            <Assembly AssemblyName="Negar.MessageBox, Culture=neutral, PublicKeyToken=dfb97cb8308c094f">
+                <Merging />
+                <Embedding Compress="0" Embed="1" GAC="1" />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Log.Manager, Culture=neutral, PublicKeyToken=7d935595bdbb98a2">
+                <Merging />
+                <Embedding Compress="0" Embed="1" GAC="1" />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Calendar, Culture=neutral, PublicKeyToken=145b7e473c8af181">
+                <Merging />
+                <Embedding Compress="0" Embed="1" GAC="1" />
+            </Assembly>
+            <Assembly AssemblyName="Negar.ConnectionString.Manager, Culture=neutral, PublicKeyToken=8591c648ca881033">
+                <Merging />
+                <Embedding Compress="0" Embed="1" GAC="1" />
+            </Assembly>
+            <Assembly AssemblyName="Negar.License.Manager, Culture=neutral, PublicKeyToken=0dbe34f4a48e0e11">
+                <Merging />
+                <Embedding Compress="0" Embed="1" GAC="1" />
+            </Assembly>
+            <Assembly AssemblyName="Interop.NovinAfzar, Culture=neutral, PublicKeyToken=f973fbbb2077d5f9">
+                <Merging Merge="1">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation />
+                    <ControlFlow Obfuscate="0" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.SMS.Manager, Culture=neutral, PublicKeyToken=dffe8fe90208e36b">
+                <Merging />
+                <Embedding Compress="0" Embed="1" GAC="1" />
+            </Assembly>
+            <Assembly AssemblyName="Negar.SMS.Sender.Service, Culture=neutral, PublicKeyToken=null">
+                <Merging>
+                    <ResourcesCompression />
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesPruning />
+                </Merging>
+            </Assembly>
+        </Assemblies>
+        <Options>
+            <Obfuscation FieldsNameMangling="3" NameMangling="3" />
+            <ExceptionReporting />
+            <StrongNameSigning KeyFileName=".\Strong Key.snk" Sign="1" />
+            <OtherProtections AddIncorrectMetadata="1" SuppressIldasm="1" />
+            <StringsEncoding Encode="1" UseImprovedEncoding="1" />
+            <OtherOptimizations SealClasses="1" />
+            <Debugging CreatePDB="0" />
+        </Options>
+    </Configuration>
+</SmartAssemblyProject>

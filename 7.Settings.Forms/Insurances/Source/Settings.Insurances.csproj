@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C7216D3B-4E23-4982-8210-C17448874B1E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sepehr.Settings.Insurances</RootNamespace>
+    <AssemblyName>Sepehr.Settings.Insurances</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>SepehrLogo.ico</ApplicationIcon>
+    <StartupObject>
+    </StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Settings.Insurances.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Sepehr.Settings.Insurances.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=7.7.0.4, Culture=neutral, PublicKeyToken=5fd520d36328f741, processorArchitecture=MSIL" />
+    <Reference Include="Negar.Calendar, Version=2.2.0.5, Culture=neutral, PublicKeyToken=145b7e473c8af181, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Calendar\Calendar\bin\Debug\Negar.Calendar.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Db.Layer.Manager, Version=2.3.3.28, Culture=neutral, PublicKeyToken=05adbdc7e690569f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Db.Layer.Manager\Db.Layer.Manager\bin\Debug\Negar.Db.Layer.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Db.Layer.Manager.Sepehr, Version=2.4.0.35, Culture=neutral, PublicKeyToken=2c485803badad6a0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Db.Layer.Manager.Sepehr\Db.Layer.Manager.Sepehr\bin\Debug\Negar.Db.Layer.Manager.Sepehr.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Grid.Printing, Version=2.3.4.31, Culture=neutral, PublicKeyToken=889de89d3c20ee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Grid.Printing\Grid.Printing\bin\Debug\Negar.Grid.Printing.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Help.Manager, Version=2.1.0.3, Culture=neutral, PublicKeyToken=3400f1278b418aa3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Help.Manager\Help.Manager\bin\Debug\Negar.Help.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Log.Manager, Version=2.3.0.3, Culture=neutral, PublicKeyToken=7d935595bdbb98a2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Log.Manager\Log.Manager\bin\Debug\Negar.Log.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.MessageBox, Version=2.1.0.0, Culture=neutral, PublicKeyToken=dfb97cb8308c094f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\MessageBox\MessageBox\bin\Debug\Negar.MessageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InsurancesServices\ExcludedRefPhysAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsurancesServices\ExcludedRefPhysAdd.Designer.cs">
+      <DependentUpon>ExcludedRefPhysAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsurancesServices\ExcludedRefPhys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsurancesServices\ExcludedRefPhys.Designer.cs">
+      <DependentUpon>ExcludedRefPhys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsurancesServices\ExcludedRefPhysSpecsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsurancesServices\ExcludedRefPhysSpecsAdd.Designer.cs">
+      <DependentUpon>ExcludedRefPhysSpecsAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsurancesServices\ExcludedRefPhysSpecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsurancesServices\ExcludedRefPhysSpecs.Designer.cs">
+      <DependentUpon>ExcludedRefPhysSpecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsurancesServices\CopySettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsurancesServices\CopySettings.Designer.cs">
+      <DependentUpon>CopySettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsurancesServices\AutoCalculation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsurancesServices\AutoCalculation.Designer.cs">
+      <DependentUpon>AutoCalculation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsurancesServices\IMSComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InsurancesServices\ServicesCoverage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsurancesServices\ServicesCoverage.designer.cs">
+      <DependentUpon>ServicesCoverage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insurances\FormulasTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insurances\FormulasTest.Designer.cs">
+      <DependentUpon>FormulasTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insurances\FormulasManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insurances\FormulasManage.Designer.cs">
+      <DependentUpon>FormulasManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insurances\Formulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insurances\Formulas.Designer.cs">
+      <DependentUpon>Formulas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insurances.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insurances.Designer.cs">
+      <DependentUpon>Insurances.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insurances\InsManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insurances\InsManage.Designer.cs">
+      <DependentUpon>InsManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insurances\AftabSyntaxHighlighter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="InsurancesServices\ExcludedRefPhysAdd.resx">
+      <DependentUpon>ExcludedRefPhysAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsurancesServices\ExcludedRefPhys.resx">
+      <DependentUpon>ExcludedRefPhys.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsurancesServices\ExcludedRefPhysSpecsAdd.resx">
+      <DependentUpon>ExcludedRefPhysSpecsAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsurancesServices\ExcludedRefPhysSpecs.resx">
+      <DependentUpon>ExcludedRefPhysSpecs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsurancesServices\CopySettings.resx">
+      <DependentUpon>CopySettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsurancesServices\AutoCalculation.resx">
+      <DependentUpon>AutoCalculation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsurancesServices\ServicesCoverage.resx">
+      <DependentUpon>ServicesCoverage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insurances\FormulasTest.resx">
+      <DependentUpon>FormulasTest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insurances\FormulasManage.resx">
+      <DependentUpon>FormulasManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insurances\Formulas.resx">
+      <DependentUpon>Formulas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insurances.resx">
+      <DependentUpon>Insurances.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insurances\InsManage.resx">
+      <DependentUpon>InsManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangeLog.txt" />
+    <None Include="Resources\Accept.png" />
+    <None Include="Resources\AddMed.png" />
+    <None Include="Resources\Apply.png" />
+    <None Include="Resources\Automatic.gif" />
+    <None Include="Resources\Cancel.png" />
+    <None Include="Resources\Copy.png" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\EditSmall.png" />
+    <None Include="Resources\Help.png" />
+    <None Include="Resources\SepehrIcon.ico" />
+    <None Include="Resources\SelectAll.png" />
+    <None Include="Resources\SelectNone.png" />
+    <None Include="Resources\InsLogo.ico" />
+    <None Include="Resources\ServicesSettings.ico" />
+    <None Include="Resources\Allow.ico" />
+    <None Include="Resources\Deny.ico" />
+    <None Include="Resources\PrintGrid.ico" />
+    <None Include="Resources\Physician.ico" />
+    <None Include="Resources\Job.ico" />
+    <None Include="Settings.Insurances.snk" />
+    <Content Include="SepehrLogo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>C:\Projects\Negar\5.Tools\GacInstaller\GacInstaller.exe u $(TargetName)</PreBuildEvent>
+    <PostBuildEvent>C:\Projects\Negar\5.Tools\GacInstaller\GacInstaller.exe i "$(TargetPath)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

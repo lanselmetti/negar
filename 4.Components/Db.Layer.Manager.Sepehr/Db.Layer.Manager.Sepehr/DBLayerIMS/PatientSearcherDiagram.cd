@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Sepehr.DBLayerIMS.SimpleSearchHelper">
+    <Position X="0.5" Y="0.5" Width="5.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Sepehr.DBLayerIMS.SimpleSearchHelper.PatientData">
+        <TypeIdentifier>
+          <NewMemberFileName>DBLayerIMS\SimpleSearchHelper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BECAAAAAAAAAgAAAAAAgAAAAAAAAAAgAAAAABAAAAAA=</HashCode>
+      <FileName>DBLayerIMS\SimpleSearchHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

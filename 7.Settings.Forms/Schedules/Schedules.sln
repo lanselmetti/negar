@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Settings.Schedules", "Source\Settings.Schedules.csproj", "{088D3CD5-14E9-4E08-A650-AFA2D33C24EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test Project", "Test\Test Project.csproj", "{F85D0D0B-4AB0-4307-87C3-9D6F68240B0C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{088D3CD5-14E9-4E08-A650-AFA2D33C24EE} = {088D3CD5-14E9-4E08-A650-AFA2D33C24EE}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{088D3CD5-14E9-4E08-A650-AFA2D33C24EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{088D3CD5-14E9-4E08-A650-AFA2D33C24EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{088D3CD5-14E9-4E08-A650-AFA2D33C24EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{088D3CD5-14E9-4E08-A650-AFA2D33C24EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F85D0D0B-4AB0-4307-87C3-9D6F68240B0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F85D0D0B-4AB0-4307-87C3-9D6F68240B0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F85D0D0B-4AB0-4307-87C3-9D6F68240B0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F85D0D0B-4AB0-4307-87C3-9D6F68240B0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

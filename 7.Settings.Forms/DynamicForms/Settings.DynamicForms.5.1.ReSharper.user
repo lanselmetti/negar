@@ -1,0 +1,36 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="76CED00A-8F50-4150-9AB9-A7FB4F9C8E08/f:MainForm.Designer.cs" caret="6408" fromTop="91" />
+      <File id="76CED00A-8F50-4150-9AB9-A7FB4F9C8E08/f:MainForm.cs" caret="0" fromTop="0" />
+      <File id="76CED00A-8F50-4150-9AB9-A7FB4F9C8E08/f:Program.cs" caret="498" fromTop="19" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="76CED00A-8F50-4150-9AB9-A7FB4F9C8E08/f:MainForm.Designer.cs" caret="6752" fromTop="2" />
+      <File id="76CED00A-8F50-4150-9AB9-A7FB4F9C8E08/f:MainForm.Designer.cs" caret="6888" fromTop="161" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="Sepehr.Settings.DynamicForms" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

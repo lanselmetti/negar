@@ -1,0 +1,29 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="FDE6C69C-D8B8-44F4-9C35-9719747ABF80/f:GSMModemManager.cs" caret="279" fromTop="15" />
+      <File id="FDE6C69C-D8B8-44F4-9C35-9719747ABF80/f:SMSMessageData.cs" caret="2027" fromTop="20" />
+      <File id="FDE6C69C-D8B8-44F4-9C35-9719747ABF80/f:SMSSender.cs" caret="729" fromTop="19" />
+      <File id="FDE6C69C-D8B8-44F4-9C35-9719747ABF80/f:SMSSentResultData.cs" caret="0" fromTop="0" />
+    </RecentFiles>
+    <RecentEdits />
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

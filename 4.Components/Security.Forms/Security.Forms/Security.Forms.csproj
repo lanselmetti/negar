@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48869187-073A-4883-AFF5-B84D50FC3477}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Negar.Security</RootNamespace>
+    <AssemblyName>Negar.Security.Forms</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <StartupObject>
+    </StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Security.Forms.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Negar.Security.Forms.XML</DocumentationFile>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=7.7.0.4, Culture=neutral, PublicKeyToken=5fd520d36328f741, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Aftab CSM (Arash)\Aftab CSM\bin\Release\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.TreeGX, Version=2.2.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\#Third.Party.Components\DevComponents.TreeGX.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.ConnectionString.Manager, Version=2.2.0.5, Culture=neutral, PublicKeyToken=8591c648ca881033, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ConnectionString.Manager\ConnectionString.Manager\bin\Debug\Negar.ConnectionString.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Db.Layer.Manager, Version=2.3.3.28, Culture=neutral, PublicKeyToken=05adbdc7e690569f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Db.Layer.Manager\Db.Layer.Manager\bin\Debug\Negar.Db.Layer.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Help.Manager, Version=2.1.0.3, Culture=neutral, PublicKeyToken=3400f1278b418aa3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Help.Manager\Help.Manager\bin\Debug\Negar.Help.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Log.Manager, Version=2.3.0.3, Culture=neutral, PublicKeyToken=7d935595bdbb98a2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Log.Manager\Log.Manager\bin\Debug\Negar.Log.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.MessageBox, Version=2.1.0.0, Culture=neutral, PublicKeyToken=dfb97cb8308c094f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MessageBox\MessageBox\bin\Debug\Negar.MessageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.User.Security.Manager, Version=2.2.0.1, Culture=neutral, PublicKeyToken=07c8b4ac8802f45f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\User.Security.Manager\User.Security.Manager\bin\Debug\Negar.User.Security.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACL\Copy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACL\Copy.Designer.cs">
+      <DependentUpon>Copy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACL\ManageAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACL\ManageAccess.Designer.cs">
+      <DependentUpon>ManageAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACL\Diagram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACL\Diagram.Designer.cs">
+      <DependentUpon>Diagram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\ACLCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\ACLCard.Designer.cs">
+      <DependentUpon>ACLCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACL\Manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACL\Manage.Designer.cs">
+      <DependentUpon>Manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\ChangeUserPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\ChangeUserPassword.Designer.cs">
+      <DependentUpon>ChangeUserPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersGroups.Designer.cs">
+      <DependentUpon>UsersGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Cryptographer.cs" />
+    <Compile Include="UsersInGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersInGroups.designer.cs">
+      <DependentUpon>UsersInGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\UsersSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\UsersSelection.designer.cs">
+      <DependentUpon>UsersSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ACL\Copy.resx">
+      <DependentUpon>Copy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACL\ManageAccess.resx">
+      <DependentUpon>ManageAccess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACL\Diagram.resx">
+      <DependentUpon>Diagram.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\ACLCard.resx">
+      <DependentUpon>ACLCard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACL\Manage.resx">
+      <DependentUpon>Manage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\ChangeUserPassword.resx">
+      <DependentUpon>ChangeUserPassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersGroups.resx">
+      <DependentUpon>UsersGroups.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersInGroups.resx">
+      <DependentUpon>UsersInGroups.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\UsersSelection.resx">
+      <DependentUpon>UsersSelection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangeLog.txt" />
+    <None Include="Resources\InfoSmall1.ico" />
+    <None Include="BaseFormsDiagram.cd" />
+    <None Include="Classes\ClassesDiagram.cd" />
+    <None Include="ACL\ACLDiagram.cd" />
+    <None Include="Resources\ArashCSMIcon.ico" />
+    <None Include="Resources\Accept.png" />
+    <None Include="Resources\AddMed.png" />
+    <None Include="Resources\Apply.png" />
+    <None Include="Resources\Cancel.png" />
+    <None Include="Resources\DeleteMed.png" />
+    <None Include="Resources\Help.png" />
+    <None Include="Resources\Copy.png" />
+    <None Include="Resources\DeleteSmall.png" />
+    <None Include="Resources\EditSmall.png" />
+    <None Include="Resources\ACLDiagram.ico" />
+    <None Include="Resources\Password.ico" />
+    <None Include="Resources\SelectAll.png" />
+    <None Include="Resources\SelectNone.png" />
+    <None Include="Resources\InfoSmall.ico" />
+    <None Include="Resources\Allow.ico" />
+    <None Include="Resources\Deny.ico" />
+    <None Include="Security.Forms.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>C:\Projects\Negar\5.Tools\GacInstaller\GacInstaller.exe u $(TargetName)</PreBuildEvent>
+    <PostBuildEvent>C:\Projects\Negar\5.Tools\GacInstaller\GacInstaller.exe i "$(TargetPath)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,34 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="088D3CD5-14E9-4E08-A650-AFA2D33C24EE/f:ChangeLog.txt" caret="3121" fromTop="14" />
+      <File id="088D3CD5-14E9-4E08-A650-AFA2D33C24EE/d:Applications/f:Apps.cs" caret="7427" fromTop="20" />
+      <File id="088D3CD5-14E9-4E08-A650-AFA2D33C24EE/d:AppsAddinFields/f:AddinCols.cs" caret="753" fromTop="20" />
+      <File id="088D3CD5-14E9-4E08-A650-AFA2D33C24EE/d:AppsAddinFields/f:ColumnsOrder.cs" caret="4153" fromTop="8" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="088D3CD5-14E9-4E08-A650-AFA2D33C24EE/d:AppsAddinFields/f:ColumnsOrder.cs" caret="6260" fromTop="15" />
+      <File id="088D3CD5-14E9-4E08-A650-AFA2D33C24EE/d:AppsAddinFields/f:ColumnsOrder.cs" caret="6113" fromTop="12" />
+      <File id="088D3CD5-14E9-4E08-A650-AFA2D33C24EE/f:ChangeLog.txt" caret="3121" fromTop="14" />
+      <File id="088D3CD5-14E9-4E08-A650-AFA2D33C24EE/d:Applications/f:Apps.cs" caret="9696" fromTop="10" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

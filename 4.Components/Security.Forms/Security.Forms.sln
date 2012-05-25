@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security.Forms", "Security.Forms\Security.Forms.csproj", "{48869187-073A-4883-AFF5-B84D50FC3477}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{D6E054EE-04B3-4311-BEFA-E98588E452E6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{48869187-073A-4883-AFF5-B84D50FC3477} = {48869187-073A-4883-AFF5-B84D50FC3477}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48869187-073A-4883-AFF5-B84D50FC3477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48869187-073A-4883-AFF5-B84D50FC3477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48869187-073A-4883-AFF5-B84D50FC3477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48869187-073A-4883-AFF5-B84D50FC3477}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6E054EE-04B3-4311-BEFA-E98588E452E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6E054EE-04B3-4311-BEFA-E98588E452E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6E054EE-04B3-4311-BEFA-E98588E452E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6E054EE-04B3-4311-BEFA-E98588E452E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

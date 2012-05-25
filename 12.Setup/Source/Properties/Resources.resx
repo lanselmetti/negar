@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="install" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\install.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Setup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Setup.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Help.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LicenseAgreement" xml:space="preserve">
+    <value>توافق‌نامه‌ی استفاده از نرم‌افزار
+اینجانب خریدار یک نسخه از نرم‌افزار سپهر یا دریافت‌کننده نسخه نمایشی آن، با نصب این نرم‌افزار تمامی شرایط ذیل را  قبل از خرید، در نسخه نمایشی یا از طریق سایت مطالعه کرده و اینک با دریافت و درک مفاد آن به عنوان شرط استفاده از نرم‌افزار، بدون هیچ قید و شرطی کلیه شرایط ذیل را با فشاردادن کلید (من توافقنامه را خواندم) جهت نصب نرم‌افزار به عنوان تایید الکترونیکی خود قبول می‌نمایم:
+1. مالکیت معنوی این نرم‌افزار متعلق به صاحب امتیاز آن (شرکت رایان پرتونگار) است. این نرم‌افزار تحت حمایت قانون حمایت از حقوق پدیدآورندگان نرم‌افزار‏های رایانه‏ای (قانون کپی رایت) قرار دارد. پخش آن به هر نحو و هر نوع استفاده از اجزاء این نرم‌افزار بدون اجازه‌نامه‌ی کتبی از صاحب امتیاز مطابق قوانین جمهوری اسلامی ایران و قوانین بین‌المللی پی‌گرد قانونی دارد.
+2. خرید یک یا چند نسخه از این نرم‌افزار به مفهوم مالکیت امتیاز آن برای خریدار نیست و صرفا خریدار حق استفاده از نسخه خریداری شده جهت تولید محصولات نرم‌افزاری چندرسانه‌ای دارد. این حق استفاده برای همان نسخه و نگارشی که خریداری شده است، به مدت نامحدود به خریدار اعطا شده است.
+3. در صورت استفاده از نسخه‌ی نمایشی محصول، هر نوع استفاده‌ حقیقی یا تجاری از آن ممنوع است. استفاده از نسخه‌ی نمایشی هیچ‌گونه حقی را بجز امکان بررسی قابلیت‌های نرم‌افزار برای خریدار (قبل از خرید) ایجاد نمی‌نماید.
+4. خریدار این نرم‌افزار با دریافت نسخه‌ی نمایشی از سایت یا بروشور یا دموی نرم‌افزار، تمامی قابلیت‌ها، امکانات و کاربرد آن را قبل از خرید مورد بررسی قرار داده و آن را چنان‌که هست ، تایید و خریداری نموده است.
+5. مسئولیت قانونی و شرعی هر نوع استفاده از این نرم‌افزار بر عهده‌ی خریدار است.
+6. خریدار مجاز به هیچ‌گونه واگذاری این نرم‌افزار اعم از اجاره یا فروش آن به سایر اشخاص حقیقی یا حقوقی ندارد.
+7. صاحب امتیاز نرم‌افزار هیچ‌گونه مسئولیتی در قبال هر نوع اتفاق و رخداد نرم‌افزاری معمول یا ناگهانی مانند از بین رفتن فایل‌های داده‌ی برنامه، حذف آن‌ها و امثال آن ندارد و رفع این گونه اشکالات بر عهده‌ی آن نمی‌باشد. مگر كلیه موارد در غالی قراردادهای جداگانه به امضاء طرفین رسیده باشد.
+8. با توجه به تنوع ترکیبات متنوع تولید از فایل‌های مختلف ورودی توسط خریدار، صاحب امتیاز نرم‌افزار، کیفیت اجرای همه این تولیدات را در رایانه‌های مخاطبین تضمین نمی‌نماید.
+9. صاحب امتیاز تعهدی برای تولید نگارش‌های بعدی نرم‌افزار ندارد. لیکن در صورت ادامه‌ی توسعه تولید، خریدار می‌تواند از به روزرسانی‌های نرم‌افزار استفاده نماید. صاحب امتیاز مجاز است به روز رسانی‌ها را تا حد دل‌خواه رایگان و بعد از آن در قبال پرداخت حق ارتقاء محصول از طرف خریدار به انجام رساند یا نگارش‌های بعدی را در قالب مجزا با هزینه مستقل عرضه نماید.
+10. خرابی قفل سخت‌افزاری برنامه پس از نصب و راه‌اندازی آن بر عهده‌ی خریدار بوده و در صورت نیاز به تعویض، قفل خراب و مبلغ هزینه تعویض از طرف خریدار پرداخت می‌گردد. ملاك آماده بودن قفل ها اولین راه اندازی سالم در سیستم مشتری می باشد.
+11. صاحب امتیاز می‌تواند در هر زمان که بخواهد و بدون اعلام قبلی و بدون این‌که تعهدی برای وی ایجاد شود، نوع خدمات و محصولات خود را تغییر یا اصلاح نماید.
+_____________________________________________________
+حق کپی © 1996-2010 شرکت رایان پرتونگار. تمامی حقوق محفوظ است.</value>
+  </data>
+</root>

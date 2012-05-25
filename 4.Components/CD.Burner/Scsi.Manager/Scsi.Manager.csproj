@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{70F80C21-890D-45B5-A0C3-2B1052733E7D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>ScsiKey.snk</AssemblyOriginatorKeyFile>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AssemblyName>Negar.Scsi.Manager</AssemblyName>
+    <RootNamespace>Negar.ScsiManager</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <DocumentationFile>bin\Debug\Negar.Scsi.Manager.xml</DocumentationFile>
+    <NoWarn>1591 1573 1607</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <DocumentationFile>bin\Release\Negar.Scsi.Manager.xml</DocumentationFile>
+    <NoWarn>1591 1573 1607</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ata\AtaStream.cs" />
+    <Compile Include="Ata\DeviceIdentifier.cs" />
+    <Compile Include="Ata\IAtaPassThrough.cs" />
+    <Compile Include="Ata\AtaDevice.cs" />
+    <Compile Include="Ata\AtaException.cs" />
+    <Compile Include="Ata\Types.cs" />
+    <Compile Include="EnumValueDisplayNameAttribute.cs" />
+    <Compile Include="Marshaling.cs" />
+    <Compile Include="Scsi\AdditionalSenseCodeAndQualifierPair.cs" />
+    <Compile Include="Scsi\Block\BlockDevice.cs" />
+    <Compile Include="Scsi\Block\Vital Product Data Pages\BlockLimitsVitalProductDataPage.cs" />
+    <Compile Include="Scsi\Commands\WriteBufferCommand.cs" />
+    <Compile Include="Scsi\Commands\TestUnitReadyCommand.cs" />
+    <Compile Include="Scsi\Commands\Write10Command.cs" />
+    <Compile Include="Scsi\Commands\SynchronizeCache10Command.cs" />
+    <Compile Include="Scsi\Commands\Write12Command.cs" />
+    <Compile Include="Scsi\Commands\WriteAndVerify10Command.cs" />
+    <Compile Include="Scsi\Commands\StartStopUnitCommand.cs" />
+    <Compile Include="Scsi\Commands\SetRemovableMediaBitCommand.cs" />
+    <Compile Include="Scsi\Commands\Seek10Command.cs" />
+    <Compile Include="Scsi\Commands\SendDiagnosticCommand.cs" />
+    <Compile Include="Scsi\Commands\RequestSenseCommand.cs" />
+    <Compile Include="Scsi\Commands\Read06Command.cs" />
+    <Compile Include="Scsi\Commands\ReadCapacityCommand.cs" />
+    <Compile Include="Scsi\Commands\FixedLengthScsiCommand.cs" />
+    <Compile Include="Scsi\Commands\InquiryCommand.cs" />
+    <Compile Include="Scsi\Commands\ReadBufferCommand.cs" />
+    <Compile Include="Scsi\Commands\Read32Command.cs" />
+    <Compile Include="Scsi\Commands\Read12Command.cs" />
+    <Compile Include="Scsi\Commands\Read10Command.cs" />
+    <Compile Include="Scsi\Commands\ModeSense10Command.cs" />
+    <Compile Include="Scsi\Commands\ModeSelect10Command.cs" />
+    <Compile Include="Scsi\Commands\Read16Command.cs" />
+    <Compile Include="Scsi\Commands\AtaPassThrough12Command.cs" />
+    <Compile Include="Scsi\Commands\VariableLengthScsiCommand.cs" />
+    <Compile Include="Scsi\Commands\ScsiCommand.cs" />
+    <Compile Include="Scsi\Inquiry Data\StandardInquiryData.cs" />
+    <Compile Include="Scsi\Inquiry Data\Vital Product Data Pages\VitalProductDataInquiryData.cs" />
+    <Compile Include="Scsi\Mode Pages\PowerConditionsModePage.cs" />
+    <Compile Include="Scsi\Mode Pages\CachingModePage.cs" />
+    <Compile Include="Scsi\Mode Pages\ReadWriteErrorRecoveryParametersPage.cs" />
+    <Compile Include="Scsi\Mode Pages\ModePage.cs" />
+    <Compile Include="Scsi\Multimedia\Disc Structure Data\DvdPhysicalFormatInformation.cs" />
+    <Compile Include="Scsi\Multimedia\Disc Structure Data\BDStructureData.cs" />
+    <Compile Include="Scsi\Multimedia\Disc Structure Data\DvdStructureData.cs" />
+    <Compile Include="Scsi\Multimedia\Events\DeviceBusyEvent.cs" />
+    <Compile Include="Scsi\Multimedia\Events\MultipleHostEvent.cs" />
+    <Compile Include="Scsi\Multimedia\Events\MediaEvent.cs" />
+    <Compile Include="Scsi\Multimedia\Events\ExternalRequestEvent.cs" />
+    <Compile Include="Scsi\Multimedia\Events\PowerManagementEvent.cs" />
+    <Compile Include="Scsi\Multimedia\Events\OperationalChangeEvent.cs" />
+    <Compile Include="Scsi\Multimedia\Events\MultimediaEventHeader.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\BDRPseudoOverwriteFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\ReserveTrackCommand.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\FormatUnitCommand.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\GetConfigurationCommand.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\GetPerformanceCommand.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\GetEventStatusNotificationCommand.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\LoadUnloadMediumCommand.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\PreventAllowMediumRemovalCommand.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\ReadBufferCapacityCommand.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\ReadCDCommand.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\ReadDiscInformationCommand.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\ReadDiscStructureCommand.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\CloseSessionTrackCommand.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\ReadFormatCapacitiesCommand.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\ReadTocPmaAtipCommand.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\ReadTrackInformationCommand.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\Erase10Command.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\SendCueSheetCommand.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\SendOpcInformationCommand.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\SetCDSpeedCommand.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\SetReadAheadCommand.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\SetStreamingCommand.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\Verify10Command.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\BlankCommand.cs" />
+    <Compile Include="Scsi\Multimedia\Commands\ReportKeyCommand.cs" />
+    <Compile Include="Scsi\Multimedia\Features\CoreFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\BDWriteFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\DoubleDensityCDRWWriteFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\DvdPlusRWDualLayerFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\TimelySafeRecordingFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\DvdMinusRWWriteFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\MountRainierRewritableFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\CDMasteringFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\SecurDiscFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\VCPSFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\DvdCssManagedRecordingFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\AdvancedAccessContentSystemFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\FirmwareInformationFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\DvdContentProtectionForRecordableMediaFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\DvdPlusRDualLayerFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\DvdReadFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\DiscControlBlocksFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\MediaSerialNumberFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\DriveSerialNumberFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\DoubleDensityCDRWriteFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\CDAudioExternalPlayFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\RealTimeStreamingFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\BDReadFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\PowerManagementFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\DoubleDensityCDReadFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\LayerJumpRecordingFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\EmbeddedChangerFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\DvdContentScramblingSystemFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\DvdPlusRFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\StopLongOperationFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\RigidRestrictedOverwriteFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\DvdPlusRWFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\EnhancedDefectReportingFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\SmartFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\TimeoutFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\MicrocodeUpgradeFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\HDDvdRWFragmentRecordingFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\LayerJumpRigidRestrictedOverwriteFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\DefectManagementFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Events\Event and EventUnion.cs" />
+    <Compile Include="Scsi\Multimedia\Features\RandomWritableFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\VendorSpecificFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\WriteOnceFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\HDDvdWriteFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\FormattableFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\CDRWConstantAngularVelocityWriteFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\MultiReadFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\RemovableMediumFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\SectorErasableFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\WriteProtectFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\RandomReadableFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\IncrementalStreamingWritableFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\CDTrackAtOnceFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\RestrictedOverwriteFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\MorphingFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\CDRWMediaWriteSupportFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\HDDvdReadFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\CDReadFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\GetSupport%28%29 Not Implemented\HybridDiscFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\ProfileListFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Features\MultimediaFeature.cs" />
+    <Compile Include="Scsi\Multimedia\Format Descriptors\CDRWOrDvdMinusRWGrowSessionDescriptor.cs" />
+    <Compile Include="Scsi\Multimedia\Format Descriptors\CDRWOrDvdMinusRWAddSessionDescriptor.cs" />
+    <Compile Include="Scsi\Multimedia\Format Descriptors\DvdPlusRWBasicFormatDescriptor.cs" />
+    <Compile Include="Scsi\Multimedia\Format Descriptors\MountRainierRewritableFullFormatDescriptor.cs" />
+    <Compile Include="Scsi\Multimedia\Format Descriptors\CDRWOrDvdMinusRWFullFormatDescriptor.cs" />
+    <Compile Include="Scsi\Multimedia\Format Descriptors\ZoneFormatDescriptor.cs" />
+    <Compile Include="Scsi\Multimedia\Format Descriptors\ZoneReformatDescriptor.cs" />
+    <Compile Include="Scsi\Multimedia\Format Descriptors\SpareAreaExpansionDescriptor.cs" />
+    <Compile Include="Scsi\Multimedia\Format Descriptors\FullFormatDescriptor.cs" />
+    <Compile Include="Scsi\Multimedia\Format Descriptors\FormatDescriptorOther.cs" />
+    <Compile Include="Scsi\Multimedia\Format Descriptors\FormatDescriptorCDRW.cs" />
+    <Compile Include="Scsi\Multimedia\Format Descriptors\FormatDescriptor.cs" />
+    <Compile Include="Scsi\Multimedia\IMultimediaDevice.cs" />
+    <Compile Include="Scsi\Inquiry Data\InquiryData.cs" />
+    <Compile Include="Scsi\Multimedia\Disc Structure Data\DiscStructureData.cs" />
+    <Compile Include="Scsi\IScsiDevice.cs" />
+    <Compile Include="Scsi\Multimedia\Mode Pages\CDParametersPage.cs" />
+    <Compile Include="Scsi\Multimedia\Mode Pages\WriteParametersPage.cs" />
+    <Compile Include="Scsi\Multimedia\Mode Pages\CapabilitiesMechanicalStatusPage.cs" />
+    <Compile Include="Scsi\Multimedia\Performance Descriptors\WriteSpeedDescriptor.cs" />
+    <Compile Include="Scsi\Multimedia\Performance Descriptors\DefectStatusDescriptor.cs" />
+    <Compile Include="Scsi\Multimedia\Performance Descriptors\UnusableAreaDescriptor.cs" />
+    <Compile Include="Scsi\Multimedia\Performance Descriptors\ExceptionsPerformanceDescriptor.cs" />
+    <Compile Include="Scsi\Multimedia\Performance Descriptors\NominalPerformanceDescriptor.cs" />
+    <Compile Include="Scsi\Multimedia\Performance Descriptors\PerformanceDescriptor.cs" />
+    <Compile Include="Scsi\Multimedia\Performance Descriptors\PerformanceData.cs" />
+    <Compile Include="Scsi\Multimedia\TOC-PMA-ATIP Response Data\CDText.cs" />
+    <Compile Include="Scsi\Multimedia\TOC-PMA-ATIP Response Data\MultisessionInformation.cs" />
+    <Compile Include="Scsi\Multimedia\TOC-PMA-ATIP Response Data\AbsoluteTimeInPregroove.cs" />
+    <Compile Include="Scsi\Multimedia\TOC-PMA-ATIP Response Data\ProgramMemoryArea.cs" />
+    <Compile Include="Scsi\Multimedia\TOC-PMA-ATIP Response Data\RawTableOfContents.cs" />
+    <Compile Include="Scsi\Multimedia\TOC-PMA-ATIP Response Data\FormattedTableOfContents.cs" />
+    <Compile Include="Scsi\Multimedia\TOC-PMA-ATIP Response Data\TocPmaAtipResponseData.cs" />
+    <Compile Include="Scsi\Multimedia\TrackStream.cs" />
+    <Compile Include="Scsi\ScsiStream.cs" />
+    <Compile Include="Scsi\IScsiPassThrough.cs" />
+    <Compile Include="Scsi\ReadBufferData.cs" />
+    <Compile Include="Scsi\ScsiDevice.cs" />
+    <Compile Include="Scsi\ScsiVersionAttribute.cs" />
+    <Compile Include="Scsi\Types.cs" />
+    <Compile Include="Scsi\Multimedia\FeatureCollection.cs" />
+    <Compile Include="Scsi\Multimedia\FormatCapacityList.cs" />
+    <Compile Include="Scsi\Multimedia\Format Descriptors\[Template].cs" />
+    <Compile Include="Scsi\Multimedia\MultimediaDevice.cs" />
+    <Compile Include="Scsi\Internal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scsi\Sense Data.cs" />
+    <Compile Include="Scsi\ScsiException.cs" />
+    <Compile Include="Scsi\Multimedia\Types.cs" />
+    <Compile Include="Scsi\VendorId.cs" />
+    <Compile Include="Scsi\VersionDescriptor.cs" />
+    <Compile Include="Scsi\Inquiry Data\Vital Product Data Pages\SupportedVitalProductDataPagesDataPage.cs" />
+    <Compile Include="Scsi\Win32Spti.cs" />
+    <Compile Include="SubStream.cs" />
+    <Compile Include="Win32FileStream.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ScsiKey.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scsi\Block\Commands\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

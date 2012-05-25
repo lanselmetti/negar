@@ -1,0 +1,113 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:PACS.cs" caret="882" fromTop="20" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/d:DataLayer/f:DbLayer.cs" caret="0" fromTop="0" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:Messages.cs" caret="6388" fromTop="17" />
+      <File id="1169D85A-FE46-43D7-8814-3926C7FBF856/f:Form1.cs" caret="380" fromTop="12" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:Messages.cs" caret="13158" fromTop="10" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:Messages.cs" caret="13403" fromTop="15" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:Messages.cs" caret="8102" fromTop="3" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:Messages.cs" caret="10958" fromTop="12" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:Messages.cs" caret="8043" fromTop="13" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:Messages.cs" caret="11696" fromTop="15" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:Messages.cs" caret="6968" fromTop="11" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:Messages.cs" caret="6783" fromTop="6" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:Messages.cs" caret="9825" fromTop="3" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:Messages.cs" caret="7304" fromTop="12" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:Messages.cs" caret="10814" fromTop="12" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:Messages.cs" caret="11770" fromTop="10" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:Messages.cs" caret="12347" fromTop="8" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:Messages.cs" caret="13755" fromTop="6" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:Messages.cs" caret="14012" fromTop="11" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:Messages.cs" caret="14596" fromTop="8" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:Messages.cs" caret="14396" fromTop="3" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:Messages.cs" caret="10132" fromTop="14" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:Messages.cs" caret="15499" fromTop="14" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="var" priority="2" />
+      <Item value="new" priority="0" />
+      <Item value="List" priority="0" />
+      <Item value="MsgMessageStates`0" priority="0" />
+      <Item value="DataContext`0" priority="0" />
+      <Item value="Data" priority="6" />
+      <Item value="x" priority="1" />
+      <Item value="Message" priority="3" />
+      <Item value="StateID" priority="0" />
+      <Item value="String`0" priority="0" />
+      <Item value="Manager`0" priority="0" />
+      <Item value="DateBoldEventArgs`0" priority="0" />
+      <Item value="null" priority="0" />
+      <Item value="DateTime`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="First`1" priority="0" />
+      <Item value="Where`1" priority="0" />
+      <Item value="Take`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Sepehr.DBLayerIMS.DataLayer.MsgMessageStates">
+      <Item value="MsgList" priority="0" />
+      <Item value="MsgStates" priority="0" />
+      <Item value="StateIX" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Sepehr.DBLayerIMS.DataLayer.DbLayer">
+      <Item value="MsgMessageStates" priority="0" />
+      <Item value="MsgLists" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
+      <Item value="ToList`1" priority="1" />
+      <Item value="OrderBy`2" priority="0" />
+      <Item value="OrderByDescending`2" priority="0" />
+      <Item value="Select`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Sepehr.DBLayerIMS.DataLayer.MsgList">
+      <Item value="StateIX" priority="2" />
+      <Item value="DestinationNumber" priority="1" />
+      <Item value="StateChangedDateTime" priority="2" />
+      <Item value="MsgStates" priority="0" />
+      <Item value="MessageID" priority="0" />
+      <Item value="PriorityIX" priority="0" />
+      <Item value="ID" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Sepehr.DBLayerIMS.Manager">
+      <Item value="DBML" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Linq.Table`1">
+      <Item value="Where`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="AddMinutes`0" priority="0" />
+      <Item value="AddHours`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IOrderedQueryable`1">
+      <Item value="OrderBy`2" priority="0" />
+      <Item value="ToList`1" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

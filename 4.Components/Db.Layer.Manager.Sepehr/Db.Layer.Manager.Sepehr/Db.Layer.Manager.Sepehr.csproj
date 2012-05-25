@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A5AB37C6-47E2-4544-A3A2-7F91753B5BC6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sepehr</RootNamespace>
+    <AssemblyName>Negar.Db.Layer.Manager.Sepehr</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Db.Layer.Manager.Sepehr.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Negar.Db.Layer.Manager.Sepehr.xml</DocumentationFile>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Negar.Calendar, Version=2.2.0.5, Culture=neutral, PublicKeyToken=145b7e473c8af181, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Calendar\Calendar\bin\Debug\Negar.Calendar.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.ConnectionString.Manager, Version=2.2.0.5, Culture=neutral, PublicKeyToken=8591c648ca881033, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ConnectionString.Manager\ConnectionString.Manager\bin\Debug\Negar.ConnectionString.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Db.Layer.Manager, Version=2.3.3.28, Culture=neutral, PublicKeyToken=05adbdc7e690569f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Db.Layer.Manager\Db.Layer.Manager\bin\Debug\Negar.Db.Layer.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Log.Manager, Version=2.3.0.3, Culture=neutral, PublicKeyToken=7d935595bdbb98a2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Log.Manager\Log.Manager\bin\Debug\Negar.Log.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.MessageBox, Version=2.1.0.0, Culture=neutral, PublicKeyToken=dfb97cb8308c094f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MessageBox\MessageBox\bin\Debug\Negar.MessageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.User.Security.Manager, Version=2.2.0.1, Culture=neutral, PublicKeyToken=07c8b4ac8802f45f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\User.Security.Manager\User.Security.Manager\bin\Debug\Negar.User.Security.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBLayerIMS\Cash.cs" />
+    <Compile Include="DBLayerIMS\Account.cs" />
+    <Compile Include="DBLayerIMS\DataLayer\PACSDbLayer.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PACSDbLayer.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DBLayerIMS\Messages.cs" />
+    <Compile Include="DBLayerIMS\PACS.cs" />
+    <Compile Include="DBLayerIMS\DataLayer\DbLayer.cs">
+      <DependentUpon>DbLayer.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DBLayerIMS\Settings.cs" />
+    <Compile Include="DBLayerIMS\Document.cs" />
+    <Compile Include="DBLayerIMS\Referrals.cs" />
+    <Compile Include="DBLayerIMS\Services.cs" />
+    <Compile Include="DBLayerIMS\Insurance.cs" />
+    <Compile Include="DBLayerIMS\Manager.cs" />
+    <Compile Include="DBLayerIMS\DataLayer\DbLayer.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbLayer.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DBLayerIMS\Schedules.cs" />
+    <Compile Include="DBLayerIMS\PatientSearcher.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DBLayerIMS\DataLayer\DbLayer.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DbLayer.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DBLayerIMS\DataLayer\PACSDbLayer.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>PACSDbLayer.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBLayerIMS\PatientSearcherDiagram.cd" />
+    <None Include="DBLayerIMS\SettingsDiagram.cd" />
+    <None Include="DBLayerIMS\AccountDiagram.cd" />
+    <None Include="DBLayerIMS\DocumentDiagram.cd" />
+    <None Include="DBLayerIMS\CashDiagram.cd" />
+    <None Include="DBLayerIMS\ReferralsDiagram.cd" />
+    <None Include="DBLayerIMS\ServicesDiagram.cd" />
+    <None Include="DBLayerIMS\InsuranceDiagram.cd" />
+    <None Include="DBLayerIMS\SchedulesDiagram.cd" />
+    <None Include="DBLayerIMS\ManagerDiagram.cd" />
+    <None Include="DBLayerIMS\DataLayer\DbLayer.dbml.layout">
+      <DependentUpon>DbLayer.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangeLog.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Db.Layer.Manager.Sepehr.snk" />
+    <None Include="DBLayerIMS\DataLayer\PACSDbLayer.dbml.layout">
+      <DependentUpon>PACSDbLayer.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

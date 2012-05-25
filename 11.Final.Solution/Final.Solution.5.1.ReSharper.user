@@ -1,0 +1,55 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="3D6F200B-44EF-478D-B8F9-39600A1ACB04/d:DBLayerPMS/d:DataLayer/f:DbLayer.dbml" caret="30" fromTop="0" />
+      <File id="3D6F200B-44EF-478D-B8F9-39600A1ACB04/d:DBLayerPMS/d:DataLayer/f:DbLayer.dbml.layout" caret="30" fromTop="0" />
+      <File id="3D6F200B-44EF-478D-B8F9-39600A1ACB04/d:DBLayerPMS/f:ManagerDiagram.cd" caret="30" fromTop="0" />
+      <File id="3D6F200B-44EF-478D-B8F9-39600A1ACB04/d:DBLayerPMS/f:PatientsDiagram.cd" caret="30" fromTop="0" />
+      <File id="3D6F200B-44EF-478D-B8F9-39600A1ACB04/d:DBLayerPMS/f:SecurityDiagram.cd" caret="30" fromTop="0" />
+      <File id="3D6F200B-44EF-478D-B8F9-39600A1ACB04/d:DBLayerPMS/f:SMSDiagram.cd" caret="30" fromTop="0" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:AccountDiagram.cd" caret="30" fromTop="0" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:CashDiagram.cd" caret="30" fromTop="0" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/d:DataLayer/f:DbLayer.dbml" caret="30" fromTop="0" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/d:DataLayer/f:DbLayer.dbml.layout" caret="30" fromTop="0" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/d:DataLayer/f:PACSDbLayer.dbml" caret="30" fromTop="0" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/d:DataLayer/f:PACSDbLayer.dbml.layout" caret="30" fromTop="0" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:DocumentDiagram.cd" caret="30" fromTop="0" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:InsuranceDiagram.cd" caret="30" fromTop="0" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:ManagerDiagram.cd" caret="30" fromTop="0" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:PatientSearcherDiagram.cd" caret="30" fromTop="0" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:ReferralsDiagram.cd" caret="30" fromTop="0" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:SchedulesDiagram.cd" caret="30" fromTop="0" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:ServicesDiagram.cd" caret="30" fromTop="0" />
+      <File id="A5AB37C6-47E2-4544-A3A2-7F91753B5BC6/d:DBLayerIMS/f:SettingsDiagram.cd" caret="30" fromTop="0" />
+      <File id="5B92E499-1136-4646-8DC1-C74761FC790B/f:PanelClip.resx" caret="30" fromTop="0" />
+      <File id="5B92E499-1136-4646-8DC1-C74761FC790B/f:PanelClipGraber.resx" caret="30" fromTop="0" />
+      <File id="5B92E499-1136-4646-8DC1-C74761FC790B/f:PanelGraber.resx" caret="30" fromTop="0" />
+      <File id="5B92E499-1136-4646-8DC1-C74761FC790B/d:Properties/f:Resources.resx" caret="30" fromTop="0" />
+      <File id="10A7DAFA-2DDF-46DC-A4CF-49A5F65E3F21/d:GridPrinting/f:EditColName.resx" caret="30" fromTop="0" />
+      <File id="10A7DAFA-2DDF-46DC-A4CF-49A5F65E3F21/d:GridPrinting/f:ReportPreview.resx" caret="30" fromTop="0" />
+      <File id="10A7DAFA-2DDF-46DC-A4CF-49A5F65E3F21/d:GridPrinting/f:ReportResult.resx" caret="30" fromTop="0" />
+      <File id="10A7DAFA-2DDF-46DC-A4CF-49A5F65E3F21/d:Properties/f:Resources.resx" caret="30" fromTop="0" />
+      <File id="D792E26E-C6BB-40FA-B997-4237F446B8FB/f:HelpViewer.resx" caret="35" fromTop="0" />
+      <File id="10A7DAFA-2DDF-46DC-A4CF-49A5F65E3F21/d:GridPrinting/f:ReportPreview.cs" caret="20949" fromTop="16" />
+    </RecentFiles>
+    <RecentEdits />
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

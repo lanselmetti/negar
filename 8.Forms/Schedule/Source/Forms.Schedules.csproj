@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5DAE0755-C2A0-46BC-8C28-C869E94E1E1B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sepehr.Forms.Schedules</RootNamespace>
+    <AssemblyName>Sepehr.Forms.Schedules</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>SepehrLogo.ico</ApplicationIcon>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Forms.Schedules.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Sepehr.Forms.Schedules.XML</DocumentationFile>
+    <PlatformTarget>x86</PlatformTarget>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=7.7.0.4, Culture=neutral, PublicKeyToken=5fd520d36328f741, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\#Third.Party.Components\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Calendar, Version=2.2.0.5, Culture=neutral, PublicKeyToken=145b7e473c8af181, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Calendar\Calendar\bin\Debug\Negar.Calendar.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Db.Layer.Manager, Version=2.3.3.28, Culture=neutral, PublicKeyToken=05adbdc7e690569f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Db.Layer.Manager\Db.Layer.Manager\bin\Debug\Negar.Db.Layer.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Db.Layer.Manager.Sepehr, Version=2.4.0.38, Culture=neutral, PublicKeyToken=2c485803badad6a0, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Db.Layer.Manager.Sepehr\Db.Layer.Manager.Sepehr\bin\Debug\Negar.Db.Layer.Manager.Sepehr.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Negar.Grid.Printing, Version=2.3.4.31, Culture=neutral, PublicKeyToken=889de89d3c20ee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Grid.Printing\Grid.Printing\bin\Debug\Negar.Grid.Printing.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Help.Manager, Version=2.1.0.3, Culture=neutral, PublicKeyToken=3400f1278b418aa3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Help.Manager\Help.Manager\bin\Debug\Negar.Help.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.License.Manager, Version=1.3.0.3, Culture=neutral, PublicKeyToken=0dbe34f4a48e0e11, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\License.Manager\License.Manager\bin\Debug\Negar.License.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Log.Manager, Version=2.3.0.3, Culture=neutral, PublicKeyToken=7d935595bdbb98a2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Log.Manager\Log.Manager\bin\Debug\Negar.Log.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.MessageBox, Version=2.1.0.0, Culture=neutral, PublicKeyToken=dfb97cb8308c094f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\MessageBox\MessageBox\bin\Debug\Negar.MessageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.User.Security.Manager, Version=2.2.0.1, Culture=neutral, PublicKeyToken=07c8b4ac8802f45f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\User.Security.Manager\User.Security.Manager\bin\Debug\Negar.User.Security.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Sepehr.Forms.Admission, Version=2.3.6.60, Culture=neutral, PublicKeyToken=7b8ea6fbc8251556, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Admission\Source\bin\Debug\Sepehr.Forms.Admission.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppointmentsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppointmentsEdit.designer.cs">
+      <DependentUpon>AppointmentsEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppointmentsLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppointmentsLog.Designer.cs">
+      <DependentUpon>AppointmentsLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SchDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppsDescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsDescription.designer.cs">
+      <DependentUpon>AppsDescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeDate.Designer.cs">
+      <DependentUpon>ChangeDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientSearch.designer.cs">
+      <DependentUpon>PatientSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointments.designer.cs">
+      <DependentUpon>Appointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsSearch.designer.cs">
+      <DependentUpon>AppsSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientShiftSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientShiftSearch.designer.cs">
+      <DependentUpon>PatientShiftSearch.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppointmentsEdit.resx">
+      <DependentUpon>AppointmentsEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppointmentsLog.resx">
+      <DependentUpon>AppointmentsLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsDescription.resx">
+      <DependentUpon>AppsDescription.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeDate.resx">
+      <DependentUpon>ChangeDate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointments.resx">
+      <DependentUpon>Appointments.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsSearch.resx">
+      <DependentUpon>AppsSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientSearch.resx">
+      <DependentUpon>PatientSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientShiftSearch.resx">
+      <DependentUpon>PatientShiftSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangeLog.txt" />
+    <None Include="Forms.Schedules.snk" />
+    <None Include="SchDataGridViewDiagram.cd" />
+    <None Include="Resources\Accept.png" />
+    <None Include="Resources\Cancel.png" />
+    <None Include="Resources\Help.png" />
+    <None Include="Resources\Copy.png" />
+    <None Include="Resources\Cut.png" />
+    <None Include="Resources\DeleteMed.png" />
+    <None Include="Resources\Paste.png" />
+    <None Include="Resources\SepehrIcon.ico" />
+    <None Include="Resources\Find.ico" />
+    <None Include="Resources\DeleteSmall.png" />
+    <None Include="Resources\HelpMed.ico" />
+    <None Include="Resources\PrintGrid.ico" />
+    <None Include="Resources\Search.ico" />
+    <None Include="Resources\SchSearchApps.ico" />
+    <None Include="Resources\SchAdd.png" />
+    <None Include="Resources\LeftLarge.ico" />
+    <None Include="Resources\RightLarge.ico" />
+    <None Include="Resources\InfoSmall.ico" />
+    <None Include="Resources\SchClearShift.png" />
+    <None Include="Resources\SchEditApp.png" />
+    <None Include="Resources\FreeLockedRow.ico" />
+    <None Include="Resources\SchAdmitPat.png" />
+    <None Include="Resources\SchAdmitRef.png" />
+    <None Include="Resources\Refresh.ico" />
+    <None Include="Resources\PatientSearch.ico" />
+    <None Include="Resources\RefSearch.ico" />
+    <None Include="Resources\PatDelete.ico" />
+    <None Include="Resources\RefDelete.ico" />
+    <None Include="Resources\PatientFile.ico" />
+    <None Include="Resources\RefData.ico" />
+    <None Include="Resources\SchInfo.png" />
+    <Content Include="SepehrLogo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>C:\Projects\Negar\5.Tools\GacInstaller\GacInstaller.exe u $(TargetName)</PreBuildEvent>
+    <PostBuildEvent>C:\Projects\Negar\5.Tools\GacInstaller\GacInstaller.exe i "$(TargetPath)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

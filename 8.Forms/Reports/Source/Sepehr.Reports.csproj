@@ -1,0 +1,695 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{07A18736-D961-4C00-89C3-ECD1EF4BE778}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sepehr.Forms.Reports</RootNamespace>
+    <AssemblyName>Sepehr.Forms.Reports</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>SepehrLogo.ico</ApplicationIcon>
+    <StartupObject>
+    </StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Forms.Reports.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Sepehr.Forms.Reports.XML</DocumentationFile>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\CrystalDecisions.Enterprise.Framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\CrystalDecisions.Enterprise.InfoStore.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=7.7.0.4, Culture=neutral, PublicKeyToken=5fd520d36328f741, processorArchitecture=MSIL" />
+    <Reference Include="Negar.Calendar, Version=2.2.0.5, Culture=neutral, PublicKeyToken=145b7e473c8af181, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Calendar\Calendar\bin\Debug\Negar.Calendar.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.ConnectionString.Manager, Version=2.2.0.5, Culture=neutral, PublicKeyToken=8591c648ca881033, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\ConnectionString.Manager\ConnectionString.Manager\bin\Debug\Negar.ConnectionString.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Db.Layer.Manager, Version=2.3.3.28, Culture=neutral, PublicKeyToken=05adbdc7e690569f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Db.Layer.Manager\Db.Layer.Manager\bin\Debug\Negar.Db.Layer.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Db.Layer.Manager.Sepehr, Version=2.4.0.35, Culture=neutral, PublicKeyToken=2c485803badad6a0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Db.Layer.Manager.Sepehr\Db.Layer.Manager.Sepehr\bin\Debug\Negar.Db.Layer.Manager.Sepehr.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Grid.Printing, Version=2.3.4.31, Culture=neutral, PublicKeyToken=889de89d3c20ee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Grid.Printing\Grid.Printing\bin\Debug\Negar.Grid.Printing.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Help.Manager, Version=2.1.0.3, Culture=neutral, PublicKeyToken=3400f1278b418aa3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Help.Manager\Help.Manager\bin\Debug\Negar.Help.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Log.Manager, Version=2.3.0.3, Culture=neutral, PublicKeyToken=7d935595bdbb98a2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Log.Manager\Log.Manager\bin\Debug\Negar.Log.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.MessageBox, Version=2.1.0.0, Culture=neutral, PublicKeyToken=dfb97cb8308c094f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\MessageBox\MessageBox\bin\Debug\Negar.MessageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.User.Security.Manager, Version=2.2.0.1, Culture=neutral, PublicKeyToken=07c8b4ac8802f45f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\User.Security.Manager\User.Security.Manager\bin\Debug\Negar.User.Security.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="General\Report04\Report4_2.cs">
+      <DependentUpon>Report4_2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="General\Report21\Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Report21\Filter.designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Report21\Report21.cs">
+      <DependentUpon>Report21.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="General\Report20\Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Report20\Filter.designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Report20\Report20.cs">
+      <DependentUpon>Report20.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="General\Report19\Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Report19\Filter.designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Report19\Report19.cs">
+      <DependentUpon>Report19.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="General\Report18\Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Report18\Filter.designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Report18\Report18.cs">
+      <DependentUpon>Report18.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="General\Report17\Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Report17\Filter.designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Report17\Report17.cs">
+      <DependentUpon>Report17.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="General\Report16\Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Report16\Filter.designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Report16\Report16.cs">
+      <DependentUpon>Report16.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="General\Report15\Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Report15\Filter.designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Report15\Report15.cs">
+      <DependentUpon>Report15.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="General\Report14\Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Report14\Filter.designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Report14\Report14.cs">
+      <DependentUpon>Report14.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="General\Report13\Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Report13\Filter.designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Report13\Report13.cs">
+      <DependentUpon>Report13.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="General\Report11\Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Report11\Filter.designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Report11\Report11.cs">
+      <DependentUpon>Report11.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="General\Report10\Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Report10\Filter.designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Report10\Report10.cs">
+      <DependentUpon>Report10.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="General\Report12\Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Report12\Filter.designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Report12\Report12.cs">
+      <DependentUpon>Report12.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="General\Report09\Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Report09\Filter.designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Report09\Report9.cs">
+      <DependentUpon>Report9.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="General\Report08\Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Report08\Filter.designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Report08\Report8.cs">
+      <DependentUpon>Report8.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="General\Report07\Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Report07\Filter.designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Report06\Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Report06\Filter.designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Report06\Report6.cs">
+      <DependentUpon>Report6.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="General\Report07\Report7.cs">
+      <DependentUpon>Report7.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="General\Report01\Report1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="General\Report02\Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Report02\Filter.designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Report02\Report2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="General\Report03\Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Report03\Filter.designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Report03\Report3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="General\Report04\Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Report04\Filter.designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Report04\Report4_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report4_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="General\Report05\Report5.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report5.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="General\ReportPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\ReportPreview.designer.cs">
+      <DependentUpon>ReportPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Report05\Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Report05\Filter.designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Report01\Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Report01\Filter.designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="General\Report04\Report4_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report4_2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report21\Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report21\Report21.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report21.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report20\Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report20\Report20.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report20.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report19\Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report19\Report19.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report19.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report18\Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report18\Report18.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report18.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report17\Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report17\Report17.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report17.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report16\Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report16\Report16.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report16.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report15\Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report15\Report15.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report15.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report14\Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report14\Report14.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report14.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report13\Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report13\Report13.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report13.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report11\Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report11\Report11.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report11.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report10\Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report10\Report10.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report10.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report12\Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report12\Report12.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report12.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report09\Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report09\Report9.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report9.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report08\Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report08\Report8.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report8.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report07\Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report06\Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report06\Report6.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report6.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report07\Report7.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report7.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report01\Report1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report02\Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report02\Report2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report03\Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report03\Report3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report04\Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report04\Report4_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report4_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report05\Report5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report5.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\ReportPreview.resx">
+      <DependentUpon>ReportPreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report05\Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Report01\Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designables\Design\Manage.resx">
+      <DependentUpon>Manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designables\Design\AddinFields.resx">
+      <DependentUpon>AddinFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designables\Design\AddinFieldsManage.resx">
+      <DependentUpon>AddinFieldsManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designables\Report\Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designables\Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Designables\Design\AftabSyntaxHighlighter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Designables\Report\ReportGenerator.cs" />
+    <Compile Include="Designables\ReportHelper.cs" />
+    <Compile Include="Designables\Design\Manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Designables\Design\Manage.designer.cs">
+      <DependentUpon>Manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Designables\Design\AddinFields.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Designables\Design\AddinFields.designer.cs">
+      <DependentUpon>AddinFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Designables\Design\AddinFieldsManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Designables\Design\AddinFieldsManage.designer.cs">
+      <DependentUpon>AddinFieldsManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Designables\Report\Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Designables\Report\Filter.designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Designables\Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Designables\Reports.designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms.Reports.snk" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="General\Report21\T-SQL.sql" />
+    <None Include="General\Report20\T-SQL.sql" />
+    <None Include="General\Report19\T-SQL.sql" />
+    <None Include="General\Report18\T-SQL.sql" />
+    <None Include="General\Report17\T-SQL.sql" />
+    <None Include="General\Report16\T-SQL.sql" />
+    <None Include="General\Report15\T-SQL.sql" />
+    <None Include="General\Report14\T-SQL.sql" />
+    <None Include="General\Report13\T-SQL.sql" />
+    <None Include="General\Report11\T-SQL.sql" />
+    <None Include="General\Report10\T-SQL.sql" />
+    <None Include="General\Report12\T-SQL.sql" />
+    <None Include="General\Report09\T-SQL.sql" />
+    <None Include="General\Report08\T-SQL.sql" />
+    <None Include="General\Report07\T-SQL.sql" />
+    <None Include="General\Report01\T-SQL.sql" />
+    <None Include="General\Report02\T-SQL.sql" />
+    <None Include="General\Report03\T-SQL.sql" />
+    <None Include="General\Report04\T-SQL.sql" />
+    <None Include="General\Report05\T-SQL.sql" />
+    <None Include="General\Report06\T-SQL.sql" />
+    <Content Include="ChangeLog.txt" />
+    <None Include="Resources\Accept.png" />
+    <None Include="Resources\Cancel.png" />
+    <None Include="Resources\Help.png" />
+    <None Include="Resources\SelectAll.png" />
+    <None Include="Resources\SelectNone.png" />
+    <None Include="Resources\SepehrIcon.ico" />
+    <None Include="Resources\AddMed.png" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\EditSmall.png" />
+    <None Include="Resources\PrintGrid.ico" />
+    <None Include="Resources\ExportToExcel.ico" />
+    <None Include="Resources\Refresh.ico" />
+    <None Include="Resources\RightMed2.png" />
+    <None Include="Resources\RightMed1.png" />
+    <None Include="Resources\LeftMed1.png" />
+    <None Include="Resources\LeftMed2.png" />
+    <None Include="Resources\UsersSettings.ico" />
+    <None Include="Resources\AddinFields.ico" />
+    <None Include="Resources\PrintSettings.ico" />
+    <None Include="Resources\PrintPreview.ico" />
+    <None Include="Resources\Copy.png" />
+    <None Include="Resources\Browse.ico" />
+    <None Include="Resources\Left.png" />
+    <None Include="Resources\Collapse.png" />
+    <None Include="Resources\Expand.png" />
+    <Content Include="SepehrLogo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>C:\Projects\Negar\5.Tools\GacInstaller\GacInstaller.exe u $(TargetName)</PreBuildEvent>
+    <PostBuildEvent>C:\Projects\Negar\5.Tools\GacInstaller\GacInstaller.exe i "$(TargetPath)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

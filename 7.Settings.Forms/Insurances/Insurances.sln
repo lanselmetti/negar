@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Settings.Insurances", "Source\Settings.Insurances.csproj", "{C7216D3B-4E23-4982-8210-C17448874B1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{0C663106-5090-4B65-9B8F-96FDD22CD8CD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C7216D3B-4E23-4982-8210-C17448874B1E} = {C7216D3B-4E23-4982-8210-C17448874B1E}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7216D3B-4E23-4982-8210-C17448874B1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7216D3B-4E23-4982-8210-C17448874B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7216D3B-4E23-4982-8210-C17448874B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7216D3B-4E23-4982-8210-C17448874B1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C663106-5090-4B65-9B8F-96FDD22CD8CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C663106-5090-4B65-9B8F-96FDD22CD8CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C663106-5090-4B65-9B8F-96FDD22CD8CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C663106-5090-4B65-9B8F-96FDD22CD8CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

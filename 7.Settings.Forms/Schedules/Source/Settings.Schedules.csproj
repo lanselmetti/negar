@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{088D3CD5-14E9-4E08-A650-AFA2D33C24EE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sepehr.Settings.Schedules</RootNamespace>
+    <AssemblyName>Sepehr.Settings.Schedules</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>SepehrLogo.ico</ApplicationIcon>
+    <StartupObject>
+    </StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Settings.Schedules.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Sepehr.Settings.Schedules.XML</DocumentationFile>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=7.7.0.4, Culture=neutral, PublicKeyToken=5fd520d36328f741, processorArchitecture=MSIL" />
+    <Reference Include="Negar.Calendar, Version=2.2.0.5, Culture=neutral, PublicKeyToken=145b7e473c8af181, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Calendar\Calendar\bin\Debug\Negar.Calendar.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Db.Layer.Manager.Sepehr, Version=2.4.0.35, Culture=neutral, PublicKeyToken=2c485803badad6a0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Db.Layer.Manager.Sepehr\Db.Layer.Manager.Sepehr\bin\Debug\Negar.Db.Layer.Manager.Sepehr.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Help.Manager, Version=2.1.0.3, Culture=neutral, PublicKeyToken=3400f1278b418aa3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Help.Manager\Help.Manager\bin\Debug\Negar.Help.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.Log.Manager, Version=2.3.0.3, Culture=neutral, PublicKeyToken=7d935595bdbb98a2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\Log.Manager\Log.Manager\bin\Debug\Negar.Log.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="Negar.MessageBox, Version=2.1.0.0, Culture=neutral, PublicKeyToken=dfb97cb8308c094f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\4.Components\MessageBox\MessageBox\bin\Debug\Negar.MessageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppsAddinFields\AddinColsManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsAddinFields\AddinColsManage.Designer.cs">
+      <DependentUpon>AddinColsManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsAddinFields\ColumnsOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsAddinFields\ColumnsOrder.designer.cs">
+      <DependentUpon>ColumnsOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\AppsBaseEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\AppsBaseEdit.Designer.cs">
+      <DependentUpon>AppsBaseEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\AppsCurrentEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\AppsCurrentEdit.Designer.cs">
+      <DependentUpon>AppsCurrentEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\AppsEditConflicts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\AppsEditConflicts.designer.cs">
+      <DependentUpon>AppsEditConflicts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\AppsNewPeriods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\AppsNewPeriods.Designer.cs">
+      <DependentUpon>AppsNewPeriods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsAddinFields\MultiChoiceItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsAddinFields\MultiChoiceItems.Designer.cs">
+      <DependentUpon>MultiChoiceItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsAddinFields\MultiChoiceFieldItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsAddinFields\MultiChoiceFieldItems.Designer.cs">
+      <DependentUpon>MultiChoiceFieldItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\HolidaysAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\HolidaysAdd.Designer.cs">
+      <DependentUpon>HolidaysAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsAddinFields\AddinCols.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsAddinFields\AddinCols.Designer.cs">
+      <DependentUpon>AddinCols.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\AppsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\AppsAdd.Designer.cs">
+      <DependentUpon>AppsAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Apps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Apps.Designer.cs">
+      <DependentUpon>Apps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Holidays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Holidays.Designer.cs">
+      <DependentUpon>Holidays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AppsAddinFields\MultiChoiceItems.resx">
+      <DependentUpon>MultiChoiceItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\AppsBaseEdit.resx">
+      <DependentUpon>AppsBaseEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsAddinFields\ColumnsOrder.resx">
+      <DependentUpon>ColumnsOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\AppsCurrentEdit.resx">
+      <DependentUpon>AppsCurrentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\AppsEditConflicts.resx">
+      <DependentUpon>AppsEditConflicts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\AppsNewPeriods.resx">
+      <DependentUpon>AppsNewPeriods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsAddinFields\MultiChoiceFieldItems.resx">
+      <DependentUpon>MultiChoiceFieldItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\HolidaysAdd.resx">
+      <DependentUpon>HolidaysAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsAddinFields\AddinColsManage.resx">
+      <DependentUpon>AddinColsManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsAddinFields\AddinCols.resx">
+      <DependentUpon>AddinCols.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\AppsAdd.resx">
+      <DependentUpon>AppsAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Apps.resx">
+      <DependentUpon>Apps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Holidays.resx">
+      <DependentUpon>Holidays.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangeLog.txt" />
+    <None Include="Resources\Accept.png" />
+    <None Include="Resources\AddMed.png" />
+    <None Include="Resources\Apply.png" />
+    <None Include="Resources\Cancel.png" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\Help.png" />
+    <None Include="Resources\SelectAll.png" />
+    <None Include="Resources\SelectNone.png" />
+    <None Include="Resources\SepehrIcon.ico" />
+    <None Include="Resources\EditSmall.png" />
+    <None Include="Resources\SchHolidays.png" />
+    <None Include="Resources\SchAdd.png" />
+    <None Include="Resources\AddinFields.ico" />
+    <None Include="Resources\UpLarge.ico" />
+    <None Include="Resources\DownLarge.ico" />
+    <None Include="Resources\Ascending.png" />
+    <None Include="Resources\Descending.png" />
+    <None Include="Resources\Collapse.png" />
+    <None Include="Resources\Expand.png" />
+    <None Include="Resources\EditLarge.ico" />
+    <None Include="Resources\SchAdmitRef.png" />
+    <None Include="Resources\LeftLarge.ico" />
+    <None Include="Settings.Schedules.snk" />
+    <Content Include="SepehrLogo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>C:\Projects\Negar\5.Tools\GacInstaller\GacInstaller.exe u $(TargetName)</PreBuildEvent>
+    <PostBuildEvent>C:\Projects\Negar\5.Tools\GacInstaller\GacInstaller.exe i "$(TargetPath)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

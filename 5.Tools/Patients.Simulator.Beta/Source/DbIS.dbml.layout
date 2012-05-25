@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 12.75" name="DbIS">
+  <DataContextMoniker Name="/DbIS" />
+  <nestedChildShapes>
+    <classShape Id="18126907-dc66-49ce-8f3e-467238c6056b" absoluteBounds="0.75, 4.25, 2, 4.3830997721354166">
+      <DataClassMoniker Name="/DbIS/RefList" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bdc06caf-b42c-41a8-a6c6-e46837758dd5" absoluteBounds="0.765, 4.71, 1.9700000000000002, 3.8230997721354165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8651ddd5-acd7-4d61-9645-7db71a6b79e1" absoluteBounds="3.5, 9.375, 2, 3.0683211263020826">
+      <DataClassMoniker Name="/DbIS/RefService" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e4af110a-0f80-4edc-a1c3-5a1a892d2641" absoluteBounds="3.515, 9.835, 1.9700000000000002, 2.508321126302083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8919347e-e227-40c4-be94-1fd689e797a8" absoluteBounds="6.75, 1.375, 2, 2.0822371419270831">
+      <DataClassMoniker Name="/DbIS/ServiceList" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f6719533-bec5-4bd0-ad9b-df56e9997679" absoluteBounds="6.765, 1.835, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="74088c68-8438-4488-9c06-d827422a4455" absoluteBounds="3.5, 6.375, 2, 2.0822371419270826">
+      <DataClassMoniker Name="/DbIS/RefTransaction" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7e1fe123-02c4-43b8-b36f-62c547c7e701" absoluteBounds="3.515, 6.835, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="31f10f32-0387-4dc6-8cc9-e6be12231456" absoluteBounds="3.5, 2.625, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/DbIS/RefCostsAndDiscount" />
+      <nestedChildShapes>
+        <elementListCompartment Id="57ec1378-a64c-4108-9ec5-ed5d9d732e69" absoluteBounds="3.515, 3.085, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5059fd83-c127-45a7-ad93-b7c72a2e74c9" absoluteBounds="0.75, 0.75, 2, 1.75354248046875">
+      <DataClassMoniker Name="/DbIS/CostsAndDiscountsType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e0c1af89-1b2a-4bad-810a-eaaa3f059086" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.6874995); (4.5 : 1.6874995); (4.5 : 2.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DbIS/CostsAndDiscountsType/CostsAndDiscountsType_RefCostsAndDiscount" />
+      <nodes>
+        <classShapeMoniker Id="5059fd83-c127-45a7-ad93-b7c72a2e74c9" />
+        <classShapeMoniker Id="31f10f32-0387-4dc6-8cc9-e6be12231456" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="f758652c-006f-4ebe-833f-6f74cf483f7b" absoluteBounds="6.25, 5, 2, 2.4109318033854166">
+      <DataClassMoniker Name="/DbIS/RefDocument" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d628592d-1e8b-4ce1-8d00-9a6ce00fc8e5" absoluteBounds="6.265, 5.46, 1.9700000000000002, 1.8509318033854165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 5.65625); (6.25 : 5.65625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DbIS/RefList/RefList_RefDocument" />
+      <nodes>
+        <classShapeMoniker Id="18126907-dc66-49ce-8f3e-467238c6056b" />
+        <classShapeMoniker Id="f758652c-006f-4ebe-833f-6f74cf483f7b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 9.29002115885417); (1.75 : 11.1258048502604); (3.5 : 11.1258048502604)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DbIS/RefList/RefList_RefService" />
+      <nodes>
+        <classShapeMoniker Id="18126907-dc66-49ce-8f3e-467238c6056b" />
+        <classShapeMoniker Id="8651ddd5-acd7-4d61-9645-7db71a6b79e1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.54890055338542); (3.5 : 7.54890055338542)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DbIS/RefList/RefList_RefTransaction" />
+      <nodes>
+        <classShapeMoniker Id="18126907-dc66-49ce-8f3e-467238c6056b" />
+        <classShapeMoniker Id="74088c68-8438-4488-9c06-d827422a4455" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.51524983723958); (3.5 : 4.51524983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DbIS/RefList/RefList_RefCostsAndDiscount" />
+      <nodes>
+        <classShapeMoniker Id="18126907-dc66-49ce-8f3e-467238c6056b" />
+        <classShapeMoniker Id="31f10f32-0387-4dc6-8cc9-e6be12231456" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

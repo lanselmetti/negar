@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="ImagingSystem" Class="DbIS" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\sqldeveloper;Initial Catalog=ImagingSystem;Integrated Security=True" SettingsObjectName="Negar.Properties.Settings" SettingsPropertyName="ImagingSystemConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="Referrals.List" Member="RefLists">
+    <Type Name="RefList">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PatientIX" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BedRiddenIX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsEditing" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="RegisterDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="PrescriptionDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Weight" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="AdmitterIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ReferPhysicianIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ReferStatusIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Ins1IX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Ins1Validation" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Ins1Num1" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Ins1Num2" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Ins1PageNum" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Ins1PartLimit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ins2IX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Ins2Validation" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Ins2Num" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Ins2PartLimit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PrePayable" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="RefList_RefService" Member="RefServices" ThisKey="ID" OtherKey="ReferralIX" Type="RefService" />
+      <Association Name="RefList_RefTransaction" Member="RefTransactions" ThisKey="ID" OtherKey="ReferralIX" Type="RefTransaction" />
+      <Association Name="RefList_RefCostsAndDiscount" Member="RefCostsAndDiscounts" ThisKey="ID" OtherKey="ReferralIX" Type="RefCostsAndDiscount" />
+      <Association Name="RefList_RefDocument" Member="RefDocuments" ThisKey="ID" OtherKey="RefIX" Type="RefDocument" />
+    </Type>
+  </Table>
+  <Table Name="Referrals.RefServices" Member="RefServices">
+    <Type Name="RefService">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ReferralIX" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ServiceIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Quantity" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="ExpertIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PhysicianIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsIns1Cover" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsIns2Cover" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Ins1Price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ins1PartPrice" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ins2Price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ins2PartPrice" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PatientPayablePrice" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="RefList_RefService" Member="RefList" ThisKey="ReferralIX" OtherKey="ID" Type="RefList" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Services.List" Member="ServiceLists">
+    <Type Name="ServiceList">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="CategoryIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PriceFree" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PriceGov" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Accounting.RefTransaction" Member="RefTransactions">
+    <Type Name="RefTransaction">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ReferralIX" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="OccuredDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CashierIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CashIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Value" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="RefList_RefTransaction" Member="RefList" ThisKey="ReferralIX" OtherKey="ID" Type="RefList" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Accounting.RefCostsAndDiscounts" Member="RefCostsAndDiscounts">
+    <Type Name="RefCostsAndDiscount">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ReferralIX" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CostIXOrDiscountIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CashierIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="RefList_RefCostsAndDiscount" Member="RefList" ThisKey="ReferralIX" OtherKey="ID" Type="RefList" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="CostsAndDiscountsType_RefCostsAndDiscount" Member="CostsAndDiscountsType" ThisKey="CostIXOrDiscountIX" OtherKey="ID" Type="CostsAndDiscountsType" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="Accounting.CostsAndDiscountsTypes" Member="CostsAndDiscountsTypes">
+    <Type Name="CostsAndDiscountsType">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsCost" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Limitation" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Association Name="CostsAndDiscountsType_RefCostsAndDiscount" Member="RefCostsAndDiscounts" ThisKey="ID" OtherKey="CostIXOrDiscountIX" Type="RefCostsAndDiscount" />
+    </Type>
+  </Table>
+  <Table Name="Referrals.RefDocuments" Member="RefDocuments">
+    <Type Name="RefDocument">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RefIX" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TypeIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ReportPhysicianIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TypistIX" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="LastModifyDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="LastModifierIX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DocData" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="RefList_RefDocument" Member="RefList" ThisKey="RefIX" OtherKey="ID" Type="RefList" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+</Database>

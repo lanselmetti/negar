@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="PatientsSystem" Class="DbClassPS" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Function Name="Clinic.SP_SelectRefPhysiciansSpecs" Method="SP_SelectRefPhysiciansSpecs">
+    <ElementType Name="SP_SelectRefPhysiciansSpecsResult">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

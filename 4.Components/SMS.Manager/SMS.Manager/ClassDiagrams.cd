@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Negar.SMSManager.SMSMessageData">
+    <Position X="3.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAQAAAABAAIAAAAAAAIAAAAIA=</HashCode>
+      <FileName>SMSMessageData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.SMSManager.GSMModemManager">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EgAQQAAAIAAAQAAAAAAgAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GSMModemManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.SMSManager.SMSSender">
+    <Position X="6" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAQAAAAAAAAAAAIAAQAAAAAAAAAA=</HashCode>
+      <FileName>SMSSender.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

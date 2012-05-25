@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Negar.Security.Classes.ACLCard">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="FormPanel" Hidden="true" />
+      <Field Name="FormToolTip" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="lblTitle" Hidden="true" />
+      <Field Name="PictureBoxStatus" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAACQAAACAAABCAAACAAAACAAQAQAAEAAAACAABBAA=</HashCode>
+      <FileName>Classes\ACLCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.Security.Classes.ChangeUserPassword">
+    <Position X="2.5" Y="0.5" Width="1.75" />
+    <Members>
+      <Field Name="btnAccept" Hidden="true" />
+      <Field Name="btnCancel" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="FormErrorProvider" Hidden="true" />
+      <Field Name="FormToolTip" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="lbl1" Hidden="true" />
+      <Field Name="lbl2" Hidden="true" />
+      <Field Name="lblOldPass" Hidden="true" />
+      <Field Name="txtOldPass" Hidden="true" />
+      <Field Name="txtPass1" Hidden="true" />
+      <Field Name="txtPass2" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAxACAgAAtIAACAAAICBgAAQYAAAAEAAAAACIA=</HashCode>
+      <FileName>Classes\ChangeUserPassword.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.Security.Classes.Cryptographer">
+    <Position X="4.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAIAAACAAAAAACAIAAAAAIAAAAAAA=</HashCode>
+      <FileName>Classes\Cryptographer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negar.Security.Classes.UsersSelection">
+    <Position X="7" Y="0.5" Width="2.5" />
+    <Members>
+      <Field Name="btnAccept" Hidden="true" />
+      <Field Name="btnAll" Hidden="true" />
+      <Field Name="btnCancel" Hidden="true" />
+      <Field Name="btnNone" Hidden="true" />
+      <Field Name="cboGroups" Hidden="true" />
+      <Field Name="cBoxWithInActives" Hidden="true" />
+      <Field Name="ColFirstName" Hidden="true" />
+      <Field Name="ColLastName" Hidden="true" />
+      <Field Name="ColSelection" Hidden="true" />
+      <Field Name="ColUserName" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvData" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="FormPanel" Hidden="true" />
+      <Field Name="FormToolTip" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="lblCategory" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QEAACAAAEHAAIAsAACCaAQIKAAAAQAgACCCABBAEAAA=</HashCode>
+      <FileName>Classes\UsersSelection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,2047 @@
+<SmartAssemblyProject ProjectId="{c4fe0cfc-0646-4ccc-b7d9-7441b4b694c1}" Version="2.0">
+    <MainAssemblyFileName>.\Source\bin\Debug\Sepehr.exe</MainAssemblyFileName>
+    <FriendlyName>Sepehr IMS Main Application</FriendlyName>
+    <CompanyName>آفتاب</CompanyName>
+    <Configuration Name="Release">
+        <ApplicationName>Sepehr IMS Main Application</ApplicationName>
+        <Destination DestinationFileName=".\Sepehr.exe" />
+        <Assemblies>
+            <Assembly AssemblyName="DevComponents.DotNetBar2, Culture=neutral, PublicKeyToken=5fd520d36328f741">
+                <Merging Merge="1">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="1" />
+                    <ResourcesCompression Compress="0" />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab Calendar, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab User Security Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Aftab User Security Manager</Assembly>
+                                <Module>Aftab User Security Manager.dll</Module>
+                                <Namespace>Aftab.DbLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Aftab User Security Manager</Assembly>
+                                <Module>Aftab User Security Manager.dll</Module>
+                                <Namespace>Aftab.DbLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab Connection String Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab License Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Interop.NovinAfzar, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="1" />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="IMS Security Setting Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Security Setting Forms</Assembly>
+                                <Module>IMS Security Setting Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Security.DataLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Security Setting Forms</Assembly>
+                                <Module>IMS Security Setting Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Security.DataLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Security Setting Forms</Assembly>
+                                <Module>IMS Security Setting Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="DevComponents.TreeGX, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="1" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab MessageBox, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="IMS Windows Log Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="1" />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab Help Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr IMS Schedules Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS Schedules Forms</Assembly>
+                                <Module>Sepehr IMS Schedules Forms.dll</Module>
+                                <Namespace>Sepehr.Schedules.DbLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS Schedules Forms</Assembly>
+                                <Module>Sepehr IMS Schedules Forms.dll</Module>
+                                <Namespace>Sepehr.Schedules.DbLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS Schedules Forms</Assembly>
+                                <Module>Sepehr IMS Schedules Forms.dll</Module>
+                                <Namespace>Sepehr.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr IMS Reports Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS Reports Forms</Assembly>
+                                <Module>Sepehr IMS Reports Forms.dll</Module>
+                                <Namespace>Sepehr.Reports.DbLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS Reports Forms</Assembly>
+                                <Module>Sepehr IMS Reports Forms.dll</Module>
+                                <Namespace>Sepehr.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS Reports Forms</Assembly>
+                                <Module>Sepehr IMS Reports Forms.dll</Module>
+                                <Namespace>Sepehr.Reports.DbLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS Reports Forms</Assembly>
+                                <Module>Sepehr IMS Reports Forms.dll</Module>
+                                <Namespace>Sepehr.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.CrystalReports.Engine, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                </Merging>
+                <Embedding Compress="0" Embed="0" GAC="1" />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.Shared, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                </Merging>
+                <Embedding Compress="0" Embed="0" GAC="1" />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.ReportAppServer.DataSetConversion, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                </Merging>
+                <Embedding Compress="0" Embed="0" GAC="1" />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.KeyCode, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding Compress="0" Embed="0" GAC="1" />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.ReportSource, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                </Merging>
+                <Embedding Compress="0" Embed="0" GAC="1" />
+            </Assembly>
+            <Assembly AssemblyName="AxInterop.OALib, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding Compress="0" Embed="1" />
+            </Assembly>
+            <Assembly AssemblyName="Interop.OALib, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding Compress="0" Embed="1" />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.Windows.Forms, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding Compress="0" Embed="0" GAC="1" />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr IMS Admission Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS Admission Forms</Assembly>
+                                <Module>Sepehr IMS Admission Forms.dll</Module>
+                                <Namespace>Sepehr.Admission.DbLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS Admission Forms</Assembly>
+                                <Module>Sepehr IMS Admission Forms.dll</Module>
+                                <Namespace>Sepehr.Admission.DbLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS Admission Forms</Assembly>
+                                <Module>Sepehr IMS Admission Forms.dll</Module>
+                                <Namespace>Sepehr.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="IMS Patient Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Patient Manager</Assembly>
+                                <Module>IMS Patient Manager.dll</Module>
+                                <Namespace>IMS.DbLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Patient Manager</Assembly>
+                                <Module>IMS Patient Manager.dll</Module>
+                                <Namespace>IMS.DbLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="IMS Bills Print Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Bills Print Manager</Assembly>
+                                <Module>IMS Bills Print Manager.dll</Module>
+                                <Namespace>IMS.DbLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Bills Print Manager</Assembly>
+                                <Module>IMS Bills Print Manager.dll</Module>
+                                <Namespace>IMS.DbLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr IMS Account Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS Account Forms</Assembly>
+                                <Module>Sepehr IMS Account Forms.dll</Module>
+                                <Namespace>Sepehr.Account.DbLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS Account Forms</Assembly>
+                                <Module>Sepehr IMS Account Forms.dll</Module>
+                                <Namespace>Sepehr.Account.DbLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr IMS Documents Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS Documents Forms</Assembly>
+                                <Module>Sepehr IMS Documents Forms.dll</Module>
+                                <Namespace>Sepehr.Documents.DbLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS Documents Forms</Assembly>
+                                <Module>Sepehr IMS Documents Forms.dll</Module>
+                                <Namespace>Sepehr.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS Documents Forms</Assembly>
+                                <Module>Sepehr IMS Documents Forms.dll</Module>
+                                <Namespace>Sepehr.Documents.DbLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS Documents Forms</Assembly>
+                                <Module>Sepehr IMS Documents Forms.dll</Module>
+                                <Namespace>Sepehr.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="ChilkatDotNet2, Culture=neutral, PublicKeyToken=eb5fc1fc52ef09bd">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding Compress="0" Embed="1" GAC="1" />
+            </Assembly>
+            <Assembly AssemblyName="Aftab COM Interop Framework, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="1" />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr IMS Cash Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS Cash Forms</Assembly>
+                                <Module>Sepehr IMS Cash Forms.dll</Module>
+                                <Namespace>Sepehr.Cash.DataLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS Cash Forms</Assembly>
+                                <Module>Sepehr IMS Cash Forms.dll</Module>
+                                <Namespace>Sepehr.Cash.DataLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS Cash Forms</Assembly>
+                                <Module>Sepehr IMS Cash Forms.dll</Module>
+                                <Namespace>Sepehr.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="IMS Schedules Setting Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Schedules Setting Forms</Assembly>
+                                <Module>IMS Schedules Setting Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Schedules.DataLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Schedules Setting Forms</Assembly>
+                                <Module>IMS Schedules Setting Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Schedules Setting Forms</Assembly>
+                                <Module>IMS Schedules Setting Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Schedules.DataLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Schedules Setting Forms</Assembly>
+                                <Module>IMS Schedules Setting Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="IMS Patients Setting Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Patients Setting Forms</Assembly>
+                                <Module>IMS Patients Setting Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Patients.DataLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Patients Setting Forms</Assembly>
+                                <Module>IMS Patients Setting Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Patients.DataLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="IMS Referrals Setting Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Referrals Setting Forms</Assembly>
+                                <Module>IMS Referrals Setting Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Referrals.DataLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Referrals Setting Forms</Assembly>
+                                <Module>IMS Referrals Setting Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Referrals.DataLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="IMS Services Setting Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Services Setting Forms</Assembly>
+                                <Module>IMS Services Setting Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Services.DataLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Services Setting Forms</Assembly>
+                                <Module>IMS Services Setting Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Services.DataLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="IMS Insurances Setting Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Insurances Setting Forms</Assembly>
+                                <Module>IMS Insurances Setting Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Insurances.DataLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Insurances Setting Forms</Assembly>
+                                <Module>IMS Insurances Setting Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Insurances.DataLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="IMS Accounts Setting Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Accounts Setting Forms</Assembly>
+                                <Module>IMS Accounts Setting Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Accounts.DataLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Accounts Setting Forms</Assembly>
+                                <Module>IMS Accounts Setting Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Accounts.DataLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="IMS Cash Setting Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Cash Setting Forms</Assembly>
+                                <Module>IMS Cash Setting Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Cash.DataLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Cash Setting Forms</Assembly>
+                                <Module>IMS Cash Setting Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Cash.DataLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="IMS Documents Setting Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Documents Setting Forms</Assembly>
+                                <Module>IMS Documents Setting Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Documents.DataLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>IMS Documents Setting Forms</Assembly>
+                                <Module>IMS Documents Setting Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Documents.DataLayer</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr IMS, Culture=neutral, PublicKeyToken=null">
+                <Merging>
+                    <ResourcesCompression Compress="1" />
+                    <Pruning Prune="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS</Assembly>
+                                <Module>Sepehr IMS.exe</Module>
+                                <Namespace>Sepehr.DbLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS</Assembly>
+                                <Module>Sepehr IMS.exe</Module>
+                                <Namespace>Sepehr.Properties</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS</Assembly>
+                                <Module>Sepehr IMS.exe</Module>
+                                <Namespace>Sepehr.Forms.Search</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS</Assembly>
+                                <Module>Sepehr IMS.exe</Module>
+                                <Namespace>Sepehr.DbLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr IMS</Assembly>
+                                <Module>Sepehr IMS.exe</Module>
+                                <Namespace>Sepehr.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                    <StringsEncoding />
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="Microsoft.Office.Interop.Word, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+                <Embedding Compress="0" Embed="0" GAC="0" />
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="Microsoft.Office.Interop.Excel, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+                <Embedding Compress="0" Embed="0" GAC="0" />
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.ReportAppServer.ObjectFactory, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding Compress="0" Embed="0" GAC="1" />
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.ReportAppServer.XmlSerialize, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding Compress="0" Embed="0" GAC="1" />
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="Microsoft.Vbe.Interop, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+                <Embedding Compress="0" Embed="0" GAC="0" />
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="office, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+                <Embedding Compress="0" Embed="0" GAC="0" />
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.ReportAppServer.ClientDoc, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding Compress="0" Embed="0" GAC="1" />
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.ReportAppServer.Controllers, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding Compress="0" Embed="0" GAC="1" />
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.ReportAppServer.CommonControls, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding Compress="0" Embed="0" GAC="1" />
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.ReportAppServer.ReportDefModel, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding Compress="0" Embed="0" GAC="1" />
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.ReportAppServer.CommLayer, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding Compress="0" Embed="0" GAC="1" />
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.ReportAppServer.CommonObjectModel, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding Compress="0" Embed="0" GAC="1" />
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.ReportAppServer.DataDefModel, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding Compress="0" Embed="0" GAC="1" />
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.Enterprise.InfoStore, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding Compress="0" Embed="0" GAC="1" />
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.Enterprise.Framework, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding Compress="0" Embed="0" GAC="1" />
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="CrystalDecisions.Enterprise.PluginManager, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+                <Embedding Compress="0" Embed="0" GAC="1" />
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr Setting - Security Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Security Forms</Assembly>
+                                <Module>Sepehr Setting - Security Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Security.DataLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Security Forms</Assembly>
+                                <Module>Sepehr Setting - Security Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Security.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Security Forms</Assembly>
+                                <Module>Sepehr Setting - Security Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Security.DataLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Security Forms</Assembly>
+                                <Module>Sepehr Setting - Security Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Security.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr Setting - Schedules Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Schedules Forms</Assembly>
+                                <Module>Sepehr Setting - Schedules Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Schedules.DataLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Schedules Forms</Assembly>
+                                <Module>Sepehr Setting - Schedules Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Schedules.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Schedules Forms</Assembly>
+                                <Module>Sepehr Setting - Schedules Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Schedules.DataLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Schedules Forms</Assembly>
+                                <Module>Sepehr Setting - Schedules Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Schedules.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr Setting - Patients Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Patients Forms</Assembly>
+                                <Module>Sepehr Setting - Patients Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Patients.DataLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Patients Forms</Assembly>
+                                <Module>Sepehr Setting - Patients Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Patients.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Patients Forms</Assembly>
+                                <Module>Sepehr Setting - Patients Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Patients.DataLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Patients Forms</Assembly>
+                                <Module>Sepehr Setting - Patients Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Patients.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr Setting - Referrals Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Referrals Forms</Assembly>
+                                <Module>Sepehr Setting - Referrals Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Referrals.DataLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Referrals Forms</Assembly>
+                                <Module>Sepehr Setting - Referrals Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Referrals.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Referrals Forms</Assembly>
+                                <Module>Sepehr Setting - Referrals Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Referrals.DataLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Referrals Forms</Assembly>
+                                <Module>Sepehr Setting - Referrals Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Referrals.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr Setting - Services Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Services Forms</Assembly>
+                                <Module>Sepehr Setting - Services Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Services.DataLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Services Forms</Assembly>
+                                <Module>Sepehr Setting - Services Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Services.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Services Forms</Assembly>
+                                <Module>Sepehr Setting - Services Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Services.DataLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Services Forms</Assembly>
+                                <Module>Sepehr Setting - Services Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Services.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr Setting - Insurances Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Insurances Forms</Assembly>
+                                <Module>Sepehr Setting - Insurances Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Insurances.DataLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Insurances Forms</Assembly>
+                                <Module>Sepehr Setting - Insurances Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Insurances.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Insurances Forms</Assembly>
+                                <Module>Sepehr Setting - Insurances Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Insurances.DataLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Insurances Forms</Assembly>
+                                <Module>Sepehr Setting - Insurances Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Insurances.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr Setting - Accounts Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Accounts Forms</Assembly>
+                                <Module>Sepehr Setting - Accounts Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Accounts.DataLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Accounts Forms</Assembly>
+                                <Module>Sepehr Setting - Accounts Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Accounts.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Accounts Forms</Assembly>
+                                <Module>Sepehr Setting - Accounts Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Accounts.DataLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Accounts Forms</Assembly>
+                                <Module>Sepehr Setting - Accounts Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Accounts.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr Setting - Cash Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Cash Forms</Assembly>
+                                <Module>Sepehr Setting - Cash Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Cash.DataLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Cash Forms</Assembly>
+                                <Module>Sepehr Setting - Cash Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Cash.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Cash Forms</Assembly>
+                                <Module>Sepehr Setting - Cash Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Cash.DataLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Cash Forms</Assembly>
+                                <Module>Sepehr Setting - Cash Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Cash.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr Setting - Documents Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning Prune="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Documents Forms</Assembly>
+                                <Module>Sepehr Setting - Documents Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Documents.DataLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Documents Forms</Assembly>
+                                <Module>Sepehr Setting - Documents Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Documents.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Documents Forms</Assembly>
+                                <Module>Sepehr Setting - Documents Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Documents.DataLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Documents Forms</Assembly>
+                                <Module>Sepehr Setting - Documents Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.Documents.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr IMS PACS Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr Setting - PACS Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab WinApp Log Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding Compress="1" Embed="1" />
+            </Assembly>
+            <Assembly AssemblyName="AxInterop.OfficeCtrl, Culture=neutral, PublicKeyToken=null">
+                <Merging />
+                <Embedding Compress="0" Embed="1" />
+            </Assembly>
+            <Assembly AssemblyName="Interop.OfficeCtrl, Culture=neutral, PublicKeyToken=null">
+                <Merging />
+                <Embedding Compress="0" Embed="1" />
+            </Assembly>
+            <Assembly AssemblyName="Aftab Grid Printing, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Aftab Grid Printing</Assembly>
+                                <Module>Aftab Grid Printing.dll</Module>
+                                <Namespace>Aftab.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr Setting - Bill Templates Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Bill Templates Forms</Assembly>
+                                <Module>Sepehr Setting - Bill Templates Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.BillTemplates.DbLayer</Namespace>
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Sepehr Setting - Bill Templates Forms</Assembly>
+                                <Module>Sepehr Setting - Bill Templates Forms.dll</Module>
+                                <Namespace>Sepehr.Settings.BillTemplates.Properties</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab Dynamic Assembly Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="3" />
+                </Merging>
+                <Embedding Compress="0" Embed="1" />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr DB Layer Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab DB Layer Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr Bills Print Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Aftab Security Forms, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow Obfuscate="0" />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar Medical Video Capture, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar DirectX Capture Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar DirectShow Manager, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr Setting - SMS, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesCompression Compress="1" />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar SMS Dashboard, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar CD Burner, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr SMS Dashboard, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Db.Layer.Manager, Culture=neutral, PublicKeyToken=05adbdc7e690569f">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.MessageBox, Culture=neutral, PublicKeyToken=dfb97cb8308c094f">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Log.Manager, Culture=neutral, PublicKeyToken=7d935595bdbb98a2">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Calendar, Culture=neutral, PublicKeyToken=145b7e473c8af181">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.ConnectionString.Manager, Culture=neutral, PublicKeyToken=8591c648ca881033">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.License.Manager, Culture=neutral, PublicKeyToken=0dbe34f4a48e0e11">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="4" />
+                    <ResourcesCompression />
+                    <MemberRefsProxy Proxy="1" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Interop.NovinAfzar, Culture=neutral, PublicKeyToken=f973fbbb2077d5f9">
+                <Merging Merge="1">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="1" />
+                    <MemberRefsProxy />
+                    <ResourcesCompression />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Db.Layer.Manager.Sepehr, Culture=neutral, PublicKeyToken=2c485803badad6a0">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.User.Security.Manager, Culture=neutral, PublicKeyToken=07c8b4ac8802f45f">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Dynamic.Assembly.Manager, Culture=neutral, PublicKeyToken=997ee20e80970eef">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Help.Manager, Culture=neutral, PublicKeyToken=3400f1278b418aa3">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Grid.Printing, Culture=neutral, PublicKeyToken=889de89d3c20ee2b">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr.Forms.Admission, Culture=neutral, PublicKeyToken=7b8ea6fbc8251556">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Bills.Manager, Culture=neutral, PublicKeyToken=b4b068709de94ab0">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr.Forms.Account, Culture=neutral, PublicKeyToken=dcc3f08507c87586">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr.Forms.Documents, Culture=neutral, PublicKeyToken=eef734bcae4de234">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.CD.Burner, Culture=neutral, PublicKeyToken=d3532a17236832c1">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Medical.Video.Capture, Culture=neutral, PublicKeyToken=dd6094eed36cb310">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.DirectX.Capture.Manager, Culture=neutral, PublicKeyToken=1b932e3c240dbe37">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.DirectX.Manager, Culture=neutral, PublicKeyToken=0261dd00f7b66d0b">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr.Forms.Schedules, Culture=neutral, PublicKeyToken=d29b99480dc83f6d">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr.Forms.Cash, Culture=neutral, PublicKeyToken=f7681f82a05894fd">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr.SMS.Dashboard, Culture=neutral, PublicKeyToken=75dd1fc2399a2af9">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr.Forms.Reports, Culture=neutral, PublicKeyToken=9abe8a95c0ef8f06">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Negar.Security.Forms, Culture=neutral, PublicKeyToken=2082fd47a73736eb">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr.Settings.Schedules, Culture=neutral, PublicKeyToken=117aa94a4b505c35">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr.Settings.Patients, Culture=neutral, PublicKeyToken=ec77ccde3d7abd7e">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr.Settings.Referrals, Culture=neutral, PublicKeyToken=0fa7b36a90fea07c">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr.Settings.Services, Culture=neutral, PublicKeyToken=d8afced9433be29b">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr.Settings.Insurances, Culture=neutral, PublicKeyToken=9fe92fae6f82b4a6">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr.Settings.Accounts, Culture=neutral, PublicKeyToken=b63dc9bb51d8ad5b">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr.Settings.Cash, Culture=neutral, PublicKeyToken=37e674cd7866d711">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr.Settings.Documents, Culture=neutral, PublicKeyToken=a6104812a0ec224f">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr.Settings.BillTemplates, Culture=neutral, PublicKeyToken=54b2dcbad92d35ac">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr.Settings.PACSIntegration, Culture=neutral, PublicKeyToken=cb1cb7064c1f9379">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr.Settings.SMS, Culture=neutral, PublicKeyToken=4ef9cdc8009cccea">
+                <Merging Merge="1">
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesCompression />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Sepehr, Culture=neutral, PublicKeyToken=null">
+                <Merging>
+                    <ResourcesCompression />
+                    <Pruning />
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow />
+                    <ResourcesPruning />
+                    <MemberRefsProxy />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="mscorlib, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Security, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="Accessibility, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Configuration, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Xml, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Runtime.Serialization.Formatters.Soap, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Deployment, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Data.SqlXml, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Design, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Data, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Drawing.Design, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Web, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Data.OracleClient, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Web.RegularExpressions, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="Microsoft.VisualC, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Transactions, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.EnterpriseServices, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.DirectoryServices, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Runtime.Remoting, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Web.Services, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.DirectoryServices.Protocols, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.ServiceProcess, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Configuration.Install, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Data.Linq, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Core, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Xml.Linq, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Runtime.Serialization, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="SMDiagnostics, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="Microsoft.VisualBasic, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Management, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="Microsoft.JScript, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="Microsoft.Vsa, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="stdole, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="PoweredBySmartAssembly, Culture=neutral, PublicKeyToken=7f465a1c156d4d57">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="SmartAssembly.AssemblyResolver, Culture=neutral, PublicKeyToken=7f465a1c156d4d57">
+                <Merging>
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="SmartAssembly.Zip, Culture=neutral, PublicKeyToken=7f465a1c156d4d57">
+                <Merging>
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="SmartAssembly.StringsEncoding, Culture=neutral, PublicKeyToken=7f465a1c156d4d57">
+                <Merging>
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="SmartAssembly.HouseOfCards, Culture=neutral, PublicKeyToken=7f465a1c156d4d57">
+                <Merging>
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="SmartAssembly.MemoryManagement, Culture=neutral, PublicKeyToken=7f465a1c156d4d57">
+                <Merging>
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                </Merging>
+            </Assembly>
+        </Assemblies>
+        <Options>
+            <Obfuscation FieldsNameMangling="3" NameMangling="3" />
+            <ExceptionReporting ReportExceptions="0" />
+            <StrongNameSigning KeyFileName=".\Source\bin\Debug\ProtectionKey.snk" Sign="1" />
+            <OtherProtections AddIncorrectMetadata="1" SuppressIldasm="1" />
+            <StringsEncoding Encode="1" UseImprovedEncoding="1" />
+            <OtherOptimizations ManageMemory="1" SealClasses="1" />
+            <Debugging CreatePDB="0" />
+            <Troubleshooting SelfDiagnostic="0" />
+            <FeatureUsageReporting />
+        </Options>
+    </Configuration>
+</SmartAssemblyProject>

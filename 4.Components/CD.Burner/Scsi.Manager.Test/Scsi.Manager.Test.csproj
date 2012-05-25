@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C6DB785E-D0EF-41AA-A8E2-39493A99232A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BurnApp</RootNamespace>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Program.ico</ApplicationIcon>
+    <AssemblyName>Test</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Negar.Scsi.Manager, Version=1.0.0.1, Culture=neutral, PublicKeyToken=2acb7f1f9a0ada3c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Scsi.Manager\bin\Debug\Negar.Scsi.Manager.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CapacityBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FileSystems\DiscMaster.cs" />
+    <Compile Include="FileSystems\Iso9660\DirectoryRecord.cs" />
+    <Compile Include="FileSystems\Iso9660\IsoFileSystem.cs" />
+    <Compile Include="FileSystems\Iso9660\IsoHelper.cs" />
+    <Compile Include="FileSystems\Iso9660\IsoMaster.cs" />
+    <Compile Include="FileSystems\Iso9660\PathTableRecord.cs" />
+    <Compile Include="FileSystems\Iso9660\Types.cs" />
+    <Compile Include="FileSystems\Iso9660\VolumeDescriptors.cs" />
+    <Compile Include="FileSystems\Udf\FileEntryInformationControlBlock.cs" />
+    <Compile Include="FileSystems\Udf\Other Types\Allocation Descriptors.cs" />
+    <Compile Include="FileSystems\Udf\Other Types\CharacterSpecification.cs" />
+    <Compile Include="FileSystems\Udf\Other Types\EntityIdentifier.cs" />
+    <Compile Include="FileSystems\Udf\Other Types\PathComponent.cs" />
+    <Compile Include="FileSystems\Udf\Other Types\Timestamp.cs" />
+    <Compile Include="FileSystems\Udf\Other Types\UdfRevision.cs" />
+    <Compile Include="FileSystems\Udf\Partition Maps\MetadataPartitionMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileSystems\Udf\Partition Maps\PartitionMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileSystems\Udf\Partition Maps\SparablePartitionMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileSystems\Udf\Partition Maps\Type1PartitionMap.cs" />
+    <Compile Include="FileSystems\Udf\Partition Maps\Type2PartitionMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileSystems\Udf\Partition Maps\UdfType2PartitionMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileSystems\Udf\Partition Maps\VirtualPartitionMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileSystems\Udf\Tagged Descriptors\AllocationExtentDescriptor.cs" />
+    <Compile Include="FileSystems\Udf\Tagged Descriptors\AnchorVolumeDescriptorPointer.cs" />
+    <Compile Include="FileSystems\Udf\Tagged Descriptors\FileIdentifierDescriptor.cs" />
+    <Compile Include="FileSystems\Udf\Tagged Descriptors\FileSetDescriptor.cs" />
+    <Compile Include="FileSystems\Udf\Tagged Descriptors\ImplementationUseVolumeDescriptor.cs" />
+    <Compile Include="FileSystems\Udf\Tagged Descriptors\Information Control Block Descriptors\ExtendedFileEntryInformationControlBlockDescriptor.cs" />
+    <Compile Include="FileSystems\Udf\Tagged Descriptors\Information Control Block Descriptors\FileEntryInformationControlBlockDescriptor.cs" />
+    <Compile Include="FileSystems\Udf\Tagged Descriptors\Information Control Block Descriptors\FileEntryInformationControlBlockDescriptorBase.cs" />
+    <Compile Include="FileSystems\Udf\Tagged Descriptors\Information Control Block Descriptors\IndirectInformationControlBlockDescriptor.cs" />
+    <Compile Include="FileSystems\Udf\Tagged Descriptors\Information Control Block Descriptors\InformationControlBlockDescriptor.cs" />
+    <Compile Include="FileSystems\Udf\Tagged Descriptors\Information Control Block Descriptors\TerminalInformationControlBlockDescriptor.cs" />
+    <Compile Include="FileSystems\Udf\Tagged Descriptors\LogicalVolumeDescriptor.cs" />
+    <Compile Include="FileSystems\Udf\Tagged Descriptors\LogicalVolumeIntegrityDescriptor.cs" />
+    <Compile Include="FileSystems\Udf\Tagged Descriptors\PartitionDescriptor.cs" />
+    <Compile Include="FileSystems\Udf\Tagged Descriptors\PrimaryVolumeDescriptor.cs" />
+    <Compile Include="FileSystems\Udf\Tagged Descriptors\TaggedDescriptor.cs" />
+    <Compile Include="FileSystems\Udf\Tagged Descriptors\TerminatingDescriptor.cs" />
+    <Compile Include="FileSystems\Udf\Tagged Descriptors\UnallocatedSpaceDescriptor.cs" />
+    <Compile Include="FileSystems\Udf\Tagged Descriptors\VolumeDescriptorPointer.cs" />
+    <Compile Include="FileSystems\Udf\UdfLogicalVolume.cs" />
+    <Compile Include="FileSystems\Udf\UdfLogicalVolume.FileSet.cs" />
+    <Compile Include="FileSystems\Udf\UdfPartition.cs" />
+    <Compile Include="FileSystems\Udf\UdfVolume.cs" />
+    <Compile Include="FileSystems\Udf\UdfVolume.VolumeDescriptorSequenceCollection.cs" />
+    <Compile Include="FileSystems\Udf\UdfVolume.VolumeRecognitionSequenceCollection.cs" />
+    <Compile Include="FileSystems\Udf\Volume Structure Descriptors\BeginningExtendedAreaDescriptor.cs" />
+    <Compile Include="FileSystems\Udf\Volume Structure Descriptors\BootDescriptor.cs" />
+    <Compile Include="FileSystems\Udf\Volume Structure Descriptors\NonSequentialRecording2Descriptor.cs" />
+    <Compile Include="FileSystems\Udf\Volume Structure Descriptors\NonSequentialRecording3Descriptor.cs" />
+    <Compile Include="FileSystems\Udf\Volume Structure Descriptors\TerminatingExtendedAreaDescriptor.cs" />
+    <Compile Include="FileSystems\Udf\Volume Structure Descriptors\UdfVolumeDescriptor.cs" />
+    <Compile Include="FileSystems\Udf\Volume Structure Descriptors\UnknownVolumeStructureDescriptor.cs" />
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBlank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBlank.Designer.cs">
+      <DependentUpon>FormBlank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormErrorRecovery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormErrorRecovery.Designer.cs">
+      <DependentUpon>FormErrorRecovery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProcessing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProcessing.Designer.cs">
+      <DependentUpon>FormProcessing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMdiParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMdiParent.Designer.cs">
+      <DependentUpon>FormMdiParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFeatures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFeatures.Designer.cs">
+      <DependentUpon>FormFeatures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStartBurn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStartBurn.Designer.cs">
+      <DependentUpon>FormStartBurn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\AllocatedStream.cs" />
+    <Compile Include="Helper\Checksum.cs" />
+    <Compile Include="Helper\IFileSystemInfo.cs" />
+    <Compile Include="Helper\ILocatable.cs" />
+    <Compile Include="Helper\IStreamSource.cs" />
+    <Compile Include="Helper\LinearProgressEstimator.cs" />
+    <Compile Include="Helper\ProgressDialog.cs" />
+    <Compile Include="Helper\Range.cs" />
+    <Compile Include="Helper\RestrictedAccessStream.cs" />
+    <Compile Include="Helper\RingBuffer.cs" />
+    <Compile Include="FileSystems\Udf\UdfHelper.cs" />
+    <Compile Include="FileSystems\Udf\UdfMaster.cs" />
+    <Compile Include="Helper\VirtualFileInfo.cs" />
+    <Compile Include="FileSystems\VolumeDescriptorBase.cs" />
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BackgroundBurner.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helper\WeakDictionary.cs" />
+    <Compile Include="Helper\Win32FileSystemInfo.cs" />
+    <Compile Include="Helper\Windows.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormErrorRecovery.resx">
+      <DependentUpon>FormErrorRecovery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMdiParent.resx">
+      <DependentUpon>FormMdiParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStartBurn.resx">
+      <DependentUpon>FormStartBurn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Helper\Streams.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System.Shell\IFolderView.cs" />
+    <Compile Include="System.Shell\DragDropHelpers.cs" />
+    <Compile Include="System.Shell\ICommDlgBrowser.cs" />
+    <Compile Include="System.Shell\IContextMenu.cs" />
+    <Compile Include="System.Shell\IEnumIDList.cs" />
+    <Compile Include="System.Shell\IExtractIcon.cs" />
+    <Compile Include="System.Shell\IPersist.cs" />
+    <Compile Include="System.Shell\IPersistFolder.cs" />
+    <Compile Include="System.Shell\IProfferServices.cs" />
+    <Compile Include="System.Shell\IServiceProvider.cs" />
+    <Compile Include="System.Shell\IShellBrowser.cs" />
+    <Compile Include="System.Shell\IShellChangeNotify.cs" />
+    <Compile Include="System.Shell\IShellFolder.cs" />
+    <Compile Include="System.Shell\IShellFolderView.cs" />
+    <Compile Include="System.Shell\IShellFolderViewCB.cs" />
+    <Compile Include="System.Shell\IShellItem.cs" />
+    <Compile Include="System.Shell\IShellLink.cs" />
+    <Compile Include="System.Shell\IShellView.cs" />
+    <Compile Include="System.Shell\ShellBrowser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System.Shell\ShellBrowser.Designer.cs">
+      <DependentUpon>ShellBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System.Shell\ShellChangeNotifyEventArgs.cs" />
+    <Compile Include="System.Shell\ShellItemIdList.cs" />
+    <Compile Include="System.Shell\ShellListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System.Shell\ShellTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System.Shell\ShellTreeView.Designer.cs">
+      <DependentUpon>ShellTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System.Shell\ShellUtil.cs" />
+    <Compile Include="System.Shell\Types.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Program.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

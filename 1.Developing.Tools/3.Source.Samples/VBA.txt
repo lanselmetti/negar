@@ -1,0 +1,16 @@
+Private Sub Worksheet_Change(ByVal Target As Range)
+
+Dim WSheet As Worksheet
+Set WSheet = ActiveWorkbook.Worksheets(2)
+
+Dim Cells As Range
+Set Cells = WSheet.Range("A1", "A10")
+
+For Each Cell In Cells
+    Dim NewCell As Range
+    Set NewCell = Cell
+    If NewCell.Value <> "" And NewCell.Value = Target.Value Then
+        Target.Value = ""
+    End If
+Next Cell
+End Sub

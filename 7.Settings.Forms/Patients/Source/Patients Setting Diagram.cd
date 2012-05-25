@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Sepehr.Settings.Patients.frmAdditionalCols">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Field Name="btnAdd" Hidden="true" />
+      <Field Name="btnClose" Hidden="true" />
+      <Field Name="btnDelete" Hidden="true" />
+      <Field Name="btnEditApp" Hidden="true" />
+      <Field Name="btnHelp" Hidden="true" />
+      <Field Name="cmsForm" Hidden="true" />
+      <Field Name="cmsMenu" Hidden="true" />
+      <Field Name="ColDesc" Hidden="true" />
+      <Field Name="ColTitle" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvData" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="FormPanel" Hidden="true" />
+      <Field Name="FormToolTip" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AFAACBgAACAAAAIAAgCQAAAKAQAAwAAABLBQJAAEAQY=</HashCode>
+      <FileName>AdditionalCols.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sepehr.Settings.Patients.frmAdditionalColsManage">
+    <Position X="2.25" Y="0.5" Width="2" />
+    <Members>
+      <Field Name="btnAccept" Hidden="true" />
+      <Field Name="btnCancel" Hidden="true" />
+      <Field Name="btnHelp" Hidden="true" />
+      <Field Name="cBoxBool" Hidden="true" />
+      <Field Name="cBoxString" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="FormPanel" Hidden="true" />
+      <Field Name="FormToolTip" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="lblDescription" Hidden="true" />
+      <Field Name="lblInsName" Hidden="true" />
+      <Field Name="lblTitle" Hidden="true" />
+      <Field Name="lblType" Hidden="true" />
+      <Field Name="panel1" Hidden="true" />
+      <Field Name="txtDescription" Hidden="true" />
+      <Field Name="txtName" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAACIAABCAAAAsABQCYEAgCAAAAQBAABAAAIQAFAQQ=</HashCode>
+      <FileName>AdditionalColsManage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sepehr.Settings.Patients.frmCities">
+    <Position X="4" Y="2" Width="1.5" />
+    <Members>
+      <Field Name="btnAccept" Hidden="true" />
+      <Field Name="btnAdd" Hidden="true" />
+      <Field Name="btnApply" Hidden="true" />
+      <Field Name="btnCancel" Hidden="true" />
+      <Field Name="btnDelete" Hidden="true" />
+      <Field Name="btnHelp" Hidden="true" />
+      <Field Name="cBoxWithInActives" Hidden="true" />
+      <Field Name="cmsForm" Hidden="true" />
+      <Field Name="cmsMenu" Hidden="true" />
+      <Field Name="ColState" Hidden="true" />
+      <Field Name="Column1" Hidden="true" />
+      <Field Name="Column2" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvData" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="FormPanel" Hidden="true" />
+      <Field Name="FormToolTip" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEAACAgAACEAAIsAAgCQCEACAQAwwBAABDAQJRQEgUY=</HashCode>
+      <FileName>Cities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sepehr.Settings.Patients.frmCountries">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <Members>
+      <Field Name="btnAccept" Hidden="true" />
+      <Field Name="btnAdd" Hidden="true" />
+      <Field Name="btnApply" Hidden="true" />
+      <Field Name="btnCancel" Hidden="true" />
+      <Field Name="btnDelete" Hidden="true" />
+      <Field Name="btnHelp" Hidden="true" />
+      <Field Name="cBoxWithInActives" Hidden="true" />
+      <Field Name="cmsForm" Hidden="true" />
+      <Field Name="cmsMenu" Hidden="true" />
+      <Field Name="Column1" Hidden="true" />
+      <Field Name="Column2" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvData" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="FormPanel" Hidden="true" />
+      <Field Name="FormToolTip" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEAACAgAACAAAIsAAgCQCAACAQAwwBAABDAQJRQEgUY=</HashCode>
+      <FileName>Countries.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sepehr.Settings.Patients.frmPatientsJob">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <Members>
+      <Field Name="btnAccept" Hidden="true" />
+      <Field Name="btnAdd" Hidden="true" />
+      <Field Name="btnApply" Hidden="true" />
+      <Field Name="btnCancel" Hidden="true" />
+      <Field Name="btnDelete" Hidden="true" />
+      <Field Name="btnHelp" Hidden="true" />
+      <Field Name="cBoxWithInActives" Hidden="true" />
+      <Field Name="cmsForm" Hidden="true" />
+      <Field Name="cmsMenu" Hidden="true" />
+      <Field Name="Column1" Hidden="true" />
+      <Field Name="Column2" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvData" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="FormPanel" Hidden="true" />
+      <Field Name="FormToolTip" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEAACAgAACAAAIsAAgCQCAACAQAwwBAABDAQJRQEgUY=</HashCode>
+      <FileName>PatientsJob.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sepehr.Settings.Patients.frmPatientsName">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <Members>
+      <Field Name="btnAccept" Hidden="true" />
+      <Field Name="btnAdd" Hidden="true" />
+      <Field Name="btnApply" Hidden="true" />
+      <Field Name="btnCancel" Hidden="true" />
+      <Field Name="btnDelete" Hidden="true" />
+      <Field Name="btnHelp" Hidden="true" />
+      <Field Name="cmsForm" Hidden="true" />
+      <Field Name="cmsMenu" Hidden="true" />
+      <Field Name="ColEng" Hidden="true" />
+      <Field Name="ColIsFirstName" Hidden="true" />
+      <Field Name="ColName" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvData" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="FormPanel" Hidden="true" />
+      <Field Name="FormToolTip" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AkAAKAgAADAAAIsAAgCQCAACAQAAwBAABDAQJQAEgUY=</HashCode>
+      <FileName>PatientsName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sepehr.Settings.Patients.frmStates">
+    <Position X="2.25" Y="2" Width="1.5" />
+    <Members>
+      <Field Name="btnAccept" Hidden="true" />
+      <Field Name="btnAdd" Hidden="true" />
+      <Field Name="btnApply" Hidden="true" />
+      <Field Name="btnCancel" Hidden="true" />
+      <Field Name="btnDelete" Hidden="true" />
+      <Field Name="btnHelp" Hidden="true" />
+      <Field Name="cBoxWithInActives" Hidden="true" />
+      <Field Name="cmsForm" Hidden="true" />
+      <Field Name="cmsMenu" Hidden="true" />
+      <Field Name="ColCountry" Hidden="true" />
+      <Field Name="Column1" Hidden="true" />
+      <Field Name="Column2" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvData" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="FormPanel" Hidden="true" />
+      <Field Name="FormToolTip" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEAACAgAACAAAIsAAgCQCEACAQAwwBAAhDAQJRQEgUY=</HashCode>
+      <FileName>States.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

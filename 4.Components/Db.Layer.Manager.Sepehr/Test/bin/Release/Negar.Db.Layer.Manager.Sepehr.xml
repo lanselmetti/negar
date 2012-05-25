@@ -1,0 +1,809 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Negar.Db.Layer.Manager.Sepehr</name>
+    </assembly>
+    <members>
+        <member name="T:Sepehr.DBLayerIMS.Schedules">
+            <summary>
+            كلاس مدیریت اطلاعات نوبت دهی تصویربرداری
+            </summary>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Schedules.GetSchAppData(System.Int16)">
+            <summary>
+            تابعی برای خواندن اطلاعات به روز شده یك برنامه نوبت دهی ، مستقیماً از بانك اطلاعات
+            </summary>
+            <returns>اطلاعات برنامه یا تهی برای وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Schedules.GetSchAppConflictsInPeriod(System.Int16,System.DateTime,System.DateTime)">
+            <summary>
+            تابعی برای خواندن نقاط تلاقی تاریخ های ارائه شده به تابع با نوبت های موجود در بانك برای یك برنامه
+            </summary>
+            <returns>اطلاعات تلاقی ها یا تهی برای وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Schedules.GetSchAppWeekPeriodData(System.Int16)">
+            <summary>
+            تابعی برای خواندن اطلاعات به روز شده ساختار روز های یك برنامه نوبت دهی ، مستقیماً از بانك اطلاعات
+            </summary>
+            <returns>اطلاعات برنامه یا تهی برای وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Schedules.GetSchAppFirstOrLastDateTime(System.Int16,System.Boolean)">
+            <summary>
+            تابعی برای خواندن اولین یا آخرین نوبت ثبت شده در بانك برای یك برنامه
+            </summary>
+            <param name="ApplicationID">كلید برنامه مورد نظر</param>
+            <param name="IsFirst">تعیین اولین روز یا آخرین روز</param>
+            <returns>تاریخ مورد نظر یا تهی برای وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Schedules.GetSchAddinColumnsAppCover(System.Int16,System.Int16)">
+            <summary>
+            تابعی برای دسترسی یك برنامه نوبت دهی به یك فیلد پویا نوبت دهی
+            </summary>
+            <returns>دسترسی برنامه یا تهی برای وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Schedules.GetSchAddinDataItemsColCovers(System.Int16)">
+            <summary>
+            تابعی برای خواندن آیتم های تحت پوشش فیلد چند گزینه ای پویا برنامه نوبت دهی ، مستقیماً از بانك اطلاعات
+            </summary>
+            <returns>اطلاعات برنامه یا تهی برای وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Schedules.InsertSchAppWeekPeriod(System.Int16,System.Byte,System.DateTime,System.DateTime,System.Int16,System.Byte)">
+            <summary>
+            تابعی برای ثبت دوره های زمانی برنامه نوبت دهی جدید در بانك اطلاعات
+            </summary>
+            <returns>صحت ثبت اطلاعات یا وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Schedules.InsertOneDayAppointments(System.Int16,System.DateTime,System.DateTime,System.Int16,System.Int16)">
+            <summary>
+            تابعی برای ثبت نوبت های یك روز مشخص برای برنامه نوبت دهی در بانك اطلاعات
+            </summary>
+            <returns>صحت ثبت اطلاعات یا وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Schedules.DeleteSchApp(System.Int16)">
+            <summary>
+            تابعی برای حذف یك برنامه نوبت دهی از بانك اطلاعات
+            </summary>
+            <returns>حذف موفقیت آمیز یا وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Schedules.GetSchApplicationNextOrPrevDay(System.Int16,System.DateTime,System.Boolean)">
+            <summary>
+            تابع پیدا كردن روز بعدی یك شیفت در یك برنامه نوبت دهی بر اساس تاریخ ارائه شده
+            </summary>
+            <param name="ApplicationID">كلید برنامه نوبت دهی</param>
+            <param name="CurrentDate">تاریخ مورد نظر برای مقایسه</param>
+            <param name="IsNext">شیفت بعدی یا قبلی</param>
+            <returns>قفل بودن یا آزاد بودن نوبت</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Schedules.CheckLockAppointment(System.Int32)">
+            <summary>
+            تابع بررسی قفل بودن یك ردیف نوبت
+            </summary>
+            <param name="AppointmentID">كلید نوبت</param>
+            <returns>قفل بودن یا آزاد بودن نوبت</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Schedules.ChangeLockAppointment(System.Int32,System.Boolean)">
+            <summary>
+            تابع تغییر وضعیت قفل بودن یك ردیف نوبت
+            </summary>
+            <param name="AppointmentID">كلید نوبت</param>
+            <param name="IsLock">قفل كردن یا آزاد كردن</param>
+            <returns>صحت انجام كار</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Schedules.GetMultiSelectItemsByColID(System.Int16)">
+            <summary>
+            تابع ارائه لیست آیتم های مجاز ستون پویا
+            </summary>
+            <param name="ColID">كلید ستون پویا چند گزینه ای</param>
+            <returns>لیست آیتم های یا تهی برای خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Schedules.SchAppointmentLogEvents(System.Int32)">
+            <summary>
+             تابع بازگرداننده لیست سابقه نوبت انتخاب شده
+            </summary>
+            <param name="AppointmentID">شناسه نوبت انتخاب شده</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Schedules.InsertSchLogEvents(System.Int32,System.Byte,System.String,System.String)">
+            <summary>
+             تابع ثبت رخدادهای نوبت دهی در بانك اطلاعاتی
+            </summary>
+            <param name="AppointmentIX">شناسه نوبت</param>
+            <param name="CategoryIX">شناسه طبقه بندی</param>
+            <param name="ColumnName">نام ستونی كه تغییر كرده</param>
+            <param name="Value">مقدار ستون پس از تغییر</param>
+            <returns></returns>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Schedules.SchAppList">
+            <summary>
+            لیست برنامه های نوبت دهی ثبت شده در سیستم
+            </summary>
+            <remarks>
+            بدون اعمال فعال بودن یا نبودن آنها. همراه با آیتم انتخاب نشده
+            </remarks>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Schedules.SchAddinColumnsList">
+            <summary>
+            لیست ستون های پویا برنامه های نوبت دهی ثبت شده در سیستم
+            </summary>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Schedules.SchAddinColsAppCover">
+            <summary>
+            لیست پوشش ستون های پویا برنامه های نوبت دهی ثبت شده در سیستم
+            </summary>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Schedules.SchAddinColumnsOrdersList">
+            <summary>
+            لیست ترتیب ستون های اضافی برنامه های نوبت دهی ثبت شده در سیستم
+            </summary>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Schedules.SchAddinDataItemsList">
+            <summary>
+            لیست آیتم های قابل استفاده در فیلد های اضافی نوبت دهی چند گزینه ای
+            </summary>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Schedules.SchLogCategoriesList">
+            <summary>
+            لیست برنامه های نوبت دهی ثبت شده در سیستم
+            </summary>
+            <remarks>
+            بدون اعمال فعال بودن یا نبودن آنها. همراه با آیتم انتخاب نشده
+            </remarks>
+        </member>
+        <member name="T:Sepehr.DBLayerIMS.Manager">
+            <summary>
+            كلاس مدیریت اتصال به بانك تصویربرداری
+            </summary>
+        </member>
+        <member name="F:Sepehr.DBLayerIMS.Manager._DBML">
+            <summary>
+            شی ء مدیریت اتصال به بانك اطلاعات
+            </summary>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Manager.Initialize">
+            <summary>
+            تابعی برای نمونه سازی از شیء اتصال به بانك اطلاعات
+            </summary>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Manager.Submit">
+            <summary>
+            تابعی برای اعمال تغییرات انجام شده در لایه داده
+            </summary>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Manager.ExecuteCommand(System.String,System.Int32)">
+            <summary>
+            تابعی برای اجرای دستورات بانك بدون مقدار بازگشتی
+            </summary>
+            <param name="CommandString">متن فرمان</param>
+            <param name="Timeout">زمان اجرا</param>
+            <returns>صحت اجرای فرمان</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Manager.ExecuteCommand(System.String,System.Int32,System.String)">
+            <summary>
+            تابعی برای اجرای دستورات بدون مقدار بازگشتی به بانك اطلاعاتی دلخواه
+            </summary>
+            <param name="CommandString">متن فرمان</param>
+            <param name="Timeout">زمان اجرا</param>
+            <param name="DataBaseName">نام بانك جهت اتصال</param>
+            <returns>صحت اجرای فرمان</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Manager.ExecuteQuery(System.String,System.Int32)">
+            <summary>
+            تابعی برای اجرای دستورات بانك با مقدار بازگشتی جدول
+            </summary>
+            <param name="CommandString">متن فرمان</param>
+            <param name="Timeout">زمان اجرا</param>
+            <returns>صحت اجرای فرمان</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Manager.ExecuteQuery(System.String,System.Int32,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            تابعی برای اجرای دستورات بانك با مقدار بازگشتی جدول
+            </summary>
+            <param name="CommandString">متن فرمان</param>
+            <param name="Timeout">زمان اجرا</param>
+            <param name="Params">پارامتر های دلخواه كاربر برای ارسال كه فرمان</param>
+            <returns>صحت اجرای فرمان</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Manager.ReleaseCachedFiles">
+            <summary>
+            تابعی برای حذف كردن كلیه اطلاعات نگاه داشته شده در حافظه توسط پروژه
+            </summary>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Manager.DBML">
+            <summary>
+            شیء مدیریت اتصال به بانك اطلاعات
+            </summary>
+        </member>
+        <member name="T:Sepehr.DBLayerIMS.Insurance">
+            <summary>
+            كلاس مدیریت اطلاعات بیمه های تصویربرداری
+            </summary>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Insurance.InsFullList">
+            <summary>
+            لیست بیمه های تعریف شده برای سیستم تصویربرداری در سیستم
+            </summary>
+            <remarks>
+            بدون اعمال فعال بودن یا نبودن آنها. همراه با آیتم انتخاب نشده
+            </remarks>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Insurance.Ins2FormulaList">
+            <summary>
+            لیست فرمول های بیمه دوم تعریف شده برای سیستم تصویربرداری در سیستم
+            </summary>
+            <remarks>
+            بدون اعمال فعال بودن یا نبودن آنها. همراه با آیتم انتخاب نشده
+            </remarks>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Insurance.InsServiceFullList">
+            <summary>
+            لیست ارتباط بیمه ها با خدمات تصویربرداری
+            </summary>
+        </member>
+        <member name="T:Sepehr.DBLayerIMS.Referrals">
+            <summary>
+            كلاس مدیریت اطلاعات مراجعات تصویربرداری
+            </summary>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Referrals.GetPatAddinDataItemsColCovers(System.Int16)">
+            <summary>
+            تابعی برای خواندن آیتم های تحت پوشش فیلد چند گزینه ای پویا
+            </summary>
+            <returns>اطلاعات برنامه یا تهی برای وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Referrals.GetRefAddinDataItemsColCovers(System.Int16)">
+            <summary>
+            تابعی برای خواندن آیتم های تحت پوشش فیلد چند گزینه ای پویا
+            </summary>
+            <returns>اطلاعات برنامه یا تهی برای وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Referrals.GetPatIDByRefID(System.Int32)">
+            <summary>
+            تابعی برای خواندن كلید بیمار ، بر اساس كلید مراجعه تصویربرداری بیمار
+            </summary>
+            <returns>كلید بیمار یا تهی برای وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Referrals.GetPatRefIDListByPatID(System.Int32)">
+            <summary>
+            تابعی برای خواندن لیست كلید های مراجعات بیمار ، بر اساس كلید بیمار
+            </summary>
+            <returns>لیست كلیدهای مراجعات بیمار یا تهی برای وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Referrals.GetRefDataByID(System.Int32)">
+            <summary>
+            تابع بدست آوردن اطلاعات مراجعه ی بیمار مورد نظر
+            </summary>
+            <param name="RefID">كلید مراجعه</param>
+            <returns>اطلاعات مراجعه یا تهی برای خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Referrals.GetPatRefCountByPatID(System.Int32)">
+            <summary>
+            تابعی برای خواندن تعداد مراجعات بیمار با كلید بیمار
+            </summary>
+            <returns>تعداد مراجعه یا تهی برای وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Referrals.GetPatFirstOrLastRefID(System.Int32,System.Boolean)">
+            <summary>
+            تابع بدست آوردن كلید اولین یا آخرین مراجعه ی یك بیمار
+            </summary>
+            <param name="PatientID">كد بیمار</param>
+            <param name="IsLast">آخرین مراجعه یا اولین مراجعه</param>
+            <returns>كلید مراجعه ، صفر برای عدم وجود یا تهی برای خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Referrals.GetPatRefNextOrPrevRefID(System.Int32,System.Boolean)">
+            <summary>
+            تابع بدست آوردن كلید مراجعه قبلی یا بعدی بیمار نسبت به مراجعه جاری
+            </summary>
+            <param name="CurrentRefID">كلید مراجعه</param>
+            <param name="IsNext">پیدا كردن مراجعه بعدی یا قبلی</param>
+            <returns>كلید مراجعه یا صفر برای عدم وجود یا تهی برای خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Referrals.GetPatFirstOrLastDocID(System.Int32,System.Boolean)">
+            <summary>
+            تابع بدست آوردن كلید اولین یا آخرین مدرك تصویربرداری ثبت شده برای یك بیمار
+            </summary>
+            <param name="PatientID">كد بیمار</param>
+            <param name="IsLast">آخرین مدرك یا اولین مدرك</param>
+            <returns>كلید مراجعه ، صفر برای عدم وجود یا تهی برای خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Referrals.DeletePatRef(System.Int32)">
+            <summary>
+            حذف مراجعه یك بیمار ار بانك
+            </summary>
+            <param name="RefID">كلید مراجعه</param>
+            <returns>كلید مراجعه ای كه باید بعد از حذف نمایش داده شود یا صفر برای حذف آخرین مراجعه بیمار یا تهی برای خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Referrals.CheckRefIsLock(System.Int32)">
+            <summary>
+            تابعی برای بررسی وضعیت قفل بودن مراجعه یك بیمار
+            </summary>
+            <param name="RefID">كلید مراجعه</param>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Referrals.ChangeRefLock(System.Int32,System.Boolean)">
+            <summary>
+            تابعی برای تغییر دادن وضعیت قفل بودن یك مراجعه تصویربرداری
+            </summary>
+            <param name="RefID">كلید مراجعه</param>
+            <param name="IsLock">وضعیت مورد نظر</param>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Referrals.PatAddinColsList">
+            <summary>
+            لیست فیلد های پویا بیماران تصویربرداری
+            </summary>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Referrals.PatAddinDataItemsList">
+            <summary>
+            لیست آیتم های قابل استفاده در فیلد های پویای چند گزینه ای بیماران
+            </summary>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Referrals.RefAddinColsList">
+            <summary>
+            لیست فیلد های پویا مراجعات بیماران تصویربرداری
+            </summary>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Referrals.RefAddinDataItemsList">
+            <summary>
+            لیست آیتم های قابل استفاده در فیلد های پویای چند گزینه ای بیماران
+            </summary>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Referrals.RefServPerformers">
+            <summary>
+            لیست پزشكان و كارشناسان خدمات تصویربرداری
+            </summary>
+            <remarks>
+            بدون اعمال فعال بودن یا نبودن آنها. همراه با آیتم انتخاب نشده
+            </remarks>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Referrals.RefStatusList">
+            <summary>
+            لیست وضعیت های مراجعه تصویربرداری
+            </summary>
+            <remarks>
+            بدون اعمال فعال بودن یا نبودن آنها. همراه با آیتم انتخاب نشده
+            </remarks>
+        </member>
+        <member name="T:Sepehr.DBLayerIMS.PACS">
+            <summary>
+            كلاس مدیریت اطلاعات پكس
+            </summary>
+        </member>
+        <member name="F:Sepehr.DBLayerIMS.PACS._DBML">
+            <summary>
+            شی ء مدیریت اتصال به بانك اطلاعات
+            </summary>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.PACS.RegisterRefDataInPACS(System.Int32,System.Collections.Generic.List{System.Int16})">
+            <summary>
+            تابعی برای ثبت اطلاعات بیمار در پكس
+            </summary>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.PACS.Initialize">
+            <summary>
+            تابعی برای نمونه سازی از شیء اتصال به بانك اطلاعات
+            </summary>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.PACS.Submit">
+            <summary>
+            تابعی برای اعمال تغییرات انجام شده در لایه داده
+            </summary>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.PACS.ReleaseCachedFiles">
+            <summary>
+            تابعی برای حذف كردن كلیه اطلاعات نگاه داشته شده در حافظه توسط پروژه
+            </summary>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.PACS.Modalities">
+            <summary>
+            لیست ستون های پویا برنامه های نوبت دهی ثبت شده در سیستم
+            </summary>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.PACS.DBML">
+            <summary>
+            شیء مدیریت اتصال به بانك اطلاعات
+            </summary>
+        </member>
+        <member name="T:Sepehr.DBLayerIMS.Cash">
+            <summary>
+            كلاس مدیریت اطلاعات صندوق های تصویربرداری
+            </summary>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Cash.OpenCash(System.Int16,System.Int32)">
+            <summary>
+            تابع باز كردن صندوق مشخص با موجودی ابتدایی تعیین شده توسط كاربر جاری
+            </summary>
+            <param name="CashID">كلید صندوق</param>
+            <param name="SupplyBegin">مبلغ آغاز صندوق</param>
+            <returns>صحت انجام كار</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Cash.CloseCash(System.Int16,System.Int32)">
+            <summary>
+            تابع بستن صندوق مشخص با موجودی نهایی تعیین شده توسط كاربر جاری
+            </summary>
+            <param name="CashID">كلید صندوق</param>
+            <param name="SupplyEnd">مبلغ نهایی</param>
+            <returns>صحت انجام كار</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Cash.GetCashLogOrderedPrice(System.Int32)">
+            <summary>
+            تابعی برای بدست آوردن مبلغ موجودی مقرر یك لاگ صندوق
+            </summary>
+            <param name="CashLogID">كلید لاگ صندوق</param>
+            <returns>مبلغ موجودی مقرر</returns>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Cash.CashFullList">
+            <summary>
+            لیست صندوق های تعریف شده برای سیستم تصویربرداری در سیستم
+            </summary>
+            <remarks>
+            بدون اعمال فعال بودن یا نبودن آنها. همراه با آیتم انتخاب نشده
+            </remarks>
+        </member>
+        <member name="T:Sepehr.DBLayerIMS.Services">
+            <summary>
+            كلاس مدیریت اطلاعات خدمات تصویربرداری
+            </summary>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Services.ServCategoriesList">
+            <summary>
+            لیست طبقه بندی های خدمات تعریف شده برای سیستم تصویربرداری
+            </summary>
+            <remarks>
+            بدون اعمال فعال بودن یا نبودن آنها. همراه با آیتم انتخاب نشده
+            </remarks>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Services.ServicesList">
+            <summary>
+            لیست خدمات تعریف شده برای سیستم تصویربرداری
+            </summary>
+            <remarks>
+            بدون اعمال فعال بودن یا نبودن آنها. همراه با آیتم انتخاب نشده
+            </remarks>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Services.ServAddinPriceColsList">
+            <summary>
+            لیست ستون های قیمت پایه اضافی خدمات برای سیستم تصویربرداری
+            </summary>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Services.ServGroupsList">
+            <summary>
+            لیست گروه های خدمات تعریف شده برای سیستم تصویربرداری
+            </summary>
+            <remarks>
+            بدون اعمال فعال بودن یا نبودن آنها. همراه با آیتم انتخاب نشده
+            </remarks>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Services.ServicesInGroupsList">
+            <summary>
+            لیست عضویت خدمات در گروه های خدمات در سیستم تصویربرداری
+            </summary>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Services.DefaultPerformersList">
+            <summary>
+            لیست لیست كادر پزشكی پیش فرض خدمات
+            </summary>
+        </member>
+        <member name="T:Sepehr.DBLayerIMS.Document">
+            <summary>
+            كلاس مدیریت اطلاعات مدارك تصویربرداری
+            </summary>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Document.GetPatDocCountByPatID(System.Int32)">
+            <summary>
+            تابعی برای خواندن تعداد مدارك ثبت شده برای یك بیمار ، بر اساس كلید بیمار
+            </summary>
+            <returns>تعداد مدارك بیمار یا تهی برای وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Document.GetRefDocCountByRefID(System.Int32)">
+            <summary>
+            تابعی برای خواندن تعداد مدارك ثبت شده برای یك مراجعه ، بر اساس كلید مراجعه
+            </summary>
+            <returns>تعداد مدارك مراجعه یا تهی برای وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Document.GetRefDocsByRefID(System.Int32)">
+            <summary>
+            روالی برای خواندن مدرك یك مراجعه
+            </summary>
+            <param name="RefID">كلید مراجعه</param>
+            <returns>اطلاعات مدارك مراجعه یا تهی برای خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Document.GetRefDocIDListByRefID(System.Int32)">
+            <summary>
+            تابعی برای خواندن لیست كلید های مدارك مراجعه تصویربرداری بیمار ، بر اساس كلید مراجعه
+            </summary>
+            <returns>لیست كلیدهای مدارك مراجعه بیمار یا تهی برای وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Document.GetRefLastDocIDByRefID(System.Int32)">
+            <summary>
+            تابعی برای خواندن كلید آخرین مدرك مراجعه تصویربرداری بیمار ، بر اساس كلید مراجعه
+            </summary>
+            <returns>لیست كلید مدرك مراجعه بیمار یا تهی برای وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Document.GetRefDocDateByDocID(System.Int32)">
+            <summary>
+            تابعی برای خواندن تاریخ مدرك مراجعه تصویربرداری ، بر اساس كلید مدرك
+            </summary>
+            <returns>لیست كلید مدرك مراجعه بیمار یا تهی برای وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Document.GetDocTemplateBinaryData(System.Int16)">
+            <summary>
+            روالی برای خواندن اطلاعات باینری یك قالب مدرك و نگاه داری آن در حافظه موقت
+            </summary>
+            <param name="DocTemplateID">كلید قالب</param>
+            <returns>اطلاعات باینری قالب مدرك یا تهی برای خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Document.ClearCatchedDocTemplates">
+            <summary>
+            روالی برای تخلیه كردن اطلاعات قالب های مدرك نگاه داشته شده در حافظه موقت
+            </summary>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Document.GetRefDocBinaryByDocID(System.Int32)">
+            <summary>
+            تابعی برای خواندن فایل باینری یك مدرك ، بر اساس كلید مدرك
+            </summary>
+            <returns>فایل باینری مدرك مراجعه بیمار یا تهی برای وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Document.SetRefDocBinaryByDocID(System.Int32,System.Data.Linq.Binary)">
+            <summary>
+            تابعی برای ذخیره فایل باینری یك مدرك ، بر اساس كلید مدرك
+            </summary>
+            <returns>صحت ذخیره سازی</returns>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Document.DocTemplatesList">
+            <summary>
+            لیست قالب های مدرك تعریف شده برای سیستم تصویربرداری در سیستم
+            </summary>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Document.DocTextsList">
+            <summary>
+            لیست متن های مدرك تعریف شده برای سیستم تصویربرداری در سیستم
+            </summary>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Document.DocTypesList">
+            <summary>
+            لیست نوع مدرك تعریف شده برای سیستم تصویربرداری در سیستم
+            </summary>
+        </member>
+        <member name="T:Sepehr.DBLayerIMS.RefDocData">
+            <summary>
+            كلاس پایه ای برای اطلاعات مدارك
+            </summary>
+        </member>
+        <member name="T:Sepehr.DBLayerIMS.PatientSearcher">
+            <summary>
+            كلاس مدیریت جستجوی ساده بیماران در فرم اصلی
+            </summary>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.PatientSearcher.GetPatDataByPatListID(System.Int32)">
+            <summary>
+            تابعی برای خواندن اطلاعات یك بیمار با كلید بیمار
+            </summary>
+            <param name="PatListID">كلید بیمار</param>
+            <returns>اطلاعات بیمار یا تهی برای خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.PatientSearcher.GetPatDataByPatID(System.String)">
+            <summary>
+            تابعی برای خواندن اطلاعات یك بیمار با شماره رشته ای بیمار
+            </summary>
+            <param name="PatID">شماره بیمار</param>
+            <returns>اطلاعات بیمار یا تهی برای خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.PatientSearcher.GetSamePatDataByPatID(System.String)">
+            <summary>
+            تابعی برای خواندن اطلاعات بیماران دارای كد با شماره رشته ای بیمار
+            </summary>
+            <param name="PatID">شماره بیمار</param>
+            <returns>اطلاعات بیمار یا تهی برای خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.PatientSearcher.GetPatDataListSimpleFilter(System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            تابعی برای خواندن اطلاعات یك بیمار با شماره رشته ای بیمار
+            </summary>
+            <returns>اطلاعات بیمار یا تهی برای خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.PatientSearcher.GetPatDataListByPatListIDList(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            تابعی برای خواندن اطلاعات لیستی از بیماران با لیستی از كلید های بیماران
+            </summary>
+            <returns>اطلاعات بیمار یا تهی برای خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.PatientSearcher.GeneratePatSearchResult(Negar.DBLayerPMS.DataLayer.PatList,System.Int32)">
+            <summary>
+            تابعی برای تولید كلاس مناسب برای نمایش نتیجه جستجوی ساده بیماران
+            </summary>
+            <param name="PData">اطلاعات بیمار بر اساس اطلاعات بانك</param>
+            <param name="RowIndex">شماره ردیف مناسب برای ثبت</param>
+            <returns>اطلاعات نتیجه جستجو یا تهی برای خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.PatientSearcher.GetPatRefListDataByPatID(System.Int32)">
+            <summary>
+            تابعی برای خواندن اطلاعات مراجعات بیمار با كد بیمار
+            </summary>
+            <param name="PatListID">شماره بیمار</param>
+            <returns>اطلاعات مراجعات بیمار یا تهی برای خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.PatientSearcher.GeneratePatRefSearchResult(Sepehr.DBLayerIMS.DataLayer.RefList,System.Int32)">
+            <summary>
+            تابعی برای تولید كلاس مناسب برای نمایش نتیجه جستجوی ساده مراجعات
+            </summary>
+            <param name="RefData">اطلاعات مراجعه بر اساس اطلاعات بانك</param>
+            <param name="RowIndex">شماره ردیف مناسب برای ثبت</param>
+            <returns>اطلاعات نتیجه جستجو یا تهی برای خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.PatientSearcher.GetLongPersianDate(System.DateTime)">
+            <summary>
+            تابعی برای تبدیل تاریخ میلادی به متن فارسی
+            </summary>
+            <param name="SentDate">تاریخ میلادی</param>
+            <returns>تاریخ شمسی</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.PatientSearcher.GetShortPersianDate(System.DateTime)">
+            <summary>
+            تابعی برای تبدیل تاریخ میلادی به متن فارسی
+            </summary>
+            <param name="SentDate">تاریخ میلادی</param>
+            <returns>تاریخ شمسی</returns>
+        </member>
+        <member name="T:Sepehr.DBLayerIMS.PatientSearcher.PatientData">
+            <summary>
+            كلاس مدیریت اطلاعات جستجوی بیماران
+            </summary>
+        </member>
+        <member name="T:Sepehr.DBLayerIMS.PatientSearcher.PatientRefData">
+            <summary>
+            كلاس مدیریت اطلاعات جستجوی مراجعات بیماران
+            </summary>
+        </member>
+        <member name="T:Sepehr.DBLayerIMS.Account">
+            <summary>
+            كلاس مدیریت اطلاعات حساب تصویربرداری
+            </summary>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Account.GetRefIDByTransID(System.Int32)">
+            <summary>
+            تابع خواندن شماره مراجعه با كلید تراكنش
+            </summary>
+            <param name="TransID">كلید تراكنش</param>
+            <returns>كلید مراجعه یا تهی برای خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Account.GetUserExcludedCD(System.Int16)">
+            <summary>
+            تابع خواندن تخفیف ها و هزینه های محدود شده برای یك كاربر
+            </summary>
+            <returns>لیست محدودیت ها یا تهی برای خطا</returns>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Account.CostAndDiscountFullList">
+            <summary>
+            لیست تخفیف ها و هزینه های تعریف شده تصویربرداری در سیستم
+            </summary>
+            <remarks>
+            بدون اعمال فعال بودن یا نبودن آنها. همراه با آیتم انتخاب نشده
+            </remarks>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Account.BanksFullList">
+            <summary>
+            لیست بانك های تعریف شده تصویربرداری در سیستم
+            </summary>
+            <remarks>
+            بدون اعمال فعال بودن یا نبودن آنها. همراه با آیتم انتخاب نشده
+            </remarks>
+        </member>
+        <member name="T:Sepehr.DBLayerIMS.Messages">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Sepehr.DBLayerIMS.Messages._MassageCategories">
+            <summary>
+            لیست طبقه بندی پیام های كوتاه
+            </summary>
+        </member>
+        <member name="F:Sepehr.DBLayerIMS.Messages._MassageStates">
+            <summary>
+            لیست وضعیت سیستم ارسال پیام
+            </summary>
+        </member>
+        <member name="F:Sepehr.DBLayerIMS.Messages._MassageLogCategories">
+            <summary>
+            لیست طبقه بندی رخداد های پیام های كوتاه
+            </summary>
+        </member>
+        <member name="F:Sepehr.DBLayerIMS.Messages._MassagePriorities">
+            <summary>
+            لیست اولویت های ارسال پیام
+            </summary>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Messages.InsertMessageToMsgList(System.Byte,System.Nullable{System.Byte},System.Nullable{System.Int32},System.String,System.Nullable{System.Byte},System.String)">
+            <summary>
+             تابع افزودن یك پیام كوتاه در سیستم
+            </summary>
+             <returns>صحت انجام كار</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Messages.InsertMsgLogEvent(System.Byte,System.String)">
+            <summary>
+             تابع ثبت رخداد های سیستم پیام كوتاه
+            </summary>
+            <returns>صحت انجام كار</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Messages.PreparingMsgListForSend">
+            <summary>
+             تابع آماده سازی لیست پیام ها جهت ارسال
+            </summary>
+            <returns>لیست پیام ها - در صورت بروز خطا مقدار تهی</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Messages.PreparingMsgListForCheckDelivery">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Messages.UpdateMassagesStates(System.Collections.Generic.List{System.Int32},System.Byte)">
+            <summary>
+             تابع بروز رسانی وضعیت پیام ها
+            </summary>
+            <returns>صحت انجام كار</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Messages.DeleteMessageByID(System.Int64)">
+            <summary>
+             تابع حذف پیام كوتاه با شناسه پیام كوتاه
+            </summary>
+            <returns>صحت انجام كار</returns>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Messages.MassageCategories">
+            <summary>
+             لیست طبقه بندی پیام های كوتاه
+            </summary>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Messages.MassageStates">
+            <summary>
+             لیست طبقه بندی پیام های كوتاه
+            </summary>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Messages.MassageLogCategories">
+            <summary>
+             لیست طبقه بندی پیام های كوتاه
+            </summary>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Messages.MassagePriorities">
+            <summary>
+             لیست طبقه بندی پیام های كوتاه
+            </summary>
+        </member>
+        <member name="T:Sepehr.DBLayerIMS.Settings">
+            <summary>
+            كلاس مدیریت اطلاعات صندوق های تصویربرداری
+            </summary>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Settings.InsertCurrentUserSetting(System.Int16,System.Nullable{System.Boolean},System.String)">
+            <summary>
+            تابعی برای ثبت تنظیمات كاربری برای كاربر جاری
+            </summary>
+            <returns>ثبت موفقیت آمیز یا وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Settings.InsertUserSetting(System.Int16,System.Int16,System.Nullable{System.Boolean},System.String)">
+            <summary>
+            تابعی برای ثبت تنظیمات كاربری برای یك كاربر خاص
+            </summary>
+            <returns>ثبت موفقیت آمیز یا وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Settings.ClearUserSettings(System.Int16)">
+            <summary>
+            تابعی برای حذف كلیه تنظیمات كاربری برای یك كاربر خاص
+            </summary>
+            <returns>حذف موفقیت آمیز یا وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Settings.InsertSystemSetting(System.Int16,System.Nullable{System.Boolean},System.String)">
+            <summary>
+            تابعی برای ثبت تنظیمات سیستمی
+            </summary>
+            <returns>ثبت موفقیت آمیز یا وقوع خطا</returns>
+        </member>
+        <member name="M:Sepehr.DBLayerIMS.Settings.ReadSetting(System.Int16,System.Nullable{System.Int16})">
+            <summary>
+            تابعی برای خواندن تنظیمات كاربری یا تنظیمات عمومی
+            </summary>
+        </member>
+        <member name="P:Sepehr.DBLayerIMS.Settings.CurrentUserSettingsFullList">
+            <summary>
+            لیست تنظیمات ثبت شده برای كابر جاری در سیستم تصویربرداری
+            </summary>
+        </member>
+    </members>
+</doc>

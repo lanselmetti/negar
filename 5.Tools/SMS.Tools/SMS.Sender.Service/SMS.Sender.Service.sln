@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Sender.Service", "Source\SMS.Sender.Service.csproj", "{F1911FF2-5A9B-4BD5-AB2D-D648FFCD690C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{2DA54330-C38E-4808-AAB2-F509614B430B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F1911FF2-5A9B-4BD5-AB2D-D648FFCD690C} = {F1911FF2-5A9B-4BD5-AB2D-D648FFCD690C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1911FF2-5A9B-4BD5-AB2D-D648FFCD690C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1911FF2-5A9B-4BD5-AB2D-D648FFCD690C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1911FF2-5A9B-4BD5-AB2D-D648FFCD690C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1911FF2-5A9B-4BD5-AB2D-D648FFCD690C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DA54330-C38E-4808-AAB2-F509614B430B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DA54330-C38E-4808-AAB2-F509614B430B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DA54330-C38E-4808-AAB2-F509614B430B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DA54330-C38E-4808-AAB2-F509614B430B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <UseContracts>False</UseContracts>
+    <ProduceContractAssembly>False</ProduceContractAssembly>
+    <Verify>True</Verify>
+    <ReferenceTypesAreNonNullByDefault>False</ReferenceTypesAreNonNullByDefault>
+    <ProgramVerifierCommandLineOptions>
+    </ProgramVerifierCommandLineOptions>
+    <DisabledContractFeatures>
+    </DisabledContractFeatures>
+    <CheckContractAdmissibility>True</CheckContractAdmissibility>
+    <CheckPurity>False</CheckPurity>
+    <ProjectView>ProjectFiles</ProjectView>
+  </PropertyGroup>
+</Project>

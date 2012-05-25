@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Negar.frmMain">
+    <Position X="0.5" Y="0.5" Width="3.5" />
+    <Members>
+      <Field Name="cboInstalledApps" Hidden="true" />
+      <Field Name="cboUserName" Hidden="true" />
+      <Field Name="cBoxMakeNewConnection" Hidden="true" />
+      <Field Name="cBoxSaveLastAuthentication" Hidden="true" />
+      <Field Name="cBoxUseLocalServer" Hidden="true" />
+      <Field Name="cBoxUseSavedSettings" Hidden="true" />
+      <Field Name="cBoxUseServerNameOrIP" Hidden="true" />
+      <Field Name="ColServerAddress" Hidden="true" />
+      <Field Name="ColSettingName" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvConnections" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="FormPanel" Hidden="true" />
+      <Field Name="FormToolTip" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="lblAppDescription" Hidden="true" />
+      <Field Name="lblFooter1" Hidden="true" />
+      <Field Name="lblHeaderP1" Hidden="true" />
+      <Field Name="lblHeaderP2" Hidden="true" />
+      <Field Name="lblHeaderP3" Hidden="true" />
+      <Field Name="lblInstalledSoftwares" Hidden="true" />
+      <Field Name="lblP1Desc1" Hidden="true" />
+      <Field Name="lblP3Desc1" Hidden="true" />
+      <Field Name="lblPassword" Hidden="true" />
+      <Field Name="lblServerName" Hidden="true" />
+      <Field Name="lblSettingName" Hidden="true" />
+      <Field Name="lblSQLInstance" Hidden="true" />
+      <Field Name="lblUserName" Hidden="true" />
+      <Field Name="OpenFileDialogForm" Hidden="true" />
+      <Field Name="PanelConnectionChooser" Hidden="true" />
+      <Field Name="pBoxConnectionSettings" Hidden="true" />
+      <Field Name="pBoxLogin" Hidden="true" />
+      <Field Name="txtNewServerName" Hidden="true" />
+      <Field Name="txtNewServerSQLInstanceName" Hidden="true" />
+      <Field Name="txtPassword" Hidden="true" />
+      <Field Name="txtSettingName" Hidden="true" />
+      <Field Name="WizardControl" Hidden="true" />
+      <Field Name="WPage1" Hidden="true" />
+      <Field Name="WPage2" Hidden="true" />
+      <Field Name="WPage3" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IKhkCoAQAGAIQCIAAACRQAAKCBB4WwOEFgAAQRAVOAA=</HashCode>
+      <FileName>Main.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
